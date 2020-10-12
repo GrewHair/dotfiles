@@ -18,7 +18,7 @@ windows:
       scroll-pos:
         x: 0
         y: 0
-      title: Build A Calculator With JavaScript Tutorial - YouTube
+      title: (64) Build A Calculator With JavaScript Tutorial - YouTube
       url: https://www.youtube.com/watch?v=j59qQ7YWLxw&feature=youtu.be
       zoom: 1.0
     - last_visited: '2020-10-13T11:42:14'
@@ -205,8 +205,49 @@ windows:
       title: '(64) Marxism: Zizek/Peterson: Official Video - YouTube'
       url: https://www.youtube.com/watch?v=lsWndfzuOc4
       zoom: 1.0
+  - history:
+    - last_visited: '2020-10-12T17:59:31'
+      pinned: false
+      title: GitHub
+      url: https://github.com/
+    - last_visited: '2020-10-12T17:59:43'
+      pinned: false
+      title: Create a New Repository
+      url: https://github.com/new
+    - last_visited: '2020-10-12T18:00:13'
+      original-url: https://github.com/repositories
+      pinned: false
+      title: GrewHair/dotfiles
+      url: https://github.com/GrewHair/dotfiles
+    - active: true
+      last_visited: '2020-10-12T18:00:20'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: GrewHair
+      url: https://github.com/GrewHair
+      zoom: 1.0
   - active: true
     history:
+    - last_visited: '2020-10-12T18:00:33'
+      pinned: false
+      title: GitHub
+      url: https://github.com/
+    - last_visited: '2020-10-12T18:01:03'
+      pinned: false
+      title: GrewHair/dotfiles
+      url: https://github.com/GrewHair/dotfiles
+    - active: true
+      last_visited: '2020-10-12T18:01:14'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: GrewHair/dotfiles
+      url: https://github.com/GrewHair/dotfiles/network/members
+      zoom: 1.0
+  - history:
     - active: true
       last_visited: '2020-10-12T17:48:01'
       pinned: false
