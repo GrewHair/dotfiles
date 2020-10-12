@@ -1,0 +1,4 @@
+* [[file:/home/boris/projects/dotfiles/productivity/git/.gitconfig][.gitconfig]] should be symlinked to [[/home/boris/.gitconfig]]:
+  #+BEGIN_SRC sh
+  ln -s /home/boris/projects/dotfiles/productivity/git/.gitconfig /home/boris/.gitconfig
+  #+END_SRC

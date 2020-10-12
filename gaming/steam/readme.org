@@ -1,0 +1,21 @@
+* It seems quite cumbersome to keep steam's configs under source control, because all the games are given some obscure IDs which may not work well with the new installation - so it's probably better to just configure everything by hand from the GUI:
+ 
+** To attach a [[file:/home/boris/projects/dotfiles/gaming/qjoypad][qjoypad]] config to a game, follow this procedure:
+*** right-click a game and choose 'Properties...' in the context menu:
+    [[/home/boris/projects/dotfiles/gaming/steam/assets/right_click-properties.png]]
+sdfsdfsdfsdfsdhh
+sdfsdfsdfsdf
+*** A window will open. Click the 'SET LAUNCH OPTIONS...' button on the 'GENERAL' tab and input the needed bash command there:
+    [[/home/boris/projects/dotfiles/gaming/steam/assets/set_launch_options_dialog.png]]
+
+~/bin/qjoypad_tekken_7.sh ; %command% ;  ~/bin/stop_qjoypad.sh
+*** At the moment, I have qjoypad configurations only for two games: Tekken 7 and Yume Nikki Dream Diary. Here are the bash commands:
+**** Tekken 7
+     #+BEGIN_SRC sh
+     ~/bin/gaming/qjoypad_tekken_7.sh ; %command% ;  ~/bin/gaming/stop_qjoypad.sh
+     #+END_SRC
+**** Yume Nikki Dream Diary
+     #+BEGIN_SRC sh
+     ~/bin/gaming/qjoypad_yume_nikki_DD.sh ; %command% ; ~/bin/gaming/stop_qjoypad.sh
+     #+END_SRC
+** Game covers, icons, logos, etc (for the manually added games) are normally to be found (or added to when downloaded) at [[file:/media/boris/games/games/icons]]

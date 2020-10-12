@@ -1,0 +1,5 @@
+* [[file:/home/boris/projects/dotfiles/media/mpv/input.conf][input.conf]] should be symlinked to [[/home/boris/.config/mpv/input.conf]]:
+  #+BEGIN_SRC sh
+  ln -s /home/boris/projects/dotfiles/media/mpv/input.conf /home/boris/.config/mpv/input.conf
+  #+END_SRC
+** Note: there is a lot of other stuff in that folder which should also be (later) replaced by symlinks to here - but unlike the case with [[/home/boris/projects/dotfiles/media/vifm/readme.org][vifm]] there is also a lot of unnecessary files (like PDFs and such), and thus I decided not to symlink the whole folder and just add stuff one by one as I go

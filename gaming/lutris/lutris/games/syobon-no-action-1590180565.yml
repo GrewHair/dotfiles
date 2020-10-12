@@ -1,0 +1,11 @@
+game:
+  exe: /media/boris/games/games/syobon_no_action/drive_c/NekoMario/NekoMario.exe
+  prefix: /media/boris/games/games/syobon_no_action
+system:
+  reset_desktop: true
+  resolution: 700x450
+  sdl_video_fullscreen: 'off'
+wine:
+  Desktop: true
+  UseXVidMode: false
+  WineDesktop: 700x450

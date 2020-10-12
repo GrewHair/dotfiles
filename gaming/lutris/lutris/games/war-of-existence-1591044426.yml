@@ -1,0 +1,10 @@
+game:
+  exe: /media/boris/games/games/iji/drive_c/WarofExistenceEV/WarofExistence/Game.exe
+  prefix: /media/boris/games/games/iji
+system:
+  reset_desktop: true
+  resolution: 640x480
+  sdl_video_fullscreen: 'off'
+wine:
+  Desktop: false
+  WineDesktop: 800x600

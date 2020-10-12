@@ -1,0 +1,6 @@
+* Find the file [[/etc/environment]]
+* Append the following lines to its end:
+  #+BEGIN_SRC sh
+  TIDDLYWIKI_PLUGIN_PATH="/home/boris/projects/tiddlywiki/plugins"
+  BROWSER="qutebrowser"
+  #+END_SRC

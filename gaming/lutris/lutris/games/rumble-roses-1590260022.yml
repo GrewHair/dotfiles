@@ -1,0 +1,6 @@
+game:
+  main_file: /media/boris/d/roms/ps2/Rumble Roses (Europe) (En,Fr,De,Es,It).iso
+pcsx2:
+  fullscreen: true
+  runner_executable: /usr/games/PCSX2
+system: {}

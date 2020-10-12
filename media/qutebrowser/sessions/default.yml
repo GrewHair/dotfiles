@@ -1,0 +1,208 @@
+windows:
+- active: true
+  geometry: !!binary |
+    AdnQywACAAAAAAeAAAAAAAAADv8AAAQfAAAHgwAAAAMAAA78AAAEHAAAAAEAAAAAB4A=
+  tabs:
+  - history:
+    - last_visited: '2020-10-15T08:43:18'
+      pinned: false
+      title: Xwrits Manual
+      url: http://www.lcdf.org/xwrits/man.html
+    - last_visited: '2020-10-15T09:16:06'
+      pinned: false
+      title: History
+      url: qute://history/
+    - active: true
+      last_visited: '2020-10-12T17:37:41'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Build A Calculator With JavaScript Tutorial - YouTube
+      url: https://www.youtube.com/watch?v=j59qQ7YWLxw&feature=youtu.be
+      zoom: 1.0
+    - last_visited: '2020-10-12T23:42:14'
+      pinned: false
+      title: (64) ITT 2016 - Kevlin Henney - Seven Ineffective Coding Habits of Many
+        Programmers - YouTube
+      url: https://www.youtube.com/watch?v=ZsHMHukIlJY
+    - last_visited: '2020-10-12T22:38:52'
+      pinned: false
+      title: (64) The Forgotten Art of Structured Programming - Kevlin Henney [C++
+        on Sea 2019] - YouTube
+      url: https://www.youtube.com/watch?v=SFv8Wm2HdNM
+  - history:
+    - active: true
+      last_visited: '2020-10-12T17:37:43'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: linux permanently add environment variable - Google Search
+      url: https://www.google.com/search?q=linux%20permanently%20add%20environment%20variable
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-12T17:37:40'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: bash - How do I add environment variables? - Ask Ubuntu
+      url: https://askubuntu.com/questions/58814/how-do-i-add-environment-variables
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-12T17:37:40'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: How to permanently set environmental variables - Unix & Linux Stack Exchange
+      url: https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-10-14T14:04:50'
+      pinned: false
+      title: relationship between design patterns and state machines - Google Search
+      url: https://www.google.com/search?q=relationship%20between%20design%20patterns%20and%20state%20machines
+    - active: true
+      last_visited: '2020-10-12T17:37:40'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: architecture - What is the difference between a state machine and the
+        implementation of the state pattern? - Stack Overflow
+      url: https://stackoverflow.com/questions/19859531/what-is-the-difference-between-a-state-machine-and-the-implementation-of-the-sta
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-12T17:37:40'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Designing A Calculator with FSM Logic | by Robert Vunabandi | Medium
+      url: https://medium.com/@rvunabandi/making-a-calculator-in-javascript-64193ea6a492
+      zoom: 1.5
+  - history:
+    - active: true
+      last_visited: '2020-10-12T17:37:54'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'i3 window borders : i3wm'
+      url: https://www.reddit.com/r/i3wm/comments/9125dz/i3_window_borders/
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-10-12T09:13:29'
+      pinned: false
+      title: i3 documentation - Google Search
+      url: https://www.google.com/search?q=i3%20documentation
+    - last_visited: '2020-10-12T09:13:32'
+      pinned: false
+      title: i3 - improved tiling wm
+      url: https://i3wm.org/docs/
+    - last_visited: '2020-10-12T09:13:36'
+      pinned: false
+      title: 'i3: i3 User’s Guide'
+      url: https://i3wm.org/docs/userguide.html
+    - active: true
+      last_visited: '2020-10-12T17:37:40'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'i3: i3 User’s Guide'
+      url: https://i3wm.org/docs/userguide.html#_default_border_style_for_new_windows
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-12T17:37:41'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'State Machine Design pattern — Part 2: State Pattern vs. State Machine
+        | by Kousik Nath | Data Driven Investor | Medium'
+      url: https://medium.com/datadriveninvestor/state-machine-design-pattern-part-2-state-pattern-vs-state-machine-3010dd0fcf28
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-12T17:37:40'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 4-1 A calculator as a finite state automaton
+      url: https://www.cs.rit.edu/~ats/java/html/skript/4__01.htmld/index.html
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-12T17:37:39'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: How to Detect Key Presses In Python - Nitratine
+      url: https://nitratine.net/blog/post/how-to-detect-key-presses-in-python/
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-10-12T08:41:54'
+      pinned: false
+      title: (63) YouTube
+      url: https://www.youtube.com/
+    - last_visited: '2020-10-12T08:41:54'
+      pinned: false
+      title: '(63) Гомосексуальность: норма или болезнь? Психотерапевт об ЛГБТ. Психотерапия
+        при гомо/бисексуальности - YouTube'
+      url: https://www.youtube.com/watch?v=sQRrOrOu4ao
+    - last_visited: '2020-10-12T17:01:33'
+      pinned: false
+      title: '(63) ИДЕАЛЬНАЯ СОВМЕСТИМОСТЬ ч.2: ролевые игры в паре. От чего зависит
+        успех отношений? - YouTube'
+      url: https://www.youtube.com/watch?v=SbbKo2NAyTc
+    - active: true
+      last_visited: '2020-10-12T17:37:54'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Слежение за почтовыми отправлениями
+      url: https://webservices.belpost.by/searchRu/BV211857112BY
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-10-13T02:36:28'
+      pinned: false
+      title: xkeysnail ubuntu - Google Search
+      url: https://www.google.com/search?q=xkeysnail%20ubuntu
+    - last_visited: '2020-10-13T02:47:58'
+      pinned: false
+      title: xkeysnail ubuntu systemd - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk03clz3uqJxDkiUoz3IA7-hP5J9GOw%3A1602502586929&ei=uj-EX8epOIGKwPAPut6FqAs&q=xkeysnail+ubuntu+systemd&oq=xkeysnail+ubuntu+systemd&gs_lcp=CgZwc3ktYWIQAzoHCCMQrgIQJzoFCCEQoAE6BAghEBU6BwghEAoQoAFQpNopWPj-KWDthCpoAHABeACAAa4CiAGQC5IBBzAuNS4yLjGYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=psy-ab&ved=0ahUKEwjH7ser-67sAhUBBRAIHTpvAbUQ4dUDCA0&uact=5
+    - last_visited: '2020-10-13T02:48:42'
+      pinned: false
+      title: xkeysnail check_perm.py - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk02hq9RkrbA1KThk4r94LuvexRFX0Q%3A1602503277232&ei=bUKEX6jSDbH3qwHJhpXADA&q=xkeysnail+check_perm.py&oq=xkeysnail+check_perm.py&gs_lcp=CgZwc3ktYWIQAzoECCMQJzoHCAAQyQMQHjoFCCEQoAE6BwghEAoQoAFQwaECWNTIAmCZzAJoAHAAeACAAYUCiAH7EJIBBjAuMTQuMZgBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwjovNz0_a7sAhWx-yoKHUlDBcgQ4dUDCA0&uact=5
+    - active: true
+      last_visited: '2020-10-12T17:37:40'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'MikiyaShibuya/xkeysnail: Modify keys on Ubuntu like macOS'
+      url: https://github.com/MikiyaShibuya/xkeysnail
+      zoom: 1.0
+  - active: true
+    history:
+    - active: true
+      last_visited: '2020-10-12T17:37:40'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: '(64) Marxism: Zizek/Peterson: Official Video - YouTube'
+      url: https://www.youtube.com/watch?v=lsWndfzuOc4
+      zoom: 1.0

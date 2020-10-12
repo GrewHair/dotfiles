@@ -1,0 +1,13 @@
+game:
+  arch: auto
+  exe: /media/boris/games/games/iji/drive_c/Program Files/Iji/iji.exe
+  prefix: /media/boris/games/games/iji
+  working_dir: /media/boris/games/games/iji/drive_c/Program Files/Iji
+system:
+  pulse_latency: false
+  reset_pulse: false
+wine:
+  Audio: auto
+  dxvk: true
+  system_winetricks: false
+  version: Proton 3.16

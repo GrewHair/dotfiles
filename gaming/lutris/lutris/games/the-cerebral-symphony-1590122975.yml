@@ -1,0 +1,8 @@
+game:
+  exe: /media/boris/games/games/the-cerebral-symphony/drive_c/The Cerebral Symphony/The
+    Cerebral Symphony/RPG_RT.exe
+  prefix: /media/boris/games/games/the-cerebral-symphony
+system:
+  xephyr_fullscreen: false
+wine:
+  version: lutris-5.6-2-x86_64

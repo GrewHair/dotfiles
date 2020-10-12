@@ -1,0 +1,955 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/boris/
+	..
+1585933842
+'b
+	/home/boris/bin/
+	..
+1585933842
+'g
+	/home/boris/bin
+	..
+1596459235
+'h
+	/home/boris/
+	..
+1585933842
+'k
+	/home/boris/tiddlywiki/wiki22/tiddlers/$_/core/ui
+	..
+1587526945
+'m
+	/home/boris
+	.gitconfig
+1596570631
+
+# Bookmarks:
+b/home/boris/
+	Home
+	1589202473
+b/home/boris/Downloads/
+	Downloads
+	1588610732
+b/home/boris/google-drive/
+	Google_Drive
+	1589201469
+b/media/boris/d/roms/
+	Roms
+	1590361467
+b/home/boris/.config/retroarch/
+	Retroarch_Config
+	1590438708
+b/home/boris/tiddlywiki/wiki22/
+	My_Wiki
+	1591310257
+b/media/boris/d/Data Science/Stats/
+	Data_Science
+	1591293180
+
+# TUI:
+ar
+q0
+v2
+ov
+m-1
+l10,2
+r8,2
+
+# Left window history (oldest to newest):
+d/home/boris/.config/regolith/i3
+	config
+1
+d/home/boris/.config/regolith
+	i3
+2
+d/home/boris/.config
+	regolith
+19
+d/home/boris
+	.config
+4
+d/home
+	boris
+1
+d/home/boris
+	old
+19
+d/home/boris/old
+	my_startup.sh
+2
+d/home/boris
+	.config
+4
+d/home/boris/.config
+	regolith
+19
+d/home/boris/.config/regolith
+	i3
+2
+d/home/boris/.config/regolith/i3
+	config
+1
+d/home/boris/.config/regolith
+	i3
+2
+d/home/boris/.config
+	systemd
+29
+d/home/boris/.config/systemd
+	user
+1
+d/home/boris/.config/systemd/user
+	xkeysnail.service
+3
+d/home/boris/.config/systemd
+	user
+1
+d/home/boris/.config
+	gespeaker
+25
+d/home/boris
+	.qjoypad3
+31
+d/home/boris/.qjoypad3
+	yume_nikki_DD.lyt
+4
+d/home/boris
+	.qjoypad3
+31
+d/home/boris/.qjoypad3
+	yume_nikki_DD.lyt
+4
+d/home/boris
+	.qjoypad3
+31
+d/home/boris/.qjoypad3
+	yume_nikki_DD.lyt
+4
+d/home/boris
+	.qjoypad3
+1
+d/home/boris/.qjoypad3
+	rbo.lyt
+3
+d/home/boris
+	.qjoypad3
+1
+d/home/boris/.qjoypad3
+	super_bernie_world.lyt
+2
+d/home/boris
+	bin
+50
+d/home/boris/bin
+	gaming
+1
+d/home/boris/bin/gaming
+	..
+0
+d/home/boris/bin
+	gaming
+1
+d/home/boris/bin/gaming
+	..
+0
+d/home/boris/bin
+	i3
+1
+d/home/boris/projects/dotfiles/gaming/scripts
+	..
+0
+d/home/boris/projects/dotfiles/gaming
+	scripts
+4
+d/home/boris/projects/dotfiles
+	gaming
+3
+d/home/boris/projects
+	dotfiles
+10
+d/home/boris
+	bin
+15
+d/home/boris/bin
+	gaming
+1
+d/home/boris/bin/gaming
+	qjoypad_rbo.sh
+1
+d/home/boris/bin
+	gaming
+1
+d/home/boris/bin/gaming
+	qjoypad_rbo.sh
+1
+d/home/boris/bin
+	gaming
+1
+d/home/boris/bin/gaming
+	qjoypad_rbo.sh
+1
+d/home/boris/bin
+	i3
+2
+d/home/boris/bin/i3
+	new-workspace.sh
+1
+d/home/boris/bin
+	i3
+2
+d/home/boris/bin/i3
+	new-workspace.sh
+1
+d/home/boris/bin
+	i3
+2
+d/home/boris/bin/i3
+	new-workspace.sh
+1
+d/home/boris/bin
+	i3
+2
+d/home/boris/bin/i3
+	new-workspace.sh
+1
+d/home/boris/bin
+	i3
+2
+d/home/boris/bin/i3
+	kill_all_games.sh
+6
+d/home/boris/bin
+	i3
+2
+d/home/boris/bin/i3
+	kill_all_games.sh
+6
+d/home/boris/bin
+	i3
+2
+d/home/boris/bin/i3
+	kill_all_games.sh
+6
+d/home/boris/bin
+	i3
+2
+d/home/boris/bin/i3
+	kill_all_games.sh
+6
+d/home/boris/bin
+	start_tw.sh
+4
+d/home/boris/projects/dotfiles/control/i3/scripts/i3
+	..
+0
+d/home/boris/projects/dotfiles/control/i3/scripts
+	i3
+1
+d/home/boris/projects/dotfiles/control/i3/scripts/i3
+	..
+0
+d/home/boris/projects/dotfiles/control/i3/scripts
+	i3
+1
+d/home/boris/projects/dotfiles/control/i3/scripts/i3
+	..
+0
+d/home/boris/projects/dotfiles/control/i3/scripts
+	i3
+1
+d/home/boris/projects/dotfiles/control/i3/scripts/i3
+	..
+0
+d/home/boris/projects/dotfiles/control/i3/scripts
+	move-to-new-workspace.sh
+2
+d/home/boris/projects/dotfiles/control/i3
+	scripts
+1
+d/home/boris/projects/dotfiles/control/i3/scripts
+	move-to-new-workspace.sh
+2
+d/home/boris/projects/dotfiles/control/i3
+	scripts
+1
+d/home/boris/projects/dotfiles/control/i3/scripts
+	move-to-new-workspace.sh
+2
+d/home/boris/projects/dotfiles/control/i3
+	scripts
+1
+d/home/boris/projects/dotfiles/control
+	i3
+1
+d/home/boris/projects/dotfiles
+	control
+2
+d/home/boris/projects
+	dotfiles
+10
+d/home/boris
+	bin
+12
+d/home/boris/bin
+	i3
+1
+d/home/boris/bin/i3
+	kill_all_games.sh
+6
+d/home/boris/bin
+	i3
+1
+d/home/boris/bin/i3
+	kill_all_games.sh
+6
+d/home/boris/bin
+	i3
+1
+d/home/boris/bin/i3
+	kill_all_games.sh
+6
+d/home/boris/bin
+	xkeysnail
+3
+d/home/boris/bin/xkeysnail
+	.git
+1
+d/home/boris/bin
+	xkeysnail
+3
+d/home/boris
+	Pictures
+5
+d/home/boris/Pictures
+	Screenshot from 2020-10-05 11-35-44.png
+20
+d/home/boris
+	bin
+4
+d/home/boris/bin
+	startup
+4
+d/home/boris/bin/startup
+	..
+0
+d/home/boris/bin
+	xkeysnail
+3
+d/home/boris/bin/xkeysnail
+	wqall
+8
+d/home/boris/bin
+	xkeysnail
+4
+d/home/boris/bin/xkeysnail
+	xkeysnail.service
+8
+d/home/boris/bin
+	xkeysnail
+4
+d/home/boris
+	.config
+20
+d/home/boris/.config
+	xkeysnail
+20
+d/home/boris/.config/xkeysnail
+	..
+0
+d
+
+# Right window history (oldest to newest):
+D/home/boris/projects/dotfiles/media
+	qutebrowser
+2
+D/home/boris/projects/dotfiles
+	media
+5
+D/home/boris/projects
+	dotfiles
+10
+D/home/boris
+	bin
+8
+D/home/boris/bin
+	i3
+1
+D/home/boris/bin/i3
+	..
+0
+D/home/boris/bin
+	xkeysnail
+2
+D/home/boris/bin/xkeysnail
+	.git
+1
+D/home/boris/bin/xkeysnail/.git
+	..
+0
+D/home/boris/bin/xkeysnail
+	10-input.rules
+3
+D/home/boris/bin
+	i3
+1
+D/home/boris/bin/i3
+	move-to-new-workspace-focus.sh
+3
+D/home/boris/bin
+	i3
+1
+D/home/boris/bin/i3
+	cycle_output.py
+4
+D/home/boris/bin
+	xkeysnail
+2
+D/home/boris/bin/xkeysnail
+	.git
+1
+D/home/boris/bin
+	xkeysnail
+2
+D/home/boris/bin/xkeysnail
+	.git
+1
+D/home/boris/bin
+	i3
+1
+D/home/boris/bin/i3
+	..
+0
+D/home/boris/bin
+	start_tw.sh
+10
+D/home/boris
+	projects
+16
+D/home/boris/projects
+	dotfiles
+10
+D/home/boris/projects/dotfiles
+	gaming
+3
+D/home/boris/projects/dotfiles/gaming
+	qjoypad
+2
+D/home/boris/projects/dotfiles/gaming/qjoypad
+	.qjoypad3
+1
+D/home/boris/projects/dotfiles/gaming
+	scripts
+4
+D/home/boris/projects/dotfiles/gaming/scripts
+	qjoypad_rbo.sh
+1
+D/home/boris/projects/dotfiles/gaming
+	scripts
+4
+D/home/boris/projects/dotfiles/gaming/scripts
+	gaming
+1
+D/home/boris/projects/dotfiles/gaming/scripts/gaming
+	..
+0
+D/home/boris/projects/dotfiles/gaming/scripts
+	gaming
+1
+D/home/boris/projects/dotfiles/gaming/scripts/gaming
+	qjoypad_tekken_7.sh
+4
+D/home/boris/projects/dotfiles/gaming/scripts
+	gaming
+1
+D/home/boris/projects/dotfiles/gaming
+	scripts
+4
+D/home/boris/projects/dotfiles
+	gaming
+3
+D/home/boris/projects
+	dotfiles
+10
+D/home/boris/projects/dotfiles
+	control
+2
+D/home/boris/projects/dotfiles/control
+	i3
+1
+D/home/boris/projects/dotfiles/control/i3
+	scripts
+1
+D/home/boris/projects/dotfiles/control/i3/scripts
+	i3
+1
+D/home/boris/projects/dotfiles/control/i3/scripts/i3
+	new-workspace.sh
+1
+D/home/boris/projects/dotfiles/control/i3/scripts
+	i3
+1
+D/home/boris/projects/dotfiles/control/i3
+	scripts
+1
+D/home/boris/projects/dotfiles/control
+	i3
+1
+D/home/boris/projects/dotfiles/control/i3
+	scripts
+1
+D/home/boris/projects/dotfiles/control
+	i3
+1
+D/home/boris/projects/dotfiles/control/i3
+	scripts
+1
+D/home/boris/projects/dotfiles/control
+	i3
+1
+D/home/boris/projects/dotfiles/control/i3
+	scripts
+1
+D/home/boris/projects/dotfiles/control
+	rofi
+2
+D/home/boris/projects/dotfiles/control/rofi
+	readme.org
+1
+D/home/boris/projects/dotfiles/control
+	i3
+1
+D/home/boris/projects/dotfiles/control/i3
+	scripts
+1
+D/home/boris/projects/dotfiles/control
+	i3
+1
+D/home/boris/projects/dotfiles/control/i3
+	scripts
+1
+D/home/boris/projects/dotfiles/control/i3/scripts
+	i3
+1
+D/home/boris/projects/dotfiles/control/i3/scripts/i3
+	
+1
+D/home/boris/projects/dotfiles/control/i3/scripts
+	..
+0
+D/home/boris/projects/dotfiles/control/i3
+	readme.org
+3
+D/home/boris/projects/dotfiles/control
+	i3
+1
+D/home/boris/projects/dotfiles
+	startup
+7
+D/home/boris/projects/dotfiles/startup
+	assets
+1
+D/home/boris/projects/dotfiles/startup/assets
+	..
+0
+D/home/boris/projects/dotfiles/startup
+	assets
+1
+D/home/boris/projects/dotfiles/startup/assets
+	startup_applications.png
+1
+D/home/boris/projects/dotfiles/startup
+	startup
+2
+D/home/boris/projects/dotfiles/startup/startup
+	..
+0
+D/home/boris/projects/dotfiles/startup
+	startup
+2
+D/home/boris/projects/dotfiles
+	misc
+6
+D/home/boris/projects/dotfiles/misc
+	..
+0
+D/home/boris/projects/dotfiles
+	misc
+6
+D/home/boris/projects
+	dotfiles
+10
+D/home/boris
+	.config
+6
+D/home/boris/.config
+	systemd
+16
+D/home/boris/.config/systemd
+	user
+1
+D/home/boris/.config/systemd/user
+	xkeysnail.service
+3
+D/home/boris/.config/systemd
+	user
+1
+D/home/boris/.config
+	systemd
+16
+D/home/boris
+	.config
+6
+D/home/boris/.config
+	xkeysnail
+20
+D/home/boris/.config/xkeysnail
+	..
+0
+D/home/boris/.config
+	xkeysnail
+20
+D/home/boris
+	projects
+20
+D/home/boris/projects
+	dotfiles
+10
+D/home/boris/projects/dotfiles
+	control
+2
+D/home/boris/projects/dotfiles/control
+	rofi
+2
+D/home/boris/projects/dotfiles/control/rofi
+	config
+2
+D/home/boris/projects/dotfiles/control
+	xkeysnail
+3
+D/home/boris/projects/dotfiles/control/xkeysnail
+	readme.org
+2
+D/home/boris/projects/dotfiles/control
+	xkeysnail
+3
+D/home/boris/projects/dotfiles
+	control
+2
+D/home/boris/projects
+	dotfiles
+10
+D/home/boris/projects/dotfiles
+	media
+6
+D/home/boris/projects/dotfiles/media
+	qutebrowser
+2
+D/home/boris/projects/dotfiles/media/qutebrowser
+	stylesheets
+3
+D/home/boris/projects/dotfiles/media/qutebrowser/stylesheets
+	qutebrowser_dark_solarized
+1
+D/home/boris/projects/dotfiles/media/qutebrowser/stylesheets/qutebrowser_dark_solarized
+	custom_solarized.css
+2
+D/home/boris/projects/dotfiles/media/qutebrowser/stylesheets
+	solarized-everything-css
+2
+D/home/boris/projects/dotfiles/media/qutebrowser/stylesheets/solarized-everything-css
+	css
+1
+D
+
+# Command line history (oldest to newest):
+:!grep hint *
+:!grep -r hint *
+:mkdir stylesheets
+:nnoremap yf :!echo %c:p | xclip -selection clipboard %i<cr>
+:!echo %c:p | xclip -selection clipboard %i<cr>
+:!vim wikipedia_dark_theme.js
+:!vim
+:!vim sci-hub_button.js
+:!vim google_search_dark_hight_mode_theme.js
+:!vim google_translate_dark.js
+:!vim wikipedia_dark_theme_night_mode-wip.js
+:!vim github_com_darker_with_dev_help_documentation_pages.js
+:!vim github_dark_script
+:!vim my_dark_github.js
+:mkdir buku_run
+:mkdir userscripts
+:!vim foo.py
+:mkdir js
+:!vim enumerate_elements.js
+:!vim check.js
+:help bmark
+:help
+:bmgo Downloads
+:map
+:nmap
+:map gbr bmgo Roms
+:map gbr :bmgo Roms
+:map gbr 'bmgo Roms'
+:map gmr 'bmgo Roms'
+:map gmr :bmgo Roms
+:bmgo Roms
+:bmgo Home
+:!python3 tts.py
+:!python tts.py
+:python tts.py
+:!python %c
+:mkdir test_atom
+:!vim 2020-08-03_3
+:!vim 2020-08-03_4
+:!vim quora_dark_theme_night_mode.js
+:!vim dark_reader.js
+:!mpv %c
+:cd /etc/mpv
+:!mpv --script=/etc/mpv/
+:!mpv --script=/home/boris/.config/mpv/scripts/mpris.so %c
+:mkdir 'qutebrowser backup'
+:mkdir 'unit
+:mkdir 'unit tests example'
+:Q
+:mkdir 
+:mkdir javascript
+:mkdir 'hello world'
+:mkdir mocha-test
+:!sc-im %c
+:mkdir rsschool-cv
+:mkdir python
+:mkdir test_python_project
+:!touch .projectile
+:!vim .gitignore
+:m
+:vim %c
+:!vim %c
+:!emacs %c
+:!touch 
+:!touch script.js
+:set rnu
+:!grep WMClass
+:!grep * WMClass
+:x
+:s
+:mkdir lisp
+:wq
+:mkdir shells
+:mkdir bash
+:copy
+:mkdir vifm
+:mkdir mpv
+:mkdir tiddlywiki
+:mkdir lutris retroarch steam
+:mkdir rofi
+:e
+:mkdir config
+:bmarks
+:mkdir
+:mkdir qutebrowser
+:sh
+:mkdir qjoypad
+:mkdir gaming
+:mkdir i3
+:mkdir styles
+:mkdir scripts
+:sync
+:mkdir assets
+:rename
+:mkdir startup
+:mkdir misc
+:mkdir xkeysnail
+:move
+:empty
+:q
+
+# Search history (oldest to newest):
+/dolp
+/.rom
+/my_
+/my_new
+/home/boris/°
+/tiddlywiki
+/regoli
+/telegram-cli
+/snap
+/tg
+/.bashr
+/sim
+/offi
+/Offi
+/OB
+/.ipy
+/.ipynb
+/con
+/OBC_UPD
+/Dow
+/pydot
+/.bashrc
+/bashrc
+/.lua
+/stri
+/string
+/vif
+/.scimrc
+/.
+/.con
+/hints.fea
+/hint
+/qu
+/note
+/.loca
+/mpv
+/.atom
+/.cache
+/Everyone
+/Des
+/.shar
+/Down
+/pika
+/rese
+/reser
+/bmarks
+/.sp
+/.spacemacs
+/.spac
+/.emacs
+/macs
+/python
+/Prefix
+/web
+/java
+/i3
+/usr
+/applica
+/discord
+/icons
+/pix
+/torbrowser
+/qutebrowser
+/iconlj
+/appli
+/vival
+/opera
+/gvfsh
+/.gv
+/proj
+/lisp
+/regol
+/emacs
+/rego
+/team
+/alveh
+/dot
+/vimrc
+/vifm
+/buku
+/git
+/.confi
+/rofi
+/lutris
+/lutri
+/.local
+/retroarch
+/retro
+/qute
+/old
+/.config
+/syste
+/qjoyp
+/qjoypad
+/qjoy
+/bin
+/xkeysnail
+/pro
+/config
+/xkey
+
+# Prompt history (oldest to newest):
+p've found is actually Autokey's folders, but Autokey needs to always be running (even if I call autokey-run), which I'd prefer to avoid.g I've found is actually Autokey's folders, but Autokey needs to always be running (even if I call autokey-run), which I'd prefer to avoid.config
+p've found is actually Autokey's folders, but Autokey needs to always be running (even if I call autokey-run), which I'd prefer to avoid.g I've found is actually Autokey's folders, but Autokey needs to always be running (even if I call autokey-run), which I'd prefer to avoid.g I've found is actually Autokey's folders, but Autokey needs to always be running (even if I call autokey-run), which I'd prefer to avoid.g I've found is actually Autokey's folders, but Autokey needs to always be running (even if I call autokey-run), which I'd prefer to avoid.config
+p've found is actually Autokey's folders, but Autokey needs to always be running (even if I call autokey-run), which I'd prefer to avoid.config
+p.spacemacs-backup
+pedit-tiddler-enumerate_elements.jsbackup
+pconfig.py.backup2
+pkill.dropdown.js
+pemuparadise_workaround.js
+psound_to_tv.sh
+pqjoypad_NO_LAYOUT.sh
+pDefault
+p_a_tiddler_with_a_nice_reveal_widget_usage_that_may_help.tid
+pstate.tid
+pdropdown.tid
+psort_tags_by.tid
+pCustomNewTiddler.tid
+pMyTools.tid
+pprobability_distribution.tid
+pmonokai-bright.tid
+p_my_macros_summary_RailroadSets_rlrd-set_syll-fig.tid
+prlrd-set_syll-fig.tid
+pbinary_symmetric_channel.tid
+pComparison_of_Propositions.tid
+plineWrapping.tid
+ppalette.tid
+ptheme.tid
+pqjoypad_tekken_7.sh
+pqjoypad_tekken_7_noexit.sh
+ptekken_keys.sh
+pqjoypad_yume_nikki_DD.sh
+pqjoypad_super_bernie_world.sh
+ptest.sh
+pqjoypad_melty_blood_re-act.sh
+pqjoypad_rbo.sh
+pkill_all_games.sh
+pqjoypad_ppsspp.sh
+pconfig_backup.py
+pconfig.py
+pconfig.py.backup
+pmy_dark_github_2.js
+padd_to_buku.sh
+pde-enumerate_elements.js
+ptts.py
+ptouchpad.sh
+premap_keys.sh
+pyank_pre.py
+pyank-pre.sh
+pmove-to-new-workspace.sh
+pmove-to-new-workspace-focus.sh
+pfoo.sh
+
+# Local filter history (oldest to newest):
+|[^tid]
+|.*[^tid]
+|.*[^tid]$
+|^Bang
+|^Bo
+|^Ecco
+|^Power Stone 2
+|^Power
+|^Sou
+|^Cann
+|^Zero
+|^Trigg
+|578
+|python
+|.*pdf
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+
+# State:
+f
+i1
+[.0
+[F
+F
+I1
+].0
+]F
+s1

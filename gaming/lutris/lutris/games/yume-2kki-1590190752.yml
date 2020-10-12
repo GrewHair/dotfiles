@@ -1,0 +1,6 @@
+game:
+  exe: /media/boris/games/games/yume-2kki/drive_c/Yume 2kki/0.109h p1p2p3 eng/start.exe
+  prefix: /media/boris/games/games/yume-2kki
+system: {}
+wine:
+  version: Proton 5.0

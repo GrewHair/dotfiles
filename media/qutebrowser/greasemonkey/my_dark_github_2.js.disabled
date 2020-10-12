@@ -1,0 +1,52 @@
+// ==UserScript==
+// @include	 https://github.com/*
+// ==/UserScript==
+
+document.body.style.backgroundColor = "#444";
+document.body.style.color = "#ccc";
+intro_shelf = document.querySelector(".intro-shelf");
+intro_shelf.style.color = "#ccc";
+intro_shelf.style.backgroundImage = "linear-gradient(180deg,hsla(0,0%,100%,0) 60%,#333),linear-gradient(70deg,#333 32%,#333)";
+
+document
+    .querySelectorAll(".gh-header")
+    .forEach(el => el.style.backgroundColor = "#333");
+
+document
+    .querySelectorAll(".intro-shelf .shelf-lead")
+    .forEach(el => el.style.color = "#ccc");
+
+document
+    .querySelectorAll(".bg-gray-light")
+    .forEach(el => {
+      el.classList.remove("bg-gray-light");
+      el.style.backgroundColor = "#333";
+    });
+
+//document
+//    .querSelectorAll(".btn")
+//    .forEach(el => {
+//      el.style.color = "#ccc";
+//      el.style.backgroundColor = "#222";
+//    });
+
+document
+    .querySelectorAll(".Box-header--blue")
+    .forEach(el => el.style.backgroundColor = "#333");
+
+document
+    .querySelectorAll(".timeline-comment")
+    .forEach(el => el.style.backgroundColor = "#666");
+
+document
+    .querySelectorAll(".markdown-body .highlight pre, .markdown-body pre")
+    .forEach(el => el.style.backgroundColor = "#675");
+
+document.querySelectorAll(".pl-c").forEach(el => el.style.color = "#333");
+
+//document
+//    .querySelectorAll(".timeline-comment-header")
+//    .forEach(el => {
+//      el.style.backgroundColor = "#555");
+//      el.style.color = "222");
+//    });

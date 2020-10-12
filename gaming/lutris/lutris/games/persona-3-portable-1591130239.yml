@@ -1,0 +1,9 @@
+game:
+  main_file: /media/boris/d/roms/sony psp/Shin Megami Tensei - Persona 3 Portable
+    (Europe) (Preproduction 1.00) [ULES-01523].iso
+ppsspp:
+  fullscreen: true
+system:
+  postexit_command: /home/boris/bin/gaming/stop_qjoypad.sh
+  prefix_command: ''
+  prelaunch_command: /home/boris/bin/gaming/qjoypad_ppsspp.sh

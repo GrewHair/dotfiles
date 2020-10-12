@@ -1,0 +1,4 @@
+* The whole [[file:/home/boris/projects/dotfiles/gaming/qjoypad/.qjoypad3][.qjoypad3/]] directory should be symlinked to [[/home/boris/.qjoypad3]]:
+  #+BEGIN_SRC sh
+  ln -s /home/boris/projects/dotfiles/gaming/qjoypad/.qjoypad3 /home/boris/.qjoypad3
+  #+END_SRC

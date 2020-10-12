@@ -1,0 +1,6 @@
+* The whole [[file:/home/boris/.config/vifm/vifm/][vifm/]] directory should be symlinked to [[/home/boris/.config/vifm/]]:
+  #+BEGIN_SRC sh
+  ln -s /home/boris/projects/dotfiles/media/vifm/vifm /home/boris/.config/vifm
+  #+END_SRC
+
+** this is because apart from just the config file, there are other files and directories there that contain scripts, bookmarks, etc.

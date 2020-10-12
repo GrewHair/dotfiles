@@ -1,0 +1,15 @@
+Unfortunately, at this point I don't really understand how systemd and uinput work :(. But I'm kind of forced to use them, because xkeysnail requires root privileges to be run. And for whatever reason, just putting a 'sudo' inside a simple startup script ran by gash results in nothing being done. So I lurked the internets and found this:
+
+[[https://github.com/MikiyaShibuya/xkeysnail]].
+
+I don't understand some steps from this procedure, but i've cloned the repo anyway. [[file:/home/boris/projects/dotfiles/control/xkeysnail/obscure_repo_i'm_using][Here it is]]. If you're lost and can't find a way to make things work, use this repo. Also use it if you don't remember how to create a systemd service file - it's just over there.
+
+It really didn't work out so well after I followed the procedure - xkeysnail wouldn't autostart!
+
+So what I ended up doing is I placed the commands for systemctl to start the xkeysnail service inside the [[file:/home/boris/projects/dotfiles/startup/startup/remap_keys.sh][one of the startup scripts]], which is completely savage, because it does this thing (that is supposed to be only done once) on each boot! But it does the job...
+
+I'm intentionally leaving this readme unfinished and lacking clear instructions, because it's quite obvious that the way I'm doing it right now is very bad, and next time I try to configure this thing, I better try some more so maybe I finally get it... Most importantly, [[file:/home/boris/projects/dotfiles/control/xkeysnail/xkeysnail-config.py][the config file itself]] is here and it should be symlinked to [[/home/boris/.config/xkeysnail/xkeysnail-config.py]]:
+
+#+BEGIN_SRC sh
+ln -s /home/boris/projects/dotfiles/control/xkeysnail/xkeysnail-config.py /home/boris/.config/xkeysnail/xkeysnail-config.py
+#+END_SRC

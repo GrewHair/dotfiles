@@ -1,0 +1,4 @@
+* [[file:/home/boris/projects/dotfiles/control/rofi/config][config]] should be symlinked to [[/home/boris/.config/rofi/config]]:
+  #+BEGIN_SRC sh
+  ln -s /home/boris/projects/dotfiles/control/rofi/config /home/boris/.config/rofi/config
+  #+END_SRC

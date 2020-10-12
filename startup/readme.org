@@ -1,0 +1,10 @@
+* These are my startup scripts. Their whole [[file:/home/boris/projects/dotfiles/startup/startup][folder]] should be symlinked to [[/home/boris/bin/startup]]:
+  #+BEGIN_SRC sh
+  ln -s /home/boris/projects/dotfiles/startup/startup /home/boris/bin/startup
+  #+END_SRC
+
+* To add them in gnome, launch rofi and type 'startup applications'. You'll get a dialog UI like this:
+
+  [[file:/home/boris/projects/dotfiles/startup/assets/startup_applications.png]]
+
+  Just add them one by one.

@@ -1,0 +1,4 @@
+steam:
+  quit_steam_on_exit: true
+system:
+  game_path: /media/boris/games/.steam/steam

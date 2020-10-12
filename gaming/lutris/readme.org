@@ -1,0 +1,15 @@
+* The whole [[file:/home/boris/projects/dotfiles/gaming/lutris/lutris][lutris/]] directory should be symlinked to [[/home/boris/.config/lutris/]]:
+  #+BEGIN_SRC sh
+  ln -s /home/boris/projects/dotfiles/gaming/lutris/lurtis /home/boris/.config/lutris
+  #+END_SRC
+
+* The [[file:/home/boris/projects/dotfiles/gaming/lutris/banners][banners/]], [[file:/home/boris/projects/dotfiles/gaming/lutris/covers][covers/]] and [[file:/home/boris/projects/dotfiles/gaming/lutris/coverart][coverart/]] directories should be symlinked to the corresponding dirs in [[/home/boris/.local/share/lutris/]]:
+  #+BEGIN_SRC sh
+  ln -s /home/boris/projects/dotfiles/gaming/lutris/banners /home/boris/.local/share/lutris/banners
+  ln -s /home/boris/projects/dotfiles/gaming/lutris/covers /home/boris/.local/share/lutris/covers
+  ln -s /home/boris/projects/dotfiles/gaming/lutris/coverart /home/boris/.local/share/lutris/coverart
+  #+END_SRC
+
+** Note: there are other dirs in [[/home/boris/.local/share/lutris]], but they take up a couple gigs, so better not touch them I guess...
+
+** If you ever need to manually add any artworks from the gui: covers, icons, logos, etc are normally to be found (or added to when downloaded) at [[file:/media/boris/games/games/icons]]

@@ -1,0 +1,14 @@
+* [[file:/home/boris/projects/dotfiles/control/i3/config][config]] should be symlinked to [[/home/boris/.config/regolith/i3/config]]:
+  #+BEGIN_SRC sh
+  ln -s /home/boris/projects/dotfiles/control/i3/config /home/boris/.config/regolith/i3/config
+  #+END_SRC
+
+* [[file:/home/boris/projects/dotfiles/control/i3/styles/i3-wm][./styles/i3-wm]] should be symlinked to [[/home/boris/.config/regolith/styles/i3-wm]]:
+  #+BEGIN_SRC sh
+  ln -s /home/boris/projects/dotfiles/control/i3/styles/i3-wm /home/boris/.config/regolith/styles/i3-wm
+  #+END_SRC
+  
+* The entire [[file:/home/boris/projects/dotfiles/control/i3/scripts][scripts/]] directory should be symlinked to [[/home/boris/bin/i3]]:
+  #+BEGIN_SRC sh
+  ln -s /home/boris/projects/dotfiles/control/i3/scripts /home/boris/bin/i3
+  #+END_SRC

@@ -1,0 +1,12 @@
+* [[file:/home/boris/projects/dotfiles/media/qutebrowser/config.py][config.py]] should be symlinked to [[/home/boris/.config/qutebrowser/config.py]]:
+  #+BEGIN_SRC sh
+  ln -s /home/boris/projects/dotfiles/media/qutebrowser/config.py /home/boris/.config/qutebrowser/config.py
+  #+END_SRC
+
+* [[file:/home/boris/projects/dotfiles/media/qutebrowser/greasemonkey][greasemonkey/]], [[file:/home/boris/projects/dotfiles/media/qutebrowser/sessions][sessions/]], [[file:/home/boris/projects/dotfiles/media/qutebrowser/stylesheets][stylesheets/]] and [[file:/home/boris/projects/dotfiles/media/qutebrowser/userscripts][userscripts/]] directories should be symlinked to the corresponding dirs in [[/home/boris/.local/share/qutebrowser]]:
+  #+BEGIN_SRC sh
+  ln -s /home/boris/projects/dotfiles/media/qutebrowser/greasemonkey /home/boris/.local/share/qutebrowser/greasemonkey
+  ln -s /home/boris/projects/dotfiles/media/qutebrowser/sessions /home/boris/.local/share/qutebrowser/sessions
+  ln -s /home/boris/projects/dotfiles/media/qutebrowser/stylesheets /home/boris/.local/share/qutebrower/stylesheets
+  ln -s /home/boris/projects/dotfiles/media/qutebrowser/userscripts /home/boris/.local/share/qutebrowser/userscripts
+  #+END_SRC

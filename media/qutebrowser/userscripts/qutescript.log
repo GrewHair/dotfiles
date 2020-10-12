@@ -1,0 +1,10 @@
+*** Traceback (most recent call last):
+  File "/home/boris/qutescript/src/qutescript/decorator.py", line 35, in wrapper
+    request = build_request(script_path=script_path)
+  File "/home/boris/qutescript/src/qutescript/request.py", line 76, in build_request
+    raise AssertionError('Unable to read environment variables, did you pass `:spawn --userscript` ?')
+AssertionError: Unable to read environment variables, did you pass `:spawn --userscript` ?
+
+
+*** Cannot build request.
+

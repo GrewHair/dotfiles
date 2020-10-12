@@ -1,0 +1,10 @@
+game:
+  exe: /media/boris/games/games/melty-blood-re-act/drive_c/Program Files (x86)/Watanabe-Production
+    and TYPE-MOON/Melty Blood Re-ACT Final Tuned/mbr.exe
+  prefix: /media/boris/games/games/melty-blood-re-act
+system:
+  postexit_command: /home/boris/bin/gaming/stop_qjoypad.sh
+  prelaunch_command: /home/boris/bin/gaming/qjoypad_melty_blood_re-act.sh
+  reset_desktop: true
+wine:
+  version: Proton 5.0

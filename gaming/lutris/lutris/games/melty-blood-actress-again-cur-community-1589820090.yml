@@ -1,0 +1,10 @@
+game:
+  arch: win32
+  args: ''
+  exe: /media/boris/games/games/melty-blood-actress-again-current-code/drive_c/Program
+    Files/MBAACC/MBAA.exe
+  prefix: /media/boris/games/games/melty-blood-actress-again-current-code
+system:
+  env: {}
+wine:
+  version: lutris-5.6-2-x86_64

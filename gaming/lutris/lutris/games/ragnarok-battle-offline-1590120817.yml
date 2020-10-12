@@ -1,0 +1,9 @@
+game:
+  exe: /media/boris/games/games/ragnarok-battle-offline/drive_c/Program Files (x86)/Ragnarok
+    Battle Offline/rbo_ex3.exe
+  prefix: /media/boris/games/games/ragnarok-battle-offline
+system:
+  postexit_command: /home/boris/bin/gaming/stop_qjoypad.sh
+  prelaunch_command: /home/boris/bin/gaming/qjoypad_rbo.sh
+wine:
+  version: Proton 3.16

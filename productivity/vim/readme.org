@@ -1,0 +1,4 @@
+* [[file:/home/boris/projects/dotfiles/productivity/vim/.vimrc][.vimrc]] should be symlinked to [[/home/boris/.vimrc]]:
+  #+BEGIN_SRC sh
+  ln -s /home/boris/projects/dotfiles/productivity/vim/.vimrc /home/boris/.vimrc
+  #+END_SRC

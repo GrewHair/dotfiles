@@ -1,0 +1,6 @@
+* Unfortunately, for whatever reason I seem to not be able to just call qjoypad with corresponding arguments in the pre-launch and post-launch commands for games in lutris and steam - but somehow everything starts to work if I wrap things up in the scripts - thus this whole folder.
+
+* The whole [[file:/home/boris/projects/dotfiles/gaming/scripts/gaming][gaming/]] directory should be symlinked to [[/home/boris/bin/gaming]]:
+  #+BEGIN_SRC sh
+  ln -s /home/boris/projects/dotfiles/gaming/scripts/gaming /home/boris/binn/gaming
+  #+END_SRC

@@ -1,0 +1,4 @@
+* [[file:/home/boris/projects/dotfiles/knowledge/buku_run/config][config]] should be symlinked to [[/home/boris/.config/buku_run/config]]:
+  #+BEGIN_SRC sh
+  ln -s /home/boris/projects/dotfiles/knowledge/buku_run/config /home/boris/.config/buku_run/config
+  #+END_SRC
