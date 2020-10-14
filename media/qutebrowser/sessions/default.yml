@@ -1,73 +1,161 @@
 windows:
 - active: true
   geometry: !!binary |
-    AdnQywACAAAAAAeAAAAAAAAADv8AAAQfAAAHgwAAAAMAAA78AAAEHAAAAAEAAAAAB4A=
+    AdnQywACAAAAAAUAAAAAAAAADH8AAAQfAAAFAwAAAAMAAAx8AAAEHAAAAAIAAAAAB4A=
   tabs:
   - history:
-    - last_visited: '2020-10-15T08:43:18'
+    - last_visited: '2020-10-18T08:43:18'
       pinned: false
       title: Xwrits Manual
       url: http://www.lcdf.org/xwrits/man.html
-    - last_visited: '2020-10-15T09:16:06'
+    - last_visited: '2020-10-18T09:16:06'
       pinned: false
       title: History
       url: qute://history/
     - active: true
-      last_visited: '2020-10-12T17:37:41'
+      last_visited: '2020-10-14T18:41:05'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Build A Calculator With JavaScript Tutorial - YouTube
+      title: (67) Build A Calculator With JavaScript Tutorial - YouTube
       url: https://www.youtube.com/watch?v=j59qQ7YWLxw&feature=youtu.be
       zoom: 1.0
-    - last_visited: '2020-10-12T23:42:14'
+    - last_visited: '2020-10-15T23:42:14'
       pinned: false
       title: (64) ITT 2016 - Kevlin Henney - Seven Ineffective Coding Habits of Many
         Programmers - YouTube
       url: https://www.youtube.com/watch?v=ZsHMHukIlJY
-    - last_visited: '2020-10-12T22:38:52'
+    - last_visited: '2020-10-15T22:38:52'
       pinned: false
       title: (64) The Forgotten Art of Structured Programming - Kevlin Henney [C++
         on Sea 2019] - YouTube
       url: https://www.youtube.com/watch?v=SFv8Wm2HdNM
   - history:
+    - last_visited: '2020-10-15T12:22:03'
+      pinned: false
+      title: termial ctrl s sleep - Google Search
+      url: https://www.google.com/search?q=termial%20ctrl%20s%20sleep
     - active: true
-      last_visited: '2020-10-12T17:37:43'
+      last_visited: '2020-10-14T18:41:15'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: linux permanently add environment variable - Google Search
-      url: https://www.google.com/search?q=linux%20permanently%20add%20environment%20variable
+      title: microsoft natural ergonomic 4000 software - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk01uu1KHmPNo82v3HC7EEnl0rizTig%3A1602667321561&ei=OcOGX_PTIfH2qwHq6rCgCg&q=microsoft+natural+ergonomic+4000+software&oq=microsoft+natural+ergonomic+4000+software&gs_lcp=CgZwc3ktYWIQAzIJCAAQyQMQFhAeMgYIABAWEB46BwgjEOoCECc6BwguEOoCECc6CAgAEMkDEJECOgUIABCRAjoCCC46AggAOggILhDHARCjAjoECCMQJzoECAAQQzoECC4QQzoFCAAQyQM6BwgjELACECc6BwgAEMkDEA06BAgAEA1Qzc0cWJeNH2CnkR9oBnAAeACAAacBiAGeIZIBBTMzLjEzmAEAoAEBqgEHZ3dzLXdperABCsABAQ&sclient=psy-ab&ved=0ahUKEwiz1JOD4bPsAhVx-yoKHWo1DKQQ4dUDCA0&uact=5
       zoom: 1.0
   - history:
+    - last_visited: '2020-10-15T12:30:38'
+      original-url: https://www.google.com/search?sxsrf=ALeKk01uu1KHmPNo82v3HC7EEnl0rizTig%3A1602667321561&ei=OcOGX_PTIfH2qwHq6rCgCg&q=microsoft+natural+ergonomic+4000+software&oq=microsoft+natural+ergonomic+4000+software&gs_lcp=CgZwc3ktYWIQAzIJCAAQyQMQFhAeMgYIABAWEB46BwgjEOoCECc6BwguEOoCECc6CAgAEMkDEJECOgUIABCRAjoCCC46AggAOggILhDHARCjAjoECCMQJzoECAAQQzoECC4QQzoFCAAQyQM6BwgjELACECc6BwgAEMkDEA06BAgAEA1Qzc0cWJeNH2CnkR9oBnAAeACAAacBiAGeIZIBBTMzLjEzmAEAoAEBqgEHZ3dzLXdperABCsABAQ&sclient=psy-ab&ved=0ahUKEwiz1JOD4bPsAhVx-yoKHWo1DKQQ4dUDCA0&uact=5#
+      pinned: false
+      title: microsoft natural ergonomic 4000 software - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk01uu1KHmPNo82v3HC7EEnl0rizTig%3A1602667321561&ei=OcOGX_PTIfH2qwHq6rCgCg&q=microsoft+natural+ergonomic+4000+software&oq=microsoft+natural+ergonomic+4000+software&gs_lcp=CgZwc3ktYWIQAzIJCAAQyQMQFhAeMgYIABAWEB46BwgjEOoCECc6BwguEOoCECc6CAgAEMkDEJECOgUIABCRAjoCCC46AggAOggILhDHARCjAjoECCMQJzoECAAQQzoECC4QQzoFCAAQyQM6BwgjELACECc6BwgAEMkDEA06BAgAEA1Qzc0cWJeNH2CnkR9oBnAAeACAAacBiAGeIZIBBTMzLjEzmAEAoAEBqgEHZ3dzLXdperABCsABAQ&sclient=psy-ab&ved=0ahUKEwiz1JOD4bPsAhVx-yoKHWo1DKQQ4dUDCA0&uact=5
+    - last_visited: '2020-10-15T12:30:59'
+      pinned: false
+      title: microsoft natural ergonomic 4000 software - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk02btpAsCXfg9nu5nxkYvTOotV1Lgg%3A1602667833647&ei=OcWGX8H6Js_3qwHk_JboDQ&q=microsoft+natural+ergonomic+4000+software&oq=microsoft+natural+ergonomic+4000+software&gs_lcp=CgZwc3ktYWIQAzIHCCMQyQMQJzIGCAAQFhAeOgoIIxCwAhDJAxAnOggIABAIEA0QHjoHCCEQChCgAVCHX1iIggFgxpcBaAFwAXgAgAGaAYgB0QKSAQMxLjKYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=psy-ab&ved=0ahUKEwiB-6r34rPsAhXP-yoKHWS-Bd0Q4dUDCA0&uact=5
+    - last_visited: '2020-10-15T12:31:04'
+      pinned: false
+      title: Natural Ergonomic Keyboard 4000 | Device downloads | Microsoft Accessories
+      url: https://www.microsoft.com/accessories/en-ca/d/natural-ergonomic-keyboard-4000
     - active: true
-      last_visited: '2020-10-12T17:37:40'
+      last_visited: '2020-10-14T18:41:06'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: bash - How do I add environment variables? - Ask Ubuntu
-      url: https://askubuntu.com/questions/58814/how-do-i-add-environment-variables
+      title: 404 Error
+      url: https://www.microsoft.com/accessories/en-ca/d/natural-ergonomic-keyboard-3999
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2020-10-12T17:37:40'
+      last_visited: '2020-10-14T18:41:14'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: How to permanently set environmental variables - Unix & Linux Stack Exchange
-      url: https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables
+      title: microsoft natural ergonomic 4000 spacebar is tough - Google Search
+      url: https://www.google.com/search?q=microsoft%20natural%20ergonomic%204000%20spacebar%20is%20tough
       zoom: 1.0
   - history:
-    - last_visited: '2020-10-14T14:04:50'
+    - active: true
+      last_visited: '2020-10-14T18:41:05'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'SOLVED: Spacebar on my Microsoft Natural Ergonomic - Fixya'
+      url: https://www.fixya.com/support/t9477876-spacebar_microsoft_natural
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-14T18:41:04'
+      original-url: http://www.paulstravelpictures.com/MS-Natural-Ergo-Keyboard-Sticky-Spacebar-Fix/index.html
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: MS Natural Ergo Keyboard 4000 Stiff/Sticky Space Bar Problem Solutions
+        - Pictures Illustrated Repair Guide
+      url: https://www.paulstravelpictures.com/MS-Natural-Ergo-Keyboard-Sticky-Spacebar-Fix/index.html
+      zoom: 1.75
+  - history:
+    - active: true
+      last_visited: '2020-10-14T18:41:14'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: microsoft natural ergonomic 4000 spacebar metal sway bar - Google Search
+      url: https://www.google.com/search?q=microsoft%20natural%20ergonomic%204000%20spacebar%20metal%20sway%20bar
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-14T18:41:05'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'The Unauthorized Version: Fix for Microsoft Natural Ergo Keyboard 4000
+        Stiff Spacebar'
+      url: http://dthatcher.blogspot.com/2011/06/fix-for-microsoft-natural-ergo-keyboard.html
+      zoom: 1.75
+  - history:
+    - last_visited: '2020-10-15T04:57:15'
+      pinned: false
+      title: (67) A First Look At SpaceVim - YouTube
+      url: https://www.youtube.com/watch?v=iXPS_NHLj9k
+    - last_visited: '2020-10-15T05:24:17'
+      pinned: false
+      title: (67) YouTube
+      url: https://www.youtube.com/
+    - active: true
+      last_visited: '2020-10-14T18:41:05'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: '(67) 2017 Personality 02/03: Historical & Mythological Context - YouTube'
+      url: https://www.youtube.com/watch?v=HbAZ6cFxCeY
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-14T18:41:05'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 2100
+      title: Disable Keyboard Repeat from command line? - Ask Ubuntu
+      url: https://askubuntu.com/questions/576421/disable-keyboard-repeat-from-command-line
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-10-17T14:04:50'
       pinned: false
       title: relationship between design patterns and state machines - Google Search
       url: https://www.google.com/search?q=relationship%20between%20design%20patterns%20and%20state%20machines
     - active: true
-      last_visited: '2020-10-12T17:37:40'
+      last_visited: '2020-10-14T18:41:05'
       pinned: false
       scroll-pos:
         x: 0
@@ -78,7 +166,7 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2020-10-12T17:37:40'
+      last_visited: '2020-10-14T18:41:05'
       pinned: false
       scroll-pos:
         x: 0
@@ -88,39 +176,7 @@ windows:
       zoom: 1.5
   - history:
     - active: true
-      last_visited: '2020-10-12T17:37:54'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: 'i3 window borders : i3wm'
-      url: https://www.reddit.com/r/i3wm/comments/9125dz/i3_window_borders/
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-10-12T09:13:29'
-      pinned: false
-      title: i3 documentation - Google Search
-      url: https://www.google.com/search?q=i3%20documentation
-    - last_visited: '2020-10-12T09:13:32'
-      pinned: false
-      title: i3 - improved tiling wm
-      url: https://i3wm.org/docs/
-    - last_visited: '2020-10-12T09:13:36'
-      pinned: false
-      title: 'i3: i3 User’s Guide'
-      url: https://i3wm.org/docs/userguide.html
-    - active: true
-      last_visited: '2020-10-12T17:37:40'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: 'i3: i3 User’s Guide'
-      url: https://i3wm.org/docs/userguide.html#_default_border_style_for_new_windows
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-12T17:37:41'
+      last_visited: '2020-10-14T18:41:04'
       pinned: false
       scroll-pos:
         x: 0
@@ -131,7 +187,7 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2020-10-12T17:37:40'
+      last_visited: '2020-10-14T18:41:05'
       pinned: false
       scroll-pos:
         x: 0
@@ -141,68 +197,57 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2020-10-12T17:37:39'
+      last_visited: '2020-10-14T18:41:05'
       pinned: false
       scroll-pos:
         x: 0
-        y: 0
-      title: How to Detect Key Presses In Python - Nitratine
-      url: https://nitratine.net/blog/post/how-to-detect-key-presses-in-python/
-      zoom: 1.0
+        y: 15573
+      title: xkeysnail/key.py at master · mooz/xkeysnail
+      url: https://github.com/mooz/xkeysnail/blob/master/xkeysnail/key.py
+      zoom: 1.75
   - history:
-    - last_visited: '2020-10-12T08:41:54'
-      pinned: false
-      title: (63) YouTube
-      url: https://www.youtube.com/
-    - last_visited: '2020-10-12T08:41:54'
-      pinned: false
-      title: '(63) Гомосексуальность: норма или болезнь? Психотерапевт об ЛГБТ. Психотерапия
-        при гомо/бисексуальности - YouTube'
-      url: https://www.youtube.com/watch?v=sQRrOrOu4ao
-    - last_visited: '2020-10-12T17:01:33'
-      pinned: false
-      title: '(63) ИДЕАЛЬНАЯ СОВМЕСТИМОСТЬ ч.2: ролевые игры в паре. От чего зависит
-        успех отношений? - YouTube'
-      url: https://www.youtube.com/watch?v=SbbKo2NAyTc
     - active: true
-      last_visited: '2020-10-12T17:37:54'
+      last_visited: '2020-10-14T18:44:22'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Слежение за почтовыми отправлениями
-      url: https://webservices.belpost.by/searchRu/BV211857112BY
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-10-13T02:36:28'
-      pinned: false
-      title: xkeysnail ubuntu - Google Search
-      url: https://www.google.com/search?q=xkeysnail%20ubuntu
-    - last_visited: '2020-10-13T02:47:58'
-      pinned: false
-      title: xkeysnail ubuntu systemd - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk03clz3uqJxDkiUoz3IA7-hP5J9GOw%3A1602502586929&ei=uj-EX8epOIGKwPAPut6FqAs&q=xkeysnail+ubuntu+systemd&oq=xkeysnail+ubuntu+systemd&gs_lcp=CgZwc3ktYWIQAzoHCCMQrgIQJzoFCCEQoAE6BAghEBU6BwghEAoQoAFQpNopWPj-KWDthCpoAHABeACAAa4CiAGQC5IBBzAuNS4yLjGYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=psy-ab&ved=0ahUKEwjH7ser-67sAhUBBRAIHTpvAbUQ4dUDCA0&uact=5
-    - last_visited: '2020-10-13T02:48:42'
-      pinned: false
-      title: xkeysnail check_perm.py - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk02hq9RkrbA1KThk4r94LuvexRFX0Q%3A1602503277232&ei=bUKEX6jSDbH3qwHJhpXADA&q=xkeysnail+check_perm.py&oq=xkeysnail+check_perm.py&gs_lcp=CgZwc3ktYWIQAzoECCMQJzoHCAAQyQMQHjoFCCEQoAE6BwghEAoQoAFQwaECWNTIAmCZzAJoAHAAeACAAYUCiAH7EJIBBjAuMTQuMZgBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwjovNz0_a7sAhWx-yoKHUlDBcgQ4dUDCA0&uact=5
-    - active: true
-      last_visited: '2020-10-12T17:37:40'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: 'MikiyaShibuya/xkeysnail: Modify keys on Ubuntu like macOS'
-      url: https://github.com/MikiyaShibuya/xkeysnail
+      title: xkeysnail remap menu key - Google Search
+      url: https://www.google.com/search?q=xkeysnail%20remap%20menu%20key
       zoom: 1.0
   - active: true
     history:
     - active: true
-      last_visited: '2020-10-12T17:37:40'
+      last_visited: '2020-10-14T18:44:28'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 800
+      title: xorg - How to remap the Context Menu key to the Super key - Unix & Linux
+        Stack Exchange
+      url: https://unix.stackexchange.com/questions/13369/how-to-remap-the-context-menu-key-to-the-super-key
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-10-15T07:12:24'
+      pinned: false
+      title: np.log(Pop1831) - Google Search
+      url: https://www.google.com/search?q=np.log%28Pop1831%29
+    - active: true
+      last_visited: '2020-10-14T18:41:05'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: '(64) Marxism: Zizek/Peterson: Official Video - YouTube'
-      url: https://www.youtube.com/watch?v=lsWndfzuOc4
+      title: python - Can some one explain me what does np.log do? - Stack Overflow
+      url: https://stackoverflow.com/questions/28058527/can-some-one-explain-me-what-does-np-log-do
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-14T18:41:04'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Binding - Wikipedia
+      url: https://en.wikipedia.org/wiki/Binding
       zoom: 1.0

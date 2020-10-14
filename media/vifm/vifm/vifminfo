@@ -50,7 +50,7 @@ b/media/boris/d/Data Science/Stats/
 	1591293180
 
 # TUI:
-ar
+al
 q0
 v2
 ov
@@ -59,48 +59,6 @@ l10,2
 r8,2
 
 # Left window history (oldest to newest):
-d/home/boris/.config/regolith/i3
-	config
-1
-d/home/boris/.config/regolith
-	i3
-2
-d/home/boris/.config
-	regolith
-19
-d/home/boris
-	.config
-4
-d/home
-	boris
-1
-d/home/boris
-	old
-19
-d/home/boris/old
-	my_startup.sh
-2
-d/home/boris
-	.config
-4
-d/home/boris/.config
-	regolith
-19
-d/home/boris/.config/regolith
-	i3
-2
-d/home/boris/.config/regolith/i3
-	config
-1
-d/home/boris/.config/regolith
-	i3
-2
-d/home/boris/.config
-	systemd
-29
-d/home/boris/.config/systemd
-	user
-1
 d/home/boris/.config/systemd/user
 	xkeysnail.service
 3
@@ -357,74 +315,53 @@ d/home/boris/.config
 	xkeysnail
 20
 d/home/boris/.config/xkeysnail
+	xkeysnail-config.py
+1
+d/home/boris/.config
+	xkeysnail
+37
+d/home/boris
+	Downloads
+27
+d/home/boris/Downloads
+	MLBOOK.pdf
+20
+d/home/boris
+	.config
+47
+d/home/boris/.config
+	xkeysnail
+37
+d/home/boris/.config/xkeysnail
 	..
 0
+d/home/boris/.config
+	xkeysnail
+32
+d/home/boris
+	bin
+31
+d/home/boris/bin
+	startup
+3
+d/home/boris/bin/startup
+	start_tw.sh
+2
+d/home/boris/bin
+	startup
+3
+d/home/boris
+	.config
+32
+d/home/boris/.config
+	xkeysnail
+39
+d/home/boris/.config/xkeysnail
+	xkeysnail-config.py
+1
 d
 
 # Right window history (oldest to newest):
-D/home/boris/projects/dotfiles/media
-	qutebrowser
-2
-D/home/boris/projects/dotfiles
-	media
-5
-D/home/boris/projects
-	dotfiles
-10
-D/home/boris
-	bin
-8
-D/home/boris/bin
-	i3
-1
-D/home/boris/bin/i3
-	..
-0
-D/home/boris/bin
-	xkeysnail
-2
-D/home/boris/bin/xkeysnail
-	.git
-1
-D/home/boris/bin/xkeysnail/.git
-	..
-0
-D/home/boris/bin/xkeysnail
-	10-input.rules
-3
-D/home/boris/bin
-	i3
-1
-D/home/boris/bin/i3
-	move-to-new-workspace-focus.sh
-3
-D/home/boris/bin
-	i3
-1
-D/home/boris/bin/i3
-	cycle_output.py
-4
-D/home/boris/bin
-	xkeysnail
-2
-D/home/boris/bin/xkeysnail
-	.git
-1
-D/home/boris/bin
-	xkeysnail
-2
-D/home/boris/bin/xkeysnail
-	.git
-1
-D/home/boris/bin
-	i3
-1
-D/home/boris/bin/i3
-	..
-0
-D/home/boris/bin
-	start_tw.sh
-10
 D/home/boris
 	projects
 16
@@ -662,6 +599,69 @@ D/home/boris/projects/dotfiles/media/qutebrowser/stylesheets
 D/home/boris/projects/dotfiles/media/qutebrowser/stylesheets/solarized-everything-css
 	css
 1
+D/home/boris/projects/dotfiles/media/qutebrowser/stylesheets
+	solarized-everything-css
+2
+D/home/boris/projects/dotfiles/media/qutebrowser
+	stylesheets
+3
+D/home/boris/projects/dotfiles/media
+	qutebrowser
+2
+D/home/boris/projects/dotfiles
+	media
+6
+D/home/boris/projects
+	dotfiles
+10
+D/home/boris
+	projects
+20
+D/home
+	boris
+1
+D/
+	media
+10
+D/media
+	boris
+1
+D/media/boris
+	d
+1
+D/media/boris/d
+	Work
+3
+D/media/boris/d/Work
+	Work
+3
+D/media/boris/d/Work/Work
+	HR
+13
+D/media/boris/d/Work/Work/HR
+	some chinese photos
+3
+D/media/boris/d/Work/Work
+	Analysis
+6
+D/media/boris/d/Work/Work/Analysis
+	TCR & OBDH analysis
+3
+D/media/boris/d/Work/Work/Analysis/TCR & OBDH analysis
+	расшифровка тм
+7
+D/media/boris/d/Work/Work/Analysis/TCR & OBDH analysis/расшифровка тм
+	..
+0
+D/media/boris/d/Work/Work/Analysis/TCR & OBDH analysis
+	расшифровка тм
+7
+D/media/boris/d/Work/Work/Analysis/TCR & OBDH analysis/расшифровка тм
+	Расшифровка формата TM
+1
+D/media/boris/d/Work/Work/Analysis/TCR & OBDH analysis/расшифровка тм/Расшифровка формата TM
+	temp open me.xls
+2
 D
 
 # Command line history (oldest to newest):
@@ -857,16 +857,16 @@ D
 /retro
 /qute
 /old
-/.config
 /syste
 /qjoyp
 /qjoypad
 /qjoy
-/bin
 /xkeysnail
 /pro
 /config
 /xkey
+/bin
+/.config
 
 # Prompt history (oldest to newest):
 p've found is actually Autokey's folders, but Autokey needs to always be running (even if I call autokey-run), which I'd prefer to avoid.g I've found is actually Autokey's folders, but Autokey needs to always be running (even if I call autokey-run), which I'd prefer to avoid.config
@@ -919,6 +919,7 @@ pyank-pre.sh
 pmove-to-new-workspace.sh
 pmove-to-new-workspace-focus.sh
 pfoo.sh
+pxkeysnail-config.py.backup
 
 # Local filter history (oldest to newest):
 |[^tid]
@@ -938,6 +939,7 @@ pfoo.sh
 |.*pdf
 
 # Registers:
+""/home/boris/.config/xkeysnail/xkeysnail-config.py
 
 # Directory stack (oldest to newest):
 

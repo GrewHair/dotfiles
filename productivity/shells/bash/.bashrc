@@ -171,3 +171,6 @@ export EDITOR=vim
 
 # set browser (i added this)
 export BROWSER=qutebrowser
+
+# disable ctrl-s
+stty -ixon
