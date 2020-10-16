@@ -326,7 +326,7 @@ config.set('tabs.mode_on_change', 'restore')
 config.set('tabs.last_close', 'close')
 
 # Messages timeout
-c.messages.timeout = 8000
+c.messages.timeout = 500
 
 # Downloads position
 config.set('downloads.position', 'bottom')
@@ -346,7 +346,8 @@ c.keyhint.delay = 300
 # Uppercase for hints
 c.hints.uppercase = True
 
-config.bind(';s', 'hint paragraphs userscript tts.py')
+# config.bind(';s', 'hint paragraphs userscript tts.py')
+config.bind(';s', 'hint paragraphs userscript mimic.sh')
 
 config.bind(';p', 'hint pre userscript yank-pre.sh')
 
@@ -491,7 +492,7 @@ config.bind('<Shift-Return>', 'follow-hint -s {hint-url}', mode='hint')
 # Tiddlywiki
 #config.bind('r', 'hint edit-tiddler normal ;; enter-mode insert ;; set input.spatial_navigation true')
 #config.bind('R', 'hint sidebar-scrollable')  # i desided to ditch this in favour of the following (to try to be consistent with the current mapping in Atom):
-config.bind('<Alt+\>', 'hint sidebar-scrollable')
+config.bind('<Alt+p>', 'hint sidebar-scrollable')
 config.bind('r', 'hint edit-tiddler normal ;; set input.spatial_navigation true')
 config.bind('<Alt-R>', 'hint edit-tiddler normal ;; set input.spatial_navigation true')
 config.bind('<Alt-R>', 'hint edit-tiddler normal ;; set input.spatial_navigation true', mode='insert')

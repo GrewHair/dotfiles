@@ -59,21 +59,6 @@ l10,2
 r8,2
 
 # Left window history (oldest to newest):
-d/home/boris/.config/systemd/user
-	xkeysnail.service
-3
-d/home/boris/.config/systemd
-	user
-1
-d/home/boris/.config
-	gespeaker
-25
-d/home/boris
-	.qjoypad3
-31
-d/home/boris/.qjoypad3
-	yume_nikki_DD.lyt
-4
 d/home/boris
 	.qjoypad3
 31
@@ -359,27 +344,24 @@ d/home/boris/.config
 d/home/boris/.config/xkeysnail
 	xkeysnail-config.py
 1
+d/media/boris/7806A99A06A95A40
+	thrustadcs20190930-20201002.txt
+54
+d/media/boris
+	..
+0
+d/media/boris/7806A99A06A95A40
+	2020-10-15.xlsx
+50
+d/media/boris
+	7806A99A06A95A40
+3
+d/media
+	boris
+1
 d
 
 # Right window history (oldest to newest):
-D/home/boris
-	projects
-16
-D/home/boris/projects
-	dotfiles
-10
-D/home/boris/projects/dotfiles
-	gaming
-3
-D/home/boris/projects/dotfiles/gaming
-	qjoypad
-2
-D/home/boris/projects/dotfiles/gaming/qjoypad
-	.qjoypad3
-1
-D/home/boris/projects/dotfiles/gaming
-	scripts
-4
 D/home/boris/projects/dotfiles/gaming/scripts
 	qjoypad_rbo.sh
 1
@@ -662,6 +644,24 @@ D/media/boris/d/Work/Work/Analysis/TCR & OBDH analysis/расшифровка т
 D/media/boris/d/Work/Work/Analysis/TCR & OBDH analysis/расшифровка тм/Расшифровка формата TM
 	temp open me.xls
 2
+D/media/boris/d/Work/Work/Analysis/TCR & OBDH analysis/расшифровка тм
+	Расшифровка формата TM
+1
+D/media/boris/d/Work/Work/Analysis/TCR & OBDH analysis
+	расшифровка тм
+7
+D/media/boris/d/Work/Work/Analysis
+	TCR & OBDH analysis
+3
+D/media/boris/d/Work/Work
+	HR
+13
+D/media/boris/d/Work/Work/HR
+	hr_2020
+4
+D/media/boris/d/Work/Work/HR/hr_2020
+	BELINTERSAT-1_HealthReport_2020_перевод.docx
+6
 D
 
 # Command line history (oldest to newest):
@@ -739,7 +739,6 @@ D
 :wq
 :mkdir shells
 :mkdir bash
-:copy
 :mkdir vifm
 :mkdir mpv
 :mkdir tiddlywiki
@@ -764,6 +763,7 @@ D
 :mkdir xkeysnail
 :move
 :empty
+:copy
 :q
 
 # Search history (oldest to newest):
@@ -939,11 +939,13 @@ pxkeysnail-config.py.backup
 |.*pdf
 
 # Registers:
-""/home/boris/.config/xkeysnail/xkeysnail-config.py
+""/media/boris/7806A99A06A95A40/.vifm-Trash-1000/000_BELINTERSAT-1_HealthReport_2020.docx
 
 # Directory stack (oldest to newest):
 
 # Trash content:
+t/media/boris/7806A99A06A95A40/.vifm-Trash-1000/000_BELINTERSAT-1_HealthReport_2020.docx
+	/media/boris/7806A99A06A95A40/BELINTERSAT-1_HealthReport_2020.docx
 
 # State:
 f
