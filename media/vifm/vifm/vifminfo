@@ -50,7 +50,7 @@ b/media/boris/d/Data Science/Stats/
 	1591293180
 
 # TUI:
-al
+ar
 q0
 v2
 ov
@@ -59,81 +59,6 @@ l10,2
 r8,2
 
 # Left window history (oldest to newest):
-d/home/boris
-	.qjoypad3
-31
-d/home/boris/.qjoypad3
-	yume_nikki_DD.lyt
-4
-d/home/boris
-	.qjoypad3
-31
-d/home/boris/.qjoypad3
-	yume_nikki_DD.lyt
-4
-d/home/boris
-	.qjoypad3
-1
-d/home/boris/.qjoypad3
-	rbo.lyt
-3
-d/home/boris
-	.qjoypad3
-1
-d/home/boris/.qjoypad3
-	super_bernie_world.lyt
-2
-d/home/boris
-	bin
-50
-d/home/boris/bin
-	gaming
-1
-d/home/boris/bin/gaming
-	..
-0
-d/home/boris/bin
-	gaming
-1
-d/home/boris/bin/gaming
-	..
-0
-d/home/boris/bin
-	i3
-1
-d/home/boris/projects/dotfiles/gaming/scripts
-	..
-0
-d/home/boris/projects/dotfiles/gaming
-	scripts
-4
-d/home/boris/projects/dotfiles
-	gaming
-3
-d/home/boris/projects
-	dotfiles
-10
-d/home/boris
-	bin
-15
-d/home/boris/bin
-	gaming
-1
-d/home/boris/bin/gaming
-	qjoypad_rbo.sh
-1
-d/home/boris/bin
-	gaming
-1
-d/home/boris/bin/gaming
-	qjoypad_rbo.sh
-1
-d/home/boris/bin
-	gaming
-1
-d/home/boris/bin/gaming
-	qjoypad_rbo.sh
-1
 d/home/boris/bin
 	i3
 2
@@ -359,78 +284,84 @@ d/media/boris
 d/media
 	boris
 1
+d/
+	home
+5
+d/home
+	boris
+1
+d/home/boris
+	Downloads
+38
+d/home/boris/Downloads
+	CourseFiles-20200708T045552Z-001.zip
+16
+d/home/boris
+	.emacs.d
+37
+d/home/boris/.emacs.d
+	layers
+7
+d/home/boris/.emacs.d/layers
+	..
+0
+d/home/boris/.emacs.d
+	layers
+7
+d/home/boris
+	td
+22
+d/home/boris/td
+	..
+0
+d/home/boris
+	td
+22
+d/home/boris/td
+	README.md
+24
+d/home/boris
+	.emacs.d
+19
+d/home/boris/.emacs.d
+	private
+13
+d/home/boris/.emacs.d/private
+	local
+3
+d/home/boris/.emacs.d/private/local
+	eww-layer
+1
+d/home/boris/.emacs.d/private/local/eww-layer
+	..
+0
+d/home/boris/.emacs.d/private/local
+	markerpen
+2
+d/home/boris/.emacs.d/private/local/markerpen
+	markerpen.el
+1
+d/home/boris/.emacs.d/private/local
+	markerpen
+2
+d/home/boris/.emacs.d/private/local/markerpen
+	markerpen.el
+1
+d/home/boris/.emacs.d/private/local
+	eww-layer
+1
+d/home/boris/.emacs.d/private
+	local
+3
+d/home/boris/.emacs.d/private/local
+	read-aloud
+3
+d/home/boris/.emacs.d/private/local/read-aloud
+	read-aloud.el
+1
 d
 
 # Right window history (oldest to newest):
-D/home/boris/projects/dotfiles/gaming/scripts
-	qjoypad_rbo.sh
-1
-D/home/boris/projects/dotfiles/gaming
-	scripts
-4
-D/home/boris/projects/dotfiles/gaming/scripts
-	gaming
-1
-D/home/boris/projects/dotfiles/gaming/scripts/gaming
-	..
-0
-D/home/boris/projects/dotfiles/gaming/scripts
-	gaming
-1
-D/home/boris/projects/dotfiles/gaming/scripts/gaming
-	qjoypad_tekken_7.sh
-4
-D/home/boris/projects/dotfiles/gaming/scripts
-	gaming
-1
-D/home/boris/projects/dotfiles/gaming
-	scripts
-4
-D/home/boris/projects/dotfiles
-	gaming
-3
-D/home/boris/projects
-	dotfiles
-10
-D/home/boris/projects/dotfiles
-	control
-2
-D/home/boris/projects/dotfiles/control
-	i3
-1
-D/home/boris/projects/dotfiles/control/i3
-	scripts
-1
-D/home/boris/projects/dotfiles/control/i3/scripts
-	i3
-1
-D/home/boris/projects/dotfiles/control/i3/scripts/i3
-	new-workspace.sh
-1
-D/home/boris/projects/dotfiles/control/i3/scripts
-	i3
-1
-D/home/boris/projects/dotfiles/control/i3
-	scripts
-1
-D/home/boris/projects/dotfiles/control
-	i3
-1
-D/home/boris/projects/dotfiles/control/i3
-	scripts
-1
-D/home/boris/projects/dotfiles/control
-	i3
-1
-D/home/boris/projects/dotfiles/control/i3
-	scripts
-1
-D/home/boris/projects/dotfiles/control
-	i3
-1
-D/home/boris/projects/dotfiles/control/i3
-	scripts
-1
 D/home/boris/projects/dotfiles/control
 	rofi
 2
@@ -660,15 +591,80 @@ D/media/boris/d/Work/Work/HR
 	hr_2020
 4
 D/media/boris/d/Work/Work/HR/hr_2020
-	BELINTERSAT-1_HealthReport_2020_перевод.docx
+	thrustadcs20190930-20201002.txt
+4
+D/media/boris/d/Work/Work/HR
+	hr_2020
+4
+D/media/boris/d/Work/Work
+	HR
+13
+D/media/boris/d/Work
+	Work
+3
+D/media/boris/d
+	Work
+3
+D/media/boris
+	d
+1
+D/media
+	boris
+1
+D/
+	home
+6
+D/home
+	boris
+1
+D/home/boris
+	bin
+11
+D/home/boris/bin
+	startup
+1
+D/home/boris/bin/startup
+	festival-server.sh
+1
+D/home/boris/bin
+	startup
+1
+D/home/boris
+	Downloads
+4
+D/home/boris/Downloads
+	foo
+3
+D/home/boris
+	bin
+14
+D/home/boris/bin
+	xkeysnail
+4
+D/home/boris/bin/xkeysnail
+	..
+0
+D/home/boris/bin
+	xkeysnail
+4
+D/home/boris/bin/xkeysnail
+	10-uinput.rules
+2
+D/home/boris/bin
+	xkeysnail
+4
+D/home/boris/bin/xkeysnail
+	10-uinput.rules
+2
+D/home/boris/bin
+	i3
+2
+D/home/boris/bin/i3
+	restore_keys.sh
 6
 D
 
 # Command line history (oldest to newest):
-:!grep hint *
-:!grep -r hint *
-:mkdir stylesheets
-:nnoremap yf :!echo %c:p | xclip -selection clipboard %i<cr>
 :!echo %c:p | xclip -selection clipboard %i<cr>
 :!vim wikipedia_dark_theme.js
 :!vim
@@ -764,10 +760,13 @@ D
 :move
 :empty
 :copy
+:mkdir markerpen
+:!vim markerpen.el
+:mkdir read-aloud
+:!vim read-aloud.el
 :q
 
 # Search history (oldest to newest):
-/dolp
 /.rom
 /my_
 /my_new
@@ -865,8 +864,9 @@ D
 /pro
 /config
 /xkey
-/bin
 /.config
+/down
+/bin
 
 # Prompt history (oldest to newest):
 p've found is actually Autokey's folders, but Autokey needs to always be running (even if I call autokey-run), which I'd prefer to avoid.g I've found is actually Autokey's folders, but Autokey needs to always be running (even if I call autokey-run), which I'd prefer to avoid.config

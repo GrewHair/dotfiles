@@ -1,2 +1,3 @@
 * mimic is right now basically polluting my home directory. I should 'install' it somewhere and add it to path...
 * hardlinks in the scripts are becoming a problem.. I should do something about it
+* I should list all the programs I'm going to need when I finally migrate

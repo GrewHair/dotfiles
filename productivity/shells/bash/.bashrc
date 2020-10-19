@@ -174,3 +174,5 @@ export BROWSER=qutebrowser
 
 # disable ctrl-s
 stty -ixon
+
+export PATH="/home/boris/mimic1:$PATH"

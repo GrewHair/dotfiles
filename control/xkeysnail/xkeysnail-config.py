@@ -4,6 +4,7 @@ import re
 from xkeysnail.transform import *
 import os
 
+#shift_pressed = False
 
 def wheel_up():
     """Scroll the mousewheel up"""
@@ -21,6 +22,38 @@ def wheel_right():
     """Scroll the mousewheel right"""
     os.system('xdotool click 7')
 
+def speak():
+    """Speak selection"""
+    os.system("kill -9 $(ps -ef | grep 'mimic' | grep -v grep | grep -v stop | awk '{print $2}')")
+    os.system('cd /home/boris/mimic1 && xsel -p | mimic -voice slt_hts &')
+    #os.system('xsel -p | mimic')
+    #os.system('xsel -p | mimic -voice slt_hts')
+
+def keydown_shift():
+    """Depress shift button"""
+    os.system('xdotool keydown shift')
+
+def keyup_shift():
+    """Release shift button"""
+    os.system('xdotool keyup shift')
+
+def keydown_ctrl():
+    """Depress shift button"""
+    os.system('xdotool keydown ctrl')
+
+def keyup_ctrl():
+    """Release shift button"""
+    os.system('xdotool keyup ctrl')
+
+def toggle_shift():  # wrong, i'll probably have to write a class
+    """Toggle shift key"""
+    global shift_pressed
+    if shift_pressed:
+        os.system('xdotool keyup ctrl')
+        shift_pressed = False
+    else:
+        os.system('xdotool keydown ctrl')
+        shift_pressed = True
 
 # define timeout for multipurpose_modmap
 define_timeout(0.3)
@@ -112,6 +145,31 @@ define_keymap(re.compile("figma-linux"), {
     K("C-j"): K("ENTER"),
     K("C-m"): K("ENTER"),
 }, "Figma")
+
+define_keymap(re.compile("Acroread"), {
+    K("UP"): wheel_up,
+    K("DOWN"): wheel_down,
+    K("E"): wheel_up,
+    K("D"): wheel_down,
+    K("J"): K("DOWN"),
+    K("K"): K("UP"),
+    K("L"): K("RIGHT"),
+    K("H"): K("LEFT"),
+    K("KEY_0"): K("HOME"),
+    K("Shift-J"): K("Shift-DOWN"),
+    K("Shift-K"): K("Shift-UP"),
+    K("Shift-L"): K("Shift-RIGHT"),
+    K("Shift-H"): K("Shift-LEFT"),
+    #K("B"): K("C-LEFT"),
+    #K("W"): K("C-RIGHT"),
+    #K("Shift-B"): K("C-Shift-LEFT"),
+    #K("Shift-W"): K("C-Shift-RIGHT"),
+    #K("Y"): [keydown_ctrl, K("C"), keyup_ctrl],
+    K("S"): speak,
+    K("V"): keydown_shift,
+    # K("V"): toggle_shift,
+    K("C"): keyup_shift,
+}, "Acrobat Reader")
 
 #define_multipurpose_modmap(
 #    {Key.RIGHT_SHIFT: [Key.CAPSLOCK, Key.RIGHT_SHIFT]}
