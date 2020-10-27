@@ -24,10 +24,10 @@ def wheel_right():
 
 def speak():
     """Speak selection"""
+    os.system("xdotool keyup shift")
     os.system("kill -9 $(ps -ef | grep 'mimic' | grep -v grep | grep -v stop | awk '{print $2}')")
+    os.system('sleep 0.1')
     os.system('cd /home/boris/mimic1 && xsel -p | mimic -voice slt_hts &')
-    #os.system('xsel -p | mimic')
-    #os.system('xsel -p | mimic -voice slt_hts')
 
 def keydown_shift():
     """Depress shift button"""
@@ -43,6 +43,7 @@ def keydown_ctrl():
 
 def keyup_ctrl():
     """Release shift button"""
+    os.system('sleep 0.2')
     os.system('xdotool keyup ctrl')
 
 def toggle_shift():  # wrong, i'll probably have to write a class
@@ -68,6 +69,7 @@ define_multipurpose_modmap(
     {
         Key.LEFT_ALT: [Key.SPACE, Key.LEFT_CTRL],
         Key.RIGHT_ALT: [Key.SPACE, Key.RIGHT_CTRL],
+        Key.SPACE: [Key.SPACE, Key.LEFT_CTRL],
         Key.ENTER: [Key.ENTER, Key.RIGHT_ALT],
         Key.BACKSLASH: [Key.BACKSLASH, Key.RIGHT_ALT],
         Key.CAPSLOCK: [Key.ESC, Key.LEFT_ALT],
@@ -165,6 +167,8 @@ define_keymap(re.compile("Acroread"), {
     #K("Shift-B"): K("C-Shift-LEFT"),
     #K("Shift-W"): K("C-Shift-RIGHT"),
     #K("Y"): [keydown_ctrl, K("C"), keyup_ctrl],
+    #K("B"): [keydown_ctrl, K("LEFT"), keyup_ctrl],
+    # K("S"): speak,
     K("S"): speak,
     K("V"): keydown_shift,
     # K("V"): toggle_shift,

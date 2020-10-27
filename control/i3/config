@@ -597,8 +597,11 @@ bindsym $mod+s move container to workspace shared; workspace shared
 #bindsym F7 [workspace=shared] move workspace to output eDP-1-1; exec /home/boris/bin/i3/cycle_output.py eDP-1-1
 #bindsym F8 [workspace=shared] move workspace to output HDMI-0; exec /home/boris/bin/i3/cycle_output.py HDMI-0
 
-bindsym F6 exec /home/boris/bin/i3/cycle_output.py DP-2
-bindsym F7 exec /home/boris/bin/i3/cycle_output.py eDP-1-1
-bindsym F8 exec /home/boris/bin/i3/cycle_output.py HDMI-0
+bindsym F6 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py DP-2
+bindsym F7 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py eDP-1-1
+bindsym F8 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py HDMI-0
 
 for_window [class="qutebrowser"] hide_edge_borders horizontal
+
+for_window [class="large"] exec /home/boris/bin/i3/move-to-new-workspace-focus.sh
+for_window [instance="large"] exec /home/boris/bin/i3/move-to-new-workspace-focus.sh

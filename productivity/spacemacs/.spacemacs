@@ -565,6 +565,10 @@ before packages are loaded."
   (define-key evil-normal-state-map (kbd "C-M-X") 'evil-numbers/dec-at-pt)
   (define-key evil-normal-state-map (kbd "=") 'zoom-in)
   (define-key evil-normal-state-map (kbd "-") 'zoom-out)
+  (define-key evil-normal-state-map (kbd "g.") 'evil-ex)
+
+  (require 'treemacs)
+  (define-key treemacs-mode-map (kbd "ot") 'treemacs-TAB-action)
 
   ;; (require 'minibuffer-inactive-mode)
   ;; (define-key minibuffer-inactive-mode-map (kbd "C-h") 'delete-backward-char)

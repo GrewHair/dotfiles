@@ -1,67 +1,235 @@
 windows:
 - active: true
   geometry: !!binary |
-    AdnQywACAAAAAAUAAAAAAAAADH8AAAQfAAAFAwAAAAMAAAx8AAAEHAAAAAIAAAAAB4A=
+    AdnQywACAAAAAAAAAAAAAAAAB38AAAQfAAAAAwAAAAMAAAd8AAAEHAAAAAAAAAAAB4A=
   tabs:
   - history:
-    - last_visited: '2020-10-21T14:04:50'
+    - last_visited: '2020-10-26T20:09:22'
       pinned: false
-      title: relationship between design patterns and state machines - Google Search
-      url: https://www.google.com/search?q=relationship%20between%20design%20patterns%20and%20state%20machines
+      title: (78) YouTube
+      url: https://www.youtube.com/
+    - last_visited: '2020-10-26T20:09:22'
+      pinned: false
+      title: (78) таро беларусь - YouTube
+      url: https://www.youtube.com/results?search_query=%D1%82%D0%B0%D1%80%D0%BE+%D0%B1%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D1%8C
+    - last_visited: '2020-10-26T20:09:57'
+      pinned: false
+      title: (78) ПРОГНОЗ ДЛЯ БЕЛОРУСИ...Ноябрь..Таро прогноз. - YouTube
+      url: https://www.youtube.com/watch?v=kaCJ9MouAS8
+    - last_visited: '2020-10-26T20:34:25'
+      pinned: false
+      title: (78) таро беларусь - YouTube
+      url: https://www.youtube.com/results?search_query=%D1%82%D0%B0%D1%80%D0%BE+%D0%B1%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D1%8C
+    - last_visited: '2020-10-26T20:34:59'
+      pinned: false
+      title: (78) таро беларусь лукашенко - YouTube
+      url: https://www.youtube.com/results?search_query=%D1%82%D0%B0%D1%80%D0%BE+%D0%B1%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D1%8C+%D0%BB%D1%83%D0%BA%D0%B0%D1%88%D0%B5%D0%BD%D0%BA%D0%BE
+    - last_visited: '2020-10-26T20:44:05'
+      pinned: false
+      title: (78) таро лукашенко - YouTube
+      url: https://www.youtube.com/results?search_query=%D1%82%D0%B0%D1%80%D0%BE+%D0%BB%D1%83%D0%BA%D0%B0%D1%88%D0%B5%D0%BD%D0%BA%D0%BE
+    - last_visited: '2020-10-26T20:45:01'
+      pinned: false
+      title: (78) таро лукашенко - YouTube
+      url: https://www.youtube.com/results?search_query=%D1%82%D0%B0%D1%80%D0%BE+%D0%BB%D1%83%D0%BA%D0%B0%D1%88%D0%B5%D0%BD%D0%BA%D0%BE&sp=CAI%253D
+    - last_visited: '2020-10-26T20:45:13'
+      pinned: false
+      title: (78) У Лукашенко намечается прощание с прошлым? - YouTube
+      url: https://www.youtube.com/watch?v=jqf4Ntlw_DA
+    - last_visited: '2020-10-26T20:45:21'
+      pinned: false
+      title: (78) Наедине с ТАРО - YouTube
+      url: https://www.youtube.com/channel/UCcaUr3m1l06oapwvf0dpRog
+    - last_visited: '2020-10-26T20:45:53'
+      pinned: false
+      title: (78) У Лукашенко намечается прощание с прошлым? - YouTube
+      url: https://www.youtube.com/watch?v=jqf4Ntlw_DA
+    - last_visited: '2020-10-26T20:46:31'
+      pinned: false
+      title: (78) Наедине с ТАРО - YouTube
+      url: https://www.youtube.com/channel/UCcaUr3m1l06oapwvf0dpRog
+    - last_visited: '2020-10-26T20:46:46'
+      pinned: false
+      title: (78) Беларусь.Полковник ГРУ Бородач призвал силовые структуры не исполнять
+        приказы . - YouTube
+      url: https://www.youtube.com/watch?v=QT1baTmoogs
+    - last_visited: '2020-10-26T20:49:58'
+      pinned: false
+      title: (78) Наедине с ТАРО - YouTube
+      url: https://www.youtube.com/channel/UCcaUr3m1l06oapwvf0dpRog
+    - last_visited: '2020-10-26T20:50:03'
+      pinned: false
+      title: (78) Беларусь.Расклад на 27 вторник - YouTube
+      url: https://www.youtube.com/watch?v=yA3V13QWZqw
+    - last_visited: '2020-10-26T20:52:28'
+      pinned: false
+      title: (78) Наедине с ТАРО - YouTube
+      url: https://www.youtube.com/channel/UCcaUr3m1l06oapwvf0dpRog
+    - last_visited: '2020-10-26T20:52:38'
+      pinned: false
+      title: (78) таро лукашенко - YouTube
+      url: https://www.youtube.com/results?search_query=%D1%82%D0%B0%D1%80%D0%BE+%D0%BB%D1%83%D0%BA%D0%B0%D1%88%D0%B5%D0%BD%D0%BA%D0%BE
+    - last_visited: '2020-10-26T20:56:54'
+      pinned: false
+      title: '(78) Таро Беларусь: Будет ли свергнута диктатура Лукашенко? Чем закончатся
+        митинги 2020? | Карты ТАРО - YouTube'
+      url: https://www.youtube.com/watch?v=M97SXK2ok1A
+    - last_visited: '2020-10-26T20:59:55'
+      pinned: false
+      title: (78) Парапсихолог Марков - YouTube
+      url: https://www.youtube.com/channel/UCxzxsg8g4RoqgAkGKubj_Dw
+    - last_visited: '2020-10-26T21:00:36'
+      pinned: false
+      title: (78) СОСТОЯНИЕ ПОТОКА! Жизнь в Потоке! Что это? (на примере личной истории)
+        | Квантовая Психология® - YouTube
+      url: https://www.youtube.com/watch?v=L7mhZR9lpwA
+    - last_visited: '2020-10-26T21:01:31'
+      pinned: false
+      title: (78) таро лукашенко - YouTube
+      url: https://www.youtube.com/results?search_query=%D1%82%D0%B0%D1%80%D0%BE+%D0%BB%D1%83%D0%BA%D0%B0%D1%88%D0%B5%D0%BD%D0%BA%D0%BE
+    - last_visited: '2020-10-26T21:02:58'
+      pinned: false
+      title: (78) Наш Шабаш - YouTube
+      url: https://www.youtube.com/channel/UC0xUFq4btgZA2D-iXOhAn1A
+    - last_visited: '2020-10-26T21:03:02'
+      pinned: false
+      title: (78) Наш Шабаш - YouTube
+      url: https://www.youtube.com/channel/UC0xUFq4btgZA2D-iXOhAn1A/videos
+    - last_visited: '2020-10-26T21:03:13'
+      pinned: false
+      title: (78) Забастовки и митинги ультиматум Светланы Тихановской ! Беларусь
+        наши сердца 💕 с вами - YouTube
+      url: https://www.youtube.com/watch?v=3GDkYAeOMvw
+    - last_visited: '2020-10-26T22:03:44'
+      pinned: false
+      title: (78) таро лукашенко - YouTube
+      url: https://www.youtube.com/results?search_query=%D1%82%D0%B0%D1%80%D0%BE+%D0%BB%D1%83%D0%BA%D0%B0%D1%88%D0%B5%D0%BD%D0%BA%D0%BE
+    - last_visited: '2020-10-26T22:04:06'
+      pinned: false
+      title: (78) линник руслан - YouTube
+      url: https://www.youtube.com/results?search_query=%D0%BB%D0%B8%D0%BD%D0%BD%D0%B8%D0%BA+%D1%80%D1%83%D1%81%D0%BB%D0%B0%D0%BD
+    - last_visited: '2020-10-26T22:04:12'
+      pinned: false
+      title: (78) Руслан Линник - YouTube
+      url: https://www.youtube.com/channel/UC1Ms94jWRHOQl-Ux1DeSANA
+    - last_visited: '2020-10-26T22:04:15'
+      pinned: false
+      title: (78) Руслан Линник - YouTube
+      url: https://www.youtube.com/channel/UC1Ms94jWRHOQl-Ux1DeSANA/videos
+    - last_visited: '2020-10-26T22:10:09'
+      pinned: false
+      title: (78) вася сероштан - YouTube
+      url: https://www.youtube.com/results?search_query=%D0%B2%D0%B0%D1%81%D1%8F+%D1%81%D0%B5%D1%80%D0%BE%D1%88%D1%82%D0%B0%D0%BD
+    - last_visited: '2020-10-26T22:12:01'
+      pinned: false
+      title: (78) максим кац - YouTube
+      url: https://www.youtube.com/results?search_query=%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC+%D0%BA%D0%B0%D1%86
+    - last_visited: '2020-10-26T22:12:05'
+      pinned: false
+      title: (78) Максим Кац - YouTube
+      url: https://www.youtube.com/user/maxkatz1
+    - last_visited: '2020-10-26T22:21:50'
+      pinned: false
+      title: (78) Максим Кац - YouTube
+      url: https://www.youtube.com/c/maxkatz1/videos
+    - last_visited: '2020-10-26T23:01:50'
+      pinned: false
+      title: (78) шульман - YouTube
+      url: https://www.youtube.com/results?search_query=%D1%88%D1%83%D0%BB%D1%8C%D0%BC%D0%B0%D0%BD
+    - last_visited: '2020-10-26T23:02:38'
+      pinned: false
+      title: (78) шульман - YouTube
+      url: https://www.youtube.com/results?search_query=%D1%88%D1%83%D0%BB%D1%8C%D0%BC%D0%B0%D0%BD
+    - last_visited: '2020-10-26T23:02:44'
+      pinned: false
+      title: (78) шульман беларусь - YouTube
+      url: https://www.youtube.com/results?search_query=%D1%88%D1%83%D0%BB%D1%8C%D0%BC%D0%B0%D0%BD+%D0%B1%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D1%8C
+    - last_visited: '2020-10-26T23:04:12'
+      pinned: false
+      title: (78) егор жуков армия - YouTube
+      url: https://www.youtube.com/results?search_query=%D0%B5%D0%B3%D0%BE%D1%80+%D0%B6%D1%83%D0%BA%D0%BE%D0%B2+%D0%B0%D1%80%D0%BC%D0%B8%D1%8F
+    - last_visited: '2020-10-26T23:04:21'
+      pinned: false
+      title: (78) егор жуков - YouTube
+      url: https://www.youtube.com/results?search_query=%D0%B5%D0%B3%D0%BE%D1%80+%D0%B6%D1%83%D0%BA%D0%BE%D0%B2
+    - last_visited: '2020-10-26T23:04:25'
+      pinned: false
+      title: (78) Команда Жукова - YouTube
+      url: https://www.youtube.com/channel/UCyyG-tDEysAL_dy1l4XHa1A
+    - last_visited: '2020-10-26T23:04:29'
+      pinned: false
+      title: (78) Команда Жукова - YouTube
+      url: https://www.youtube.com/c/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0%D0%96%D1%83%D0%BA%D0%BE%D0%B2%D0%B0/videos
+    - last_visited: '2020-10-26T23:06:14'
+      pinned: false
+      title: (78) КАК ОТВЕЧАТЬ ПОЛИЦИИ НА МИТИНГЕ - YouTube
+      url: https://www.youtube.com/watch?v=LqMxnAFolas
+    - last_visited: '2020-10-26T23:19:13'
+      original-url: https://www.youtube.com/watch?v=LqMxnAFolas
+      pinned: false
+      title: (78) ЧТО ТАКОЕ БАРХАТНАЯ РЕВОЛЮЦИЯ - YouTube
+      url: https://www.youtube.com/watch?v=I1ypz2ZkQTI
+    - last_visited: '2020-10-27T00:00:11'
+      pinned: false
+      title: (78) YouTube
+      url: https://www.youtube.com/
     - active: true
-      last_visited: '2020-10-19T15:11:12'
+      last_visited: '2020-10-27T00:00:11'
       pinned: false
       scroll-pos:
         x: 0
-        y: 0
-      title: architecture - What is the difference between a state machine and the
-        implementation of the state pattern? - Stack Overflow
-      url: https://stackoverflow.com/questions/19859531/what-is-the-difference-between-a-state-machine-and-the-implementation-of-the-sta
+        y: 903
+      title: (78) DistroTube - YouTube
+      url: https://www.youtube.com/c/DistroTube
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2020-10-19T15:11:12'
+      last_visited: '2020-10-27T00:00:41'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Designing A Calculator with FSM Logic | by Robert Vunabandi | Medium
-      url: https://medium.com/@rvunabandi/making-a-calculator-in-javascript-64193ea6a492
+      title: (78) Useful Tools Within Emacs For Writers - YouTube
+      url: https://www.youtube.com/watch?v=eT1-lLQVHsw
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-27T00:15:28'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: codemirror vim which mappings are available - Google Search
+      url: https://www.google.com/search?q=codemirror%20vim%20which%20mappings%20are%20available
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-27T00:15:39'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 40
+      title: 'CodeMirror: User Manual'
+      url: https://codemirror.net/doc/manual.html
+      zoom: 1.75
+  - history:
+    - last_visited: '2020-10-27T00:16:07'
+      pinned: false
+      title: 'CodeMirror: User Manual'
+      url: https://codemirror.net/doc/manual.html#addons
+    - active: true
+      last_visited: '2020-10-27T00:48:20'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 87068
+      title: 'CodeMirror: User Manual'
+      url: https://codemirror.net/doc/manual.html#vimapi
       zoom: 1.5
-  - history:
+  - active: true
+    history:
     - active: true
-      last_visited: '2020-10-19T15:11:12'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: 'State Machine Design pattern — Part 2: State Pattern vs. State Machine
-        | by Kousik Nath | Data Driven Investor | Medium'
-      url: https://medium.com/datadriveninvestor/state-machine-design-pattern-part-2-state-pattern-vs-state-machine-3010dd0fcf28
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-19T15:11:13'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: 4-1 A calculator as a finite state automaton
-      url: https://www.cs.rit.edu/~ats/java/html/skript/4__01.htmld/index.html
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-19T15:11:12'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Binding - Wikipedia
-      url: https://en.wikipedia.org/wiki/Binding
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-19T17:23:10'
+      last_visited: '2020-10-27T03:07:55'
       pinned: false
       scroll-pos:
         x: 0
@@ -70,80 +238,183 @@ windows:
       url: http://127.0.0.1:8081/
       zoom: 1.0
   - history:
-    - last_visited: '2020-10-19T19:38:29'
-      original-url: https://www.youtube.com/search?q=smalltalk%20oop
+    - last_visited: '2020-10-27T00:51:52'
       pinned: false
-      title: (72) smalltalk oop - YouTube
-      url: https://www.youtube.com/results?q=smalltalk+oop
-    - last_visited: '2020-10-19T19:38:29'
+      title: 'CodeMirror: User Manual'
+      url: https://codemirror.net/doc/manual.html#commands
+    - last_visited: '2020-10-27T00:54:08'
       pinned: false
-      title: (72) Object-Oriented Programming/ Smalltalk (Part 1 of 3) - YouTube
-      url: https://www.youtube.com/watch?v=Y7rq6o6UDXc
+      title: 'CodeMirror: User Manual'
+      url: https://codemirror.net/doc/manual.html#api
+    - last_visited: '2020-10-27T00:54:41'
+      pinned: false
+      title: 'CodeMirror: User Manual'
+      url: https://codemirror.net/doc/manual.html#addons
+    - last_visited: '2020-10-27T00:55:07'
+      pinned: false
+      title: 'CodeMirror: User Manual'
+      url: https://codemirror.net/doc/manual.html#modeapi
+    - last_visited: '2020-10-27T00:55:08'
+      pinned: false
+      title: 'CodeMirror: User Manual'
+      url: https://codemirror.net/doc/manual.html#vimapi
+    - last_visited: '2020-10-27T01:00:57'
+      pinned: false
+      title: 'CodeMirror: User Manual'
+      url: https://codemirror.net/doc/manual.html#commands
     - active: true
-      last_visited: '2020-10-19T19:40:27'
+      last_visited: '2020-10-27T01:01:35'
       pinned: false
       scroll-pos:
         x: 0
-        y: 120
-      title: (72) smalltalk oop - YouTube
-      url: https://www.youtube.com/results?q=smalltalk+oop
+        y: 25406
+      title: 'CodeMirror: User Manual'
+      url: https://codemirror.net/doc/manual.html#usage
       zoom: 1.5
-    - last_visited: '2020-10-19T19:39:16'
-      pinned: false
-      title: (72) Object-Oriented Programming/ Smalltalk (Part 1 of 3) - YouTube
-      url: https://www.youtube.com/watch?v=Y7rq6o6UDXc
   - history:
     - active: true
-      last_visited: '2020-10-19T19:49:20'
+      last_visited: '2020-10-27T01:04:25'
       pinned: false
       scroll-pos:
         x: 0
-        y: 0
-      title: (72) Object-Oriented Programming/ Smalltalk (Part 1 of 3) - YouTube
-      url: https://www.youtube.com/watch?v=Y7rq6o6UDXc
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-19T20:12:19'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: git add . doesn't stage all files - Google Search
-      url: https://www.google.com/search?q=git%20add%20.%20doesn%27t%20stage%20all%20files
-      zoom: 1.0
-  - active: true
-    history:
-    - active: true
-      last_visited: '2020-10-19T20:12:22'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: git add - Difference between "git add -A" and "git add ." - Stack Overflow
-      url: https://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-19T18:32:53'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 1000
-      title: 15.04 - Why does my xdotool key command not work? - Ask Ubuntu
-      url: https://askubuntu.com/questions/695017/why-does-my-xdotool-key-command-not-work
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-10-18T10:55:24'
-      pinned: false
-      title: Welcome to Java for Python Programmers — Java for Python Programmers
-      url: http://anh.cs.luc.edu/170/html/
-    - active: true
-      last_visited: '2020-10-19T15:11:11'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Preface — Java for Python Programmers
-      url: http://anh.cs.luc.edu/170/html/Java4Python.html
+        y: 86885
+      title: 'CodeMirror: User Manual'
+      url: https://codemirror.net/doc/manual.html#option_electricChars
       zoom: 1.5
+  - history:
+    - last_visited: '2020-10-27T00:16:32'
+      pinned: false
+      title: 'CodeMirror: User Manual'
+      url: https://codemirror.net/doc/manual.html#vimapi
+    - last_visited: '2020-10-27T01:18:04'
+      pinned: false
+      title: 'CodeMirror: User Manual'
+      url: https://codemirror.net/doc/manual.html#api
+    - last_visited: '2020-10-27T01:22:31'
+      pinned: false
+      title: 'CodeMirror: User Manual'
+      url: https://codemirror.net/doc/manual.html#vimapi
+    - last_visited: '2020-10-27T01:41:41'
+      pinned: false
+      title: 'CodeMirror: User Manual'
+      url: https://codemirror.net/doc/manual.html#vimapi_extending
+    - last_visited: '2020-10-27T01:42:24'
+      pinned: false
+      title: 'CodeMirror: User Manual'
+      url: https://codemirror.net/doc/manual.html#api
+    - last_visited: '2020-10-27T02:05:21'
+      pinned: false
+      title: 'CodeMirror: User Manual'
+      url: https://codemirror.net/doc/manual.html#api_constructor
+    - active: true
+      last_visited: '2020-10-27T03:01:19'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 86768
+      title: 'CodeMirror: User Manual'
+      url: https://codemirror.net/doc/manual.html#vimapi
+      zoom: 1.5
+  - history:
+    - active: true
+      last_visited: '2020-10-27T01:23:58'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: '[vim] mapping additional functionality to a key with defineAction -
+        discuss.CodeMirror'
+      url: https://discuss.codemirror.net/t/vim-mapping-additional-functionality-to-a-key-with-defineaction/1677
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-27T01:51:39'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: codemirror how to find instances in dom - Google Search
+      url: https://www.google.com/search?q=codemirror%20how%20to%20find%20instances%20in%20dom
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-27T01:51:56'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 5243
+      title: javascript - Get CodeMirror instance - Stack Overflow
+      url: https://stackoverflow.com/questions/11581516/get-codemirror-instance
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-10-27T01:16:03'
+      pinned: false
+      title: what are electric keys in emacs - Google Search
+      url: https://www.google.com/search?q=what%20are%20electric%20keys%20in%20emacs
+    - last_visited: '2020-10-27T01:21:53'
+      pinned: false
+      title: codemirror vim doc.replaceSelection - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk01KQ8Dlf58mGgrKREJ5Qh-2BgZ0Rg%3A1603750562797&ei=okqXX8yTMKP5qwHahL3QDA&q=codemirror+vim+doc.replaceSelection&oq=codemirror+vim+doc.replaceSelection&gs_lcp=CgZwc3ktYWIQAzIHCCEQChCgAToECCMQJzoHCCMQ6gIQJzoICAAQyQMQkQI6BQgAEJECOgIIADoECAAQQzoHCAAQFBCHAjoECC4QQzoECC4QCjoICC4QxwEQrwE6CggAEMkDEBQQhwI6BwgjEMkDECc6BggAEBYQHjoFCAAQyQM6BQghEKABOgQIIRAVUKiqFFiekxVg2KEVaAJwAHgAgAHTAYgBzyOSAQcxNi4yNS4xmAEAoAEBqgEHZ3dzLXdperABCcABAQ&sclient=psy-ab&ved=0ahUKEwjM7Om0pNPsAhWj_CoKHVpCD8oQ4dUDCA0&uact=5
+    - last_visited: '2020-10-27T01:23:51'
+      pinned: false
+      title: codemirror vim defineAction - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk01K6SaAbSR00wctjk7GRpFX1e1_aQ%3A1603750912141&ei=AEyXX9v9B-2nrgSZibuICQ&q=codemirror+vim+defineAction&oq=codemirror+vim+defineAction&gs_lcp=CgZwc3ktYWIQAzIHCCEQChCgAToECCMQJzoFCAAQyQM6BggAEBYQHjoICAAQyQMQkQI6BQgAEJECOgcIABAUEIcCOgIIADoKCAAQyQMQFBCHAjoHCCMQyQMQJzoFCCEQoAE6BAghEBVQ4O4FWNmNB2CUkQdoBHAAeACAAekCiAGvE5IBCDEwLjkuMS4xmAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab&ved=0ahUKEwjb_bPbpdPsAhXtk4sKHZnEDpEQ4dUDCA0&uact=5
+    - active: true
+      last_visited: '2020-10-27T01:41:26'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 160
+      title: codemirror vim defineAction - Google Search
+      url: https://www.google.com/search?q=codemirror+vim+defineAction&sxsrf=ALeKk00-YwE--5sTV0kVyxvYdbiF4Mvv7A:1603751030369&ei=dkyXX5z4FbLrrgTjjJeoBg&start=10&sa=N&ved=2ahUKEwici-STptPsAhWytYsKHWPGBWUQ8NMDegQIDBBB
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-27T01:39:33'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: We are rewriting CodeMirror | Hacker News
+      url: https://news.ycombinator.com/item?id=17858672
+      zoom: 1.5
+  - history:
+    - active: true
+      last_visited: '2020-10-27T01:22:04'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'CodeMirror: User Manual'
+      url: http://lig-coin.imag.fr/COIN3D/ThirdParty/codemirror-4.6/doc/manual.html
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-27T01:16:25'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: codemirror command to insert a character - Google Search
+      url: https://www.google.com/search?q=codemirror%20command%20to%20insert%20a%20character
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-27T01:16:35'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 1080
+      title: codemirror - Inserting a new text at given cursor position - Stack Overflow
+      url: https://stackoverflow.com/questions/23733455/inserting-a-new-text-at-given-cursor-position
+      zoom: 1.5
+  - history:
+    - active: true
+      last_visited: '2020-10-27T00:15:33'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'How to specify custom mappings for vim mode? · Issue #2840 · codemirror/CodeMirror'
+      url: https://github.com/codemirror/CodeMirror/issues/2840
+      zoom: 1.0

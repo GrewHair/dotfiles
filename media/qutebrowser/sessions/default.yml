@@ -1,595 +1,239 @@
 windows:
 - active: true
   geometry: !!binary |
-    AdnQywACAAAAAAAAAAAAAAAABP8AAAPnAAAAAwAAAAMAAAT8AAAD5AAAAAEAAAAABQA=
+    AdnQywACAAAAAAUAAAAAAAAADH8AAAQfAAAFAwAAAAMAAAx8AAAEHAAAAAIAAAAAB4A=
   tabs:
   - history:
-    - last_visited: '2020-10-21T02:04:50'
+    - last_visited: '2020-10-26T16:48:23'
       pinned: false
-      title: relationship between design patterns and state machines - Google Search
-      url: https://www.google.com/search?q=relationship%20between%20design%20patterns%20and%20state%20machines
+      title: DuckDuckGo — Privacy, simplified.
+      url: https://start.duckduckgo.com/
     - active: true
-      last_visited: '2020-10-18T18:18:02'
+      last_visited: '2020-10-26T01:04:45'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: architecture - What is the difference between a state machine and the
-        implementation of the state pattern? - Stack Overflow
-      url: https://stackoverflow.com/questions/19859531/what-is-the-difference-between-a-state-machine-and-the-implementation-of-the-sta
+      title: History
+      url: qute://history/
       zoom: 1.0
   - history:
+    - last_visited: '2020-10-26T01:12:03'
+      pinned: false
+      title: vim difference between imap and inoremap - Google Search
+      url: https://www.google.com/search?q=vim%20difference%20between%20imap%20and%20inoremap
     - active: true
-      last_visited: '2020-10-18T18:18:01'
+      last_visited: '2020-10-26T01:15:32'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Designing A Calculator with FSM Logic | by Robert Vunabandi | Medium
-      url: https://medium.com/@rvunabandi/making-a-calculator-in-javascript-64193ea6a492
-      zoom: 1.5
+      title: tiddlywiki codemirror vimrc - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk02Qw-vP07OUTh4v0d_yakCG5r2Rfg%3A1603663922633&ei=MviVX6GQJq3qrgSogbtI&q=tiddlywiki+codemirror+vimrc&oq=tiddlywiki+codemirror+vimrc&gs_lcp=CgZwc3ktYWIQAzIJCAAQyQMQFhAeOgcIIxDqAhAnOgcILhDqAhAnOgQIIxAnOgUIABDJAzoCCAA6CAgAEMkDEJECOgUIABCRAjoECAAQQzoICC4QxwEQrwE6AgguOgQIABAKOgcIABAUEIcCOgoIABDJAxAUEIcCOgYIABAWEB5Q8uILWNrQDGCm0wxoAnABeACAAdAEiAH8J5IBCjAuMjQuNC0yLjKYAQCgAQGqAQdnd3Mtd2l6sAEKwAEB&sclient=psy-ab&ved=0ahUKEwih8cnT4dDsAhUttYsKHajADgkQ4dUDCA0&uact=5
+      zoom: 1.0
   - history:
     - active: true
-      last_visited: '2020-10-18T18:18:01'
+      last_visited: '2020-10-26T01:23:25'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 101
+      title: My ~TiddlyWiki — a non-linear personal web notebook
+      url: http://127.0.0.1:8081/
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-26T02:04:40'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 826
+      title: 'How to create keyboard shortcuts: TiddlyWiki — a non-linear personal
+        web notebook'
+      url: https://tiddlywiki.com/static/How%2520to%2520create%2520keyboard%2520shortcuts.html
+      zoom: 1.0
+    - last_visited: '2020-10-25T12:52:24'
+      pinned: false
+      title: 'keyboard: TiddlyWiki — a non-linear personal web notebook'
+      url: https://tiddlywiki.com/static/KeyboardWidget.html
+    - last_visited: '2020-10-25T12:38:32'
+      pinned: false
+      title: 'ActionWidgets: TiddlyWiki — a non-linear personal web notebook'
+      url: https://tiddlywiki.com/static/ActionWidgets.html
+  - history:
+    - active: true
+      last_visited: '2020-10-26T02:30:27'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: 'State Machine Design pattern — Part 2: State Pattern vs. State Machine
-        | by Kousik Nath | Data Driven Investor | Medium'
-      url: https://medium.com/datadriveninvestor/state-machine-design-pattern-part-2-state-pattern-vs-state-machine-3010dd0fcf28
+      title: simple spreadsheet in javascript - Google Search
+      url: https://www.google.com/search?q=simple%20spreadsheet%20in%20javascript
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2020-10-18T18:18:02'
+      last_visited: '2020-10-26T02:34:15'
       pinned: false
       scroll-pos:
         x: 0
-        y: 0
-      title: 4-1 A calculator as a finite state automaton
-      url: https://www.cs.rit.edu/~ats/java/html/skript/4__01.htmld/index.html
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-18T19:37:55'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 200
-      title: thinking in java web version - Google Search
-      url: https://www.google.com/search?q=thinking%20in%20java%20web%20version
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-18T19:39:39'
-      original-url: https://www.youtube.com/search?q=natural%20reader
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: (72) natural reader - YouTube
-      url: https://www.youtube.com/results?q=natural+reader
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-10-18T19:40:39'
-      pinned: false
-      title: natural reader web - Google Search
-      url: https://www.google.com/search?q=natural%20reader%20web
-    - last_visited: '2020-10-18T19:44:47'
-      pinned: false
-      title: online text to speech - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk020aEt68vYW60OEhgHXvJny3lxlZg%3A1603039238027&ei=BnCMX4OgAYz4qwHhoLpg&q=online+text+to+speech&oq=online+text+to+speech&gs_lcp=CgZwc3ktYWIQAzIFCAAQyQMyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BwgjEOoCECc6BAgjECc6CAgAEMkDEJECOgUIABCRAjoHCAAQyQMQQzoECC4QQzoECAAQQzoHCAAQFBCHAjoICC4QxwEQrwE6BAgAEAo6CggAEMkDEBQQhwJQyt0OWPqGD2D1iQ9oAXABeACAAW2IAYUOkgEEMTYuNZgBAKABAaoBB2d3cy13aXqwAQrAAQE&sclient=psy-ab&ved=0ahUKEwiDu9_Cyr7sAhUM_CoKHWGQDgwQ4dUDCA0&uact=5
-    - last_visited: '2020-10-18T19:45:10'
-      pinned: false
-      title: online text to speech pdf - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk015N6JHRZi6q7mAKYhHLVDAZvJJNQ%3A1603039486205&ei=_nCMX8r4C6GprgTlhrzYBA&q=online+text+to+speech+pdf+&oq=online+text+to+speech+pdf+&gs_lcp=CgZwc3ktYWIQAzIJCAAQyQMQFhAeOgQIABBHOgUIABDJAzoCCAA6BggAEBYQHlDpigFYsKABYJKrAWgAcAJ4AIABZIgBtQOSAQM0LjGYAQCgAQGqAQdnd3Mtd2l6yAEIwAEB&sclient=psy-ab&ved=0ahUKEwjK74q5y77sAhWhlIsKHWUDD0sQ4dUDCA0&uact=5
-    - last_visited: '2020-10-18T19:45:45'
-      pinned: false
-      title: online pdf viewer - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk01B6xgSjl2aKCZGktF82mUCtS1K0Q%3A1603039509227&ei=FXGMX-bEDMeFwPAPoP6CiA8&q=online+pdf+viewer&oq=online+pdf&gs_lcp=CgZwc3ktYWIQAxgAMggIABDJAxCRAjIFCAAQkQIyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoECAAQRzoHCCMQyQMQJzoGCAAQFhAeOgQIIxAnOgcIABAUEIcCULviAViN8gFgiIUCaABwAngAgAFbiAHXBZIBAjEwmAEAoAEBqgEHZ3dzLXdpesgBCMABAQ&sclient=psy-ab
-    - last_visited: '2020-10-18T19:46:56'
-      pinned: false
-      title: natural reader web - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk02Yrv5imO3RLZ_E28EqDK08smeaCw%3A1603039543930&ei=N3GMX-OiOIuwrgSrq7mQAg&q=natural+reader+web&oq=natural+reader+web&gs_lcp=CgZwc3ktYWIQAzIECCMQJzIKCAAQyQMQFBCHAjICCAAyBggAEBYQHjoICAAQyQMQkQI6BwgAEMkDEEM6BAguEEM6BAgAEEM6CgguEMcBEKMCEEM6BQgAEMkDOggILhDHARCjAjoCCC46BQgAEJECOgcIABAUEIcCULr9A1ifogRg-6UEaABwAXgAgAGCAYgB0QySAQQxMy41mAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab&ved=0ahUKEwijms7Uy77sAhULmIsKHatVDiIQ4dUDCA0&uact=5
-    - last_visited: '2020-10-18T19:46:58'
-      pinned: false
-      title: Text to Speech Commercial License with Natural Voices
-      url: https://www.naturalreaders.com/commercial.html
-    - last_visited: '2020-10-18T19:47:17'
-      pinned: false
-      title: WebReader text to speech widget Demo
-      url: https://www.naturalreaders.com/widget.html
-    - last_visited: '2020-10-18T19:47:24'
-      pinned: false
-      title: Text to Speech Commercial License with Natural Voices
-      url: https://www.naturalreaders.com/commercial.html
-    - last_visited: '2020-10-18T19:47:26'
-      pinned: false
-      title: NaturalReader Text to Speech Software Download
-      url: https://www.naturalreaders.com/software.html
-    - active: true
-      last_visited: '2020-10-18T19:47:28'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Online Text to Speech Web APP with Natural Voices
-      url: https://www.naturalreaders.com/webapp.html
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-18T18:18:01'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Binding - Wikipedia
-      url: https://en.wikipedia.org/wiki/Binding
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-10-18T19:48:26'
-      pinned: false
-      title: online pdf tts reader - Google Search
-      url: https://www.google.com/search?q=online%20pdf%20tts%20reader
-    - active: true
-      last_visited: '2020-10-18T19:49:59'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 840
-      title: online pdf tts reader - Google Search
-      url: https://www.google.com/search?q=online+pdf+tts+reader&sxsrf=ALeKk001jxypDLahw9MG2455j10IK2XOTg:1603039704985&ei=2HGMX7fIO8zIrgSClbi4Bw&start=10&sa=N&ved=2ahUKEwi3lLShzL7sAhVMpIsKHYIKDncQ8tMDegQIGBAv&biw=1914&bih=993
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-18T18:32:06'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 160
-      title: emacs text to speech - Google Search
-      url: https://www.google.com/search?q=emacs%20text%20to%20speech
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-18T18:32:40'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 3960
-      title: TTS mode for emacs. There is a scene in The big-bang… | by Jacob su |
-        Medium
-      url: https://medium.com/@zpcat/tts-mode-for-emacs-3ab6e2f14324
-      zoom: 1.5
-  - history:
-    - active: true
-      last_visited: '2020-10-18T19:51:46'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: keyboard driven scriptable pdf reader for linux - Google Search
-      url: https://www.google.com/search?q=keyboard%20driven%20scriptable%20pdf%20reader%20for%20linux
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-18T19:51:50'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 7500
-      title: 8 Best PDF Document Viewers for Linux Systems
-      url: https://www.tecmint.com/linux-pdf-viewers-and-readers-tools/
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-10-18T19:52:42'
-      pinned: false
-      title: gnu gv - Google Search
-      url: https://www.google.com/search?q=gnu%20gv
-    - last_visited: '2020-10-18T19:52:56'
-      pinned: false
-      title: gnu gv keyboard navigation - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk02avy8U79vlirmqHF8NdfBDv5fQHw%3A1603039961407&ei=2XKMX8S8GPHErgTSyq2ABQ&q=gnu+gv+keyboard+navigation&oq=gnu+gv+keyboard+navigation&gs_lcp=CgZwc3ktYWIQAzoFCAAQyQM6BggAEBYQHjoFCCEQoAE6BwghEAoQoAE6CAghEBYQHRAeOgQIIRAVUOgoWKpfYNViaAJwAXgAgAF4iAH5EJIBBDEzLjmYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=psy-ab&ved=0ahUKEwiEjdebzb7sAhVxoosKHVJlC1AQ4dUDCA0&uact=5
-    - last_visited: '2020-10-18T20:18:37'
-      pinned: false
-      title: zathura alternatives - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk01kTjTQkGfC-SVWMzuC3rwuW-2GXw%3A1603039975273&ei=53KMX4D6D-unrgS2zKj4Bw&q=zathura+alternatives&oq=zathura+alternatives&gs_lcp=CgZwc3ktYWIQAzoHCCMQ6gIQJzoECCMQJzoICAAQyQMQkQI6BQgAEJECOgIIADoICC4QxwEQowI6DQguEMcBEKMCEMkDEEM6CAguEMcBEK8BOgIILjoECAAQQzoICC4QyQMQkwI6BQgAEMkDOgYIABAWEB5Q_7JdWKr5XWDm_F1oAXAAeACAAZsBiAHgD5IBBDE1LjWYAQCgAQGqAQdnd3Mtd2l6sAEKwAEB&sclient=psy-ab&ved=0ahUKEwjAiaWizb7sAhXrk4sKHTYmCn8Q4dUDCA0&uact=5
-    - last_visited: '2020-10-18T20:21:38'
-      pinned: false
-      title: vim like pdf viewer - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk01e8e6Qe8cLUKt1d8dPnrFdx8X1gw%3A1603041516278&ei=7HiMX8fDEMzrrgSw_KXQDQ&q=vim+like+pdf+viewer&oq=vim+like+pdf+viewer&gs_lcp=CgZwc3ktYWIQAzIFCAAQyQM6BwgjEOoCECc6BAgjECc6CAgAEMkDEJECOgUIABCRAjoCCAA6BwgAEMkDEEM6BwgAEBQQhwI6BAguEEM6BAgAEEM6CggAEMkDEBQQhwI6BggAEBYQHlD4wgpYnfQKYOj2CmgDcAF4AIABf4gBqhCSAQQ5LjEymAEAoAEBqgEHZ3dzLXdperABCsABAQ&sclient=psy-ab&ved=0ahUKEwjH6YyB077sAhXMtYsKHTB-CdoQ4dUDCA0&uact=5
-    - active: true
-      last_visited: '2020-10-18T21:45:31'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: apvlv install ubuntu - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk02DbnIK0k4nrrc8cvV2u_S0zZH_hA%3A1603041696527&ei=oHmMX6XNH_2GwPAPuZOJiAI&q=apvlv+install+ubuntu&oq=apvlv+install+ubuntu&gs_lcp=CgZwc3ktYWIQAzoFCAAQyQM6CggjELACEMkDECc6BwgjEOoCECc6BAgjECc6CAgAEMkDEJECOgQIABBDOggILhDHARCjAjoCCAA6BQgAEJECOgoILhDHARCjAhBDOggILhDHARCvAToHCAAQyQMQCjoHCAAQFBCHAjoECAAQCjoECAAQHjoGCAAQChAeOgkIABDJAxAWEB46BQghEKABOgcIIRAKEKABUIPisQJYz8OyAmC3x7ICaANwAXgAgAHVAYgBoxaSAQY0LjIwLjGYAQCgAQKgAQGqAQdnd3Mtd2l6sAEKwAEB&sclient=psy-ab&ved=0ahUKEwilnYbX077sAhV9AxAIHblJAiEQ4dUDCA0&uact=5
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-18T21:46:22'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 1859
-      title: 'Install apvlv on Ubuntu: sudo apt-get install apvlv'
-      url: https://www.devmanuals.net/install/ubuntu/ubuntu-12-04-lts-precise-pangolin/install-apvlv.html
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-10-18T21:46:53'
-      pinned: false
-      title: apvlv github - Google Search
-      url: https://www.google.com/search?q=apvlv%20github
-    - active: true
-      last_visited: '2020-10-18T21:46:55'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: naihe2010/apvlv
-      url: https://github.com/naihe2010/apvlv
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-18T22:08:05'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: apvlv build from source - Google Search
-      url: https://www.google.com/search?q=apvlv%20build%20from%20source
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-18T22:08:09'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 927
-      title: naihe2010/apvlv
-      url: https://github.com/naihe2010/apvlv
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-10-18T22:04:26'
-      pinned: false
-      title: apvlv version - Google Search
-      url: https://www.google.com/search?q=apvlv%20version
-    - last_visited: '2020-10-18T22:09:46'
-      pinned: false
-      title: apvlv build from source - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk01JYM2D2HHt2y0iWQ0NCQQ8oRILZg%3A1603047865566&ei=uZGMX8aOIqHprgSi96I4&q=apvlv+build+from+source&oq=apvlv+build+from&gs_lcp=CgZwc3ktYWIQAxgAMgQIIxAnOgUIABDJAzoECAAQHjoGCAAQChAeOgkIABDJAxAWEB5Q75ATWMSoE2DLvxNoAHABeACAAZ8BiAHRCZIBAzIuOZgBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab
-    - last_visited: '2020-10-18T22:12:45'
-      pinned: false
-      title: vim like pdf viewer - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk00btfgVNl39bekJ9bTqk2GzaKbsJw%3A1603048186150&ei=-pKMX47fCI3xrgTc9pqYBA&q=vim+like+pdf+viewer&oq=vim+like+pdf&gs_lcp=CgZwc3ktYWIQAxgAMgcIIxDJAxAnOgcIIxDqAhAnOgQIIxAnOggIABDJAxCRAjoFCAAQkQI6AggAOgcIABDJAxBDOgQIABBDOgcIABAUEIcCOgUIABDJAzoGCAAQFhAeUKmCCliQ0QpgmOkKaAFwAXgAgAGoAogBkQuSAQU0LjcuMZgBAKABAaoBB2d3cy13aXqwAQrAAQE&sclient=psy-ab
-    - last_visited: '2020-10-18T22:22:17'
-      pinned: false
-      title: vim like pdf viewer - Google Search
-      url: https://www.google.com/search?q=vim+like+pdf+viewer&sxsrf=ALeKk00wzehoqr0utJZcJvU86a2fPcCVJQ:1603048364386&ei=rJOMX9mLF6-prgSghLHQCA&start=10&sa=N&ved=2ahUKEwjZkcTC7L7sAhWvlIsKHSBCDIoQ8NMDegQIEhBB
-    - active: true
-      last_visited: '2020-10-18T22:22:27'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 804
-      title: vim like pdf viewer - Google Search
-      url: https://www.google.com/search?q=vim+like+pdf+viewer&sxsrf=ALeKk0011KMpcVMHEBo6ZaACqp2ZB82MJg:1603048936540&ei=6JWMX7zHINKtrgSAgarYBw&start=0&sa=N&ved=2ahUKEwi8263T7r7sAhXSlosKHYCACns4ChDx0wN6BAgMECw
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-18T22:22:38'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 2380
-      title: 'makerj/vim-pdf: Make VIM as a PDF reader'
-      url: https://github.com/makerj/vim-pdf
-      zoom: 1.5
-  - history:
-    - active: true
-      last_visited: '2020-10-18T22:26:17'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: vim pdf - Google Search
-      url: https://www.google.com/search?q=vim%20pdf
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-18T22:26:20'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 640
-      title: Open PDF files | Vim Tips Wiki | Fandom
-      url: https://vim.fandom.com/wiki/Open_PDF_files
+        y: 2024
+      title: Mithril
+      url: https://lhorie.github.io/mithril-blog/a-spreadsheet-in-60-lines-of-javascript.html
       zoom: 1.75
   - history:
     - active: true
-      last_visited: '2020-10-18T22:24:26'
+      last_visited: '2020-10-26T03:23:53'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: linux pdftotext - Google Search
-      url: https://www.google.com/search?q=linux%20pdftotext
+      title: mithril vs react - Google Search
+      url: https://www.google.com/search?q=mithril%20vs%20react
       zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-18T22:24:32'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 40
-      title: pdftotext(1) - Linux man page
-      url: https://linux.die.net/man/1/pdftotext
-      zoom: 1.75
-  - history:
-    - active: true
-      last_visited: '2020-10-18T22:29:57'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 40
-      title: vim text to speech - Google Search
-      url: https://www.google.com/search?q=vim%20text%20to%20speech
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-18T22:30:10'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 1080
-      title: '(1) OSX Text-to-speech in VIM : vim'
-      url: https://www.reddit.com/r/vim/comments/2odq4l/osx_texttospeech_in_vim/
-      zoom: 2.0
-  - history:
-    - active: true
-      last_visited: '2020-10-18T22:32:57'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: pdftotext utility - Google Search
-      url: https://www.google.com/search?q=pdftotext%20utility
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-18T22:33:06'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 440
-      title: pdftotext - Wikipedia
-      url: https://en.wikipedia.org/wiki/Pdftotext
-      zoom: 2.0
-  - history:
-    - last_visited: '2020-10-18T22:34:39'
-      pinned: false
-      title: extract images from pdf - Google Search
-      url: https://www.google.com/search?q=extract%20images%20from%20pdf
-    - last_visited: '2020-10-18T22:34:47'
-      pinned: false
-      title: extract images from pdf linux - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk03AGtUWKfeUFCC3lFt3B2kTzVXynQ%3A1603049677994&ei=zZiMX_WZPOaMrgTG5pXAAg&q=extract+images+from+pdf+linux&oq=extract+images+from+pdf+linux&gs_lcp=CgZwc3ktYWIQAzIFCAAQyQMyBggAEBYQHjoCCAA6BwgAEBQQhwI6CAgAEBYQChAeUKEvWKs2YJo5aABwAXgAgAFxiAHaBJIBAzMuM5gBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwi1tPS08b7sAhVmhosKHUZzBSgQ4dUDCA0&uact=5
-    - active: true
-      last_visited: '2020-10-18T22:46:36'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: emacs pdf to org mode - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk031uWzuJQTKky34kRTefLGEcU2PTw%3A1603049686620&ei=1piMX8adJeX2qwGzqJ3oAQ&q=emacs+pdf+to+org+mode&oq=emacs+pdf+to+org+mode&gs_lcp=CgZwc3ktYWIQAzIICCEQFhAdEB4yCAghEBYQHRAeMggIIRAWEB0QHjIICCEQFhAdEB4yCAghEBYQHRAeMggIIRAWEB0QHjIICCEQFhAdEB4yCAghEBYQHRAeMggIIRAWEB0QHjIICCEQFhAdEB46BwgjEOoCECc6BQgAEMkDOgIIADoICC4QxwEQowI6BAgjECc6CAgAEMkDEJECOgQIABBDOggILhDHARCvAToHCAAQFBCHAjoHCAAQyQMQQzoFCAAQkQI6CggAEMkDEBQQhwI6BggAEBYQHjoHCCMQyQMQJzoJCAAQyQMQFhAeUNvRKliqlCtg5ZUraAFwAXgAgAF5iAG4DpIBBDE4LjOYAQCgAQGqAQdnd3Mtd2l6sAEKwAEB&sclient=psy-ab&ved=0ahUKEwjG4IK58b7sAhVl-yoKHTNUBx0Q4dUDCA0&uact=5
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-10-18T22:25:09'
-      pinned: false
-      title: emacs pdf to text - Google Search
-      url: https://www.google.com/search?q=emacs%20pdf%20to%20text
-    - active: true
-      last_visited: '2020-10-18T22:48:32'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 1960
-      title: '(1) Workflow advice for working with PDF’s : emacs'
-      url: https://www.reddit.com/r/emacs/comments/aqipuu/workflow_advice_for_working_with_pdfs/
-      zoom: 1.5
-  - history:
-    - last_visited: '2020-10-18T23:02:56'
-      pinned: false
-      title: (72) YouTube
-      url: https://www.youtube.com/
-    - active: true
-      last_visited: '2020-10-18T23:02:56'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: (72) pdftotext - YouTube
-      url: https://www.youtube.com/results?search_query=pdftotext
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-18T23:03:06'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: '(72) Ubuntu: Is there a better pdf to text converter than pdftotext?
-        (5 solutions!) - YouTube'
-      url: https://www.youtube.com/watch?v=AS_5zWDqjug
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-10-18T23:26:48'
-      pinned: false
-      title: poppler utils - Google Search
-      url: https://www.google.com/search?q=poppler%20utils
-    - last_visited: '2020-10-18T23:26:56'
-      pinned: false
-      title: poppler utils emacs - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk01nzbI0i7dr2y3O-mNLgbhgqAQg6g%3A1603052807874&ei=B6WMX5nkNO6FwPAPvK2KoAI&q=poppler+utils+emacs&oq=poppler+utils+emacs&gs_lcp=CgZwc3ktYWIQAzoFCAAQyQM6AggAOgcIABAUEIcCOgYIABAWEB46CQgAEMkDEBYQHjoFCCEQoAE6BwgAEMkDEA06CAgAEA0QBRAeUJIkWPcuYOIxaABwAXgAgAF8iAHpBJIBAzMuM5gBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwjZg62J_b7sAhXuAhAIHbyWAiQQ4dUDCA0&uact=5
-    - last_visited: '2020-10-18T23:35:43'
-      pinned: false
-      title: emacs doc view unable to render file - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk00g_k-PuJGAldvfQ9x5FesNUOWtYA%3A1603052815340&ei=D6WMX52oFMPnrgST3oWoBw&q=emacs+doc+view+unable+to+render+file&oq=emacs+doc+view+&gs_lcp=CgZwc3ktYWIQAxgCMgkIABDJAxAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB46BwgjEOoCECc6BAgjECc6BwgAEMkDEEM6BQgAEJECOgQIABBDOgIIADoICC4QxwEQowI6AgguOgcIABAUEIcCOggIABDJAxCRAjoKCAAQyQMQFBCHAjoFCAAQyQM6CAgAEBYQChAeUI3NH1jB6x9gk48gaAFwAXgAgAF_iAHwC5IBAzguN5gBAKABAaoBB2d3cy13aXqwAQrAAQE&sclient=psy-ab
-    - last_visited: '2020-10-18T23:38:24'
-      pinned: false
-      title: emacs edit pdf as text - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk01-yedrGPSZfJ16gm0jHKrIti-uuQ%3A1603053342789&ei=HqeMX9i2L-n0qwG6hISIBA&q=emacs+edit+pdf+as+text&oq=emacs+edit+pdf+as+text&gs_lcp=CgZwc3ktYWIQAzIICCEQFhAdEB46BwgjEOoCECc6BAgjECc6BwgAEMkDEEM6BAgAEEM6AggAOggILhDHARCjAjoCCC46BQgAEMkDOgYIABAKEEM6BQgAEJECOggIABDJAxCRAjoHCAAQFBCHAjoKCAAQyQMQFBCHAjoGCAAQFhAeOgkIABDJAxAWEB5Qp6QJWO3cCWCA4AloAnABeACAAX-IAeYRkgEEMTUuOJgBAKABAaoBB2d3cy13aXqwAQrAAQE&sclient=psy-ab&ved=0ahUKEwjYvbWI_77sAhVp-ioKHToCAUEQ4dUDCA0&uact=5
-    - last_visited: '2020-10-18T23:40:56'
-      pinned: false
-      title: poppler utils convert pdf to - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk01QyXg7b7JAVu2PBwQ4kqYUepHVqw%3A1603053503881&ei=v6eMX46VNePLrgSX-L64Aw&q=poppler+utils+convert+pdf+to&oq=poppler+utils+convert+pdf+to&gs_lcp=CgZwc3ktYWIQAzIICCEQFhAdEB4yCAghEBYQHRAeOgcIIxDqAhAnOgQIIxAnOggIABDJAxCRAjoECAAQQzoCCAA6CAguEMcBEK8BOggILhDHARCjAjoCCC46BQgAEJECOgQILhBDOgcIABDJAxBDOgcIABAUEIcCOgQILhAKOgoIABDJAxAUEIcCOgYIABAWEB46BQgAEMkDOgkIABDJAxAWEB46BQghEKABUIG5CFiGkwlgj5YJaAJwAXgBgAGhAYgB7xiSAQUxNS4xNpgBAKABAaoBB2d3cy13aXqwAQrAAQE&sclient=psy-ab&ved=0ahUKEwjO8J3V_77sAhXjpYsKHRe8DzcQ4dUDCA0&uact=5
-    - active: true
-      last_visited: '2020-10-18T23:40:59'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: pdftohtml(1) — poppler-utils — Debian testing — Debian Manpages
-      url: https://manpages.debian.org/testing/poppler-utils/pdftohtml.1.en.html
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-18T23:38:29'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 1440
-      title: docview - How to view and edit pdf files in emacs? - Emacs Stack Exchange
-      url: https://emacs.stackexchange.com/questions/49/how-to-view-and-edit-pdf-files-in-emacs
-      zoom: 1.5
   - active: true
     history:
-    - last_visited: '2020-10-18T22:50:14'
-      pinned: false
-      title: pandoc pdf to org - Google Search
-      url: https://www.google.com/search?q=pandoc%20pdf%20to%20org
-    - last_visited: '2020-10-19T00:30:57'
-      pinned: false
-      title: xkeysnail - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk00K50SwL_gYkTx5Nwc0r1QrYMPSgg%3A1603050613421&ei=dZyMX5CsGbGHrwTU4ai4Bg&q=xkeysnail&oq=xkeysnail&gs_lcp=CgZwc3ktYWIQAzIHCCMQyQMQJzIECCMQJzIECCMQJzoJCAAQyQMQFhAeOgcIIxDqAhAnOggIABDJAxCRAjoCCAA6BwgAEMkDEEM6BAgAEEM6AgguOggILhDHARCjAjoECC4QQzoECAAQCjoHCAAQFBCHAjoICC4QxwEQrwE6BQgAEMkDOgUIABCRAlDd1O8CWKbk8AJg8ebwAmgEcAF4AIABjAGIAfkJkgEEMTIuMpgBAKABAaoBB2d3cy13aXqwAQrAAQE&sclient=psy-ab&ved=0ahUKEwjQuvry9L7sAhWxw4sKHdQwCmcQ4dUDCA0&uact=5
-    - last_visited: '2020-10-19T00:39:06'
-      pinned: false
-      title: 'mooz/xkeysnail: Yet another keyboard remapping tool for X environment'
-      url: https://github.com/mooz/xkeysnail
     - active: true
-      last_visited: '2020-10-19T00:54:35'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 3793
-      title: 'mooz/xkeysnail: Yet another keyboard remapping tool for X environment'
-      url: https://github.com/mooz/xkeysnail#key-specification
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-19T00:39:11'
+      last_visited: '2020-10-26T03:24:57'
+      original-url: https://www.youtube.com/search?q=mithril%20js
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: xkeysnail/key.py at master · mooz/xkeysnail
-      url: https://github.com/mooz/xkeysnail/blob/master/xkeysnail/key.py
+      title: (77) mithril js - YouTube
+      url: https://www.youtube.com/results?q=mithril+js
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2020-10-18T20:18:12'
+      last_visited: '2020-10-26T03:23:57'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: How to copy text from an Adobe PDF file
-      url: https://www.computerhope.com/issues/ch000851.htm
+      title: Framework comparison - Mithril.js
+      url: https://mithril.js.org/framework-comparison.html
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2020-10-18T20:18:04'
+      last_visited: '2020-10-26T03:25:24'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: 'Tip: Selecting Text in a PDF | Talking PDF | PDF'
-      url: https://talkingpdf.org/tip-selecting-text-in-a-pdf/
+      title: what does pragmatic mean in programming - Google Search
+      url: https://www.google.com/search?q=what%20does%20pragmatic%20mean%20in%20programming
       zoom: 1.0
   - history:
-    - active: true
-      last_visited: '2020-10-18T19:55:37'
+    - last_visited: '2020-10-26T03:11:17'
       pinned: false
-      scroll-pos:
-        x: 0
-        y: 2051
-      title: 97 Keyboard Shortcuts for Adobe Reader 8
-      url: http://www.keyxl.com/aaa8a03/112/Adobe-Acrobate-Reader-PDF-software-keyboard-shortcuts.htm
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-10-18T20:08:49'
-      pinned: false
-      title: adobe reader configure shortcuts - Google Search
-      url: https://www.google.com/search?q=adobe%20reader%20configure%20shortcuts
+      title: javascript m() - Google Search
+      url: https://www.google.com/search?q=javascript%20m%28%29
     - active: true
-      last_visited: '2020-10-18T20:10:32'
+      last_visited: '2020-10-26T03:11:19'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Keyboard shortcuts for Adobe Acrobat
-      url: https://helpx.adobe.com/acrobat/using/keyboard-shortcuts.html
+      title: m(selector, attributes, children) - Mithril.js
+      url: https://mithril.js.org/hyperscript.html
       zoom: 1.0
   - history:
-    - last_visited: '2020-10-18T19:14:29'
+    - last_visited: '2020-10-26T02:53:36'
       pinned: false
-      title: emacs pdf-tools select paragraph - Google Search
-      url: https://www.google.com/search?q=emacs%20pdf-tools%20select%20paragraph
-    - last_visited: '2020-10-19T00:05:55'
-      pinned: false
-      title: poppler utils pdf to markdown - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk013LTdlCt9Yjv1xEZQ21CW2lwNLGg%3A1603037668379&ei=5GmMX4THFujjrgT4tKugAg&q=poppler+utils+pdf+to+markdown&oq=poppler+utils+pdf+to+markdown&gs_lcp=CgZwc3ktYWIQAzIJCAAQyQMQFhAeOgcIIxDqAhAnOggIABDJAxCRAjoCCAA6CAguEMcBEK8BOggILhDHARCjAjoECCMQJzoECAAQQzoFCAAQkQI6CgguEMcBEKMCEEM6AgguOgQILhBDOgcIABDJAxBDOgcIABAUEIcCOgQILhAKOgoIABDJAxAUEIcCOgUIABDJAzoGCAAQFhAeOggIIRAWEB0QHjoFCCEQoAE6BwghEAoQoAE6BAghEBVQ18SqCFjmkKsIYJWVqwhoAXABeACAAdcCiAH_G5IBCTEzLjEzLjIuMZgBAKABAaoBB2d3cy13aXqwAQrAAQE&sclient=psy-ab&ved=0ahUKEwiEyaPWxL7sAhXosYsKHXjaCiQQ4dUDCA0&uact=5
+      title: isNaN(+value) javascript - Google Search
+      url: https://www.google.com/search?q=isNaN%28%2Bvalue%29%20javascript
     - active: true
-      last_visited: '2020-10-19T00:06:37'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 80
-      title: pdf to markdown - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk03FnIBCjalIDse5KLvrtUKPAHPY6A%3A1603055154272&ei=Mq6MX-74D67prgTutYvoCQ&q=pdf+to+markdown&oq=pdf+to+markdown&gs_lcp=CgZwc3ktYWIQAzIICAAQyQMQkQIyBwgAEBQQhwIyAggAMgIIADICCAAyAggAOgcIIxDqAhAnOgQIIxAnOgQIABBDOgcIABDJAxBDOgUIABCRAjoFCAAQyQM6BAgAEAo6BwgAEMkDEA06BAgAEA06BggAEA0QHjoICAAQDRAFEB5QiYwCWNC-AmCRwgJoA3ABeACAAX-IAaIMkgEEMTQuM5gBAKABAaoBB2d3cy13aXqwAQrAAQE&sclient=psy-ab&ved=0ahUKEwju2Znohb_sAhWutIsKHe7aAp0Q4dUDCA0&uact=5
-      zoom: 1.5
-  - history:
-    - active: true
-      last_visited: '2020-10-18T19:15:38'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 75
-      title: '(1) Keyboard selection in pdf-tools : emacs'
-      url: https://www.reddit.com/r/emacs/comments/aqc2nf/keyboard_selection_in_pdftools/
-      zoom: 1.5
-  - history:
-    - active: true
-      last_visited: '2020-10-18T18:57:42'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 7508
-      title: Accessibility features, Adobe Acrobat Reader DC
-      url: https://helpx.adobe.com/reader/using/accessibility-features.html
-      zoom: 1.75
-  - history:
-    - last_visited: '2020-10-17T22:55:24'
-      pinned: false
-      title: Welcome to Java for Python Programmers — Java for Python Programmers
-      url: http://anh.cs.luc.edu/170/html/
-    - active: true
-      last_visited: '2020-10-18T18:18:00'
+      last_visited: '2020-10-26T02:53:51'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Preface — Java for Python Programmers
-      url: http://anh.cs.luc.edu/170/html/Java4Python.html
-      zoom: 1.5
+      title: isNaN(+value) javascript - Google Search
+      url: https://www.google.com/search?q=isNaN(%2Bvalue)+javascript&sxsrf=ALeKk023zzQ3iOkd9ksXYJPsShDTY8TRUQ:1603670016004&ei=_w-WX8j0PIiorgSezDc&start=10&sa=N&ved=2ahUKEwiI8I-t-NDsAhUIlIsKHR7mDQAQ8tMDegQIGxAv&biw=1914&bih=1014
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-10-26T02:42:53'
+      pinned: false
+      title: mithril - Google Search
+      url: https://www.google.com/search?q=mithril
+    - last_visited: '2020-10-26T02:42:58'
+      pinned: false
+      title: Mithril - Wikipedia
+      url: https://en.wikipedia.org/wiki/Mithril
+    - active: true
+      last_visited: '2020-10-26T02:43:04'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Mithril (disambiguation) - Wikipedia
+      url: https://en.wikipedia.org/wiki/Mithril_(disambiguation)
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-26T02:43:22'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: mithril js - Google Search
+      url: https://www.google.com/search?q=mithril%20js
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-26T02:43:34'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 1980
+      title: 'MithrilJS/mithril.js: A JavaScript Framework for Building Brilliant
+        Applications'
+      url: https://github.com/MithrilJS/mithril.js/
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-26T02:43:28'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Introduction - Mithril.js
+      url: https://mithril.js.org/
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-10-26T02:38:50'
+      pinned: false
+      title: Tiny Excel-like app in vanilla JS - JSFiddle - Code Playground
+      url: http://jsfiddle.net/ondras/hYfN3/
+    - active: true
+      last_visited: '2020-10-26T02:39:07'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Tiny Excel-like app in vanilla JS - JSFiddle - Code Playground
+      url: http://jsfiddle.net/ondras/hYfN3/
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-10-26T01:04:51'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 40
+      title: Useful custom Qutebrowser keybindings | Samuel Walladge
+      url: https://www.swalladge.net/archives/2017/07/31/qutebrowser-keybindings/
+      zoom: 1.0
+- geometry: !!binary |
+    AdnQywACAAAAAAUAAAAAAAAADH8AAAQfAAAFAwAAAAMAAAx8AAAEHAAAAAIAAAAAB4A=
+  tabs:
+  - active: true
+    history:
+    - active: true
+      last_visited: '2020-10-26T02:34:43'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: (77) Jordan Peterson Reveals How to Sell Anything to Anyone - YouTube
+      url: https://www.youtube.com/watch?v=89Vpqm2IaPE
+      zoom: 1.0

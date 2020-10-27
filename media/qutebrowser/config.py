@@ -161,21 +161,21 @@ c.input.insert_mode.plugins = True
 
 
 ## Unbind stuff in normal mode
-config.unbind('<Ctrl+t>')
-config.unbind('<Ctrl+n>')
-config.unbind('<Ctrl+Shift+n>')
-config.unbind('<Ctrl+w>')
-config.unbind('<Ctrl+Shift+w>')
-config.unbind('<Ctrl+PgDown>')
-config.unbind('<Ctrl+PgUp>')
+config.unbind('<Ctrl-t>')
+config.unbind('<Ctrl-n>')
+config.unbind('<Ctrl-Shift-n>')
+config.unbind('<Ctrl-w>')
+config.unbind('<Ctrl-Shift-w>')
+config.unbind('<Ctrl-PgDown>')
+config.unbind('<Ctrl-PgUp>')
 config.unbind('<F5>')
-config.unbind('<Ctrl+F5>')
+config.unbind('<Ctrl-F5>')
 config.unbind('<Back>')
 config.unbind('<Forward>')
 config.unbind('<F11>')
-config.unbind('<Ctrl+Shift+t>')
-config.unbind('<Ctrl+Shift+Tab>')
-config.unbind('<Ctrl+^>')
+config.unbind('<Ctrl-Shift-t>')
+config.unbind('<Ctrl-Shift-Tab>')
+config.unbind('<Ctrl-^>')
 config.unbind('<Alt+1>')
 config.unbind('<Alt+2>')
 config.unbind('<Alt+3>')
@@ -185,16 +185,16 @@ config.unbind('<Alt+6>')
 config.unbind('<Alt+7>')
 config.unbind('<Alt+8>')
 config.unbind('<Alt+9>')
-config.unbind('<Ctrl+h>')
-config.unbind('<Ctrl+s>')
-config.unbind('<Ctrl+Alt+p>')
-config.unbind('<Ctrl+p>')
+config.unbind('<Ctrl-h>')
+config.unbind('<Ctrl-s>')
+config.unbind('<Ctrl-Alt-p>')
+config.unbind('<Ctrl-p>')
 config.unbind('<Ctrl-Q>') # :q should be enough
 config.unbind('ad') # download cancel
 config.unbind('cd') # download clear
-config.unbind('g$') # tab-focus -1 (<Ctrl+0> should be enough)
-config.unbind('g0') # tab-focus 1 (<Ctrl+1> should be enough)
-config.unbind('g^') # tab-focus 1 (<Ctrl+1> should be enough)
+config.unbind('g$') # tab-focus -1 (<Ctrl-0> should be enough)
+config.unbind('g0') # tab-focus 1 (<Ctrl-1> should be enough)
+config.unbind('g^') # tab-focus 1 (<Ctrl-1> should be enough)
 config.unbind('ga') # open -t (O + <Enter> should be enough)
 config.unbind('gb') # bookmark-load (i'll deal with bookmarks later when i install buku)  !!!!!!!!!
 config.unbind('gB') # bookmark-load -t (i'll deal with bookmarks later when i install buku)  !!!!!!!!
@@ -248,6 +248,9 @@ config.bind('_1', 'click-element id 0 ;; jseval -q document.getElementById("0").
 # Click this div a few ms later
 config.bind('_2', 'later 30 click-element id 0')
 
+# Domain keychains: TiddlyWiki (prefix _dtw, where _ = dunder, d = domain, tw = tiddlywiki )
+config.bind('_dtwft', 'fake-key <Ctrl-]>')
+
 # Aliases
 c.aliases['yt-hide'] = 'jseval document.querySelector("#container.style-scope.ytd-masthead").style.display="none";'
 c.aliases['yt-show'] = 'jseval document.querySelector("#container.style-scope.ytd-masthead").style.display="block";'
@@ -255,6 +258,9 @@ c.aliases['stylesheets-on'] = 'set content.user_stylesheets "~/.local/share/qute
 c.aliases['stylesheets-off'] = 'set content.user_stylesheets ""'
 c.aliases['merge-windows'] = 'fake-key --global _0_0_0_0'
 c.aliases['noh'] = 'search'
+c.aliases['bindings'] = 'open qute://bindings/'
+c.aliases['bookmarks'] = 'open qute://bookmarks/'
+c.aliases['version'] = 'open qute://version/'
 
 # Add search engines
 c.url.searchengines['google'] = "https://www.google.com/search?q={}"
@@ -277,7 +283,8 @@ c.url.searchengines['translate:en-to-ru'] = "https://translate.google.com/#view=
 # Characters used for hint strings
 #c.hints.chars 'asdfghjkl'
 #c.hints.chars = "asdfghl;qwertuiop[xcvnm,./"
-c.hints.chars = "sdfghlwertuioxcvnm,.249"
+#c.hints.chars = "sdfghlwertuioxcvnm,.249"
+c.hints.chars = "sfgwrtuiocvnm,.23489"
 
 # Add hints selectors
 c.hints.selectors['paragraphs'] = ['div, span, p, ol, ul, h1, h2, h3, h4, h5, h6']
@@ -292,12 +299,20 @@ c.hints.selectors['sidebar'] = ['.tc-sidebar-tabs-main > .tc-tab-selected']
 c.hints.selectors['title'] = ['.tc-site-title']
 #c.hints.selectors['edit-tiddler'] = ['button[title="Edit this tiddler"], textarea, .tc-drafts-list>a, input[placeholder="tag name"], input[placeholder="field name"], input[placeholder="field value"], input.tc-titlebar']
 #c.hints.selectors['edit-tiddler'] = ['.tc-image-edit-button, textarea, input[placeholder="tag name"], input[placeholder="field name"], input[placeholder="field value"], input.tc-titlebar']
-c.hints.selectors['edit-tiddler'] = ['.tc-image-edit-button, .tc-image-close-button, .tc-edit-texteditor, .CodeMirror-lines, .tc-tab-buttons>button, .tc-tag-label']
+c.hints.selectors['edit-tiddler'] = ['.tc-image-edit-button, .tc-image-close-button, .tc-edit-texteditor, .CodeMirror-lines, .tc-tab-buttons>button, .tc-tag-label, input[placeholder="field value"]']
 c.hints.selectors['tw-snippet'] = ['button[title="Insert a preconfigured snippet of text - [ctrl-S]"]']
 c.hints.selectors['tw-editor-height'] = ['button[title="Choose the height of the text editor"]']
 #c.hints.selectors['sidebar-tabs-main'] = ['.tc-tab-set .tc-sidebar-tabs-main .tc-vertical']
 #c.hints.selectors['sidebar-tabs-main'] = ['.tc-tab-content .tc-vertical']
 c.hints.selectors['sidebar-scrollable'] = ['.tc-sidebar-scrollable']
+c.hints.selectors['codemirror'] = ['.tc-image-edit-button, .CodeMirror-lines']
+c.hints.selectors['tiddler-add-tag'] = ['input[placeholder="tag name"]']
+c.hints.selectors['tiddler-add-field'] = ['input[placeholder="field name"]']
+c.hints.selectors['tiddler-title'] = ['input.tc-titlebar']
+c.hints.selectors['tiddlers-and-fields'] = ['.tc-image-edit-button, input[placeholder="field value"], .CodeMirror-lines']
+c.hints.selectors['cancel-and-delete'] = ['.tc-image-cancel-button, .tc-image-close-button, button[title="Remove field"]']
+c.hints.selectors['radio-unchecked'] = ['svg']
+c.hints.selectors['folder'] = ['svg.tc-image-folder']
 
 # Enable Dark Mode
 #c.colors.webpage.darkmode.enabled = True
@@ -317,7 +332,8 @@ c.hints.selectors['sidebar-scrollable'] = ['.tc-sidebar-scrollable']
 c.url.open_base_url = True
 
 # Insert mode on sites load
-c.input.insert_mode.auto_load = True
+# c.input.insert_mode.auto_load = True
+c.input.insert_mode.auto_load = False
 
 # Restore mode on tab change
 config.set('tabs.mode_on_change', 'restore')
@@ -326,7 +342,7 @@ config.set('tabs.mode_on_change', 'restore')
 config.set('tabs.last_close', 'close')
 
 # Messages timeout
-c.messages.timeout = 500
+c.messages.timeout = 3000
 
 # Downloads position
 config.set('downloads.position', 'bottom')
@@ -341,7 +357,8 @@ c.hints.auto_follow = 'always'
 c.content.autoplay = False
 
 # Keyhint delay
-c.keyhint.delay = 300
+# c.keyhint.delay = 300
+c.keyhint.delay = 0
 
 # Uppercase for hints
 c.hints.uppercase = True
@@ -353,12 +370,11 @@ config.bind(';p', 'hint pre userscript yank-pre.sh')
 
 config.bind('..', 'repeat-command')
 
-#config.bind(';u', 'hint yt-video hover')
-config.bind(';m', 'hint links spawn -d mpv {hint-url}')
-config.bind(';v', 'hint links spawn -d vivaldi {hint-url}')
+config.bind(';m', 'hint links spawn -d mpv --x11-name="large" {hint-url}')
+config.bind(';v', 'hint links spawn -d vivaldi --class="large" {hint-url}')
 config.bind(';P', 'spawn youtube-dl -o "/media/boris/d/Smth/%(title)s-%(id)s.%(ext)s" {url}')
-config.bind(';V', 'spawn -d vivaldi {url}')
-config.bind(';M', 'spawn -d mpv {url}')
+config.bind(';V', 'spawn -d vivaldi --class="large" {url}')
+config.bind(';M', 'spawn -d mpv --x11-name="large" {url}')
 
 config.bind('o', 'set-cmd-text -s :open -r -t')
 config.bind('O', 'set-cmd-text -s :open -r -b')
@@ -385,8 +401,8 @@ config.bind('<Ctrl-W>', 'fake-key <Ctrl-Backspace>', mode='insert')
 config.bind('<Ctrl-U>', 'fake-key <Shift-Home> ;; fake-key <Backspace>', mode='insert')
 
 # Caret mode page navigation
-config.bind('J', 'scroll-page 0 0.1', mode='caret')
-config.bind('K', 'scroll-page 0 -0.1', mode='caret')
+config.bind('d', 'scroll-page 0 0.1', mode='caret')
+config.bind('e', 'scroll-page 0 -0.1', mode='caret')
 config.bind('<Ctrl-F>', 'scroll-page 0 1', mode='caret')
 config.bind('<Ctrl-B>', 'scroll-page 0 -1', mode='caret')
 config.bind('<Ctrl-D>', 'scroll-page 0 0.5', mode='caret')
@@ -405,13 +421,13 @@ config.bind('<Ctrl-Y>', 'scroll-page 0 -0.05', mode='prompt')
 # Normal mode page navigation
 config.bind('<Ctrl-E>', 'scroll-page 0 0.05')
 config.bind('<Ctrl-Y>', 'scroll-page 0 -0.05')
-config.bind('J', 'scroll-page 0 0.1')
-config.bind('K', 'scroll-page 0 -0.1')
+config.bind('d', 'scroll-page 0 0.1')
+config.bind('e', 'scroll-page 0 -0.1')
 
 # <Return> aliases
 config.bind('<Ctrl-J>', 'command-accept', mode='command')
 config.bind('<Ctrl-M>', 'command-accept', mode='command')
-#config.bind('<Ctrl-J>', 'fake-key <Return>', mode='insert')
+config.bind('<Ctrl-J>', 'fake-key <Return>', mode='insert')
 config.bind('<Ctrl-M>', 'fake-key <Return>', mode='insert')
 config.bind('<Ctrl-M>', 'follow-selected', mode='normal')
 config.bind('<Ctrl-J>', 'prompt-accept', mode='prompt')
@@ -460,29 +476,29 @@ config.bind('tk', 'set tabs.position top')
 config.bind('tj', 'set tabs.position bottom')
 config.bind('th', 'set tabs.position left')
 config.bind('tl', 'set tabs.position right')
-config.bind('tt', 'config-cycle tabs.show always switching')
-config.bind('tw', 'set input.spatial_navigation true ;; open -r -t http://127.0.0.1:8081/')
+config.bind('tt', 'config-cycle -p tabs.show always switching')
+config.bind('tw', 'open -r -t http://127.0.0.1:8081/')
 config.bind('t--', 'set-cmd-text -s :set tabs.width')
 config.bind('tH', 'back -t')
 config.bind('tL', 'forward -t')
 config.bind('tgu', 'navigate up -t')
-#config.bind('x', 'tab-close')  # it crashes tiddlywiki all the time
-config.bind('<Alt+X>', 'tab-close')  # i'll try to use this instead
-config.bind('<Alt+X>', 'tab-close', mode='insert')  # for insert mode compatibility (espetially on outo-insert on page start)
+config.bind('x', 'spawn --userscript selective-x.sh')  # it crashes tiddlywiki all the time (so instead of binding directly, i made a script with a simple if statement)
+config.bind('<Alt-X>', 'tab-close')  # i'll try to use this instead
+config.bind('<Alt-X>', 'tab-close', mode='insert')  # for insert mode compatibility (espetially on outo-insert on page start)
 config.bind('X', 'tab-close -o')
 config.bind('!x', 'tab-only')
 
 # Downloads
-config.bind('du', 'download-cancel')
-config.bind('d<Ctrl-R>', 'download-retry')
-config.bind('ddd', 'download-clear')
-config.bind('dZQ', 'download-delete')
-config.bind('dZZ', 'download-remove')
-config.bind('D', 'download-open')
-config.bind('dk', 'set downloads.position top')
-config.bind('dj', 'set downloads.position bottom')
-config.bind('dh', 'set downloads.position left')
-config.bind('dl', 'set downloads.position right')
+config.bind('Du', 'download-cancel')
+config.bind('D<Ctrl-R>', 'download-retry')
+config.bind('Ddd', 'download-clear')
+config.bind('DZQ', 'download-delete')
+config.bind('DZZ', 'download-remove')
+config.bind('DD', 'download-open')
+config.bind('Dk', 'set downloads.position top')
+config.bind('Dj', 'set downloads.position bottom')
+config.bind('Dh', 'set downloads.position left')
+config.bind('Dl', 'set downloads.position right')
 
 config.bind(';k', 'hint alll delete')
 config.bind(';a', 'hint alll')
@@ -500,17 +516,17 @@ config.bind('<Ctrl-Return>', 'leave-mode ;; fake-key <Ctrl-Enter> ;; set input.s
 config.bind('<Ctrl-Escape>', 'fake-key <Ctrl-Escape> ;; leave-mode ;; set input.spatial_navigation false', mode='insert')
 config.bind('<Escape>', 'leave-mode ;; set input.spatial_navigation false', mode='insert') # Unfocus the page on leave-mode to prevent confusing cursor blinking
 config.bind('<Escape>', 'clear-keychain ;; search ;; fullscreen --leave ;; fake-key --global _0_1', mode='normal') # Added a fake click on a dummy <div> (see 'dunder' bindings) to get rid of the fucking sticky dropdowns
-config.bind('<Ctrl+S>', 'hint tw-snippet ;; set input.spatial_navigation true ;; enter-mode insert', mode='insert')
-config.bind('<Ctrl+]>', 'hint tw-editor-height ;; set input.spatial_navigation true ;; enter-mode insert', mode='insert')
-config.bind('<Ctrl+Shift+F>', 'fake-key <Ctrl+Shift+F> ;; enter-mode insert ;; set input.spatial_navigation true')
-config.bind('<Ctrl+Shift+A>', 'fake-key <Ctrl+Shift+A> ;; enter-mode insert ;; set input.spatial_navigation true')
-config.bind('<Ctrl+Shift+N>', 'fake-key <Ctrl+Shift+N> ;; enter-mode insert ;; set input.spatial_navigation true')
+config.bind('<Ctrl-S>', 'hint tw-snippet ;; set input.spatial_navigation true ;; enter-mode insert', mode='insert')
+config.bind('<Ctrl-]>', 'hint tw-editor-height ;; set input.spatial_navigation true ;; enter-mode insert', mode='insert')
+config.bind('<Ctrl-Shift-F>', 'fake-key <Ctrl-Shift-F> ;; enter-mode insert ;; set input.spatial_navigation true')
+config.bind('<Ctrl-Shift-A>', 'fake-key <Ctrl-Shift-A> ;; enter-mode insert ;; set input.spatial_navigation true')
+config.bind('<Ctrl-Shift-N>', 'fake-key <Ctrl-Shift-N> ;; enter-mode insert ;; set input.spatial_navigation true')
 
 config.bind('<Alt-V>', 'open-editor', mode='insert')
-config.bind('<Alt-V>', 'hint inputs ;; open-editor', mode='normal')
+config.bind('<Alt-V>', 'hint inputs ;; later 10 open-editor', mode='normal')
 
 
-config.bind('e', 'config-cycle input.spatial_navigation true false', mode='normal')
+config.bind('tn', 'config-cycle -p input.spatial_navigation true false', mode='normal')
 config.bind('gg', 'run-with-count 500 scroll up')
 config.bind('G', 'run-with-count 500 scroll down')
 config.bind('<Ctrl-G><Ctrl-G>', 'scroll-to-perc 0')
@@ -535,38 +551,36 @@ for symbol in en_symbols:
     config.bind('m' + symbol, 'set-mark ' + symbol)
     config.bind("' " + symbol, 'jump-mark ' + symbol)
 
-config.bind('<Ctrl-C>', 'clear-keychain ;; search ;; fullscreen --leave ;; fake-key --global _0_1', mode='normal')
+# config.bind('<Ctrl-C>', 'clear-keychain ;; search ;; fullscreen --leave ;; fake-key --global _0_1', mode='normal')
 config.bind('<Ctrl-G>', 'clear-keychain ;; search ;; fullscreen --leave ;; fake-key --global _0_1', mode='normal')
-config.bind('<Ctrl-C>', 'leave-mode', mode='caret')
-config.bind('<Ctrl-C>', 'leave-mode', mode='command')
-config.bind('<Ctrl-C>', 'leave-mode', mode='hint')
+# config.bind('<Ctrl-C>', 'leave-mode', mode='caret')
+# config.bind('<Ctrl-C>', 'leave-mode', mode='command')
+# config.bind('<Ctrl-C>', 'leave-mode', mode='hint')
 #config.bind('<Ctrl-C>', 'leave-mode ;; set input.spatial_navigation false', mode='insert')
 config.bind('<Ctrl-G>', 'leave-mode ;; set input.spatial_navigation false', mode='insert')
-config.bind('<Ctrl-C>', 'leave-mode', mode='prompt')
-config.bind('<Ctrl-C>', 'leave-mode', mode='register')
-config.bind('<Ctrl-C>', 'leave-mode', mode='yesno')
+# config.bind('<Ctrl-C>', 'leave-mode', mode='prompt')
+# config.bind('<Ctrl-C>', 'leave-mode', mode='register')
+# config.bind('<Ctrl-C>', 'leave-mode', mode='yesno')
 
-# Evil-escape (+ easy command)
-config.bind('<Ctrl-J><Ctrl-K>', 'leave-mode ;; set input.spatial_navigation false', mode='insert')
+# Evil-escape
 config.bind('jk', 'leave-mode', mode='command')
+config.bind('jm', 'command-accept',mode='command')
 config.bind('jk', 'leave-mode', mode='yesno')
 config.bind('jk', 'leave-mode', mode='prompt')
 config.bind('jk', 'leave-mode', mode='hint')
-config.bind('<Ctrl-J><Ctrl-K>', 'set-cmd-text :', mode='normal')
-config.bind('<Ctrl-K><Ctrl-J>', 'set-cmd-text :', mode='normal')
 
-config.bind('<Ctrl-T>', 'fake-key <Ctrl-]>', mode='insert')
+config.bind('<Ctrl-T>', 'fake-key <Ctrl-]>', mode='insert')  # 'tab'/indent (vim)
 config.bind('<Ctrl-O>', 'fake-key <Return> ;; fake-key <Up> ;; fake-key <End>', mode='insert')
-config.bind('<Ctrl-I>', 'fake-key <Tab>', mode='insert')
-config.bind('<Ctrl-Alt-D>', 'fake-key <Shift-Tab>', mode='insert')
+config.bind('<Ctrl-I>', 'fake-key <Tab>', mode='insert')  # tab (bash/ASCII ^I)
+config.bind('<Ctrl-Alt-D>', 'fake-key <Shift-Tab>', mode='insert')  # 'de-tab'/dedent (vim)
 config.bind('<Ctrl-D>', 'fake-key <Del>', mode='insert')
 config.bind('<Alt-D>', 'fake-key <Ctrl-Del>', mode='insert')
 config.bind('<Ctrl-F>', 'fake-key <Right>', mode='insert')
 config.bind('<Ctrl-B>', 'fake-key <Left>', mode='insert')
 config.bind('<Alt-F>', 'fake-key <Ctrl-Right>', mode='insert')
 config.bind('<Alt-B>', 'fake-key <Ctrl-Left>', mode='insert')
-config.bind('<Ctrl-K>', 'fake-key <Shift-End> ;; fake-key <Del>', mode='insert')
-config.bind('<Ctrl-/>', 'fake-key <Ctrl-Z> ;; fake-key <Left> ;; fake-key <Right>', mode='insert')
+config.bind('<Ctrl-K>', 'fake-key <Shift-End> ;; fake-key <Del>', mode='insert')  # kill line forward (emacs/bash)
+config.bind('<Ctrl-/>', 'fake-key <Ctrl-Z> ;; fake-key <Left> ;; fake-key <Right>', mode='insert') # undo (bash)
 
 config.bind('<Alt-W>', 'fake-key <Ctrl-Insert>', mode='insert')
 config.bind('<Alt-Y>', 'fake-key <Shift-Insert>', mode='insert')
@@ -606,3 +620,48 @@ config.bind('g9', 'tab-focus 9', mode='normal')
 config.bind('g0', 'tab-focus -1', mode='normal')
 
 config.set('tabs.close_mouse_button_on_bar', 'close-current')
+
+config.bind('g.','set-cmd-text :')
+config.bind('go','open -r -t ;; set-cmd-text :')
+
+config.bind('<Ctrl-T>', 'config-cycle completion.height 50% 25% 0%', mode='command')
+config.bind('<Ctrl-S>', 'config-cycle completion.shrink true false', mode='command')
+
+config.bind('<Ctrl-W>', 'rl-backward-kill-word', mode='command')
+config.bind('<Ctrl-W>', 'rl-backward-kill-word ;; rl-backward-kill-word', mode='prompt')
+
+config.bind('<Space>','spawn --userscript selective-spacebar.sh')
+config.bind('z','spawn /home/boris/.local/share/qutebrowser/userscripts/selective-spacebar-bin.sh {url}')
+
+config.bind('a', 'spawn\
+                  xdotool\
+                  type\
+                  _dtw')
+
+# config.bind('<Ctrl-C><Ctrl-C>', 'hint --first codemirror')
+config.bind('<Ctrl-C><Ctrl-C>', 'fake-key <Ctrl-[> ;; fake-key --global <Escape> ;; fake-key --global <Escape> ;; later 50 hint --first codemirror ;; later 200 enter-mode insert ;; set input.spatial_navigation true', mode='insert')
+config.bind('<Ctrl-C><Ctrl-C>', 'fake-key <Ctrl-[> ;; fake-key --global <Escape> ;; fake-key --global <Escape> ;; later 50 hint --first codemirror ;; later 200 enter-mode insert ;; set input.spatial_navigation true', mode='normal')
+# config.bind('<Ctrl-C><Ctrl-C>', 'hint --first tiddler-title ;; later 1000 fake-key <Up> ;; later 1000 hint --first codemirror ;; later 10 hint --first codemirror', mode='insert')
+# config.bind('<Ctrl-C><Ctrl-C>', 'hint --first tiddler-title ;; later 200 message-info foo', mode='insert')
+# config.bind('<Ctrl-C><Ctrl-C>', 'enter-mode normal ;; later 10 fake-key --global _0_1 ;; hint --first codemirror ;; later 15 enter-mode insert', mode='insert')
+# config.bind('<Ctrl-C><Ctrl-C>', 'fake-key --global _0_1 ;; hint --first codemirror ;; later 15 enter-mode insert', mode='insert')
+
+config.bind('<Ctrl-T>', 'hint tiddler-title ;; set input.spatial_navigation true')
+config.bind('<Ctrl-3>', 'hint tiddler-add-tag ;; set input.spatial_navigation true')
+config.bind('<Ctrl-F>', 'hint tiddler-add-field ;; set input.spatial_navigation true')
+config.bind('<Ctrl-S>', 'hint tiddlers-and-fields ;; set input.spatial_navigation true')
+config.bind('<Ctrl-C><Ctrl-X>', 'hint cancel-and-delete ;; set input.spatial_navigation false')
+
+config.bind('<Ctrl-T>', 'hint tiddler-title ;; set input.spatial_navigation true', mode='insert')
+config.bind('<Ctrl-3>', 'hint tiddler-add-tag ;; set input.spatial_navigation true', mode='insert')
+config.bind('<Ctrl-F>', 'hint tiddler-add-field ;; set input.spatial_navigation true', mode='insert')
+config.bind('<Ctrl-S>', 'hint tiddlers-and-fields ;; set input.spatial_navigation true', mode='insert')
+config.bind('<Ctrl-C><Ctrl-X>', 'hint cancel-and-delete ;; set input.spatial_navigation false', mode='insert')
+
+config.bind('<Ctrl-T>', 'hint tiddler-title ;; set input.spatial_navigation true', mode='hint')
+config.bind('<Ctrl-3>', 'hint tiddler-add-tag ;; set input.spatial_navigation true', mode='hint')
+config.bind('<Ctrl-F>', 'hint tiddler-add-field ;; set input.spatial_navigation true', mode='hint')
+config.bind('<Ctrl-S>', 'hint tiddlers-and-fields ;; set input.spatial_navigation true', mode='hint')
+config.bind('<Ctrl-C><Ctrl-X>', 'hint cancel-and-delete ;; set input.spatial_navigation false', mode='hint')
+
+config.bind('t', 'follow-selected', mode='caret')

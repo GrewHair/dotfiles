@@ -362,156 +362,6 @@ d/home/boris/.emacs.d/private/local/read-aloud
 d
 
 # Right window history (oldest to newest):
-D/home/boris/projects/dotfiles/control
-	rofi
-2
-D/home/boris/projects/dotfiles/control/rofi
-	readme.org
-1
-D/home/boris/projects/dotfiles/control
-	i3
-1
-D/home/boris/projects/dotfiles/control/i3
-	scripts
-1
-D/home/boris/projects/dotfiles/control
-	i3
-1
-D/home/boris/projects/dotfiles/control/i3
-	scripts
-1
-D/home/boris/projects/dotfiles/control/i3/scripts
-	i3
-1
-D/home/boris/projects/dotfiles/control/i3/scripts/i3
-	
-1
-D/home/boris/projects/dotfiles/control/i3/scripts
-	..
-0
-D/home/boris/projects/dotfiles/control/i3
-	readme.org
-3
-D/home/boris/projects/dotfiles/control
-	i3
-1
-D/home/boris/projects/dotfiles
-	startup
-7
-D/home/boris/projects/dotfiles/startup
-	assets
-1
-D/home/boris/projects/dotfiles/startup/assets
-	..
-0
-D/home/boris/projects/dotfiles/startup
-	assets
-1
-D/home/boris/projects/dotfiles/startup/assets
-	startup_applications.png
-1
-D/home/boris/projects/dotfiles/startup
-	startup
-2
-D/home/boris/projects/dotfiles/startup/startup
-	..
-0
-D/home/boris/projects/dotfiles/startup
-	startup
-2
-D/home/boris/projects/dotfiles
-	misc
-6
-D/home/boris/projects/dotfiles/misc
-	..
-0
-D/home/boris/projects/dotfiles
-	misc
-6
-D/home/boris/projects
-	dotfiles
-10
-D/home/boris
-	.config
-6
-D/home/boris/.config
-	systemd
-16
-D/home/boris/.config/systemd
-	user
-1
-D/home/boris/.config/systemd/user
-	xkeysnail.service
-3
-D/home/boris/.config/systemd
-	user
-1
-D/home/boris/.config
-	systemd
-16
-D/home/boris
-	.config
-6
-D/home/boris/.config
-	xkeysnail
-20
-D/home/boris/.config/xkeysnail
-	..
-0
-D/home/boris/.config
-	xkeysnail
-20
-D/home/boris
-	projects
-20
-D/home/boris/projects
-	dotfiles
-10
-D/home/boris/projects/dotfiles
-	control
-2
-D/home/boris/projects/dotfiles/control
-	rofi
-2
-D/home/boris/projects/dotfiles/control/rofi
-	config
-2
-D/home/boris/projects/dotfiles/control
-	xkeysnail
-3
-D/home/boris/projects/dotfiles/control/xkeysnail
-	readme.org
-2
-D/home/boris/projects/dotfiles/control
-	xkeysnail
-3
-D/home/boris/projects/dotfiles
-	control
-2
-D/home/boris/projects
-	dotfiles
-10
-D/home/boris/projects/dotfiles
-	media
-6
-D/home/boris/projects/dotfiles/media
-	qutebrowser
-2
-D/home/boris/projects/dotfiles/media/qutebrowser
-	stylesheets
-3
-D/home/boris/projects/dotfiles/media/qutebrowser/stylesheets
-	qutebrowser_dark_solarized
-1
-D/home/boris/projects/dotfiles/media/qutebrowser/stylesheets/qutebrowser_dark_solarized
-	custom_solarized.css
-2
-D/home/boris/projects/dotfiles/media/qutebrowser/stylesheets
-	solarized-everything-css
-2
-D/home/boris/projects/dotfiles/media/qutebrowser/stylesheets/solarized-everything-css
-	css
-1
 D/home/boris/projects/dotfiles/media/qutebrowser/stylesheets
 	solarized-everything-css
 2
@@ -661,7 +511,157 @@ D/home/boris/bin
 2
 D/home/boris/bin/i3
 	restore_keys.sh
+9
+D/home/boris/bin
+	i3
+2
+D/home/boris
+	.local
+4
+D/home/boris/.local
+	share
+4
+D/home/boris/.local/share
+	qutebrowser
+36
+D/home/boris/.local/share/qutebrowser
+	webengine
+5
+D/home/boris/.local/share/qutebrowser/webengine
+	File System
+2
+D/home/boris/.local/share/qutebrowser/webengine/File System
+	000
+1
+D/home/boris/.local/share/qutebrowser/webengine/File System/000
+	..
+0
+D/home/boris/.local/share/qutebrowser/webengine/File System
+	Origins
+2
+D/home/boris/.local/share/qutebrowser/webengine/File System/Origins
+	..
+0
+D/home/boris/.local/share/qutebrowser/webengine/File System
+	Origins
+2
+D/home/boris/.local/share/qutebrowser/webengine
+	File System
+2
+D/home/boris/.local/share/qutebrowser
+	stylesheets
+2
+D/home/boris/.local/share/qutebrowser/stylesheets
+	..
+0
+D/home/boris/.local/share/qutebrowser
+	stylesheets
+2
+D/home/boris/.local/share/qutebrowser/stylesheets
+	..
+0
+D/home/boris/.local/share/qutebrowser
+	sessions
+1
+D/home/boris/.local/share/qutebrowser/sessions
+	default.yml
+1
+D/home/boris/.local/share/qutebrowser
+	greasemonkey
+4
+D/home/boris/.local/share/qutebrowser/greasemonkey
+	..
+0
+D/home/boris/.local/share/qutebrowser
+	userscripts
+3
+D/home/boris/.local/share/qutebrowser/userscripts
+	..
+0
+D/home/boris/.local/share/qutebrowser
+	sessions
+1
+D/home/boris/.local/share/qutebrowser/sessions
+	default.yml
+1
+D/home/boris/.local/share/qutebrowser
+	webengine
+5
+D/home/boris/.local/share/qutebrowser/webengine
+	Local Storage
+7
+D/home/boris/.local/share/qutebrowser/webengine/Local Storage
+	https_commons.wikimedia.org_0.localstorage-journal
+49
+D/home/boris/.local/share/qutebrowser/webengine
+	databases
 6
+D/home/boris/.local/share/qutebrowser/webengine/databases
+	https_translate.google.com_0
+2
+D/home/boris/.local/share/qutebrowser/webengine/databases/https_translate.google.com_0
+	1
+1
+D/home/boris/.local/share/qutebrowser/webengine/databases
+	https_translate.google.com_0
+2
+D/home/boris/.local/share/qutebrowser/webengine
+	GPUCache
+3
+D/home/boris/.local/share/qutebrowser/webengine/GPUCache
+	..
+0
+D/home/boris/.local/share/qutebrowser/webengine
+	IndexedDB
+4
+D/home/boris/.local/share/qutebrowser/webengine/IndexedDB
+	..
+0
+D/home/boris/.local/share/qutebrowser/webengine
+	Service Worker
+5
+D/home/boris/.local/share/qutebrowser/webengine/Service Worker
+	CacheStorage
+1
+D/home/boris/.local/share/qutebrowser/webengine/Service Worker/CacheStorage
+	..
+0
+D/home/boris/.local/share/qutebrowser/webengine/Service Worker
+	CacheStorage
+1
+D/home/boris/.local/share/qutebrowser/webengine
+	Application Cache
+1
+D/home/boris/.local/share/qutebrowser/webengine/Application Cache
+	Index
+3
+D/home/boris/.local/share/qutebrowser/webengine
+	Local Storage
+7
+D/home/boris/.local/share/qutebrowser
+	webengine
+5
+D/home/boris/.local/share
+	nvim
+33
+D/home/boris/.local
+	share
+4
+D/home/boris
+	projects
+50
+D/home/boris/projects
+	dotfiles
+10
+D/home/boris/projects/dotfiles
+	startup
+9
+D/home/boris/projects/dotfiles/startup
+	startup
+2
+D/home/boris/projects/dotfiles/startup/startup
+	start_tw.sh
+3
 D
 
 # Command line history (oldest to newest):
@@ -851,22 +851,22 @@ D
 /rofi
 /lutris
 /lutri
-/.local
 /retroarch
 /retro
-/qute
 /old
 /syste
 /qjoyp
 /qjoypad
 /qjoy
 /xkeysnail
-/pro
 /config
 /xkey
 /.config
 /down
 /bin
+/.local
+/qute
+/pro
 
 # Prompt history (oldest to newest):
 p've found is actually Autokey's folders, but Autokey needs to always be running (even if I call autokey-run), which I'd prefer to avoid.g I've found is actually Autokey's folders, but Autokey needs to always be running (even if I call autokey-run), which I'd prefer to avoid.config
