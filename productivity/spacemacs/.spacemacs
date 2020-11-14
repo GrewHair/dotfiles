@@ -573,6 +573,9 @@ before packages are loaded."
   ;; (require 'minibuffer-inactive-mode)
   ;; (define-key minibuffer-inactive-mode-map (kbd "C-h") 'delete-backward-char)
   ;; (define-key minibuffer-inactive-mode-map (kbd "C-w") 'evil-delete-backward-word)
+  ;; (define-key minibuffer-local-map (kbd "C-w") 'evil-delete-backward-word)
+  ;; (define-key evil-ex-search-keymap (kbd "C-w") 'evil-delete-backward-word)
+  ;; (define-key evil-ex-search-keymap (kbd "C-w") 'delete-backward-word)
 
   (require 'company)
   (unbind-key (kbd "C-h") company-active-map)

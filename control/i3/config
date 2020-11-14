@@ -449,7 +449,7 @@ bindsym $mod+Left exec /home/boris/bin/i3/kill_all_games.sh
 
 
 # Restore remap keys
-bindsym $alt+F3 exec /home/boris/bin/i3/restore_keys.sh
+bindsym $mod+F3 exec /home/boris/bin/i3/restore_keys.sh
 
 # Float GVim
 for_window [class = "Gvim"] floating enable move right 300px, move down 70px

@@ -14,10 +14,17 @@ set t_Co=256
 inoremap jk <Esc>
 inoremap kj <Esc>
 inoremap jj <Return>
-inoremap mm <Return>
-inoremap 99 6
-inoremap vv ^
-inoremap // \
+inoremap j9 6
+inoremap jv ^
+inoremap j/ \
+
+inoremap ji │
+inoremap je ├
+inoremap j- ─
+inoremap jl └
+inoremap jt ┬
+
+inoremap ол <Esc>
 
 cnoremap jk <Esc>
 cnoremap kj <Esc>
@@ -29,5 +36,7 @@ vnoremap kj <Esc>
 
 nnoremap g. :
 
+nnoremap о j
+nnoremap л k
 
 colo desert

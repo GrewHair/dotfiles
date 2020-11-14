@@ -1,0 +1,4 @@
+* [[bookmarks.db][/home/boris/projects/dotfiles/knowledge/buku/bookmarks.bd]] should be symlinked to [[/home/boris/.local/share/buku/bookmarks.db]]:
+  #+BEGIN_SRC sh
+  ln -s /home/boris/projects/dotfiles/knowledge/buku/bookmarks.db /home/boris/.local/share/buku/bookmarks.db
+  #+END_SRC

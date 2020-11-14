@@ -1,0 +1,11 @@
+* Tiddlywiki has a weird shortcut system that is very hard to wrap your head around! Googling doesn't help much, as the documentation in that part seems to be pretty messy.. As of now, I've found that the only method to define them that works for me is just to gaze at what's already there and sort of try to copy it :)
+* Here are some useful tips I've found:
+** Search for $:/config/shortcuts/ - these are the so called 'configuration tiddlers for keyboard shortcuts', which e.g. are responsible for activating the majority of the EditorToolbar elements, like 'insert wikilink', etc.
+** Try looking up the tag: $:/tags/KeyboardShortcut - tiddlers tagged with it correspond to the so-called 'global keyboard shortcuts', like 'create new tiddler', etc.
+** Search for the <$keyboard> widget in the shadow tiddlers - it seems to define some local behaviours (i.e., what does the <Enter> key do in a certain input field of a certain dropdown)
+** ...but that's not it! God only knows what else is behind. For example, after I've successfully defined a shortcut for my own 'insert transclusion' widget using the first tip in this group, it still did not appear in the Settings>Shortcuts menu - which is of course no big deal for me, but still it means that I've not 'grabbed all the hooks'
+* Here are some docs to read up (although they are NOT comprehensive):
+** https://tiddlywiki.com/static/KeyboardShortcuts.html
+** https://tiddlywiki.com/static/How%2520to%2520create%2520keyboard%2520shortcuts.html
+** https://tiddlywiki.com/static/Keyboard%2520Shortcut%2520Descriptor.html
+* Also note that Tiddlywiki seems to not support keychains - only vanilla keychords - and so, to prevent RSI, i'm using qutebrowser to simulate these key chords, to save myself some trouble.

@@ -59,219 +59,6 @@ l10,2
 r8,2
 
 # Left window history (oldest to newest):
-d/home/boris/bin
-	i3
-2
-d/home/boris/bin/i3
-	new-workspace.sh
-1
-d/home/boris/bin
-	i3
-2
-d/home/boris/bin/i3
-	new-workspace.sh
-1
-d/home/boris/bin
-	i3
-2
-d/home/boris/bin/i3
-	new-workspace.sh
-1
-d/home/boris/bin
-	i3
-2
-d/home/boris/bin/i3
-	new-workspace.sh
-1
-d/home/boris/bin
-	i3
-2
-d/home/boris/bin/i3
-	kill_all_games.sh
-6
-d/home/boris/bin
-	i3
-2
-d/home/boris/bin/i3
-	kill_all_games.sh
-6
-d/home/boris/bin
-	i3
-2
-d/home/boris/bin/i3
-	kill_all_games.sh
-6
-d/home/boris/bin
-	i3
-2
-d/home/boris/bin/i3
-	kill_all_games.sh
-6
-d/home/boris/bin
-	start_tw.sh
-4
-d/home/boris/projects/dotfiles/control/i3/scripts/i3
-	..
-0
-d/home/boris/projects/dotfiles/control/i3/scripts
-	i3
-1
-d/home/boris/projects/dotfiles/control/i3/scripts/i3
-	..
-0
-d/home/boris/projects/dotfiles/control/i3/scripts
-	i3
-1
-d/home/boris/projects/dotfiles/control/i3/scripts/i3
-	..
-0
-d/home/boris/projects/dotfiles/control/i3/scripts
-	i3
-1
-d/home/boris/projects/dotfiles/control/i3/scripts/i3
-	..
-0
-d/home/boris/projects/dotfiles/control/i3/scripts
-	move-to-new-workspace.sh
-2
-d/home/boris/projects/dotfiles/control/i3
-	scripts
-1
-d/home/boris/projects/dotfiles/control/i3/scripts
-	move-to-new-workspace.sh
-2
-d/home/boris/projects/dotfiles/control/i3
-	scripts
-1
-d/home/boris/projects/dotfiles/control/i3/scripts
-	move-to-new-workspace.sh
-2
-d/home/boris/projects/dotfiles/control/i3
-	scripts
-1
-d/home/boris/projects/dotfiles/control
-	i3
-1
-d/home/boris/projects/dotfiles
-	control
-2
-d/home/boris/projects
-	dotfiles
-10
-d/home/boris
-	bin
-12
-d/home/boris/bin
-	i3
-1
-d/home/boris/bin/i3
-	kill_all_games.sh
-6
-d/home/boris/bin
-	i3
-1
-d/home/boris/bin/i3
-	kill_all_games.sh
-6
-d/home/boris/bin
-	i3
-1
-d/home/boris/bin/i3
-	kill_all_games.sh
-6
-d/home/boris/bin
-	xkeysnail
-3
-d/home/boris/bin/xkeysnail
-	.git
-1
-d/home/boris/bin
-	xkeysnail
-3
-d/home/boris
-	Pictures
-5
-d/home/boris/Pictures
-	Screenshot from 2020-10-05 11-35-44.png
-20
-d/home/boris
-	bin
-4
-d/home/boris/bin
-	startup
-4
-d/home/boris/bin/startup
-	..
-0
-d/home/boris/bin
-	xkeysnail
-3
-d/home/boris/bin/xkeysnail
-	wqall
-8
-d/home/boris/bin
-	xkeysnail
-4
-d/home/boris/bin/xkeysnail
-	xkeysnail.service
-8
-d/home/boris/bin
-	xkeysnail
-4
-d/home/boris
-	.config
-20
-d/home/boris/.config
-	xkeysnail
-20
-d/home/boris/.config/xkeysnail
-	xkeysnail-config.py
-1
-d/home/boris/.config
-	xkeysnail
-37
-d/home/boris
-	Downloads
-27
-d/home/boris/Downloads
-	MLBOOK.pdf
-20
-d/home/boris
-	.config
-47
-d/home/boris/.config
-	xkeysnail
-37
-d/home/boris/.config/xkeysnail
-	..
-0
-d/home/boris/.config
-	xkeysnail
-32
-d/home/boris
-	bin
-31
-d/home/boris/bin
-	startup
-3
-d/home/boris/bin/startup
-	start_tw.sh
-2
-d/home/boris/bin
-	startup
-3
-d/home/boris
-	.config
-32
-d/home/boris/.config
-	xkeysnail
-39
-d/home/boris/.config/xkeysnail
-	xkeysnail-config.py
-1
-d/media/boris/7806A99A06A95A40
-	thrustadcs20190930-20201002.txt
-54
 d/media/boris
 	..
 0
@@ -359,15 +146,255 @@ d/home/boris/.emacs.d/private/local
 d/home/boris/.emacs.d/private/local/read-aloud
 	read-aloud.el
 1
+d/home/boris/Downloads
+	dotguide.pdf
+15
+d/home/boris
+	Downloads
+27
+d/home
+	boris
+1
+d/home/boris
+	qutebrowser
+18
+d/home/boris/qutebrowser
+	qutebrowser
+10
+d/home/boris/qutebrowser/qutebrowser
+	javascript
+2
+d/home/boris/qutebrowser/qutebrowser/javascript
+	.eslintrc.yaml
+2
+d/home/boris/qutebrowser/qutebrowser
+	extensions
+14
+d/home/boris/qutebrowser/qutebrowser/extensions
+	__init__.py
+2
+d/home/boris/qutebrowser/qutebrowser
+	img
+1
+d/home/boris/qutebrowser/qutebrowser/img
+	..
+0
+d/home/boris/qutebrowser/qutebrowser
+	html
+2
+d/home/boris/qutebrowser/qutebrowser/html
+	history.html
+8
+d/home/boris/qutebrowser/qutebrowser
+	misc
+3
+d/home/boris/qutebrowser/qutebrowser/misc
+	autoupdate.py
+3
+d/home/boris/qutebrowser/qutebrowser
+	utils
+4
+d/home/boris/qutebrowser/qutebrowser/utils
+	__pycache__
+1
+d/home/boris/qutebrowser/qutebrowser
+	config
+9
+d/home/boris/qutebrowser/qutebrowser/config
+	stylesheet.py
+15
+d/home/boris/qutebrowser/qutebrowser
+	extensions
+14
+d/home/boris/qutebrowser/qutebrowser/extensions
+	__init__.py
+2
+d/home/boris/qutebrowser/qutebrowser
+	components
+12
+d/home/boris/qutebrowser/qutebrowser/components
+	caretcommands.py
+4
+d/home/boris/qutebrowser/qutebrowser
+	mainwindow
+11
+d/home/boris/qutebrowser/qutebrowser/mainwindow
+	prompt.py
+6
+d/home/boris/qutebrowser/qutebrowser
+	completion
+10
+d/home/boris/qutebrowser/qutebrowser/completion
+	..
+0
+d/home/boris/qutebrowser/qutebrowser
+	keyinput
+9
+d/home/boris/qutebrowser/qutebrowser/keyinput
+	basekeyparser.py
+3
+d/home/boris/qutebrowser/qutebrowser
+	components
+11
+d/home/boris/qutebrowser
+	www
+6
+d/home/boris/qutebrowser/www
+	media
+1
+d/home/boris/qutebrowser/www/media
+	..
+0
+d/home/boris/qutebrowser/www
+	media
+1
+d/home/boris/qutebrowser
+	tests
+5
+d/home/boris/qutebrowser/tests
+	helpers
+2
+d/home/boris/qutebrowser
+	icons
+3
+d/home/boris/qutebrowser/icons
+	..
+0
+d/home/boris/qutebrowser
+	doc
+2
+d/home/boris/qutebrowser/doc
+	..
+0
+d/home/boris/qutebrowser
+	.venv
+7
+d/home/boris/qutebrowser/.venv
+	..
+0
+d/home/boris/qutebrowser
+	.travis.yml
+21
+d/home/boris
+	.config
+4
+d/home/boris/.config
+	zathura
+25
+d/home/boris/.config/zathura
+	zathurarc
+1
+d/home/boris/.config
+	zathura
+25
+d/home/boris
+	Pictures
+16
+d/home/boris/Pictures
+	Screenshot from 2020-09-25 22-46-05.png
+22
+d/home/boris
+	Downloads
+15
+d/home/boris/Downloads
+	edRVFL (1).pdf
+9
+d/home/boris
+	Downloads
+15
+d/home/boris/Downloads
+	10.2307@1558705.pdf
+27
+d/home/boris
+	.emacs.d
+5
+d/home/boris/.emacs.d
+	private
+13
+d/home/boris/.emacs.d/private
+	templates
+1
+d/home/boris/.emacs.d/private/templates
+	..
+0
+d/home/boris/.emacs.d/private
+	snippets
+2
+d/home/boris/.emacs.d/private/snippets
+	..
+0
+d/home/boris/.emacs.d/private
+	local
+3
+d/home/boris/.emacs.d/private/local
+	read-aloud
+3
+d/home/boris/.emacs.d/private
+	snippets
+2
+d/home/boris/.emacs.d
+	private
+15
+d/home/boris
+	.emacs.d
+5
+d/home/boris/.emacs.d
+	private
+15
+d/home/boris/.emacs.d/private
+	local
+3
+d/home/boris/.emacs.d
+	private
+14
+d/home/boris
+	.local
+41
+d/home/boris/.local
+	share
+4
+d/home/boris/.local/share
+	buku
+47
+d/home/boris/.local/share/buku
+	..
+0
 d
 
 # Right window history (oldest to newest):
-D/home/boris/projects/dotfiles/media/qutebrowser/stylesheets
-	solarized-everything-css
+D/home/boris/projects/dotfiles/media/vifm
+	vifm
+1
+D/home/boris/projects/dotfiles/media
+	vifm
+3
+D/home/boris/projects/dotfiles
+	media
+6
+D/home/boris/projects
+	dotfiles
+10
+D/home/boris
+	projects
+4
+D/home/boris/projects
+	dotfiles
+10
+D/home/boris/projects/dotfiles
+	media
+6
+D/home/boris/projects/dotfiles/media
+	qutebrowser
 2
 D/home/boris/projects/dotfiles/media/qutebrowser
-	stylesheets
-3
+	userscripts
+5
+D/home/boris/projects/dotfiles/media/qutebrowser/userscripts
+	selective-spacebar.sh
+2
+D/home/boris/projects/dotfiles/media/qutebrowser
+	userscripts
+5
 D/home/boris/projects/dotfiles/media
 	qutebrowser
 2
@@ -378,8 +405,56 @@ D/home/boris/projects
 	dotfiles
 10
 D/home/boris
-	projects
-20
+	.local
+4
+D/home/boris/.local
+	share
+4
+D/home/boris/.local/share
+	qutebrowser
+36
+D/home/boris/.local/share/qutebrowser
+	userscripts
+3
+D/home/boris/.local/share/qutebrowser/userscripts
+	NM_x_dispatcher.sh
+3
+D/home/boris/.local/share/qutebrowser
+	userscripts
+3
+D/home/boris/.local/share
+	qutebrowser
+36
+D/home/boris/.local
+	share
+4
+D/home/boris
+	qutebrowser
+47
+D/home/boris/qutebrowser
+	.git
+1
+D/home/boris
+	qutescript
+47
+D/home/boris/qutescript
+	docs
+2
+D/home/boris/qutescript/docs
+	conf.py
+11
+D/home/boris/qutescript
+	docs
+2
+D/home/boris
+	qutebrowser
+46
+D/home/boris/qutebrowser
+	LICENSE
+28
+D/home/boris
+	qutebrowser
+16
 D/home
 	boris
 1
@@ -393,68 +468,14 @@ D/media/boris
 	d
 1
 D/media/boris/d
-	Work
-3
-D/media/boris/d/Work
-	Work
-3
-D/media/boris/d/Work/Work
-	HR
-13
-D/media/boris/d/Work/Work/HR
-	some chinese photos
-3
-D/media/boris/d/Work/Work
-	Analysis
-6
-D/media/boris/d/Work/Work/Analysis
-	TCR & OBDH analysis
-3
-D/media/boris/d/Work/Work/Analysis/TCR & OBDH analysis
-	расшифровка тм
-7
-D/media/boris/d/Work/Work/Analysis/TCR & OBDH analysis/расшифровка тм
-	..
-0
-D/media/boris/d/Work/Work/Analysis/TCR & OBDH analysis
-	расшифровка тм
-7
-D/media/boris/d/Work/Work/Analysis/TCR & OBDH analysis/расшифровка тм
-	Расшифровка формата TM
+	Smth
+14
+D/media/boris/d/Smth
+	x246iquFyg4.jpg
 1
-D/media/boris/d/Work/Work/Analysis/TCR & OBDH analysis/расшифровка тм/Расшифровка формата TM
-	temp open me.xls
-2
-D/media/boris/d/Work/Work/Analysis/TCR & OBDH analysis/расшифровка тм
-	Расшифровка формата TM
-1
-D/media/boris/d/Work/Work/Analysis/TCR & OBDH analysis
-	расшифровка тм
-7
-D/media/boris/d/Work/Work/Analysis
-	TCR & OBDH analysis
-3
-D/media/boris/d/Work/Work
-	HR
-13
-D/media/boris/d/Work/Work/HR
-	hr_2020
-4
-D/media/boris/d/Work/Work/HR/hr_2020
-	thrustadcs20190930-20201002.txt
-4
-D/media/boris/d/Work/Work/HR
-	hr_2020
-4
-D/media/boris/d/Work/Work
-	HR
-13
-D/media/boris/d/Work
-	Work
-3
 D/media/boris/d
-	Work
-3
+	Smth
+14
 D/media/boris
 	d
 1
@@ -468,205 +489,182 @@ D/home
 	boris
 1
 D/home/boris
-	bin
-11
-D/home/boris/bin
-	startup
-1
-D/home/boris/bin/startup
-	festival-server.sh
-1
-D/home/boris/bin
-	startup
+	projects
+15
+D/home/boris/projects
+	javascript
+15
+D/home/boris/projects/javascript
+	mithril-simple-application
+5
+D/home/boris/projects/javascript/mithril-simple-application
+	node_modules
+2
+D/home/boris/Downloads
+	foo
 1
 D/home/boris
 	Downloads
-4
+25
+D/home/boris/Downloads
+	tij-img
+7
+D/home/boris/Downloads/tij-img
+	..
+0
+D/home/boris/Downloads
+	printer_drivers
+7
+D/home/boris/Downloads/printer_drivers
+	..
+0
 D/home/boris/Downloads
 	foo
-3
+1
 D/home/boris
-	bin
-14
-D/home/boris/bin
-	xkeysnail
-4
-D/home/boris/bin/xkeysnail
-	..
-0
-D/home/boris/bin
-	xkeysnail
-4
-D/home/boris/bin/xkeysnail
-	10-uinput.rules
-2
-D/home/boris/bin
-	xkeysnail
-4
-D/home/boris/bin/xkeysnail
-	10-uinput.rules
-2
-D/home/boris/bin
-	i3
-2
-D/home/boris/bin/i3
-	restore_keys.sh
-9
-D/home/boris/bin
-	i3
-2
+	go
+38
+D/home
+	boris
+1
 D/home/boris
-	.local
-4
-D/home/boris/.local
-	share
-4
-D/home/boris/.local/share
-	qutebrowser
-36
-D/home/boris/.local/share/qutebrowser
-	webengine
-5
-D/home/boris/.local/share/qutebrowser/webengine
-	File System
-2
-D/home/boris/.local/share/qutebrowser/webengine/File System
-	000
-1
-D/home/boris/.local/share/qutebrowser/webengine/File System/000
+	telega.el
+46
+D/home/boris/telega.el
 	..
 0
-D/home/boris/.local/share/qutebrowser/webengine/File System
-	Origins
-2
-D/home/boris/.local/share/qutebrowser/webengine/File System/Origins
-	..
-0
-D/home/boris/.local/share/qutebrowser/webengine/File System
-	Origins
-2
-D/home/boris/.local/share/qutebrowser/webengine
-	File System
-2
-D/home/boris/.local/share/qutebrowser
-	stylesheets
-2
-D/home/boris/.local/share/qutebrowser/stylesheets
-	..
-0
-D/home/boris/.local/share/qutebrowser
-	stylesheets
-2
-D/home/boris/.local/share/qutebrowser/stylesheets
-	..
-0
-D/home/boris/.local/share/qutebrowser
-	sessions
-1
-D/home/boris/.local/share/qutebrowser/sessions
-	default.yml
-1
-D/home/boris/.local/share/qutebrowser
-	greasemonkey
-4
-D/home/boris/.local/share/qutebrowser/greasemonkey
-	..
-0
-D/home/boris/.local/share/qutebrowser
-	userscripts
-3
-D/home/boris/.local/share/qutebrowser/userscripts
-	..
-0
-D/home/boris/.local/share/qutebrowser
-	sessions
-1
-D/home/boris/.local/share/qutebrowser/sessions
-	default.yml
-1
-D/home/boris/.local/share/qutebrowser
-	webengine
-5
-D/home/boris/.local/share/qutebrowser/webengine
-	Local Storage
-7
-D/home/boris/.local/share/qutebrowser/webengine/Local Storage
-	https_commons.wikimedia.org_0.localstorage-journal
+D/home/boris
+	.ubuntu_1804_backup
 49
-D/home/boris/.local/share/qutebrowser/webengine
-	databases
-6
-D/home/boris/.local/share/qutebrowser/webengine/databases
-	https_translate.google.com_0
-2
-D/home/boris/.local/share/qutebrowser/webengine/databases/https_translate.google.com_0
-	1
-1
-D/home/boris/.local/share/qutebrowser/webengine/databases
-	https_translate.google.com_0
-2
-D/home/boris/.local/share/qutebrowser/webengine
-	GPUCache
-3
-D/home/boris/.local/share/qutebrowser/webengine/GPUCache
+D/home/boris/.ubuntu_1804_backup
 	..
 0
-D/home/boris/.local/share/qutebrowser/webengine
-	IndexedDB
+D/home/boris
+	projects
+47
+D/home/boris/projects
+	dotfiles
+10
+D/home/boris/projects/dotfiles
+	productivity
+8
+D/home/boris/projects/dotfiles/productivity
+	spacemacs
 4
-D/home/boris/.local/share/qutebrowser/webengine/IndexedDB
+D/home/boris/projects/dotfiles/productivity/spacemacs
+	local
+1
+D/home/boris/projects/dotfiles/productivity
+	sc-im
+2
+D/home/boris/projects/dotfiles/productivity/sc-im
 	..
 0
-D/home/boris/.local/share/qutebrowser/webengine
-	Service Worker
-5
-D/home/boris/.local/share/qutebrowser/webengine/Service Worker
-	CacheStorage
+D/home/boris/projects/dotfiles/productivity
+	git
 1
-D/home/boris/.local/share/qutebrowser/webengine/Service Worker/CacheStorage
+D/home/boris/projects/dotfiles/productivity/git
+	readme.org
+2
+D/home/boris/projects/dotfiles/productivity
+	spacemacs
+4
+D/home/boris/projects/dotfiles/productivity/spacemacs
+	local
+1
+D/home/boris/projects/dotfiles/productivity/spacemacs/local
+	eww-layer
+1
+D/home/boris/projects/dotfiles/productivity/spacemacs
+	local
+1
+D/home/boris/projects/dotfiles/productivity
+	git
+1
+D/home/boris/projects/dotfiles/productivity/git
+	readme.org
+2
+D/home/boris/projects/dotfiles/productivity
+	sc-im
+2
+D/home/boris/projects/dotfiles/productivity/sc-im
 	..
 0
-D/home/boris/.local/share/qutebrowser/webengine/Service Worker
-	CacheStorage
+D/home/boris/projects/dotfiles/productivity
+	git
 1
-D/home/boris/.local/share/qutebrowser/webengine
-	Application Cache
+D/home/boris/projects/dotfiles/productivity/git
+	readme.org
+2
+D/home/boris/projects/dotfiles/productivity
+	git
 1
-D/home/boris/.local/share/qutebrowser/webengine/Application Cache
-	Index
+D/home/boris/projects/dotfiles
+	media
+6
+D/home/boris/projects/dotfiles/media
+	vifm
 3
-D/home/boris/.local/share/qutebrowser/webengine
-	Local Storage
-7
-D/home/boris/.local/share/qutebrowser
-	webengine
+D/home/boris/projects/dotfiles/media/vifm
+	vifm
+1
+D/home/boris/projects/dotfiles/media
+	vifm
+3
+D/home/boris/projects/dotfiles
+	productivity
+8
+D/home/boris/projects/dotfiles/productivity
+	spacemacs
+4
+D/home/boris/projects/dotfiles/productivity/spacemacs
+	local
+1
+D/home/boris/projects/dotfiles/productivity
+	vim
 5
+D/home/boris/projects/dotfiles/productivity/vim
+	readme.org
+1
+D/home/boris/.local/share/buku
+	bookmarks.db
+1
 D/home/boris/.local/share
-	nvim
-33
+	buku
+9
 D/home/boris/.local
 	share
 4
 D/home/boris
 	projects
-50
+47
 D/home/boris/projects
 	dotfiles
 10
 D/home/boris/projects/dotfiles
-	startup
-9
-D/home/boris/projects/dotfiles/startup
-	startup
+	knowledge
+5
+D/home/boris/projects/dotfiles/knowledge
+	buku_run
+1
+D/home/boris/projects/dotfiles/knowledge/buku_run
+	..
+0
+D/home/boris/projects/dotfiles/knowledge
+	buku_run
 2
-D/home/boris/projects/dotfiles/startup/startup
-	start_tw.sh
-3
+D/home/boris/projects/dotfiles/knowledge/buku_run
+	..
+0
+D/home/boris/projects/dotfiles/knowledge
+	buku
+1
+D/home/boris/projects/dotfiles/knowledge/buku
+	bookmarks.db
+2
 D
 
 # Command line history (oldest to newest):
-:!echo %c:p | xclip -selection clipboard %i<cr>
-:!vim wikipedia_dark_theme.js
 :!vim
 :!vim sci-hub_button.js
 :!vim google_search_dark_hight_mode_theme.js
@@ -684,8 +682,6 @@ D
 :help bmark
 :help
 :bmgo Downloads
-:map
-:nmap
 :map gbr bmgo Roms
 :map gbr :bmgo Roms
 :map gbr 'bmgo Roms'
@@ -729,7 +725,6 @@ D
 :set rnu
 :!grep WMClass
 :!grep * WMClass
-:x
 :s
 :mkdir lisp
 :wq
@@ -751,31 +746,27 @@ D
 :mkdir i3
 :mkdir styles
 :mkdir scripts
-:sync
 :mkdir assets
 :rename
 :mkdir startup
 :mkdir misc
 :mkdir xkeysnail
-:move
-:empty
 :copy
 :mkdir markerpen
 :!vim markerpen.el
 :mkdir read-aloud
 :!vim read-aloud.el
+:exit
+:x
+:map
+:nmap
+:sync
+:mkdir buku
+:move
+:empty
 :q
 
 # Search history (oldest to newest):
-/.rom
-/my_
-/my_new
-/home/boris/�
-/tiddlywiki
-/regoli
-/telegram-cli
-/snap
-/tg
 /.bashr
 /sim
 /offi
@@ -816,7 +807,6 @@ D
 /.spacemacs
 /.spac
 /.emacs
-/macs
 /python
 /Prefix
 /web
@@ -828,14 +818,12 @@ D
 /icons
 /pix
 /torbrowser
-/qutebrowser
 /iconlj
 /appli
 /vival
 /opera
 /gvfsh
 /.gv
-/proj
 /lisp
 /regol
 /emacs
@@ -845,7 +833,6 @@ D
 /dot
 /vimrc
 /vifm
-/buku
 /git
 /.confi
 /rofi
@@ -861,12 +848,25 @@ D
 /xkeysnail
 /config
 /xkey
-/.config
 /down
-/bin
-/.local
 /qute
 /pro
+/new_
+/documents
+/bin
+/maria
+/ivan
+/.local
+/.config
+/zath
+/Pic
+/qutebrowser
+/projects
+/dotfiles
+/macs
+/local
+/buku
+/proj
 
 # Prompt history (oldest to newest):
 p've found is actually Autokey's folders, but Autokey needs to always be running (even if I call autokey-run), which I'd prefer to avoid.g I've found is actually Autokey's folders, but Autokey needs to always be running (even if I call autokey-run), which I'd prefer to avoid.config
@@ -939,13 +939,10 @@ pxkeysnail-config.py.backup
 |.*pdf
 
 # Registers:
-""/media/boris/7806A99A06A95A40/.vifm-Trash-1000/000_BELINTERSAT-1_HealthReport_2020.docx
 
 # Directory stack (oldest to newest):
 
 # Trash content:
-t/media/boris/7806A99A06A95A40/.vifm-Trash-1000/000_BELINTERSAT-1_HealthReport_2020.docx
-	/media/boris/7806A99A06A95A40/BELINTERSAT-1_HealthReport_2020.docx
 
 # State:
 f

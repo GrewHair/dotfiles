@@ -480,8 +480,7 @@ set nu
 "inoremap kj <Esc>
 cnoremap jk <Esc>
 cnoremap kj <Esc>
-nnoremap <C-j><C-k> :
-nnoremap <C-k><C-j> :
+nnoremap g. :
 
 if has('mouse')
   set mouse=a

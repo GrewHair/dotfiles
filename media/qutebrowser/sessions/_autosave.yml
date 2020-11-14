@@ -1,420 +1,449 @@
 windows:
-- active: true
-  geometry: !!binary |
-    AdnQywACAAAAAAAAAAAAAAAAB38AAAQfAAAAAwAAAAMAAAd8AAAEHAAAAAAAAAAAB4A=
+- geometry: !!binary |
+    AdnQywADAAAAAAUAAAAAAAAADH8AAAQfAAAFAwAAAAMAAAx8AAAEHAAAAAIAAAAAB4AAAAUDAAAA
+    AwAADHwAAAQc
   tabs:
   - history:
-    - last_visited: '2020-10-26T20:09:22'
-      pinned: false
-      title: (78) YouTube
-      url: https://www.youtube.com/
-    - last_visited: '2020-10-26T20:09:22'
-      pinned: false
-      title: (78) таро беларусь - YouTube
-      url: https://www.youtube.com/results?search_query=%D1%82%D0%B0%D1%80%D0%BE+%D0%B1%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D1%8C
-    - last_visited: '2020-10-26T20:09:57'
-      pinned: false
-      title: (78) ПРОГНОЗ ДЛЯ БЕЛОРУСИ...Ноябрь..Таро прогноз. - YouTube
-      url: https://www.youtube.com/watch?v=kaCJ9MouAS8
-    - last_visited: '2020-10-26T20:34:25'
-      pinned: false
-      title: (78) таро беларусь - YouTube
-      url: https://www.youtube.com/results?search_query=%D1%82%D0%B0%D1%80%D0%BE+%D0%B1%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D1%8C
-    - last_visited: '2020-10-26T20:34:59'
-      pinned: false
-      title: (78) таро беларусь лукашенко - YouTube
-      url: https://www.youtube.com/results?search_query=%D1%82%D0%B0%D1%80%D0%BE+%D0%B1%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D1%8C+%D0%BB%D1%83%D0%BA%D0%B0%D1%88%D0%B5%D0%BD%D0%BA%D0%BE
-    - last_visited: '2020-10-26T20:44:05'
-      pinned: false
-      title: (78) таро лукашенко - YouTube
-      url: https://www.youtube.com/results?search_query=%D1%82%D0%B0%D1%80%D0%BE+%D0%BB%D1%83%D0%BA%D0%B0%D1%88%D0%B5%D0%BD%D0%BA%D0%BE
-    - last_visited: '2020-10-26T20:45:01'
-      pinned: false
-      title: (78) таро лукашенко - YouTube
-      url: https://www.youtube.com/results?search_query=%D1%82%D0%B0%D1%80%D0%BE+%D0%BB%D1%83%D0%BA%D0%B0%D1%88%D0%B5%D0%BD%D0%BA%D0%BE&sp=CAI%253D
-    - last_visited: '2020-10-26T20:45:13'
-      pinned: false
-      title: (78) У Лукашенко намечается прощание с прошлым? - YouTube
-      url: https://www.youtube.com/watch?v=jqf4Ntlw_DA
-    - last_visited: '2020-10-26T20:45:21'
-      pinned: false
-      title: (78) Наедине с ТАРО - YouTube
-      url: https://www.youtube.com/channel/UCcaUr3m1l06oapwvf0dpRog
-    - last_visited: '2020-10-26T20:45:53'
-      pinned: false
-      title: (78) У Лукашенко намечается прощание с прошлым? - YouTube
-      url: https://www.youtube.com/watch?v=jqf4Ntlw_DA
-    - last_visited: '2020-10-26T20:46:31'
-      pinned: false
-      title: (78) Наедине с ТАРО - YouTube
-      url: https://www.youtube.com/channel/UCcaUr3m1l06oapwvf0dpRog
-    - last_visited: '2020-10-26T20:46:46'
-      pinned: false
-      title: (78) Беларусь.Полковник ГРУ Бородач призвал силовые структуры не исполнять
-        приказы . - YouTube
-      url: https://www.youtube.com/watch?v=QT1baTmoogs
-    - last_visited: '2020-10-26T20:49:58'
-      pinned: false
-      title: (78) Наедине с ТАРО - YouTube
-      url: https://www.youtube.com/channel/UCcaUr3m1l06oapwvf0dpRog
-    - last_visited: '2020-10-26T20:50:03'
-      pinned: false
-      title: (78) Беларусь.Расклад на 27 вторник - YouTube
-      url: https://www.youtube.com/watch?v=yA3V13QWZqw
-    - last_visited: '2020-10-26T20:52:28'
-      pinned: false
-      title: (78) Наедине с ТАРО - YouTube
-      url: https://www.youtube.com/channel/UCcaUr3m1l06oapwvf0dpRog
-    - last_visited: '2020-10-26T20:52:38'
-      pinned: false
-      title: (78) таро лукашенко - YouTube
-      url: https://www.youtube.com/results?search_query=%D1%82%D0%B0%D1%80%D0%BE+%D0%BB%D1%83%D0%BA%D0%B0%D1%88%D0%B5%D0%BD%D0%BA%D0%BE
-    - last_visited: '2020-10-26T20:56:54'
-      pinned: false
-      title: '(78) Таро Беларусь: Будет ли свергнута диктатура Лукашенко? Чем закончатся
-        митинги 2020? | Карты ТАРО - YouTube'
-      url: https://www.youtube.com/watch?v=M97SXK2ok1A
-    - last_visited: '2020-10-26T20:59:55'
-      pinned: false
-      title: (78) Парапсихолог Марков - YouTube
-      url: https://www.youtube.com/channel/UCxzxsg8g4RoqgAkGKubj_Dw
-    - last_visited: '2020-10-26T21:00:36'
-      pinned: false
-      title: (78) СОСТОЯНИЕ ПОТОКА! Жизнь в Потоке! Что это? (на примере личной истории)
-        | Квантовая Психология® - YouTube
-      url: https://www.youtube.com/watch?v=L7mhZR9lpwA
-    - last_visited: '2020-10-26T21:01:31'
-      pinned: false
-      title: (78) таро лукашенко - YouTube
-      url: https://www.youtube.com/results?search_query=%D1%82%D0%B0%D1%80%D0%BE+%D0%BB%D1%83%D0%BA%D0%B0%D1%88%D0%B5%D0%BD%D0%BA%D0%BE
-    - last_visited: '2020-10-26T21:02:58'
-      pinned: false
-      title: (78) Наш Шабаш - YouTube
-      url: https://www.youtube.com/channel/UC0xUFq4btgZA2D-iXOhAn1A
-    - last_visited: '2020-10-26T21:03:02'
-      pinned: false
-      title: (78) Наш Шабаш - YouTube
-      url: https://www.youtube.com/channel/UC0xUFq4btgZA2D-iXOhAn1A/videos
-    - last_visited: '2020-10-26T21:03:13'
-      pinned: false
-      title: (78) Забастовки и митинги ультиматум Светланы Тихановской ! Беларусь
-        наши сердца 💕 с вами - YouTube
-      url: https://www.youtube.com/watch?v=3GDkYAeOMvw
-    - last_visited: '2020-10-26T22:03:44'
-      pinned: false
-      title: (78) таро лукашенко - YouTube
-      url: https://www.youtube.com/results?search_query=%D1%82%D0%B0%D1%80%D0%BE+%D0%BB%D1%83%D0%BA%D0%B0%D1%88%D0%B5%D0%BD%D0%BA%D0%BE
-    - last_visited: '2020-10-26T22:04:06'
-      pinned: false
-      title: (78) линник руслан - YouTube
-      url: https://www.youtube.com/results?search_query=%D0%BB%D0%B8%D0%BD%D0%BD%D0%B8%D0%BA+%D1%80%D1%83%D1%81%D0%BB%D0%B0%D0%BD
-    - last_visited: '2020-10-26T22:04:12'
-      pinned: false
-      title: (78) Руслан Линник - YouTube
-      url: https://www.youtube.com/channel/UC1Ms94jWRHOQl-Ux1DeSANA
-    - last_visited: '2020-10-26T22:04:15'
-      pinned: false
-      title: (78) Руслан Линник - YouTube
-      url: https://www.youtube.com/channel/UC1Ms94jWRHOQl-Ux1DeSANA/videos
-    - last_visited: '2020-10-26T22:10:09'
-      pinned: false
-      title: (78) вася сероштан - YouTube
-      url: https://www.youtube.com/results?search_query=%D0%B2%D0%B0%D1%81%D1%8F+%D1%81%D0%B5%D1%80%D0%BE%D1%88%D1%82%D0%B0%D0%BD
-    - last_visited: '2020-10-26T22:12:01'
-      pinned: false
-      title: (78) максим кац - YouTube
-      url: https://www.youtube.com/results?search_query=%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC+%D0%BA%D0%B0%D1%86
-    - last_visited: '2020-10-26T22:12:05'
-      pinned: false
-      title: (78) Максим Кац - YouTube
-      url: https://www.youtube.com/user/maxkatz1
-    - last_visited: '2020-10-26T22:21:50'
-      pinned: false
-      title: (78) Максим Кац - YouTube
-      url: https://www.youtube.com/c/maxkatz1/videos
-    - last_visited: '2020-10-26T23:01:50'
-      pinned: false
-      title: (78) шульман - YouTube
-      url: https://www.youtube.com/results?search_query=%D1%88%D1%83%D0%BB%D1%8C%D0%BC%D0%B0%D0%BD
-    - last_visited: '2020-10-26T23:02:38'
-      pinned: false
-      title: (78) шульман - YouTube
-      url: https://www.youtube.com/results?search_query=%D1%88%D1%83%D0%BB%D1%8C%D0%BC%D0%B0%D0%BD
-    - last_visited: '2020-10-26T23:02:44'
-      pinned: false
-      title: (78) шульман беларусь - YouTube
-      url: https://www.youtube.com/results?search_query=%D1%88%D1%83%D0%BB%D1%8C%D0%BC%D0%B0%D0%BD+%D0%B1%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D1%8C
-    - last_visited: '2020-10-26T23:04:12'
-      pinned: false
-      title: (78) егор жуков армия - YouTube
-      url: https://www.youtube.com/results?search_query=%D0%B5%D0%B3%D0%BE%D1%80+%D0%B6%D1%83%D0%BA%D0%BE%D0%B2+%D0%B0%D1%80%D0%BC%D0%B8%D1%8F
-    - last_visited: '2020-10-26T23:04:21'
-      pinned: false
-      title: (78) егор жуков - YouTube
-      url: https://www.youtube.com/results?search_query=%D0%B5%D0%B3%D0%BE%D1%80+%D0%B6%D1%83%D0%BA%D0%BE%D0%B2
-    - last_visited: '2020-10-26T23:04:25'
-      pinned: false
-      title: (78) Команда Жукова - YouTube
-      url: https://www.youtube.com/channel/UCyyG-tDEysAL_dy1l4XHa1A
-    - last_visited: '2020-10-26T23:04:29'
-      pinned: false
-      title: (78) Команда Жукова - YouTube
-      url: https://www.youtube.com/c/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0%D0%96%D1%83%D0%BA%D0%BE%D0%B2%D0%B0/videos
-    - last_visited: '2020-10-26T23:06:14'
-      pinned: false
-      title: (78) КАК ОТВЕЧАТЬ ПОЛИЦИИ НА МИТИНГЕ - YouTube
-      url: https://www.youtube.com/watch?v=LqMxnAFolas
-    - last_visited: '2020-10-26T23:19:13'
-      original-url: https://www.youtube.com/watch?v=LqMxnAFolas
-      pinned: false
-      title: (78) ЧТО ТАКОЕ БАРХАТНАЯ РЕВОЛЮЦИЯ - YouTube
-      url: https://www.youtube.com/watch?v=I1ypz2ZkQTI
-    - last_visited: '2020-10-27T00:00:11'
-      pinned: false
-      title: (78) YouTube
-      url: https://www.youtube.com/
     - active: true
-      last_visited: '2020-10-27T00:00:11'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 903
-      title: (78) DistroTube - YouTube
-      url: https://www.youtube.com/c/DistroTube
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-27T00:00:41'
+      last_visited: '2020-11-14T17:36:43'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: (78) Useful Tools Within Emacs For Writers - YouTube
-      url: https://www.youtube.com/watch?v=eT1-lLQVHsw
+      title: Mithril
+      url: https://lhorie.github.io/mithril-blog/a-spreadsheet-in-60-lines-of-javascript.html
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2020-10-27T00:15:28'
+      last_visited: '2020-11-14T17:36:55'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: codemirror vim which mappings are available - Google Search
-      url: https://www.google.com/search?q=codemirror%20vim%20which%20mappings%20are%20available
+      title: 'Looking to create a python overlay on top of a desktop to do fast screen
+        grabs and output bounding box? : learnpython'
+      url: https://www.reddit.com/r/learnpython/comments/9v6ktg/looking_to_create_a_python_overlay_on_top_of_a/
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2020-10-27T00:15:39'
+      last_visited: '2020-11-14T17:36:43'
       pinned: false
       scroll-pos:
         x: 0
-        y: 40
-      title: 'CodeMirror: User Manual'
-      url: https://codemirror.net/doc/manual.html
-      zoom: 1.75
+        y: 0
+      title: python - Creating a transparent overlay with qt - Stack Overflow
+      url: https://stackoverflow.com/questions/25950049/creating-a-transparent-overlay-with-qt
+      zoom: 1.0
   - history:
-    - last_visited: '2020-10-27T00:16:07'
-      pinned: false
-      title: 'CodeMirror: User Manual'
-      url: https://codemirror.net/doc/manual.html#addons
     - active: true
-      last_visited: '2020-10-27T00:48:20'
+      last_visited: '2020-11-14T17:36:43'
       pinned: false
       scroll-pos:
         x: 0
-        y: 87068
-      title: 'CodeMirror: User Manual'
-      url: https://codemirror.net/doc/manual.html#vimapi
+        y: 0
+      title: 'Python: text overlay on top of all windows including fullscreen in Linux
+        - Stack Overflow'
+      url: https://stackoverflow.com/questions/41998489/python-text-overlay-on-top-of-all-windows-including-fullscreen-in-linux
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-11-14T17:36:43'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: c - X11 - Draw on Overlay Window - Stack Overflow
+      url: https://stackoverflow.com/questions/21780789/x11-draw-on-overlay-window
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-11-14T17:36:43'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: The Modern JavaScript Tutorial
+      url: https://javascript.info/
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-11-14T09:59:37'
+      pinned: false
+      title: An Introduction to JavaScript
+      url: https://javascript.info/intro
+    - last_visited: '2020-11-14T11:22:12'
+      pinned: false
+      title: Manuals and specifications
+      url: https://javascript.info/manuals-specifications
+    - last_visited: '2020-11-14T11:24:45'
+      pinned: false
+      title: Code editors
+      url: https://javascript.info/code-editors
+    - last_visited: '2020-11-14T11:27:20'
+      pinned: false
+      title: Developer console
+      url: https://javascript.info/devtools
+    - last_visited: '2020-11-14T11:31:49'
+      pinned: false
+      title: JavaScript Fundamentals
+      url: https://javascript.info/first-steps
+    - last_visited: '2020-11-14T11:32:58'
+      pinned: false
+      title: Hello, world!
+      url: https://javascript.info/hello-world
+    - last_visited: '2020-11-14T11:42:18'
+      pinned: false
+      title: Code structure
+      url: https://javascript.info/structure
+    - last_visited: '2020-11-14T12:02:00'
+      pinned: false
+      title: The modern mode, "use strict"
+      url: https://javascript.info/strict-mode
+    - active: true
+      last_visited: '2020-11-14T17:36:43'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 13133
+      title: Variables
+      url: https://javascript.info/variables
       zoom: 1.5
+  - history:
+    - active: true
+      last_visited: '2020-11-14T17:37:29'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Inbox (1,076) - barysdzemidziuk@gmail.com - Gmail
+      url: https://mail.google.com/mail/u/0/#inbox
+      zoom: 1.25
+  - history:
+    - last_visited: '2020-11-14T11:37:15'
+      pinned: false
+      title: inline javascript vs file - Google Search
+      url: https://www.google.com/search?q=inline%20javascript%20vs%20file
+    - last_visited: '2020-11-14T11:43:30'
+      pinned: false
+      title: automatic semicolon - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk03DITDxtTlzxRL7nttJTSEa3-eCZA%3A1605299834552&ei=eu6uX-ahIYSOrwSevLX4AQ&q=automatic+semicolon&oq=automatic+semicolon&gs_lcp=CgZwc3ktYWIQAzIFCAAQyQMyAggAMgIIADIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeOgcIIxDqAhAnOggIABDJAxCRAjoFCAAQkQI6BAgAEEM6CAguEMcBEKMCOgIILjoHCAAQyQMQQzoKCC4QxwEQowIQQzoNCC4QxwEQowIQQxCTAjoICC4QxwEQrwE6DgguEMcBEK8BEMkDEJMCOgcIABAUEIcCOggIABAWEAoQHlCyrRZYk-AWYJvnFmgBcAF4AIAB5AGIAdQRkgEGNC4xNC4xmAEAoAEBqgEHZ3dzLXdperABCsABAQ&sclient=psy-ab&ved=0ahUKEwjmxpXzr4DtAhUEx4sKHR5eDR8Q4dUDCA0&uact=5
+    - last_visited: '2020-11-14T11:43:33'
+      pinned: false
+      title: automatic semicolon insertion - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk03iAz1wl4NfHfzSAMAhJZsynXH3oQ%3A1605300209518&ei=8e-uX9ClH8GprgSolKOgBw&q=automatic+semicolon+insertion&oq=automatic+semicolon+ins&gs_lcp=CgZwc3ktYWIQAxgAMgUIABDJAzICCAAyAggAMgQIABBDMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIICAAQFhAKEB5Q2AdY4wpghhJoAHABeACAAXaIAZgDkgEDMi4ymAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab
+    - active: true
+      last_visited: '2020-11-14T17:36:45'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: JavaScript/Automatic semicolon insertion - Wikibooks, open books for
+        an open world
+      url: https://en.wikibooks.org/wiki/JavaScript/Automatic_semicolon_insertion
+      zoom: 1.5
+  - history:
+    - active: true
+      last_visited: '2020-11-14T17:36:43'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Inline vs external Javascript
+      url: https://renenyffenegger.ch/notes/development/languages/JavaScript/inline-vs-external
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-11-14T17:36:43'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: https://javascript.info/article/devtools/bug.html
+      url: https://javascript.info/article/devtools/bug.html
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-11-14T17:36:49'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: clojurescript - Google Search
+      url: https://www.google.com/search?q=clojurescript
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-11-14T17:36:43'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: JavaScript engine - Wikipedia
+      url: https://en.wikipedia.org/wiki/JavaScript_engine
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-11-14T10:16:55'
+      pinned: false
+      title: transpilation - Google Search
+      url: https://www.google.com/search?q=transpilation
+    - active: true
+      last_visited: '2020-11-14T17:36:49'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: languages transpiled to javascript - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk017L-8-orbWdfBeznAVDmV_Xy8tAQ%3A1605295014087&ei=ptuuX8fcBPH1qwHBqI3wAw&q=languages+transpiled+to+javascript&oq=languages+transpiled+to+javascript&gs_lcp=CgZwc3ktYWIQAzIJCAAQyQMQFhAeOgcIIxDqAhAnOg0ILhDHARCvARDqAhAnOggIABDJAxCRAjoFCAAQkQI6AggAOggILhDHARCvAToFCAAQyQM6AgguOggILhDHARCjAjoKCC4QxwEQrwEQCjoECAAQCjoGCAAQFhAeOggIABAWEAoQHjoJCAAQyQMQDRAeOgYIABANEB46BwgAEMkDEA1Q9rVpWO_wamC692poB3ABeAGAAekBiAHZKpIBBzIyLjI0LjOYAQCgAQGqAQdnd3Mtd2l6sAEKwAEB&sclient=psy-ab&ved=0ahUKEwjHx8v4nYDtAhXx-ioKHUFUAz4Q4dUDCA0&uact=5
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-11-14T17:36:43'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Google Translate
+      url: https://translate.google.com/#view=home&op=translate&sl=en&tl=ru&text=grease
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-11-14T10:41:42'
+      pinned: false
+      title: WHAT IS WEBPACK, HOW DOES IT WORK? | Webpack 2 Basics Tutorial - YouTube
+      url: https://www.youtube.com/watch?v=GU-2T7k9NfI&t=217s
+    - last_visited: '2020-11-14T10:41:43'
+      original-url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DGU-2T7k9NfI%2526t%253D217s&hl=en&ec=65620
+      pinned: false
+      title: YouTube
+      url: https://accounts.google.com/signin/v2/identifier?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DGU-2T7k9NfI%2526t%253D217s&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin
+    - last_visited: '2020-11-14T10:42:03'
+      original-url: https://accounts.google.com/signin/v2/identifier?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DGU-2T7k9NfI%2526t%253D217s&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin
+      pinned: false
+      title: YouTube
+      url: https://accounts.google.com/signin/v2/challenge/pwd?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DGU-2T7k9NfI%2526t%253D217s&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin&cid=1&navigationDirection=forward&TL=AM3QAYb17a0P5BQSMSyutjnN5WpJD4HmjDDiFq3U516lpuJ8TXnUYGewjysEqG26
+    - last_visited: '2020-11-14T10:42:09'
+      pinned: false
+      title: Account Recovery Options
+      url: https://myaccount.google.com/signinoptions/recovery-options-collection?utm_source=Web&utm_medium=Web&utm_campaign=interstitial&oev=lytf%3D7%26wvtx%3D2%26trs%3Dli%26stel%3D1&hl=en&continue=https://accounts.google.com/ServiceLogin?continue%3Dhttps%253A%252F%252Fwww.youtube.com%252Fsignin%253Faction_handle_signin%253Dtrue%2526app%253Ddesktop%2526hl%253Den%2526next%253Dhttps%25253A%25252F%25252Fwww.youtube.com%25252Fwatch%25253Fv%25253DGU-2T7k9NfI%252526t%25253D217s%26service%3Dyoutube%26hl%3Den%26authuser%3D0%26passive%3Dtrue%26sarp%3D1%26aodrpl%3D1&service=youtube&rapt=AEjHL4MwDNDBM7R6wFerP4cyciPvNT3dfMAJlDrj7ccDr0EY_atVIFhx-j9TZzlF1zjwUZ7KM4F7KBTgTOvf-I57DTFXZ8T6Wg&pli=1
+    - last_visited: '2020-11-14T14:08:08'
+      pinned: false
+      title: (94) WHAT IS WEBPACK, HOW DOES IT WORK? | Webpack 2 Basics Tutorial -
+        YouTube
+      url: https://www.youtube.com/watch?v=GU-2T7k9NfI&t=217s
+    - active: true
+      last_visited: '2020-11-14T17:36:43'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: dockerhub - YouTube
+      url: https://www.youtube.com/results?search_query=dockerhub
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-11-14T17:36:45'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: (97) Docker Hub Introduction Tutorial - YouTube
+      url: https://www.youtube.com/watch?v=ASNL27a7sE4
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-11-14T07:15:00'
+      pinned: false
+      title: why should i use dockerhub - Google Search
+      url: https://www.google.com/search?q=why%20should%20i%20use%20dockerhub
+    - active: true
+      last_visited: '2020-11-14T17:36:43'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Everything that You Should Know About Docker Hub - Geekflare
+      url: https://geekflare.com/docker-hub-introduction/
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-11-14T17:36:43'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Lenovo Legion Y530-15ICH Solid State Drive Replacement - iFixit Repair
+        Guide
+      url: https://www.ifixit.com/Guide/Lenovo+Legion+Y530-15ICH+Solid+State+Drive+Replacement/131072
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-11-14T06:52:58'
+      pinned: false
+      title: Тренинг DevOps Fundamentals в городе Минск от EPAM | training.by
+      url: https://training.by/#!/Training/2560?lang=ru
+    - last_visited: '2020-11-14T06:56:11'
+      original-url: https://training.by/#!/Training/2560?lang=ru
+      pinned: false
+      title: Sign In to EPAM
+      url: https://access.epam.com/auth/realms/plusx/protocol/openid-connect/auth?client_id=RDPortal&response_type=code&redirect_uri=https%3A%2F%2Ftraining.by%2FAuth%2FLoginCallback&scope=openid+profile+email&state=fcfec0feca234408b958b0fa2dd9bd92&nonce=586845de4421466da1a37af93a229d99&ui_locales=ru
+    - last_visited: '2020-11-14T06:56:21'
+      pinned: false
+      title: Sign in - Google Accounts
+      url: https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?scope=openid%20profile%20email&state=0NaxW2gyjGyHSht0RLuR_FR2cuyHP8rpuWCzki1Tomw.vJGLI81MlC4.RDPortal&response_type=code&client_id=28302459813-vq689q6sp2a5hr1h3lu03eu7la4b5pk5.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Faccess.epam.com%2Fauth%2Frealms%2Fplusx%2Fbroker%2Fgoogle%2Fendpoint&nonce=8n-NjMi_wQwVAxBAOXsXXw&flowName=GeneralOAuthFlow
+    - last_visited: '2020-11-14T06:56:25'
+      original-url: https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?scope=openid%20profile%20email&state=0NaxW2gyjGyHSht0RLuR_FR2cuyHP8rpuWCzki1Tomw.vJGLI81MlC4.RDPortal&response_type=code&client_id=28302459813-vq689q6sp2a5hr1h3lu03eu7la4b5pk5.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Faccess.epam.com%2Fauth%2Frealms%2Fplusx%2Fbroker%2Fgoogle%2Fendpoint&nonce=8n-NjMi_wQwVAxBAOXsXXw&flowName=GeneralOAuthFlow
+      pinned: false
+      title: Sign Up to EPAM
+      url: https://access.epam.com/auth/realms/plusx/login-actions/post-broker-login?client_id=RDPortal&tab_id=vJGLI81MlC4#
+    - last_visited: '2020-11-14T06:56:54'
+      original-url: https://training.by/#!/Training/2560
+      pinned: false
+      title: Тренинг DevOps Fundamentals в городе Минск от EPAM | training.by
+      url: https://training.by/#!/Training/2560?lang=ru
+    - last_visited: '2020-11-14T17:36:43'
+      pinned: false
+      title: Тренинг-центр EPAM в Беларуси - программы обучения для студентов, а также
+        тех, кто хочет начать карьеру в IT | training.by
+      url: https://training.by/#!/Home?lang=ru
+    - last_visited: '2020-11-14T18:22:38'
+      pinned: false
+      title: (97) YouTube
+      url: https://www.youtube.com/
+    - last_visited: '2020-11-14T18:35:40'
+      pinned: false
+      title: (97) bash scripting unit tests - YouTube
+      url: https://www.youtube.com/results?search_query=bash+scripting+unit+tests
+    - last_visited: '2020-11-14T18:35:40'
+      pinned: false
+      title: (97) bash scripting tdd - YouTube
+      url: https://www.youtube.com/results?search_query=bash+scripting+tdd
+    - active: true
+      last_visited: '2020-11-14T18:36:03'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: (97) bash scripting test driven - YouTube
+      url: https://www.youtube.com/results?search_query=bash+scripting+test+driven
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-11-14T18:35:31'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: '(97) Shell Ninja: Mastering the Art of Shell Scripting | Roland Huß
+        - YouTube'
+      url: https://www.youtube.com/watch?v=1mt2-LbKuvY
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-11-15T00:30:42'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: devops - Google Search
+      url: https://www.google.com/search?q=devops
+      zoom: 1.0
   - active: true
     history:
     - active: true
-      last_visited: '2020-10-27T03:07:55'
+      last_visited: '2020-11-15T00:30:56'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 200
+      title: DevOps - Wikipedia
+      url: https://en.wikipedia.org/wiki/DevOps
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-11-14T17:59:23'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: My ~TiddlyWiki — a non-linear personal web notebook
-      url: http://127.0.0.1:8081/
+      title: (97) Выбираем язык программирования и друзей | Отвечаю на ваши комменты
+        - YouTube
+      url: https://www.youtube.com/watch?v=mYp313GUqRo
       zoom: 1.0
-  - history:
-    - last_visited: '2020-10-27T00:51:52'
-      pinned: false
-      title: 'CodeMirror: User Manual'
-      url: https://codemirror.net/doc/manual.html#commands
-    - last_visited: '2020-10-27T00:54:08'
-      pinned: false
-      title: 'CodeMirror: User Manual'
-      url: https://codemirror.net/doc/manual.html#api
-    - last_visited: '2020-10-27T00:54:41'
-      pinned: false
-      title: 'CodeMirror: User Manual'
-      url: https://codemirror.net/doc/manual.html#addons
-    - last_visited: '2020-10-27T00:55:07'
-      pinned: false
-      title: 'CodeMirror: User Manual'
-      url: https://codemirror.net/doc/manual.html#modeapi
-    - last_visited: '2020-10-27T00:55:08'
-      pinned: false
-      title: 'CodeMirror: User Manual'
-      url: https://codemirror.net/doc/manual.html#vimapi
-    - last_visited: '2020-10-27T01:00:57'
-      pinned: false
-      title: 'CodeMirror: User Manual'
-      url: https://codemirror.net/doc/manual.html#commands
-    - active: true
-      last_visited: '2020-10-27T01:01:35'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 25406
-      title: 'CodeMirror: User Manual'
-      url: https://codemirror.net/doc/manual.html#usage
-      zoom: 1.5
+- active: true
+  geometry: !!binary |
+    AdnQywADAAAAAAAAAAAAAAAABP8AAAPnAAAAAwAAAAMAAAT8AAAD5AAAAAEAAAAABQAAAAADAAAA
+    AwAABPwAAAPk
+  tabs:
   - history:
     - active: true
-      last_visited: '2020-10-27T01:04:25'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 86885
-      title: 'CodeMirror: User Manual'
-      url: https://codemirror.net/doc/manual.html#option_electricChars
-      zoom: 1.5
-  - history:
-    - last_visited: '2020-10-27T00:16:32'
-      pinned: false
-      title: 'CodeMirror: User Manual'
-      url: https://codemirror.net/doc/manual.html#vimapi
-    - last_visited: '2020-10-27T01:18:04'
-      pinned: false
-      title: 'CodeMirror: User Manual'
-      url: https://codemirror.net/doc/manual.html#api
-    - last_visited: '2020-10-27T01:22:31'
-      pinned: false
-      title: 'CodeMirror: User Manual'
-      url: https://codemirror.net/doc/manual.html#vimapi
-    - last_visited: '2020-10-27T01:41:41'
-      pinned: false
-      title: 'CodeMirror: User Manual'
-      url: https://codemirror.net/doc/manual.html#vimapi_extending
-    - last_visited: '2020-10-27T01:42:24'
-      pinned: false
-      title: 'CodeMirror: User Manual'
-      url: https://codemirror.net/doc/manual.html#api
-    - last_visited: '2020-10-27T02:05:21'
-      pinned: false
-      title: 'CodeMirror: User Manual'
-      url: https://codemirror.net/doc/manual.html#api_constructor
-    - active: true
-      last_visited: '2020-10-27T03:01:19'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 86768
-      title: 'CodeMirror: User Manual'
-      url: https://codemirror.net/doc/manual.html#vimapi
-      zoom: 1.5
-  - history:
-    - active: true
-      last_visited: '2020-10-27T01:23:58'
+      last_visited: '2020-11-15T00:41:36'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: '[vim] mapping additional functionality to a key with defineAction -
-        discuss.CodeMirror'
-      url: https://discuss.codemirror.net/t/vim-mapping-additional-functionality-to-a-key-with-defineaction/1677
+      title: DuckDuckGo — Privacy, simplified.
+      url: https://start.duckduckgo.com/
       zoom: 1.0
   - history:
+    - last_visited: '2020-11-15T00:42:04'
+      pinned: false
+      title: (97) YouTube
+      url: https://www.youtube.com/
+    - last_visited: '2020-11-15T00:42:04'
+      pinned: false
+      title: (97) Linux Browser wars - Performance isn't everything... - YouTube
+      url: https://www.youtube.com/watch?v=DPVrjH1mkkk
+    - last_visited: '2020-11-15T00:48:43'
+      pinned: false
+      title: (97) qutebrowser - YouTube
+      url: https://www.youtube.com/results?search_query=qutebrowser
     - active: true
-      last_visited: '2020-10-27T01:51:39'
+      last_visited: '2020-11-15T00:49:00'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 3040
+      title: (97) qutebrowser - YouTube
+      url: https://www.youtube.com/results?search_query=qutebrowser&sp=EgIIBQ%253D%253D
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-11-15T01:24:30'
+      pinned: false
+      title: (97) How To Use And Customize Qutebrowser on Linux - YouTube
+      url: https://www.youtube.com/watch?v=vZ7rbZBysyo
+    - last_visited: '2020-11-15T01:24:30'
+      pinned: false
+      title: (97) BadWolf Is A Minimal, Privacy-Oriented Web Browser - YouTube
+      url: https://www.youtube.com/watch?v=EBWy1d-JE6A
+    - active: true
+      last_visited: '2020-11-15T01:25:42'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: codemirror how to find instances in dom - Google Search
-      url: https://www.google.com/search?q=codemirror%20how%20to%20find%20instances%20in%20dom
+      title: (97) Linux Youtubers That You Should Be Watching - YouTube
+      url: https://www.youtube.com/watch?v=NybbsnDT5NI
       zoom: 1.0
   - history:
+    - last_visited: '2020-11-15T01:40:05'
+      pinned: false
+      title: installing new linux on another disk will i see previous root directory
+        - Google Search
+      url: https://www.google.com/search?q=installing%20new%20linux%20on%20another%20disk%20will%20i%20see%20previous%20root%20directory
     - active: true
-      last_visited: '2020-10-27T01:51:56'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 5243
-      title: javascript - Get CodeMirror instance - Stack Overflow
-      url: https://stackoverflow.com/questions/11581516/get-codemirror-instance
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-10-27T01:16:03'
-      pinned: false
-      title: what are electric keys in emacs - Google Search
-      url: https://www.google.com/search?q=what%20are%20electric%20keys%20in%20emacs
-    - last_visited: '2020-10-27T01:21:53'
-      pinned: false
-      title: codemirror vim doc.replaceSelection - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk01KQ8Dlf58mGgrKREJ5Qh-2BgZ0Rg%3A1603750562797&ei=okqXX8yTMKP5qwHahL3QDA&q=codemirror+vim+doc.replaceSelection&oq=codemirror+vim+doc.replaceSelection&gs_lcp=CgZwc3ktYWIQAzIHCCEQChCgAToECCMQJzoHCCMQ6gIQJzoICAAQyQMQkQI6BQgAEJECOgIIADoECAAQQzoHCAAQFBCHAjoECC4QQzoECC4QCjoICC4QxwEQrwE6CggAEMkDEBQQhwI6BwgjEMkDECc6BggAEBYQHjoFCAAQyQM6BQghEKABOgQIIRAVUKiqFFiekxVg2KEVaAJwAHgAgAHTAYgBzyOSAQcxNi4yNS4xmAEAoAEBqgEHZ3dzLXdperABCcABAQ&sclient=psy-ab&ved=0ahUKEwjM7Om0pNPsAhWj_CoKHVpCD8oQ4dUDCA0&uact=5
-    - last_visited: '2020-10-27T01:23:51'
-      pinned: false
-      title: codemirror vim defineAction - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk01K6SaAbSR00wctjk7GRpFX1e1_aQ%3A1603750912141&ei=AEyXX9v9B-2nrgSZibuICQ&q=codemirror+vim+defineAction&oq=codemirror+vim+defineAction&gs_lcp=CgZwc3ktYWIQAzIHCCEQChCgAToECCMQJzoFCAAQyQM6BggAEBYQHjoICAAQyQMQkQI6BQgAEJECOgcIABAUEIcCOgIIADoKCAAQyQMQFBCHAjoHCCMQyQMQJzoFCCEQoAE6BAghEBVQ4O4FWNmNB2CUkQdoBHAAeACAAekCiAGvE5IBCDEwLjkuMS4xmAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab&ved=0ahUKEwjb_bPbpdPsAhXtk4sKHZnEDpEQ4dUDCA0&uact=5
-    - active: true
-      last_visited: '2020-10-27T01:41:26'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 160
-      title: codemirror vim defineAction - Google Search
-      url: https://www.google.com/search?q=codemirror+vim+defineAction&sxsrf=ALeKk00-YwE--5sTV0kVyxvYdbiF4Mvv7A:1603751030369&ei=dkyXX5z4FbLrrgTjjJeoBg&start=10&sa=N&ved=2ahUKEwici-STptPsAhWytYsKHWPGBWUQ8NMDegQIDBBB
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-27T01:39:33'
+      last_visited: '2020-11-15T01:40:40'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: We are rewriting CodeMirror | Hacker News
-      url: https://news.ycombinator.com/item?id=17858672
-      zoom: 1.5
-  - history:
-    - active: true
-      last_visited: '2020-10-27T01:22:04'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: 'CodeMirror: User Manual'
-      url: http://lig-coin.imag.fr/COIN3D/ThirdParty/codemirror-4.6/doc/manual.html
+      title: dual boot two linux distros will i see files - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk016NPy_H_xqHhDMivsjZNqaYts5TQ%3A1605393604105&ei=xFywX5KGBoX4U4GvmrgN&q=dual+boot+two+linux+distros+will+i+see+files&oq=dual+boot+two+linux+distros+will+i+see+files&gs_lcp=CgZwc3ktYWIQAzoHCCMQ6gIQJzoHCC4Q6gIQJzoECCMQJzoICAAQyQMQkQI6BQgAEJECOggILhDHARCjAjoCCAA6BAguEEM6CgguEMcBEKMCEEM6BAgAEEM6AgguOgcILhBDEJMCOgcIABDJAxBDOgQIABAKOggILhDHARCvAToKCAAQyQMQFBCHAjoHCAAQFBCHAjoFCAAQyQM6BggAEBYQHjoICCEQFhAdEB46BQghEKABOgQIIRAVULGWAVi0_wFgyoICaAFwAXgAgAGcAYgBvCSSAQUxNS4yOZgBAKABAaoBB2d3cy13aXqwAQrAAQE&sclient=psy-ab&ved=0ahUKEwiS-PybjYPtAhUF_BQKHYGXBtcQ4dUDCA0&uact=5
       zoom: 1.0
-  - history:
+  - active: true
+    history:
     - active: true
-      last_visited: '2020-10-27T01:16:25'
+      last_visited: '2020-11-15T01:40:42'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: codemirror command to insert a character - Google Search
-      url: https://www.google.com/search?q=codemirror%20command%20to%20insert%20a%20character
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-10-27T01:16:35'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 1080
-      title: codemirror - Inserting a new text at given cursor position - Stack Overflow
-      url: https://stackoverflow.com/questions/23733455/inserting-a-new-text-at-given-cursor-position
-      zoom: 1.5
-  - history:
-    - active: true
-      last_visited: '2020-10-27T00:15:33'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: 'How to specify custom mappings for vim mode? · Issue #2840 · codemirror/CodeMirror'
-      url: https://github.com/codemirror/CodeMirror/issues/2840
+      title: system installation - How to dual boot two Linux distros? - Unix & Linux
+        Stack Exchange
+      url: https://unix.stackexchange.com/questions/326230/how-to-dual-boot-two-linux-distros
       zoom: 1.0

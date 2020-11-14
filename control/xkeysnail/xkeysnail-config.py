@@ -80,10 +80,10 @@ define_multipurpose_modmap(
 
 
 define_keymap(re.compile("Vivaldi-stable"), {
-    K("M-h"): K("LEFT"),
-    K("M-j"): K("DOWN"),
-    K("M-k"): K("UP"),
-    K("M-l"): K("RIGHT"),
+    K("M-h"): K("LEFT"),  # delete?
+    K("M-j"): K("DOWN"),  # delete?
+    K("M-k"): K("UP"),  # delete?
+    K("M-l"): K("RIGHT"),  # delete?
     K("M-Shift-h"): K("Shift-LEFT"),  # these 4 are for selection of text (since i can't replicate the true visual mode)
     K("M-Shift-j"): K("Shift-DOWN"),
     K("M-Shift-k"): K("Shift-UP"),
@@ -109,7 +109,7 @@ define_keymap(re.compile("Vivaldi-stable"), {
     K("C-j"): K("ENTER"),
     K("C-m"): K("ENTER"),
     K("M-w"): K("C-c"),
-    K("C-w"): K("C-x"),
+    K("C-w"): K("C-x"),  #!!!!!
     K("C-y"): K("C-v"),
     K("M-TAB"): [K("TAB"), K("TAB")],
     K("M-Shift-TAB"): [K("Shift-TAB"), K("Shift-TAB")],
