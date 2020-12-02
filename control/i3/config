@@ -159,8 +159,8 @@ bindsym $mod+Ctrl+9 workspace 19
 # cycle across workspaces on output
 #bindsym $mod+Tab workspace next_on_output
 #bindsym $mod+Shift+Tab workspace prev_on_output
-bindsym $mod+i workspace next_on_output
-bindsym $mod+$alt+i workspace prev_on_output
+#bindsym $mod+i workspace next_on_output
+#bindsym $mod+$alt+i workspace prev_on_output
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -226,6 +226,16 @@ bindsym $mod+Escape exec gnome-screensaver-command --lock
 bindsym $mod+Shift+s exec systemctl suspend
 
 # shortcuts for common system configuration tasks
+
+mode "hjkl" {
+  bindsym h exec xdotool sleep 0.1 key Left
+  bindsym j exec xdotool sleep 0.1 key Down
+  bindsym k exec xdotool sleep 0.1 key Up
+  bindsym l exec xdotool sleep 0.1 key Right
+  bindsym Shift+g exec xdotool sleep 0.1 key End
+  bindsym g exec xdotool sleep 0.1 key Home
+  bindsym i mode "default"
+}
 
 mode "gnome" {
   bindsym $mod+g exec gnome-control-center; mode "default"
@@ -589,6 +599,8 @@ workspace shared output eDP-1-1 HDMI-0
 
 bindsym $mod+s move container to workspace shared; workspace shared
 
+bindsym $mod+Ctrl+i exec /home/boris/bin/i3/switch-keyboards.sh
+
 #bindsym F6 [workspace=shared] move workspace to output DP-2; focus output DP-2; workspace next_on_output
 #bindsym F7 [workspace=shared] move workspace to output eDP-1-1; focus output eDP-1-1; workspace next_on_output
 #bindsym F8 [workspace=shared] move workspace to output HDMI-0; focus output HDMI-0; workspace next_on_output
@@ -605,3 +617,5 @@ for_window [class="qutebrowser"] hide_edge_borders horizontal
 
 for_window [class="large"] exec /home/boris/bin/i3/move-to-new-workspace-focus.sh
 for_window [instance="large"] exec /home/boris/bin/i3/move-to-new-workspace-focus.sh
+
+for_window [class="Pqiv"] floating enable

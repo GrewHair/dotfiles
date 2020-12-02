@@ -136,21 +136,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/boris/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/boris/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/boris/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/boris/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
 # neofetch at terminal startup (i added this)
 
 if [[ ! $INSIDE_EMACS ]]; then

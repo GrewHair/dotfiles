@@ -33,7 +33,7 @@ xset -r 20  # minus
 xset -r 21  # equals
 xset -r 22  # backspace
 xset -r 24  # q
-xset -r 25  # w
+# xset -r 25  # w
 # xset -r 26  # e
 xset -r 27  # r
 xset -r 28  # t
@@ -61,7 +61,7 @@ xset -r 52  # z
 # xset -r 53  # x
 xset -r 54  # c
 xset -r 55  # v
-xset -r 56  # b
+# xset -r 56  # b
 xset -r 57  # n
 xset -r 58  # m
 xset -r 59  # comma

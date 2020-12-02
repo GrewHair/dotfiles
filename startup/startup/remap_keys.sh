@@ -8,8 +8,9 @@ sleep 4
 # Launch xkeysnail
 #xhost +SI:localuser:root
 #/home/boris/.local/bin/xkeysnail /home/boris/bin/xkeysnail-config.py
-systemctl --user enable xkeysnail
-systemctl --user start xkeysnail
+xkeysnail /home/boris/.config/xkeysnail/xkeysnail-config.py
+# systemctl --user enable xkeysnail
+# systemctl --user start xkeysnail
 
 sleep 4
 
@@ -46,7 +47,7 @@ xset -r 20  # minus
 xset -r 21  # equals
 xset -r 22  # backspace
 xset -r 24  # q
-xset -r 25  # w
+# xset -r 25  # w
 # xset -r 26  # e
 xset -r 27  # r
 xset -r 28  # t
@@ -74,7 +75,7 @@ xset -r 52  # z
 # xset -r 53  # x
 xset -r 54  # c
 xset -r 55  # v
-xset -r 56  # b
+# xset -r 56  # b
 xset -r 57  # n
 xset -r 58  # m
 xset -r 59  # comma

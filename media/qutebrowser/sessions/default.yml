@@ -1,301 +1,164 @@
 windows:
 - active: true
   geometry: !!binary |
-    AdnQywADAAAAAAUAAAAAAAAADH8AAAQfAAAFAwAAAAMAAAx8AAAEHAAAAAIAAAAAB4AAAAUDAAAA
-    AwAADHwAAAQc
+    AdnQywADAAAAAAAAAAAAAAAABXcAAAQBAAAAAwAAAAMAAAV0AAAD/gAAAAEAAAAABXgAAAADAAAA
+    AwAABXQAAAP+
   tabs:
   - history:
     - active: true
-      last_visited: '2020-11-13T18:36:45'
+      last_visited: '2020-12-01T00:35:36'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Mithril
-      url: https://lhorie.github.io/mithril-blog/a-spreadsheet-in-60-lines-of-javascript.html
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-11-13T18:37:02'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: 'Looking to create a python overlay on top of a desktop to do fast screen
-        grabs and output bounding box? : learnpython'
-      url: https://www.reddit.com/r/learnpython/comments/9v6ktg/looking_to_create_a_python_overlay_on_top_of_a/
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-11-13T18:36:45'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: python - Creating a transparent overlay with qt - Stack Overflow
-      url: https://stackoverflow.com/questions/25950049/creating-a-transparent-overlay-with-qt
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-11-13T18:36:45'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: 'Python: text overlay on top of all windows including fullscreen in Linux
-        - Stack Overflow'
-      url: https://stackoverflow.com/questions/41998489/python-text-overlay-on-top-of-all-windows-including-fullscreen-in-linux
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-11-13T18:36:45'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 240
-      title: c - X11 - Draw on Overlay Window - Stack Overflow
-      url: https://stackoverflow.com/questions/21780789/x11-draw-on-overlay-window
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-11-13T18:36:45'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 533
       title: The Modern JavaScript Tutorial
       url: https://javascript.info/
       zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-12-01T00:35:36'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'Conditional branching: if, ''?'''
+      url: https://javascript.info/ifelse
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-12-01T00:35:38'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Learn
+      url: https://learn.epam.com/start
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-12-01T00:35:36'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Sign In to EPAM
+      url: https://access.epam.com/auth/realms/plusx/protocol/openid-connect/auth?client_id=learnId&redirect_uri=https%3A%2F%2Flearn.epam.com%2Fauth%2Fsignin-iam&response_type=code&scope=openid%20profile%20email%20offline_access&code_challenge=0dkfoIQfDCeu6vcXLWm5cFv4A_KSrVOydAmDlckQ5ac&code_challenge_method=S256&nonce=637417967132327240.MTk4OTI0NzgtNDc0OC00MmQzLTk2ODItOWZjMTM4ZDg2NTNiNTFjODM5ZjEtM2M0Yi00ZTllLTg0NmYtMzIwNzgzOGQwZDEz&state=CfDJ8IajQ5NwKntKsOi58laDrEzO3ibY09I_MEHGktyHD53D-3VzSi4DAb4bUnhHS8z4XT6M1NoOqpnqqaqVaKtZs8G080lyXDCXxwhuoQdzxe8En5rMrLaXpnu1q68roVeVlxn_kvPixjijP-iJMI0In6cWmUuAdTVGyf-zrlZeeVoItC7QofmcuAVrFdP8Yfjevcrszt7zGPYdPrx82ouOro7XrHoC4IVL8kUZypvt5tIsa_eu-OhJC02XPM59ghfx9F82GrYQl3usruIOV2jNZTvTd2uiqI0O3fgcnyA_y7hNM0iRbEC5Y6SSPNF3RKXGaLUCiykTuX9SHNAZYEWMq751gtt7D4QQQNwPcN3fX05EkzSAjMlP9MuaBRb7Ib_fWf6gB1c47EB1PYUEC_MdXrxyUd_xA7dsH2ee2WhpqELP-WIBW9eJPUUZPpmzG_x-DapkJ2XuUfONS9DRTidx4V4&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=5.5.0.0
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-12-01T00:35:36'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Sign In to EPAM
+      url: https://access.epam.com/auth/realms/plusx/protocol/openid-connect/auth?nonce=DqiL9u7IJ700myXupYWdsDKvkQaRiepiE7ccJu2ZVJy2hAnAKaL0bSagATUoo9gT&state=XOgsYmOccT8JhRalTq6Tj5JEPF9bGsL9&redirect_uri=https://elearn.epam.com/auth/complete/extended-openid-connect/&response_type=code&client_id=learnId&scope=openid+profile+email
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-12-01T00:35:36'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Node (networking) - Wikipedia
+      url: https://en.wikipedia.org/wiki/Node_(networking)
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-12-01T00:35:36'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: IPv4 - Wikipedia
+      url: https://en.wikipedia.org/wiki/IPv4#Identification
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-12-01T00:35:36'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Classful network - Wikipedia
+      url: https://en.wikipedia.org/wiki/Classful_network
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-12-01T00:35:36'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Internet Protocol - Wikipedia
+      url: https://en.wikipedia.org/wiki/Internet_Protocol
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-12-01T00:56:56'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 1666
+      title: Transmission Control Protocol - Wikipedia
+      url: https://en.wikipedia.org/wiki/Transmission_Control_Protocol
+      zoom: 1.5
   - active: true
     history:
-    - last_visited: '2020-11-13T21:59:37'
+    - last_visited: '2020-12-01T01:03:13'
       pinned: false
-      title: An Introduction to JavaScript
-      url: https://javascript.info/intro
-    - last_visited: '2020-11-13T23:22:12'
+      title: (110) bob kahn - YouTube
+      url: https://www.youtube.com/results?q=bob+kahn
+    - last_visited: '2020-12-01T01:03:13'
       pinned: false
-      title: Manuals and specifications
-      url: https://javascript.info/manuals-specifications
-    - last_visited: '2020-11-13T23:24:45'
-      pinned: false
-      title: Code editors
-      url: https://javascript.info/code-editors
-    - last_visited: '2020-11-13T23:27:20'
-      pinned: false
-      title: Developer console
-      url: https://javascript.info/devtools
-    - last_visited: '2020-11-13T23:31:49'
-      pinned: false
-      title: JavaScript Fundamentals
-      url: https://javascript.info/first-steps
-    - last_visited: '2020-11-13T23:32:58'
-      pinned: false
-      title: Hello, world!
-      url: https://javascript.info/hello-world
-    - last_visited: '2020-11-13T23:42:18'
-      pinned: false
-      title: Code structure
-      url: https://javascript.info/structure
-    - last_visited: '2020-11-14T00:02:00'
-      pinned: false
-      title: The modern mode, "use strict"
-      url: https://javascript.info/strict-mode
+      title: (110) bob kahn tcp - YouTube
+      url: https://www.youtube.com/results?search_query=bob+kahn+tcp
     - active: true
-      last_visited: '2020-11-14T00:19:46'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 10089
-      title: Variables
-      url: https://javascript.info/variables
-      zoom: 1.5
-  - history:
-    - last_visited: '2020-11-13T23:37:15'
-      pinned: false
-      title: inline javascript vs file - Google Search
-      url: https://www.google.com/search?q=inline%20javascript%20vs%20file
-    - last_visited: '2020-11-13T23:43:30'
-      pinned: false
-      title: automatic semicolon - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk03DITDxtTlzxRL7nttJTSEa3-eCZA%3A1605299834552&ei=eu6uX-ahIYSOrwSevLX4AQ&q=automatic+semicolon&oq=automatic+semicolon&gs_lcp=CgZwc3ktYWIQAzIFCAAQyQMyAggAMgIIADIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeOgcIIxDqAhAnOggIABDJAxCRAjoFCAAQkQI6BAgAEEM6CAguEMcBEKMCOgIILjoHCAAQyQMQQzoKCC4QxwEQowIQQzoNCC4QxwEQowIQQxCTAjoICC4QxwEQrwE6DgguEMcBEK8BEMkDEJMCOgcIABAUEIcCOggIABAWEAoQHlCyrRZYk-AWYJvnFmgBcAF4AIAB5AGIAdQRkgEGNC4xNC4xmAEAoAEBqgEHZ3dzLXdperABCsABAQ&sclient=psy-ab&ved=0ahUKEwjmxpXzr4DtAhUEx4sKHR5eDR8Q4dUDCA0&uact=5
-    - last_visited: '2020-11-13T23:43:33'
-      pinned: false
-      title: automatic semicolon insertion - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk03iAz1wl4NfHfzSAMAhJZsynXH3oQ%3A1605300209518&ei=8e-uX9ClH8GprgSolKOgBw&q=automatic+semicolon+insertion&oq=automatic+semicolon+ins&gs_lcp=CgZwc3ktYWIQAxgAMgUIABDJAzICCAAyAggAMgQIABBDMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIICAAQFhAKEB5Q2AdY4wpghhJoAHABeACAAXaIAZgDkgEDMi4ymAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab
-    - active: true
-      last_visited: '2020-11-13T23:43:41'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 120
-      title: JavaScript/Automatic semicolon insertion - Wikibooks, open books for
-        an open world
-      url: https://en.wikibooks.org/wiki/JavaScript/Automatic_semicolon_insertion
-      zoom: 1.5
-  - history:
-    - active: true
-      last_visited: '2020-11-13T23:37:45'
+      last_visited: '2020-12-01T01:03:53'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Inline vs external Javascript
-      url: https://renenyffenegger.ch/notes/development/languages/JavaScript/inline-vs-external
+      title: '(110) Robert Elliot "Bob" Kahn: ARPNET TCP/IP - YouTube'
+      url: https://www.youtube.com/watch?v=JG5-P1jZVxY
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2020-11-13T23:28:31'
+      last_visited: '2020-12-01T01:02:34'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 1359
+      title: (110) vint cerf - YouTube
+      url: https://www.youtube.com/results?q=vint+cerf
+      zoom: 1.0
+    - last_visited: '2020-12-01T01:00:33'
+      pinned: false
+      title: (110) Vint Cerf explains...Who runs the Internet's address book? - YouTube
+      url: https://www.youtube.com/watch?v=vd3dH90tdhk
+  - history:
+    - active: true
+      last_visited: '2020-12-01T00:35:36'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: https://javascript.info/article/devtools/bug.html
-      url: https://javascript.info/article/devtools/bug.html
+      title: Port (computer networking) - Wikipedia
+      url: https://en.wikipedia.org/wiki/Port_(computer_networking)#:~:text=In%20computer%20networking%2C%20a%20port,a%20type%20of%20network%20service.
       zoom: 1.0
-  - history:
+- geometry: !!binary |
+    AdnQywADAAAAAAV4AAAAAAAADPcAAAQfAAAFewAAAAMAAAz0AAAEHAAAAAIAAAAAB4AAAAV7AAAA
+    AwAADPQAAAQc
+  tabs:
+  - active: true
+    history:
     - active: true
-      last_visited: '2020-11-13T23:20:40'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 40
-      title: clojurescript - Google Search
-      url: https://www.google.com/search?q=clojurescript
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-11-13T23:07:10'
+      last_visited: '2020-12-01T00:35:37'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: JavaScript engine - Wikipedia
-      url: https://en.wikipedia.org/wiki/JavaScript_engine
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-11-13T22:16:55'
-      pinned: false
-      title: transpilation - Google Search
-      url: https://www.google.com/search?q=transpilation
-    - active: true
-      last_visited: '2020-11-13T22:46:08'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: languages transpiled to javascript - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk017L-8-orbWdfBeznAVDmV_Xy8tAQ%3A1605295014087&ei=ptuuX8fcBPH1qwHBqI3wAw&q=languages+transpiled+to+javascript&oq=languages+transpiled+to+javascript&gs_lcp=CgZwc3ktYWIQAzIJCAAQyQMQFhAeOgcIIxDqAhAnOg0ILhDHARCvARDqAhAnOggIABDJAxCRAjoFCAAQkQI6AggAOggILhDHARCvAToFCAAQyQM6AgguOggILhDHARCjAjoKCC4QxwEQrwEQCjoECAAQCjoGCAAQFhAeOggIABAWEAoQHjoJCAAQyQMQDRAeOgYIABANEB46BwgAEMkDEA1Q9rVpWO_wamC692poB3ABeAGAAekBiAHZKpIBBzIyLjI0LjOYAQCgAQGqAQdnd3Mtd2l6sAEKwAEB&sclient=psy-ab&ved=0ahUKEwjHx8v4nYDtAhXx-ioKHUFUAz4Q4dUDCA0&uact=5
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-11-13T22:01:40'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Google Translate
-      url: https://translate.google.com/#view=home&op=translate&sl=en&tl=ru&text=grease
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-11-13T22:41:42'
-      pinned: false
-      title: WHAT IS WEBPACK, HOW DOES IT WORK? | Webpack 2 Basics Tutorial - YouTube
-      url: https://www.youtube.com/watch?v=GU-2T7k9NfI&t=217s
-    - last_visited: '2020-11-13T22:41:43'
-      original-url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DGU-2T7k9NfI%2526t%253D217s&hl=en&ec=65620
-      pinned: false
-      title: YouTube
-      url: https://accounts.google.com/signin/v2/identifier?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DGU-2T7k9NfI%2526t%253D217s&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin
-    - last_visited: '2020-11-13T22:42:03'
-      original-url: https://accounts.google.com/signin/v2/identifier?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DGU-2T7k9NfI%2526t%253D217s&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin
-      pinned: false
-      title: YouTube
-      url: https://accounts.google.com/signin/v2/challenge/pwd?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DGU-2T7k9NfI%2526t%253D217s&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin&cid=1&navigationDirection=forward&TL=AM3QAYb17a0P5BQSMSyutjnN5WpJD4HmjDDiFq3U516lpuJ8TXnUYGewjysEqG26
-    - last_visited: '2020-11-13T22:42:09'
-      pinned: false
-      title: Account Recovery Options
-      url: https://myaccount.google.com/signinoptions/recovery-options-collection?utm_source=Web&utm_medium=Web&utm_campaign=interstitial&oev=lytf%3D7%26wvtx%3D2%26trs%3Dli%26stel%3D1&hl=en&continue=https://accounts.google.com/ServiceLogin?continue%3Dhttps%253A%252F%252Fwww.youtube.com%252Fsignin%253Faction_handle_signin%253Dtrue%2526app%253Ddesktop%2526hl%253Den%2526next%253Dhttps%25253A%25252F%25252Fwww.youtube.com%25252Fwatch%25253Fv%25253DGU-2T7k9NfI%252526t%25253D217s%26service%3Dyoutube%26hl%3Den%26authuser%3D0%26passive%3Dtrue%26sarp%3D1%26aodrpl%3D1&service=youtube&rapt=AEjHL4MwDNDBM7R6wFerP4cyciPvNT3dfMAJlDrj7ccDr0EY_atVIFhx-j9TZzlF1zjwUZ7KM4F7KBTgTOvf-I57DTFXZ8T6Wg&pli=1
-    - last_visited: '2020-11-14T02:08:08'
-      pinned: false
-      title: (94) WHAT IS WEBPACK, HOW DOES IT WORK? | Webpack 2 Basics Tutorial -
-        YouTube
-      url: https://www.youtube.com/watch?v=GU-2T7k9NfI&t=217s
-    - active: true
-      last_visited: '2020-11-13T18:36:45'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: (97) dockerhub - YouTube
-      url: https://www.youtube.com/results?search_query=dockerhub
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-11-13T18:36:45'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: (97) Docker Hub Introduction Tutorial - YouTube
-      url: https://www.youtube.com/watch?v=ASNL27a7sE4
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-11-13T19:15:00'
-      pinned: false
-      title: why should i use dockerhub - Google Search
-      url: https://www.google.com/search?q=why%20should%20i%20use%20dockerhub
-    - active: true
-      last_visited: '2020-11-13T19:15:07'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 4170
-      title: Everything that You Should Know About Docker Hub - Geekflare
-      url: https://geekflare.com/docker-hub-introduction/
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-11-13T18:36:45'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Lenovo Legion Y530-15ICH Solid State Drive Replacement - iFixit Repair
-        Guide
-      url: https://www.ifixit.com/Guide/Lenovo+Legion+Y530-15ICH+Solid+State+Drive+Replacement/131072
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-11-13T18:52:58'
-      pinned: false
-      title: Тренинг DevOps Fundamentals в городе Минск от EPAM | training.by
-      url: https://training.by/#!/Training/2560?lang=ru
-    - last_visited: '2020-11-13T18:56:11'
-      original-url: https://training.by/#!/Training/2560?lang=ru
-      pinned: false
-      title: Sign In to EPAM
-      url: https://access.epam.com/auth/realms/plusx/protocol/openid-connect/auth?client_id=RDPortal&response_type=code&redirect_uri=https%3A%2F%2Ftraining.by%2FAuth%2FLoginCallback&scope=openid+profile+email&state=fcfec0feca234408b958b0fa2dd9bd92&nonce=586845de4421466da1a37af93a229d99&ui_locales=ru
-    - last_visited: '2020-11-13T18:56:21'
-      pinned: false
-      title: Sign in - Google Accounts
-      url: https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?scope=openid%20profile%20email&state=0NaxW2gyjGyHSht0RLuR_FR2cuyHP8rpuWCzki1Tomw.vJGLI81MlC4.RDPortal&response_type=code&client_id=28302459813-vq689q6sp2a5hr1h3lu03eu7la4b5pk5.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Faccess.epam.com%2Fauth%2Frealms%2Fplusx%2Fbroker%2Fgoogle%2Fendpoint&nonce=8n-NjMi_wQwVAxBAOXsXXw&flowName=GeneralOAuthFlow
-    - last_visited: '2020-11-13T18:56:25'
-      original-url: https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?scope=openid%20profile%20email&state=0NaxW2gyjGyHSht0RLuR_FR2cuyHP8rpuWCzki1Tomw.vJGLI81MlC4.RDPortal&response_type=code&client_id=28302459813-vq689q6sp2a5hr1h3lu03eu7la4b5pk5.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Faccess.epam.com%2Fauth%2Frealms%2Fplusx%2Fbroker%2Fgoogle%2Fendpoint&nonce=8n-NjMi_wQwVAxBAOXsXXw&flowName=GeneralOAuthFlow
-      pinned: false
-      title: Sign Up to EPAM
-      url: https://access.epam.com/auth/realms/plusx/login-actions/post-broker-login?client_id=RDPortal&tab_id=vJGLI81MlC4#
-    - last_visited: '2020-11-13T18:56:54'
-      original-url: https://training.by/#!/Training/2560
-      pinned: false
-      title: Тренинг DevOps Fundamentals в городе Минск от EPAM | training.by
-      url: https://training.by/#!/Training/2560?lang=ru
-    - active: true
-      last_visited: '2020-11-13T20:26:57'
-      original-url: https://training.by/#!?lang=ru
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 1842
-      title: Тренинг-центр EPAM в Беларуси - программы обучения для студентов, а также
-        тех, кто хочет начать карьеру в IT | training.by
-      url: https://training.by/#!/Home?lang=ru
+      title: My ~TiddlyWiki — a non-linear personal web notebook
+      url: http://127.0.0.1:8081/
       zoom: 1.0

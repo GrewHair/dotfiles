@@ -1,63 +1,11 @@
 windows:
 - geometry: !!binary |
-    AdnQywADAAAAAAUAAAAAAAAADH8AAAQfAAAFAwAAAAMAAAx8AAAEHAAAAAIAAAAAB4AAAAUDAAAA
-    AwAADHwAAAQc
+    AdnQywADAAAAAAAAAAAAAAAABXcAAAQZAAAAAwAAAAMAAAV0AAAD/gAAAAEABAAABXgAAAAAAAAA
+    AAAABXcAAAQZ
   tabs:
   - history:
     - active: true
-      last_visited: '2020-11-14T17:36:43'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Mithril
-      url: https://lhorie.github.io/mithril-blog/a-spreadsheet-in-60-lines-of-javascript.html
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-11-14T17:36:55'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: 'Looking to create a python overlay on top of a desktop to do fast screen
-        grabs and output bounding box? : learnpython'
-      url: https://www.reddit.com/r/learnpython/comments/9v6ktg/looking_to_create_a_python_overlay_on_top_of_a/
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-11-14T17:36:43'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: python - Creating a transparent overlay with qt - Stack Overflow
-      url: https://stackoverflow.com/questions/25950049/creating-a-transparent-overlay-with-qt
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-11-14T17:36:43'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: 'Python: text overlay on top of all windows including fullscreen in Linux
-        - Stack Overflow'
-      url: https://stackoverflow.com/questions/41998489/python-text-overlay-on-top-of-all-windows-including-fullscreen-in-linux
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-11-14T17:36:43'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: c - X11 - Draw on Overlay Window - Stack Overflow
-      url: https://stackoverflow.com/questions/21780789/x11-draw-on-overlay-window
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-11-14T17:36:43'
+      last_visited: '2020-12-02T17:38:29'
       pinned: false
       scroll-pos:
         x: 0
@@ -66,384 +14,400 @@ windows:
       url: https://javascript.info/
       zoom: 1.0
   - history:
-    - last_visited: '2020-11-14T09:59:37'
-      pinned: false
-      title: An Introduction to JavaScript
-      url: https://javascript.info/intro
-    - last_visited: '2020-11-14T11:22:12'
-      pinned: false
-      title: Manuals and specifications
-      url: https://javascript.info/manuals-specifications
-    - last_visited: '2020-11-14T11:24:45'
-      pinned: false
-      title: Code editors
-      url: https://javascript.info/code-editors
-    - last_visited: '2020-11-14T11:27:20'
-      pinned: false
-      title: Developer console
-      url: https://javascript.info/devtools
-    - last_visited: '2020-11-14T11:31:49'
-      pinned: false
-      title: JavaScript Fundamentals
-      url: https://javascript.info/first-steps
-    - last_visited: '2020-11-14T11:32:58'
-      pinned: false
-      title: Hello, world!
-      url: https://javascript.info/hello-world
-    - last_visited: '2020-11-14T11:42:18'
-      pinned: false
-      title: Code structure
-      url: https://javascript.info/structure
-    - last_visited: '2020-11-14T12:02:00'
-      pinned: false
-      title: The modern mode, "use strict"
-      url: https://javascript.info/strict-mode
     - active: true
-      last_visited: '2020-11-14T17:36:43'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 13133
-      title: Variables
-      url: https://javascript.info/variables
-      zoom: 1.5
-  - history:
-    - active: true
-      last_visited: '2020-11-14T17:37:29'
+      last_visited: '2020-12-02T17:38:28'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Inbox (1,076) - barysdzemidziuk@gmail.com - Gmail
-      url: https://mail.google.com/mail/u/0/#inbox
-      zoom: 1.25
-  - history:
-    - last_visited: '2020-11-14T11:37:15'
-      pinned: false
-      title: inline javascript vs file - Google Search
-      url: https://www.google.com/search?q=inline%20javascript%20vs%20file
-    - last_visited: '2020-11-14T11:43:30'
-      pinned: false
-      title: automatic semicolon - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk03DITDxtTlzxRL7nttJTSEa3-eCZA%3A1605299834552&ei=eu6uX-ahIYSOrwSevLX4AQ&q=automatic+semicolon&oq=automatic+semicolon&gs_lcp=CgZwc3ktYWIQAzIFCAAQyQMyAggAMgIIADIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeOgcIIxDqAhAnOggIABDJAxCRAjoFCAAQkQI6BAgAEEM6CAguEMcBEKMCOgIILjoHCAAQyQMQQzoKCC4QxwEQowIQQzoNCC4QxwEQowIQQxCTAjoICC4QxwEQrwE6DgguEMcBEK8BEMkDEJMCOgcIABAUEIcCOggIABAWEAoQHlCyrRZYk-AWYJvnFmgBcAF4AIAB5AGIAdQRkgEGNC4xNC4xmAEAoAEBqgEHZ3dzLXdperABCsABAQ&sclient=psy-ab&ved=0ahUKEwjmxpXzr4DtAhUEx4sKHR5eDR8Q4dUDCA0&uact=5
-    - last_visited: '2020-11-14T11:43:33'
-      pinned: false
-      title: automatic semicolon insertion - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk03iAz1wl4NfHfzSAMAhJZsynXH3oQ%3A1605300209518&ei=8e-uX9ClH8GprgSolKOgBw&q=automatic+semicolon+insertion&oq=automatic+semicolon+ins&gs_lcp=CgZwc3ktYWIQAxgAMgUIABDJAzICCAAyAggAMgQIABBDMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIICAAQFhAKEB5Q2AdY4wpghhJoAHABeACAAXaIAZgDkgEDMi4ymAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab
-    - active: true
-      last_visited: '2020-11-14T17:36:45'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: JavaScript/Automatic semicolon insertion - Wikibooks, open books for
-        an open world
-      url: https://en.wikibooks.org/wiki/JavaScript/Automatic_semicolon_insertion
-      zoom: 1.5
-  - history:
-    - active: true
-      last_visited: '2020-11-14T17:36:43'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Inline vs external Javascript
-      url: https://renenyffenegger.ch/notes/development/languages/JavaScript/inline-vs-external
+      title: 'Conditional branching: if, ''?'''
+      url: https://javascript.info/ifelse
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2020-11-14T17:36:43'
+      last_visited: '2020-12-02T17:38:31'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: https://javascript.info/article/devtools/bug.html
-      url: https://javascript.info/article/devtools/bug.html
+      title: Learn
+      url: https://learn.epam.com/start
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2020-11-14T17:36:49'
+      last_visited: '2020-12-02T17:38:29'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: clojurescript - Google Search
-      url: https://www.google.com/search?q=clojurescript
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-11-14T17:36:43'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: JavaScript engine - Wikipedia
-      url: https://en.wikipedia.org/wiki/JavaScript_engine
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-11-14T10:16:55'
-      pinned: false
-      title: transpilation - Google Search
-      url: https://www.google.com/search?q=transpilation
-    - active: true
-      last_visited: '2020-11-14T17:36:49'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: languages transpiled to javascript - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk017L-8-orbWdfBeznAVDmV_Xy8tAQ%3A1605295014087&ei=ptuuX8fcBPH1qwHBqI3wAw&q=languages+transpiled+to+javascript&oq=languages+transpiled+to+javascript&gs_lcp=CgZwc3ktYWIQAzIJCAAQyQMQFhAeOgcIIxDqAhAnOg0ILhDHARCvARDqAhAnOggIABDJAxCRAjoFCAAQkQI6AggAOggILhDHARCvAToFCAAQyQM6AgguOggILhDHARCjAjoKCC4QxwEQrwEQCjoECAAQCjoGCAAQFhAeOggIABAWEAoQHjoJCAAQyQMQDRAeOgYIABANEB46BwgAEMkDEA1Q9rVpWO_wamC692poB3ABeAGAAekBiAHZKpIBBzIyLjI0LjOYAQCgAQGqAQdnd3Mtd2l6sAEKwAEB&sclient=psy-ab&ved=0ahUKEwjHx8v4nYDtAhXx-ioKHUFUAz4Q4dUDCA0&uact=5
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-11-14T17:36:43'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Google Translate
-      url: https://translate.google.com/#view=home&op=translate&sl=en&tl=ru&text=grease
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-11-14T10:41:42'
-      pinned: false
-      title: WHAT IS WEBPACK, HOW DOES IT WORK? | Webpack 2 Basics Tutorial - YouTube
-      url: https://www.youtube.com/watch?v=GU-2T7k9NfI&t=217s
-    - last_visited: '2020-11-14T10:41:43'
-      original-url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DGU-2T7k9NfI%2526t%253D217s&hl=en&ec=65620
-      pinned: false
-      title: YouTube
-      url: https://accounts.google.com/signin/v2/identifier?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DGU-2T7k9NfI%2526t%253D217s&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin
-    - last_visited: '2020-11-14T10:42:03'
-      original-url: https://accounts.google.com/signin/v2/identifier?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DGU-2T7k9NfI%2526t%253D217s&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin
-      pinned: false
-      title: YouTube
-      url: https://accounts.google.com/signin/v2/challenge/pwd?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DGU-2T7k9NfI%2526t%253D217s&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin&cid=1&navigationDirection=forward&TL=AM3QAYb17a0P5BQSMSyutjnN5WpJD4HmjDDiFq3U516lpuJ8TXnUYGewjysEqG26
-    - last_visited: '2020-11-14T10:42:09'
-      pinned: false
-      title: Account Recovery Options
-      url: https://myaccount.google.com/signinoptions/recovery-options-collection?utm_source=Web&utm_medium=Web&utm_campaign=interstitial&oev=lytf%3D7%26wvtx%3D2%26trs%3Dli%26stel%3D1&hl=en&continue=https://accounts.google.com/ServiceLogin?continue%3Dhttps%253A%252F%252Fwww.youtube.com%252Fsignin%253Faction_handle_signin%253Dtrue%2526app%253Ddesktop%2526hl%253Den%2526next%253Dhttps%25253A%25252F%25252Fwww.youtube.com%25252Fwatch%25253Fv%25253DGU-2T7k9NfI%252526t%25253D217s%26service%3Dyoutube%26hl%3Den%26authuser%3D0%26passive%3Dtrue%26sarp%3D1%26aodrpl%3D1&service=youtube&rapt=AEjHL4MwDNDBM7R6wFerP4cyciPvNT3dfMAJlDrj7ccDr0EY_atVIFhx-j9TZzlF1zjwUZ7KM4F7KBTgTOvf-I57DTFXZ8T6Wg&pli=1
-    - last_visited: '2020-11-14T14:08:08'
-      pinned: false
-      title: (94) WHAT IS WEBPACK, HOW DOES IT WORK? | Webpack 2 Basics Tutorial -
-        YouTube
-      url: https://www.youtube.com/watch?v=GU-2T7k9NfI&t=217s
-    - active: true
-      last_visited: '2020-11-14T17:36:43'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: dockerhub - YouTube
-      url: https://www.youtube.com/results?search_query=dockerhub
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-11-14T17:36:45'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: (97) Docker Hub Introduction Tutorial - YouTube
-      url: https://www.youtube.com/watch?v=ASNL27a7sE4
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-11-14T07:15:00'
-      pinned: false
-      title: why should i use dockerhub - Google Search
-      url: https://www.google.com/search?q=why%20should%20i%20use%20dockerhub
-    - active: true
-      last_visited: '2020-11-14T17:36:43'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Everything that You Should Know About Docker Hub - Geekflare
-      url: https://geekflare.com/docker-hub-introduction/
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-11-14T17:36:43'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Lenovo Legion Y530-15ICH Solid State Drive Replacement - iFixit Repair
-        Guide
-      url: https://www.ifixit.com/Guide/Lenovo+Legion+Y530-15ICH+Solid+State+Drive+Replacement/131072
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-11-14T06:52:58'
-      pinned: false
-      title: Тренинг DevOps Fundamentals в городе Минск от EPAM | training.by
-      url: https://training.by/#!/Training/2560?lang=ru
-    - last_visited: '2020-11-14T06:56:11'
-      original-url: https://training.by/#!/Training/2560?lang=ru
-      pinned: false
       title: Sign In to EPAM
-      url: https://access.epam.com/auth/realms/plusx/protocol/openid-connect/auth?client_id=RDPortal&response_type=code&redirect_uri=https%3A%2F%2Ftraining.by%2FAuth%2FLoginCallback&scope=openid+profile+email&state=fcfec0feca234408b958b0fa2dd9bd92&nonce=586845de4421466da1a37af93a229d99&ui_locales=ru
-    - last_visited: '2020-11-14T06:56:21'
-      pinned: false
-      title: Sign in - Google Accounts
-      url: https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?scope=openid%20profile%20email&state=0NaxW2gyjGyHSht0RLuR_FR2cuyHP8rpuWCzki1Tomw.vJGLI81MlC4.RDPortal&response_type=code&client_id=28302459813-vq689q6sp2a5hr1h3lu03eu7la4b5pk5.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Faccess.epam.com%2Fauth%2Frealms%2Fplusx%2Fbroker%2Fgoogle%2Fendpoint&nonce=8n-NjMi_wQwVAxBAOXsXXw&flowName=GeneralOAuthFlow
-    - last_visited: '2020-11-14T06:56:25'
-      original-url: https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?scope=openid%20profile%20email&state=0NaxW2gyjGyHSht0RLuR_FR2cuyHP8rpuWCzki1Tomw.vJGLI81MlC4.RDPortal&response_type=code&client_id=28302459813-vq689q6sp2a5hr1h3lu03eu7la4b5pk5.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Faccess.epam.com%2Fauth%2Frealms%2Fplusx%2Fbroker%2Fgoogle%2Fendpoint&nonce=8n-NjMi_wQwVAxBAOXsXXw&flowName=GeneralOAuthFlow
-      pinned: false
-      title: Sign Up to EPAM
-      url: https://access.epam.com/auth/realms/plusx/login-actions/post-broker-login?client_id=RDPortal&tab_id=vJGLI81MlC4#
-    - last_visited: '2020-11-14T06:56:54'
-      original-url: https://training.by/#!/Training/2560
-      pinned: false
-      title: Тренинг DevOps Fundamentals в городе Минск от EPAM | training.by
-      url: https://training.by/#!/Training/2560?lang=ru
-    - last_visited: '2020-11-14T17:36:43'
-      pinned: false
-      title: Тренинг-центр EPAM в Беларуси - программы обучения для студентов, а также
-        тех, кто хочет начать карьеру в IT | training.by
-      url: https://training.by/#!/Home?lang=ru
-    - last_visited: '2020-11-14T18:22:38'
-      pinned: false
-      title: (97) YouTube
-      url: https://www.youtube.com/
-    - last_visited: '2020-11-14T18:35:40'
-      pinned: false
-      title: (97) bash scripting unit tests - YouTube
-      url: https://www.youtube.com/results?search_query=bash+scripting+unit+tests
-    - last_visited: '2020-11-14T18:35:40'
-      pinned: false
-      title: (97) bash scripting tdd - YouTube
-      url: https://www.youtube.com/results?search_query=bash+scripting+tdd
-    - active: true
-      last_visited: '2020-11-14T18:36:03'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: (97) bash scripting test driven - YouTube
-      url: https://www.youtube.com/results?search_query=bash+scripting+test+driven
+      url: https://access.epam.com/auth/realms/plusx/protocol/openid-connect/auth?client_id=learnId&redirect_uri=https%3A%2F%2Flearn.epam.com%2Fauth%2Fsignin-iam&response_type=code&scope=openid%20profile%20email%20offline_access&code_challenge=0dkfoIQfDCeu6vcXLWm5cFv4A_KSrVOydAmDlckQ5ac&code_challenge_method=S256&nonce=637417967132327240.MTk4OTI0NzgtNDc0OC00MmQzLTk2ODItOWZjMTM4ZDg2NTNiNTFjODM5ZjEtM2M0Yi00ZTllLTg0NmYtMzIwNzgzOGQwZDEz&state=CfDJ8IajQ5NwKntKsOi58laDrEzO3ibY09I_MEHGktyHD53D-3VzSi4DAb4bUnhHS8z4XT6M1NoOqpnqqaqVaKtZs8G080lyXDCXxwhuoQdzxe8En5rMrLaXpnu1q68roVeVlxn_kvPixjijP-iJMI0In6cWmUuAdTVGyf-zrlZeeVoItC7QofmcuAVrFdP8Yfjevcrszt7zGPYdPrx82ouOro7XrHoC4IVL8kUZypvt5tIsa_eu-OhJC02XPM59ghfx9F82GrYQl3usruIOV2jNZTvTd2uiqI0O3fgcnyA_y7hNM0iRbEC5Y6SSPNF3RKXGaLUCiykTuX9SHNAZYEWMq751gtt7D4QQQNwPcN3fX05EkzSAjMlP9MuaBRb7Ib_fWf6gB1c47EB1PYUEC_MdXrxyUd_xA7dsH2ee2WhpqELP-WIBW9eJPUUZPpmzG_x-DapkJ2XuUfONS9DRTidx4V4&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=5.5.0.0
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2020-11-14T18:35:31'
+      last_visited: '2020-12-02T17:38:29'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: '(97) Shell Ninja: Mastering the Art of Shell Scripting | Roland Huß
-        - YouTube'
-      url: https://www.youtube.com/watch?v=1mt2-LbKuvY
+      title: Sign In to EPAM
+      url: https://access.epam.com/auth/realms/plusx/protocol/openid-connect/auth?nonce=DqiL9u7IJ700myXupYWdsDKvkQaRiepiE7ccJu2ZVJy2hAnAKaL0bSagATUoo9gT&state=XOgsYmOccT8JhRalTq6Tj5JEPF9bGsL9&redirect_uri=https://elearn.epam.com/auth/complete/extended-openid-connect/&response_type=code&client_id=learnId&scope=openid+profile+email
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2020-11-15T00:30:42'
+      last_visited: '2020-12-02T17:38:28'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: devops - Google Search
-      url: https://www.google.com/search?q=devops
+      title: Node (networking) - Wikipedia
+      url: https://en.wikipedia.org/wiki/Node_(networking)
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-12-02T17:38:28'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: IPv4 - Wikipedia
+      url: https://en.wikipedia.org/wiki/IPv4#Identification
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-12-02T17:38:28'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Classful network - Wikipedia
+      url: https://en.wikipedia.org/wiki/Classful_network
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2020-12-02T17:38:28'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Internet Protocol - Wikipedia
+      url: https://en.wikipedia.org/wiki/Internet_Protocol
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-12-02T17:38:48'
+      pinned: false
+      title: Best SNES PAL Region Games Never Released in North America - SNESdrunk
+        - YouTube
+      url: https://www.youtube.com/watch?v=HHt885Z6LDQ
+    - last_visited: '2020-12-02T17:38:49'
+      original-url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DHHt885Z6LDQ&hl=en&ec=65620
+      pinned: false
+      title: YouTube
+      url: https://accounts.google.com/signin/v2/identifier?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DHHt885Z6LDQ&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin
+    - last_visited: '2020-12-02T17:39:12'
+      original-url: https://accounts.google.com/signin/v2/identifier?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DHHt885Z6LDQ&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin
+      pinned: false
+      title: YouTube
+      url: https://accounts.google.com/signin/v2/challenge/pwd?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DHHt885Z6LDQ&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin&cid=1&navigationDirection=forward&TL=AM3QAYb19_LcQ1anWeMwUO0FGce1O6yL8kCYOTqX0JqFjIl-igjFCTrEWcrV1kh3
+    - active: true
+      last_visited: '2020-12-02T17:39:39'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: (112) Best SNES PAL Region Games Never Released in North America - SNESdrunk
+        - YouTube
+      url: https://www.youtube.com/watch?v=HHt885Z6LDQ
       zoom: 1.0
   - active: true
     history:
-    - active: true
-      last_visited: '2020-11-15T00:30:56'
+    - last_visited: '2020-12-02T17:50:59'
       pinned: false
-      scroll-pos:
-        x: 0
-        y: 200
-      title: DevOps - Wikipedia
-      url: https://en.wikipedia.org/wiki/DevOps
-      zoom: 1.0
-  - history:
+      title: (111) Introduction to Networking | Network Fundamentals Part 1 - YouTube
+      url: https://www.youtube.com/watch?v=cNwEVYkx2Kk&list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8
+    - last_visited: '2020-12-02T17:50:59'
+      pinned: false
+      title: (111) Cabling Devices | Network Fundamentals Part 2 - YouTube
+      url: https://www.youtube.com/watch?v=Ud8UeNgdaz4&list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8&index=2
+    - last_visited: '2020-12-02T19:10:19'
+      pinned: false
+      title: (111) How the OSI Model Works | Network Fundamentals Part 3 - YouTube
+      url: https://www.youtube.com/watch?v=y9PG-_ZNbWg&list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8&index=3
+    - last_visited: '2020-12-02T19:35:21'
+      pinned: false
+      title: (112) How IP Addresses Work | Network Fundamentals Part 4 - YouTube
+      url: https://www.youtube.com/watch?v=v8aYhOxZuNg&list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8&index=4
+    - last_visited: '2020-12-02T21:52:16'
+      pinned: false
+      title: (112) IP Addressing in Depth | Network Fundamentals Part 5 - YouTube
+      url: https://www.youtube.com/watch?v=Tnjdk08z3HM&list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8&index=5
     - active: true
-      last_visited: '2020-11-14T17:59:23'
+      last_visited: '2020-12-02T23:57:05'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: (97) Выбираем язык программирования и друзей | Отвечаю на ваши комменты
-        - YouTube
-      url: https://www.youtube.com/watch?v=mYp313GUqRo
+      title: (112) TCP/IP Model (Internet Protocol Suite) | Network Fundamentals Part
+        6 - YouTube
+      url: https://www.youtube.com/watch?v=HFRU01uS9nA&list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8&index=6
       zoom: 1.0
+  - history:
+    - last_visited: '2020-12-02T17:38:28'
+      pinned: false
+      title: Why I use qutebrowser and how I configure it - adblocking, note taking,
+        and colors - YouTube
+      url: https://www.youtube.com/watch?v=Av8Sfaprcb4
+    - last_visited: '2020-12-02T22:57:28'
+      pinned: false
+      title: (112) YouTube
+      url: https://www.youtube.com/
+    - last_visited: '2020-12-02T22:57:28'
+      pinned: false
+      title: (112) 16 бит тому назад - YouTube
+      url: https://www.youtube.com/results?search_query=16+%D0%B1%D0%B8%D1%82+%D1%82%D0%BE%D0%BC%D1%83+%D0%BD%D0%B0%D0%B7%D0%B0%D0%B4
+    - last_visited: '2020-12-02T22:57:38'
+      pinned: false
+      title: (112) Дмитрий Бачило - YouTube
+      url: https://www.youtube.com/user/BachiloDmitry
+    - last_visited: '2020-12-02T22:58:06'
+      pinned: false
+      title: (112) Дмитрий Бачило - YouTube
+      url: https://www.youtube.com/c/BachiloDmitry/videos
+    - last_visited: '2020-12-02T22:58:14'
+      pinned: false
+      title: (112) Дмитрий Бачило - YouTube
+      url: https://www.youtube.com/c/BachiloDmitry/videos
+    - last_visited: '2020-12-02T22:58:20'
+      pinned: false
+      title: (112) Дмитрий Бачило - YouTube
+      url: https://www.youtube.com/c/BachiloDmitry/videos
+    - last_visited: '2020-12-02T22:58:20'
+      pinned: false
+      title: (112) Дмитрий Бачило - YouTube
+      url: https://www.youtube.com/c/BachiloDmitry/videos
+    - last_visited: '2020-12-02T22:58:21'
+      pinned: false
+      title: (112) Дмитрий Бачило - YouTube
+      url: https://www.youtube.com/c/BachiloDmitry/videos
+    - last_visited: '2020-12-02T22:58:24'
+      pinned: false
+      title: (112) Дмитрий Бачило - YouTube
+      url: https://www.youtube.com/c/BachiloDmitry/videos
+    - last_visited: '2020-12-02T22:58:26'
+      pinned: false
+      title: (112) Дмитрий Бачило - YouTube
+      url: https://www.youtube.com/c/BachiloDmitry/videos
+    - last_visited: '2020-12-02T22:58:28'
+      pinned: false
+      title: (112) Дмитрий Бачило - YouTube
+      url: https://www.youtube.com/c/BachiloDmitry/videos
+    - last_visited: '2020-12-02T22:58:30'
+      pinned: false
+      title: (112) Дмитрий Бачило - YouTube
+      url: https://www.youtube.com/c/BachiloDmitry/videos
+    - last_visited: '2020-12-02T23:06:35'
+      pinned: false
+      title: (112) Дмитрий Бачило - YouTube
+      url: https://www.youtube.com/c/BachiloDmitry/videos
+    - active: true
+      last_visited: '2020-12-02T23:07:09'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: (112) Ставим Linux на планшет Asus Vivotab Note 8... опять. - YouTube
+      url: https://www.youtube.com/watch?v=yzjyW_1EumE
+      zoom: 1.0
+- geometry: !!binary |
+    AdnQywADAAAAAAV4AAAAAAAADPcAAAQfAAAFewAAAAMAAAz0AAAEHAAAAAIAAAAAB4AAAAV7AAAA
+    AwAADPQAAAQc
+  tabs:
+  - active: true
+    history:
+    - active: true
+      last_visited: '2020-12-02T17:38:30'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: My ~TiddlyWiki — a non-linear personal web notebook
+      url: http://127.0.0.1:8081/
+      zoom: 1.1
 - active: true
   geometry: !!binary |
-    AdnQywADAAAAAAAAAAAAAAAABP8AAAPnAAAAAwAAAAMAAAT8AAAD5AAAAAEAAAAABQAAAAADAAAA
-    AwAABPwAAAPk
+    AdnQywADAAAAAAz4AAAAAAAAEfcAAAOnAAAM+wAAAAMAABH0AAADpAAAAAAAAAAABQAAAAz7AAAA
+    AwAAEfQAAAOk
   tabs:
   - history:
     - active: true
-      last_visited: '2020-11-15T00:41:36'
+      last_visited: '2020-12-02T17:38:29'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: DuckDuckGo — Privacy, simplified.
-      url: https://start.duckduckgo.com/
+      title: Node (networking) - Wikipedia
+      url: https://en.wikipedia.org/wiki/Node_(networking)
       zoom: 1.0
   - history:
-    - last_visited: '2020-11-15T00:42:04'
-      pinned: false
-      title: (97) YouTube
-      url: https://www.youtube.com/
-    - last_visited: '2020-11-15T00:42:04'
-      pinned: false
-      title: (97) Linux Browser wars - Performance isn't everything... - YouTube
-      url: https://www.youtube.com/watch?v=DPVrjH1mkkk
-    - last_visited: '2020-11-15T00:48:43'
-      pinned: false
-      title: (97) qutebrowser - YouTube
-      url: https://www.youtube.com/results?search_query=qutebrowser
     - active: true
-      last_visited: '2020-11-15T00:49:00'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 3040
-      title: (97) qutebrowser - YouTube
-      url: https://www.youtube.com/results?search_query=qutebrowser&sp=EgIIBQ%253D%253D
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-11-15T01:24:30'
-      pinned: false
-      title: (97) How To Use And Customize Qutebrowser on Linux - YouTube
-      url: https://www.youtube.com/watch?v=vZ7rbZBysyo
-    - last_visited: '2020-11-15T01:24:30'
-      pinned: false
-      title: (97) BadWolf Is A Minimal, Privacy-Oriented Web Browser - YouTube
-      url: https://www.youtube.com/watch?v=EBWy1d-JE6A
-    - active: true
-      last_visited: '2020-11-15T01:25:42'
+      last_visited: '2020-12-02T17:38:31'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: (97) Linux Youtubers That You Should Be Watching - YouTube
-      url: https://www.youtube.com/watch?v=NybbsnDT5NI
+      title: Distributed computing - Wikipedia
+      url: https://en.wikipedia.org/wiki/Distributed_computing
       zoom: 1.0
   - history:
-    - last_visited: '2020-11-15T01:40:05'
-      pinned: false
-      title: installing new linux on another disk will i see previous root directory
-        - Google Search
-      url: https://www.google.com/search?q=installing%20new%20linux%20on%20another%20disk%20will%20i%20see%20previous%20root%20directory
     - active: true
-      last_visited: '2020-11-15T01:40:40'
+      last_visited: '2020-12-02T17:38:29'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: dual boot two linux distros will i see files - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk016NPy_H_xqHhDMivsjZNqaYts5TQ%3A1605393604105&ei=xFywX5KGBoX4U4GvmrgN&q=dual+boot+two+linux+distros+will+i+see+files&oq=dual+boot+two+linux+distros+will+i+see+files&gs_lcp=CgZwc3ktYWIQAzoHCCMQ6gIQJzoHCC4Q6gIQJzoECCMQJzoICAAQyQMQkQI6BQgAEJECOggILhDHARCjAjoCCAA6BAguEEM6CgguEMcBEKMCEEM6BAgAEEM6AgguOgcILhBDEJMCOgcIABDJAxBDOgQIABAKOggILhDHARCvAToKCAAQyQMQFBCHAjoHCAAQFBCHAjoFCAAQyQM6BggAEBYQHjoICCEQFhAdEB46BQghEKABOgQIIRAVULGWAVi0_wFgyoICaAFwAXgAgAGcAYgBvCSSAQUxNS4yOZgBAKABAaoBB2d3cy13aXqwAQrAAQE&sclient=psy-ab&ved=0ahUKEwiS-PybjYPtAhUF_BQKHYGXBtcQ4dUDCA0&uact=5
+      title: Communication endpoint - Wikipedia
+      url: https://en.wikipedia.org/wiki/Communication_endpoint
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-12-02T17:57:40'
+      pinned: false
+      title: utp - Google Search
+      url: https://www.google.com/search?q=utp
+    - active: true
+      last_visited: '2020-12-02T17:57:47'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 1139
+      title: Twisted pair - Wikipedia
+      url: https://en.wikipedia.org/wiki/Twisted_pair
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-12-02T18:00:26'
+      pinned: false
+      title: 10gbase-t - Google Search
+      url: https://www.google.com/search?q=10gbase-t
+    - last_visited: '2020-12-02T18:00:28'
+      pinned: false
+      title: 10 Gigabit Ethernet - Wikipedia
+      url: https://en.wikipedia.org/wiki/10_Gigabit_Ethernet
+    - active: true
+      last_visited: '2020-12-02T18:00:57'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 11149
+      title: 10 Gigabit Ethernet - Wikipedia
+      url: https://en.wikipedia.org/wiki/10_Gigabit_Ethernet#10GBASE-T
+      zoom: 1.25
+  - history:
+    - last_visited: '2020-12-02T18:01:42'
+      pinned: false
+      title: ethernet standards - Google Search
+      url: https://www.google.com/search?q=ethernet%20standards
+    - active: true
+      last_visited: '2020-12-02T18:01:46'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 1537
+      title: Ethernet - Wikipedia
+      url: https://en.wikipedia.org/wiki/Ethernet
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-12-02T18:02:29'
+      pinned: false
+      title: ieee 802.3 - Google Search
+      url: https://www.google.com/search?q=ieee%20802.3
+    - active: true
+      last_visited: '2020-12-02T18:02:33'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: IEEE 802.3 - Wikipedia
+      url: https://en.wikipedia.org/wiki/IEEE_802.3
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-12-02T19:06:48'
+      pinned: false
+      title: lan segment - Google Search
+      url: https://www.google.com/search?q=lan%20segment
+    - last_visited: '2020-12-02T19:22:43'
+      pinned: false
+      title: session control protocol - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk03JDnfuL37ETn6Go_6El9BFWwWGKQ%3A1606925207199&ei=l7vHX8u6C-HirgS7uZvoCg&q=session+control+protocol&oq=session+control+&gs_lcp=CgZwc3ktYWIQAxgAMgUIABDJAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoHCCMQ6gIQJzoHCAAQyQMQQzoECAAQQzoECCMQJzoCCC46BwguEMkDEEM6BwgjELECECc6BAgAEAo6BAguEAo6BwgAEMkDEA06BAgAEA06BwgAEMkDEAo6CgguEMcBEK8BEAo6CAguEMcBEK8BUIfcOVjzlDpgpp46aANwAXgBgAHhAYgBnxOSAQY1LjExLjKYAQCgAQGqAQdnd3Mtd2l6sAEKwAEB&sclient=psy-ab
+    - last_visited: '2020-12-02T21:08:21'
+      pinned: false
+      title: classless interdomain routing - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk00Ec9FkBSQP2XgaWDl_Y4nPkrnP3w%3A1606926162687&ei=Ur_HX_uzKZWEwPAP7rSGqA4&q=classless+interdomain+routing&oq=classless+inter&gs_lcp=CgZwc3ktYWIQAxgAMgUIABDJAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoHCCMQ6gIQJzoECCMQJzoICAAQyQMQkQI6BQgAEJECOgIILjoECAAQQ1CWsoIDWKvOggNgkt-CA2gBcAF4AIAB9QGIAeIOkgEGNC4xMC4xmAEAoAEBqgEHZ3dzLXdperABCsABAQ&sclient=psy-ab
+    - active: true
+      last_visited: '2020-12-02T21:52:30'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Classless Inter-Domain Routing - Wikipedia
+      url: https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
+      zoom: 1.25
+  - history:
+    - last_visited: '2020-12-02T22:15:31'
+      pinned: false
+      title: broadcast traffic - Google Search
+      url: https://www.google.com/search?q=broadcast%20traffic
+    - active: true
+      last_visited: '2020-12-02T22:15:37'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 160
+      title: Broadcasting (networking) - Wikipedia
+      url: https://en.wikipedia.org/wiki/Broadcasting_(networking)
       zoom: 1.0
   - active: true
     history:
+    - last_visited: '2020-12-03T00:01:04'
+      pinned: false
+      title: request for comments - Google Search
+      url: https://www.google.com/search?q=request%20for%20comments
     - active: true
-      last_visited: '2020-11-15T01:40:42'
+      last_visited: '2020-12-03T00:02:38'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: system installation - How to dual boot two Linux distros? - Unix & Linux
-        Stack Exchange
-      url: https://unix.stackexchange.com/questions/326230/how-to-dual-boot-two-linux-distros
+      title: Request for Comments - Wikipedia
+      url: https://en.wikipedia.org/wiki/Request_for_Comments
       zoom: 1.0
+  - history:
+    - last_visited: '2020-12-02T23:59:04'
+      pinned: false
+      title: rfc document - Google Search
+      url: https://www.google.com/search?q=rfc%20document
+    - last_visited: '2020-12-02T23:59:14'
+      pinned: false
+      title: rfc tcp/ip - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk03pSQCOH5QDmQqxKMVaWAPgQjTxvw%3A1606942742968&ei=FgDIX5_LOqnLrgTrkJLgCg&q=rfc+tcp%2Fip&oq=rfc+tcp%2Fip&gs_lcp=CgZwc3ktYWIQAzIFCAAQyQMyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB46BAgjECc6BwgjEMkDECc6AggAOgQIABBDOggIABDJAxCRAjoHCAAQFBCHAjoICC4QxwEQrwE6BAgAEApQ9SZYgEFgzURoAHABeACAAaYCiAG1DpIBAzItN5gBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwifrvmamLDtAhWppYsKHWuIBKwQ4dUDCA0&uact=5
+    - active: true
+      last_visited: '2020-12-02T23:59:20'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: RFC 1180 - TCP/IP tutorial
+      url: https://tools.ietf.org/html/rfc1180
+      zoom: 1.0
+  - history:
+    - last_visited: '2020-12-03T00:00:05'
+      pinned: false
+      title: rfc 1122 - Google Search
+      url: https://www.google.com/search?q=rfc%201122
+    - active: true
+      last_visited: '2020-12-03T00:00:10'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: RFC 1122 - Requirements for Internet Hosts - Communication Layers
+      url: https://tools.ietf.org/html/rfc1122
+      zoom: 1.75

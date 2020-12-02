@@ -6,6 +6,10 @@ import os
 
 #shift_pressed = False
 
+def hjkl_mode():
+    """Enter i3 hjkl"""
+    os.system('i3-msg mode "hjkl"')
+
 def wheel_up():
     """Scroll the mousewheel up"""
     os.system('xdotool click 4')
@@ -119,6 +123,7 @@ define_keymap(re.compile("Vivaldi-stable"), {
     K("M-n"): wheel_down,
     K("M-p"): wheel_up,
     K("M-y"): wheel_up,
+    K("C-g"): hjkl_mode,
 }, "Vivaldi Devtools")
 
 define_keymap(re.compile("figma-linux"), {

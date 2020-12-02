@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 _rofi () {
-    rofi -theme solarized -dmenu -i -no-levenshtein-sort -width 1000 "$@"
+    rofi -fullscreen -theme solarized -dmenu -i -no-levenshtein-sort -width 1000 "$@"
 }
 
 # display settings
