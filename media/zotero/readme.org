@@ -1,0 +1,13 @@
+* Download and extract the tarball
+
+* Move the directory to [[/opt]] and rename it to [[/opt/zotero/][zotero/]] so that zotero lives in[[ /opt/zotero/]]
+
+* Run the script to update the desktop file
+  #+BEGIN_SRC sh
+  /opt/zotero/set_launcher_icon
+  #+END_SRC
+
+* Symlink the zotero desktop file to the application directory:
+  #+BEGIN_SRC sh
+  ln -s /opt/zotero/zotero.desktop /home/boris/.local/share/applications/zotero.desktop
+  #+END_SRC

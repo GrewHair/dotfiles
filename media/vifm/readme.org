@@ -4,3 +4,8 @@
   #+END_SRC
 
 ** this is because apart from just the config file, there are other files and directories there that contain scripts, bookmarks, etc.
+
+* Next make vifm the default file manager:
+  #+BEGIN_SRC sh
+  xdg-mime default vifm.desktop inode/directory
+  #+END_SRC

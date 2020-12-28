@@ -393,6 +393,7 @@ c.hints.selectors['alll'] = ['*']
 c.hints.selectors['yt'] = ['yt-formatted-string']
 c.hints.selectors['yt-video'] = ['video']
 c.hints.selectors['all'].append('yt-formatted-string')
+c.hints.selectors['all'].append('h3 span')
 c.hints.selectors['tables'] = ['table']
 c.hints.selectors['pre'] = ['pre']
 c.hints.selectors['foo'] = ['.tc-block-dropdown']
@@ -491,6 +492,7 @@ c.hints.uppercase = True
 
 # config.bind(';s', 'hint paragraphs userscript tts.py')
 config.bind(';s', 'hint paragraphs userscript run-mimic.sh')
+config.bind(';S', 'spawn -d /home/boris/bin/i3/hint-qutebrowser.sh')
 
 config.bind(';p', 'hint pre userscript yank-pre.sh')
 config.bind(';T', 'hint tables userscript yank-table.sh')
@@ -502,7 +504,8 @@ config.bind(';m', 'hint links spawn -d mpv --x11-name="large" {hint-url}')
 # config.bind(';P', 'spawn youtube-dl -o "/media/boris/d/Smth/%(title)s-%(id)s.%(ext)s" {url}')  # for now I'm commenting this out, because at the moment my youtube-dl doesn't work, and I need to make an 'open in palemoon' binding. I should rearrange all this crap later using some more consistent conventions!
 config.bind(';V', 'spawn -d vivaldi --class="large" {url}')
 config.bind(';M', 'spawn -d mpv --x11-name="large" {url}')
-config.bind(';P', 'spawn -d palemoon {url} ;; later 300 spawn -d /home/boris/.local/share/qutebrowser/userscripts/change-wm-class-to-large.sh')
+config.bind(';P', 'spawn -d palemoon {url}')
+config.bind(';F', 'spawn -d firefox {url}')
 
 # config.bind(';c', 'hint paragraphs userscript /home/boris/.local/share/qutebrowser/userscripts/hint-caret.sh')  # i made this binding because ;v was occupied with vivaldi. now i don't have vivaldi, so i'll use the one below:
 config.bind(';v', 'hint paragraphs userscript /home/boris/.local/share/qutebrowser/userscripts/hint-caret.sh')
@@ -563,6 +566,7 @@ config.bind('e', 'scroll-page 0 -0.1')
 config.bind('<Ctrl-J>', 'command-accept', mode='command')
 config.bind('<Ctrl-M>', 'command-accept', mode='command')
 config.bind('<Ctrl-J>', 'fake-key <Return>', mode='insert')
+# config.bind('<Ctrl-J>', 'spawn /home/boris/.local/share/qutebrowser/userscripts/IM_C-j_dispatcher.sh {url:host} {url:port}', mode='insert')
 config.bind('<Ctrl-J>', 'follow-selected', mode='normal')
 config.bind('<Ctrl-J>', 'prompt-accept', mode='prompt')
 config.bind('<Ctrl-M>', 'prompt-accept', mode='prompt')
@@ -649,6 +653,7 @@ config.bind('r', 'hint edit-tiddler normal ;; set input.spatial_navigation true'
 config.bind('<Alt-R>', 'hint edit-tiddler normal ;; set input.spatial_navigation true')
 config.bind('<Alt-R>', 'hint edit-tiddler normal ;; set input.spatial_navigation true', mode='insert')
 config.bind('<Ctrl-Return>', 'leave-mode ;; fake-key <Ctrl-Enter> ;; set input.spatial_navigation false', mode='insert')
+config.bind('<Ctrl-C><Ctrl-J>', 'hint tiddler-title ;; later 40 fake-key <Ctrl-Enter> ;; set input.spatial_navigation false ;; later 80 enter-mode normal', mode='insert')
 config.bind('<Ctrl-Escape>', 'fake-key <Ctrl-Escape> ;; leave-mode ;; set input.spatial_navigation false', mode='insert')
 config.bind('<Escape>', 'leave-mode ;; set input.spatial_navigation false', mode='insert')
 config.bind('<Escape>', 'clear-keychain ;; search ;; fullscreen --leave ;; fake-key --global _0_1', mode='normal') # Added a fake click on a dummy <div> (see 'dunder' bindings) to get rid of the fucking sticky dropdowns
@@ -906,7 +911,12 @@ config.bind('<Space>-8', 'tab-focus -8')
 config.bind('<Space>-9', 'tab-focus -9')
 config.bind('<Space><Tab>', 'tab-focus last')
 config.bind('<Space><Ctrl-I>', 'tab-focus last')
+config.bind('<Space>fed', 'config-edit')
+config.bind('<Space>fe<Shift-R>', 'config-source')
 
+c.zoom.default = '130%'
+c.fonts.hints = 'bold 15pt default_family'
+c.content.pdfjs = True
 
 # Youtube ad blocking
 

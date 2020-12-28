@@ -1,25 +1,54 @@
-# i3 config file (v4) for Regolith Desktop Environment
+###############################################################################
+# i3-gaps config file for the Regolith Desktop Environment
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
+#
+###############################################################################
+#
+# In this config file many values are taken from Xresources with the directive
+# set_from_resource:
+#
+# set_from_resource <i3 variable name> <Xresources key> <default value>
+#
+# This configuration file utilizes Xresource variables to change configuration
+# without having to make a copy of this config file.
+# The benefit to not copying this file is easier upgrades in the future.
+# To update a value in this config without making a copy, update the Xresource
+# value in the file ~/.config/regolith/Xresources.
+#
+# For example, to change the bar position to the top of the screen this is the
+# i3 config entry in this file:
+# set_from_resource $i3-wm.bar.position i3-wm.bar.position bottom
+#
+# So add this line to ~/.config/regolith/Xresources to change it's value:
+# i3-wm.bar.position: top
+#
+# Reload i3 after making Xresource changes.  Learn more at
+# https://regolith-linux.org/docs/howto/override-xres/
+#
+###############################################################################
+#
+# This file uses a machine-parsable format for comments. The schema is:
+# ## <Category> // <Action> // <Keybinding> ##
+# Learn more at https://github.com/regolith-linux/remontoire
+#
+###############################################################################
 
-# This defines which key super maps to on your keyboard.  
-# Alt key is Mod1, and Windows key is Mod4
-set $mod Mod4
-set $alt Mod1
-set $hyper Mod3
+###############################################################################
+# Key Mappings
+###############################################################################
 
-# i3xrocks config file
-set $i3xrocks_config /etc/regolith/i3xrocks/config
+# Meta Key - Alt key is Mod1, and Windows key is Mod4
+set_from_resource $mod  i3-wm.mod Mod4
+set_from_resource $alt  i3-wm.alt Mod1
+ 
+set_from_resource $i3-wm.binding. i3-wm.binding. 
 
-# compton config file
-set $compton_config /etc/regolith/compton/config
-
-# path to terminal. Override this to specify a custom terminal.
-# set $terminal_path /usr/bin/st
-set $terminal_path /usr/bin/gnome-terminal.wrapper
-
-# Color values are defined in ~/.Xresources-regolith
+###############################################################################
+# Workspace Names
 # These are the labels which define each i3 workspace.
+###############################################################################
+
 set_from_resource $ws1  i3-wm.workspace.01.name "1"
 set_from_resource $ws2  i3-wm.workspace.02.name "2"
 set_from_resource $ws3  i3-wm.workspace.03.name "3"
@@ -40,269 +69,481 @@ set_from_resource $ws17 i3-wm.workspace.17.name "17"
 set_from_resource $ws18 i3-wm.workspace.18.name "18"
 set_from_resource $ws19 i3-wm.workspace.19.name "19"
 
+###############################################################################
+# Workspace Keys
+# These are the keys which will be used while binding workspace switching
+###############################################################################
+
+set_from_resource $ws1_key  i3-wm.workspace.01.key 1
+set_from_resource $ws2_key  i3-wm.workspace.02.key 2
+set_from_resource $ws3_key  i3-wm.workspace.03.key 3
+set_from_resource $ws4_key  i3-wm.workspace.04.key 4
+set_from_resource $ws5_key  i3-wm.workspace.05.key 5
+set_from_resource $ws6_key  i3-wm.workspace.06.key 6
+set_from_resource $ws7_key  i3-wm.workspace.07.key 7
+set_from_resource $ws8_key  i3-wm.workspace.08.key 8
+set_from_resource $ws9_key  i3-wm.workspace.09.key 9
+set_from_resource $ws10_key i3-wm.workspace.10.key 0
+
+###############################################################################
+# Launcher dialogs
+###############################################################################
+
+## Launch // Terminal // <> Enter ##
+set_from_resource $i3-wm.binding.terminal i3-wm.binding.terminal Return
+bindsym $mod+$i3-wm.binding.terminal exec /usr/bin/x-terminal-emulator
+
+## Launch // Browser // <><Shift> Enter ##
+set_from_resource $i3-wm.binding.browser i3-wm.binding.browser Shift+Return
+bindsym $mod+$i3-wm.binding.browser exec gtk-launch $(xdg-settings get default-web-browser)
+
+set_from_resource $rofiTheme rofi.theme /etc/regolith/styles/lascaille/rofi.rasi
+
+## Launch // Application // <> Space ##
+set_from_resource $i3-wm.binding.launcher.app i3-wm.binding.launcher.app space
+set_from_resource $i3-wm.program.launcher.app i3-wm.program.launcher.app rofi -show drun -theme $rofiTheme
+bindsym $mod+$i3-wm.binding.launcher.app exec $i3-wm.program.launcher.app
+
+## Launch // Command // <><Shift> Space ##
+set_from_resource $i3-wm.binding.launcher.cmd i3-wm.binding.launcher.cmd Shift+space
+set_from_resource $i3-wm.program.launcher.cmd i3-wm.program.launcher.cmd rofi -show run -theme $rofiTheme
+bindsym $mod+$i3-wm.binding.launcher.cmd exec $i3-wm.program.launcher.cmd
+
+## Navigate // Window by Name // <><Ctrl> Space ##
+set_from_resource $i3-wm.binding.launcher.window i3-wm.binding.launcher.window Ctrl+space
+set_from_resource $i3-wm.program.launcher.window i3-wm.program.launcher.window rofi -show window -theme $rofiTheme
+bindsym $mod+$i3-wm.binding.launcher.window exec $i3-wm.program.launcher.window
+
+## Launch // This Dialog // <><Shift> ? ##
+set_from_resource $i3-wm.binding.help i3-wm.binding.help Shift+question
+set_from_resource $i3-wm.program.help i3-wm.program.help /usr/bin/remontoire-toggle
+bindsym $mod+$i3-wm.binding.help exec --no-startup-id $i3-wm.program.help
+
+## Launch // File Search // <><Alt> Space ##
+set_from_resource $i3-wm.binding.file_search i3-wm.binding.file_search Mod1+space
+set_from_resource $i3-wm.program.file_search i3-wm.program.file_search rofi -show find -modi find:/usr/share/rofi/modi/finder.sh
+bindsym $mod+$i3-wm.binding.file_search exec $i3-wm.program.file_search
+
+## Launch // Look Selector // <><Alt> l ##
+set_from_resource $i3-wm.binding.look_selector i3-wm.binding.look_selector Mod1+l
+set_from_resource $i3-wm.program.look_selector i3-wm.program.look_selector rofi -show look -modi look:/usr/share/rofi/modi/look-selector.sh
+bindsym $mod+$i3-wm.binding.look_selector exec $i3-wm.program.look_selector
+
+###############################################################################
+# Window and Workspace Navigation
+###############################################################################
+
+## Navigate // Relative Parent // <> a ##/
+set_from_resource $i3-wm.binding.focus_parent i3-wm.binding.focus_parent a
+bindsym $mod+$i3-wm.binding.focus_parent focus parent
+
+## Navigate // Relative Child // <> z ##/
+set_from_resource $i3-wm.binding.focus_child i3-wm.binding.focus_child z
+bindsym $mod+$i3-wm.binding.focus_child focus child
+
+## Navigate // Relative Window // <> ↑ ↓ ← → ##
+# XXX Unbind arrow navigation in favour of the bluetooth controller bindings for gaming on the TV
+# bindsym $mod+Left focus left
+# bindsym $mod+Down focus down
+# bindsym $mod+Up focus up
+# bindsym $mod+Right focus right
+
+## Navigate // Relative Window // <> k j h l ##
+set_from_resource $i3-wm.binding.left i3-wm.binding.left h
+set_from_resource $i3-wm.binding.right i3-wm.binding.right l
+set_from_resource $i3-wm.binding.up i3-wm.binding.up k
+set_from_resource $i3-wm.binding.down i3-wm.binding.down j
+bindsym $mod+$i3-wm.binding.left focus left
+bindsym $mod+$i3-wm.binding.down focus down
+bindsym $mod+$i3-wm.binding.up focus up
+bindsym $mod+$i3-wm.binding.right focus right
+
+## Navigate // Workspaces 1-10 // <> 0..9 ##
+bindsym $mod+$ws1_key workspace number $ws1
+bindsym $mod+$ws2_key workspace number $ws2
+bindsym $mod+$ws3_key workspace number $ws3
+bindsym $mod+$ws4_key workspace number $ws4
+bindsym $mod+$ws5_key workspace number $ws5
+bindsym $mod+$ws6_key workspace number $ws6
+bindsym $mod+$ws7_key workspace number $ws7
+bindsym $mod+$ws8_key workspace number $ws8
+bindsym $mod+$ws9_key workspace number $ws9
+bindsym $mod+$ws10_key workspace number $ws10
+## Navigate // Workspace 11 - 19 // <><Ctrl> 1..9 ##
+bindsym $mod+Ctrl+$ws1_key workspace number $ws11
+bindsym $mod+Ctrl+$ws2_key workspace number $ws12
+bindsym $mod+Ctrl+$ws3_key workspace number $ws13
+bindsym $mod+Ctrl+$ws4_key workspace number $ws14
+bindsym $mod+Ctrl+$ws5_key workspace number $ws15
+bindsym $mod+Ctrl+$ws6_key workspace number $ws16
+bindsym $mod+Ctrl+$ws7_key workspace number $ws17
+bindsym $mod+Ctrl+$ws8_key workspace number $ws18
+bindsym $mod+Ctrl+$ws9_key workspace number $ws19
+
+## Navigate // Next Workspace // <> Tab ##
+set_from_resource $i3-wm.binding.ws_next i3-wm.binding.ws_next Tab
+bindsym $mod+$i3-wm.binding.ws_next workspace next
+
+## Navigate // Next Workspace // <><Alt> → ##
+set_from_resource $i3-wm.binding.ws_next2 i3-wm.binding.ws_next2 Mod1+Right
+bindsym $mod+$i3-wm.binding.ws_next2 workspace next
+
+## Navigate // Next Workspace on Output // <><Ctrl> Tab ##
+set_from_resource $i3-wm.binding.ws_next_on_output i3-wm.binding.ws_next_on_output Ctrl+Tab
+bindsym $mod+$i3-wm.binding.ws_next_on_output workspace next_on_output
+
+## Navigate // Next Workspace on Output // <><Ctrl> l ##
+# XXX Unbind the redundant next_on_output in favour of modeless resize
+# set_from_resource $i3-wm.binding.ws_next_on_output2 i3-wm.binding.ws_next_on_output2 Ctrl+l
+# bindsym $mod+$i3-wm.binding.ws_next_on_output2 workspace next_on_output
+
+## Navigate // Previous Workspace // <><Shift> Tab ##
+set_from_resource $i3-wm.binding.ws_prev i3-wm.binding.ws_prev Shift+Tab 
+bindsym $mod+$i3-wm.binding.ws_prev workspace prev
+
+## Navigate // Previous Workspace // <><Alt> ← ##
+set_from_resource $i3-wm.binding.ws_prev2 i3-wm.binding.ws_prev2 Mod1+Left
+bindsym $mod+$i3-wm.binding.ws_prev2 workspace prev
+
+## Navigate // Previous Workspace on Output // <><Ctrl><Shift> Tab ##
+set_from_resource $i3-wm.binding.ws_prev_on_output i3-wm.binding.ws_prev_on_output Ctrl+Shift+Tab
+bindsym $mod+$i3-wm.binding.ws_prev_on_output workspace prev_on_output
+
+## Navigate // Previous Workspace on Output // <><Ctrl> h ##
+# XXX Unbind the redundant prev_on_output in favour of modeless resize
+# set_from_resource $i3-wm.binding.ws_prev_on_output2 i3-wm.binding.ws_prev_on_output2 Ctrl+h
+# bindsym $mod+$i3-wm.binding.ws_prev_on_output2 workspace prev_on_output
+
+## Navigate // Next Free Workspace // <> ` ##
+set_from_resource $i3-wm.binding.next_free i3-wm.binding.next_free grave
+bindsym $mod+$i3-wm.binding.next_free exec --no-startup-id /usr/share/i3xrocks/next-workspace --startnum 1
+
+## Navigate // Scratchpad // <><Ctrl> a ##
+set_from_resource $i3-wm.binding.scratchpad i3-wm.binding.scratchpad Ctrl+a
+bindsym $mod+$i3-wm.binding.scratchpad scratchpad show
+
+###############################################################################
+# Window and Workspace Configuration
+###############################################################################
+
+## Modify // Window Position // <><Shift> ↑ ↓ ← → ##
+# XXX Unbind moving windows with arrows in favour of the bluetooth controller...
+# bindsym $mod+Shift+Left move left
+# bindsym $mod+Shift+Down move down
+# bindsym $mod+Shift+Up move up
+# bindsym $mod+Shift+Right move right
+
+## Modify // Window Position // <><Shift> k j h l ##
+set_from_resource $i3-wm.binding.move_left i3-wm.binding.move_left Shift+h
+set_from_resource $i3-wm.binding.move_right i3-wm.binding.move_right Shift+l
+set_from_resource $i3-wm.binding.move_up i3-wm.binding.move_up Shift+k
+set_from_resource $i3-wm.binding.move_down i3-wm.binding.move_down Shift+j
+bindsym $mod+$i3-wm.binding.move_left move left
+bindsym $mod+$i3-wm.binding.move_down move down
+bindsym $mod+$i3-wm.binding.move_up move up
+bindsym $mod+$i3-wm.binding.move_right move right
+
+## Modify // Containing Workspace // <><Ctrl><Shift> ↑ ↓ ← → ##
+bindsym $mod+Ctrl+Shift+Left move workspace to output left
+bindsym $mod+Ctrl+Shift+Down move workspace to output down
+bindsym $mod+Ctrl+Shift+Up move workspace to output up
+bindsym $mod+Ctrl+Shift+Right move workspace to output right
+
+## Modify // Containing Workspace // <><Ctrl><Shift> k j h l ##
+set_from_resource $i3-wm.binding.take_left i3-wm.binding.take_left Ctrl+Shift+h
+set_from_resource $i3-wm.binding.take_right i3-wm.binding.take_right Ctrl+Shift+l
+set_from_resource $i3-wm.binding.take_up i3-wm.binding.take_up Ctrl+Shift+k
+set_from_resource $i3-wm.binding.take_down i3-wm.binding.take_down Ctrl+Shift+j
+bindsym $mod+$i3-wm.binding.take_left move workspace to output left
+bindsym $mod+$i3-wm.binding.take_down move workspace to output down
+bindsym $mod+$i3-wm.binding.take_up move workspace to output up
+bindsym $mod+$i3-wm.binding.take_right move workspace to output right
+
+## Modify // Vertical Window Orientation // <> v ##
+set_from_resource $i3-wm.binding.split_v i3-wm.binding.split_v v
+bindsym $mod+$i3-wm.binding.split_v split vertical
+
+## Modify // Horizontal Window Orientation // <> g ##
+set_from_resource $i3-wm.binding.split_h i3-wm.binding.split_h g
+bindsym $mod+$i3-wm.binding.split_h split horizontal
+
+## Modify // Toggle Window Orientation // <> Backspace ##
+set_from_resource $i3-wm.binding.orientation_toggle i3-wm.binding.orientation_toggle BackSpace
+bindsym $mod+$i3-wm.binding.orientation_toggle split toggle
+
+## Modify // Window Fullscreen Toggle // <> f ##
+# XXX disabling this in favour of wasd-style moving
+#set_from_resource $i3-wm.binding.fullscreen_toggle i3-wm.binding.fullscreen_toggle f 
+#bindsym $mod+$i3-wm.binding.fullscreen_toggle fullscreen toggle
+
+## Modify // Window Floating Toggle // <><Shift> f ##
+set_from_resource $i3-wm.binding.float_toggle i3-wm.binding.float_toggle Shift+f
+bindsym $mod+Shift+$i3-wm.binding.float_toggle floating toggle
+
+## Modify // Move to Scratchpad // <><Ctrl> m ##
+set_from_resource $i3-wm.binding.move_scratchpad i3-wm.binding.move_scratchpad Ctrl+m
+bindsym $mod+$i3-wm.binding.move_scratchpad move to scratchpad
+
+## Modify // Tile/Float Focus Toggle // <><Shift> t ##
+set_from_resource $i3-wm.binding.focus_toggle i3-wm.binding.focus_toggle Shift+t
+bindsym $mod+$i3-wm.binding.focus_toggle focus mode_toggle
+
+## Modify // Window Layout Mode // <> t ##
+set_from_resource $i3-wm.binding.layout_mode i3-wm.binding.layout_mode t
+bindsym $mod+$i3-wm.binding.layout_mode layout toggle tabbed splith splitv
+
+## Modify // Move Window to Workspace 1 - 10 // <><Shift> 0..9 ##
+bindsym $mod+Shift+$ws1_key move container to workspace number $ws1
+bindsym $mod+Shift+$ws2_key move container to workspace number $ws2
+bindsym $mod+Shift+$ws3_key move container to workspace number $ws3
+bindsym $mod+Shift+$ws4_key move container to workspace number $ws4
+bindsym $mod+Shift+$ws5_key move container to workspace number $ws5
+bindsym $mod+Shift+$ws6_key move container to workspace number $ws6
+bindsym $mod+Shift+$ws7_key move container to workspace number $ws7
+bindsym $mod+Shift+$ws8_key move container to workspace number $ws8
+bindsym $mod+Shift+$ws9_key move container to workspace number $ws9
+bindsym $mod+Shift+$ws10_key move container to workspace number $ws10
+## Modify // Move Window to Workspace 11 - 19// <><Ctrl><Shift> 1..9 ##
+bindsym $mod+Shift+Ctrl+$ws1_key move container to workspace number $ws11
+bindsym $mod+Shift+Ctrl+$ws2_key move container to workspace number $ws12
+bindsym $mod+Shift+Ctrl+$ws3_key move container to workspace number $ws13
+bindsym $mod+Shift+Ctrl+$ws4_key move container to workspace number $ws14
+bindsym $mod+Shift+Ctrl+$ws5_key move container to workspace number $ws15
+bindsym $mod+Shift+Ctrl+$ws6_key move container to workspace number $ws16
+bindsym $mod+Shift+Ctrl+$ws7_key move container to workspace number $ws17
+bindsym $mod+Shift+Ctrl+$ws8_key move container to workspace number $ws18
+bindsym $mod+Shift+Ctrl+$ws9_key move container to workspace number $ws19
+
+# move focused container to workspace, move to workspace
+## Modify // Carry Window to Workspace 1 - 10// <><Alt> 0..9 ##
+bindsym $mod+$alt+$ws1_key move container to workspace number $ws1; workspace number $ws1
+bindsym $mod+$alt+$ws2_key move container to workspace number $ws2; workspace number $ws2
+bindsym $mod+$alt+$ws3_key move container to workspace number $ws3; workspace number $ws3
+bindsym $mod+$alt+$ws4_key move container to workspace number $ws4; workspace number $ws4
+bindsym $mod+$alt+$ws5_key move container to workspace number $ws5; workspace number $ws5
+bindsym $mod+$alt+$ws6_key move container to workspace number $ws6; workspace number $ws6
+bindsym $mod+$alt+$ws7_key move container to workspace number $ws7; workspace number $ws7
+bindsym $mod+$alt+$ws8_key move container to workspace number $ws8; workspace number $ws8
+bindsym $mod+$alt+$ws9_key move container to workspace number $ws9; workspace number $ws9
+bindsym $mod+$alt+$ws10_key move container to workspace number $ws10; workspace number $ws10
+## Modify // Carry Window to Workspace 11 - 19 // <><Alt><Ctrl> 1..9 ##
+bindsym $mod+$alt+Ctrl+$ws1_key move container to workspace number $ws11; workspace number $ws11
+bindsym $mod+$alt+Ctrl+$ws2_key move container to workspace number $ws12; workspace number $ws12
+bindsym $mod+$alt+Ctrl+$ws3_key move container to workspace number $ws13; workspace number $ws13
+bindsym $mod+$alt+Ctrl+$ws4_key move container to workspace number $ws14; workspace number $ws14
+bindsym $mod+$alt+Ctrl+$ws5_key move container to workspace number $ws15; workspace number $ws15
+bindsym $mod+$alt+Ctrl+$ws6_key move container to workspace number $ws16; workspace number $ws16
+bindsym $mod+$alt+Ctrl+$ws7_key move container to workspace number $ws17; workspace number $ws17
+bindsym $mod+$alt+Ctrl+$ws8_key move container to workspace number $ws18; workspace number $ws18
+bindsym $mod+$alt+Ctrl+$ws9_key move container to workspace number $ws19; workspace number $ws19
+
+## Modify // Carry Window to Next Free Workspace // <><Shift> ` ##
+set_from_resource $i3-wm.binding.take_next_free i3-wm.binding.take_next_free Mod1+grave
+bindsym $mod+$i3-wm.binding.take_next_free exec --no-startup-id /usr/share/i3xrocks/next-workspace --startnum 1 --move-window-and-follow
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-#hide_edge_borders smart
+# Hiding borders adjacent to the screen edges.
+# The "smart" setting hides borders on workspaces with only one window visible.
+set_from_resource $i3-wm.hide.edge.borders i3-wm.hide.edge.borders smart
+hide_edge_borders $i3-wm.hide.edge.borders
 
-# start a terminal
-bindsym $mod+apostrophe exec $terminal_path
-bindsym $mod+Return exec $terminal_path
+###############################################################################
+# Session Management
+###############################################################################
 
-# start a web browser
-bindsym $mod+Shift+Return exec /usr/bin/sensible-browser
-bindsym $mod+Shift+apostrophe exec /usr/bin/sensible-browser
+## Session // Exit App // <><Shift> q ##
+set_from_resource $i3-wm.binding.exit_app i3-wm.binding.exit_app Shift+q
+bindsym $mod+$i3-wm.binding.exit_app [con_id="__focused__"] kill
 
-# kill focused window
-bindsym $mod+Shift+q kill
+## Session // Terminate App // <><Alt> q ##
+set_from_resource $i3-wm.binding.kill_app i3-wm.binding.kill_app Mod1+q
+bindsym $mod+$i3-wm.binding.kill_app [con_id="__focused__"] exec --no-startup-id kill -9 $(xdotool getwindowfocus getwindowpid)
 
-set_from_resource $rofiTheme rofi.theme "regolith-theme"
+## Session // Reload i3 Config // <><Shift> c ##
+set_from_resource $i3-wm.binding.reload i3-wm.binding.reload Shift+c
+bindsym $mod+$i3-wm.binding.reload reload
 
-# rofi app and window launchers
-bindsym $mod+space exec rofi -show drun -theme $rofiTheme
-#bindsym $mod+Shift+space exec rofi -show run -theme $rofiTheme
-#bindsym $mod+Ctrl+space exec rofi -show window -theme $rofiTheme
-#bindsym $mod+Ctrl+space exec rofi -show window -theme solarized
-bindsym $mod+Shift+space exec rofi -show window -theme solarized
-##bindsym $mod+$alt+space exec /home/boris/bin/i3/insert_unicode.sh
-bindsym $mod+u exec /home/boris/bin/i3/insert_unicode.sh
+## Session // Refresh Session // <><Shift> r ##
+set_from_resource $i3-wm.binding.refresh i3-wm.binding.refresh Shift+r
+set_from_resource $i3-wm.program.refresh_ui i3-wm.program.refresh_ui /usr/bin/regolith-look refresh
+bindsym $mod+$i3-wm.binding.refresh exec --no-startup-id $i3-wm.program.refresh_ui
 
-# change focus
-#bindsym $mod+Left focus left
-#bindsym $mod+Down focus down
-#bindsym $mod+Up focus up
-#bindsym $mod+Right focus right
+## Session // Restart i3 // <><Ctrl> r ##
+set_from_resource $i3-wm.binding.restart i3-wm.binding.restart Ctrl+r
+bindsym $mod+$i3-wm.binding.restart restart
 
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
+## Session // Logout // <><Shift> e ##
+set_from_resource $i3-wm.binding.logout i3-wm.binding.logout Shift+e
+set_from_resource $i3-wm.program.logout i3-wm.program.logout /usr/bin/gnome-session-quit --logout
+bindsym $mod+$i3-wm.binding.logout exec $i3-wm.program.logout
 
-# move windows in workspaces
-#bindsym $mod+Shift+Left move left
-#bindsym $mod+Shift+Down move down
-#bindsym $mod+Shift+Up move up
-#bindsym $mod+Shift+Right move right
+## Session // Reboot // <><Shift> b ##
+set_from_resource $i3-wm.binding.reboot i3-wm.binding.reboot Shift+b
+set_from_resource $i3-wm.program.reboot i3-wm.program.reboot /usr/bin/gnome-session-quit --reboot
+bindsym $mod+$i3-wm.binding.reboot exec $i3-wm.program.reboot
 
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+## Session // Power Down // <><Shift> p ##
+set_from_resource $i3-wm.binding.shutdown i3-wm.binding.shutdown Shift+p
+set_from_resource $i3-wm.program.shutdown i3-wm.program.shutdown /usr/bin/gnome-session-quit --power-off
+bindsym $mod+$i3-wm.binding.shutdown exec $i3-wm.program.shutdown
 
-# toggle split orientation
-bindsym $mod+BackSpace split toggle
+## Session // Lock Screen // <> Escape ##
+set_from_resource $i3-wm.binding.lock i3-wm.binding.lock Escape 
+set_from_resource $i3-wm.program.lock i3-wm.program.lock dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock
+bindsym $mod+$i3-wm.binding.lock exec $i3-wm.program.lock
 
-# enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+## Session // Sleep // <><Shift> s ##
+set_from_resource $i3-wm.binding.sleep i3-wm.binding.sleep Shift+s
+set_from_resource $i3-wm.program.sleep i3-wm.program.sleep systemctl suspend
+bindsym $mod+$i3-wm.binding.sleep exec $i3-wm.program.sleep
 
-# change gaps interactively
-bindsym $mod+minus gaps inner current minus 6
-bindsym $mod+plus gaps inner current plus 6
+###############################################################################
+# System Management
+###############################################################################
 
-# show/hide keybindings
-bindsym $mod+Shift+question exec --no-startup-id /usr/bin/conky-toggle
+## Modify // Settings // <> c ##
+set_from_resource $i3-wm.binding.settings i3-wm.binding.settings c 
+set_from_resource $i3-wm.program.settings i3-wm.program.settings gnome-control-center --class=floating_window
+bindsym $mod+$i3-wm.binding.settings exec $i3-wm.program.settings
 
-# toggle tiling / floating
-bindsym $mod+Shift+f floating toggle
+## Modify // Display Settings // <> d ##
+# XXX disabling this in favour of wasd-style moving
+#set_from_resource $i3-wm.binding.display i3-wm.binding.display d
+#set_from_resource $i3-wm.program.display i3-wm.program.display gnome-control-center --class=floating_window display
+#bindsym $mod+$i3-wm.binding.display exec $i3-wm.program.display
 
-# change focus between tiling / floating windows
-bindsym $mod+Shift+t focus mode_toggle
+## Modify // Wifi Settings // <> w ##
+set_from_resource $i3-wm.binding.wifi i3-wm.binding.wifi w
+set_from_resource $i3-wm.program.wifi i3-wm.program.wifi gnome-control-center --class=floating_window wifi
+bindsym $mod+$i3-wm.binding.wifi exec $i3-wm.program.wifi
 
-# toggle tabbed mode
-bindsym $mod+t layout toggle tabbed splith splitv
+## Modify // Bluetooth Settings // <> b ##
+set_from_resource $i3-wm.binding.bluetooth i3-wm.binding.bluetooth b 
+set_from_resource $i3-wm.program.bluetooth i3-wm.program.bluetooth gnome-control-center --class=floating_window bluetooth
+bindsym $mod+$i3-wm.binding.bluetooth exec $i3-wm.program.bluetooth
 
-# move to workspace
-#bindsym $mod+1 workspace $ws1
-#bindsym $mod+2 workspace $ws2
-#bindsym $mod+3 workspace $ws3
-#bindsym $mod+4 workspace $ws4
-#bindsym $mod+5 workspace $ws5
-#bindsym $mod+6 workspace $ws6
-#bindsym $mod+7 workspace $ws7
-#bindsym $mod+8 workspace $ws8
-#bindsym $mod+9 workspace $ws9
-#bindsym $mod+0 workspace $ws10
-#bindsym $mod+Ctrl+1 workspace $ws11
-#bindsym $mod+Ctrl+2 workspace $ws12
-#bindsym $mod+Ctrl+3 workspace $ws13
-#bindsym $mod+Ctrl+4 workspace $ws14
-#bindsym $mod+Ctrl+5 workspace $ws15
-#bindsym $mod+Ctrl+6 workspace $ws16
-#bindsym $mod+Ctrl+7 workspace $ws17
-#bindsym $mod+Ctrl+8 workspace $ws18
-#bindsym $mod+Ctrl+9 workspace $ws19
+## Launch // File Browser // <><Shift> n ##
+set_from_resource $i3-wm.binding.files i3-wm.binding.files Shift+n
+set_from_resource $i3-wm.program.files i3-wm.program.files /usr/bin/nautilus --new-window
+bindsym $mod+$i3-wm.binding.files exec $i3-wm.program.files
 
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
-bindsym $mod+Ctrl+1 workspace 11
-bindsym $mod+Ctrl+2 workspace 12
-bindsym $mod+Ctrl+3 workspace 13
-bindsym $mod+Ctrl+4 workspace 14
-bindsym $mod+Ctrl+5 workspace 15
-bindsym $mod+Ctrl+6 workspace 16
-bindsym $mod+Ctrl+7 workspace 17
-bindsym $mod+Ctrl+8 workspace 18
-bindsym $mod+Ctrl+9 workspace 19
+## Launch // Notification Viewer // <> n ##
+set_from_resource $i3-wm.binding.notification_ui i3-wm.binding.notification_ui n
+set_from_resource $i3-wm.program.notification_ui i3-wm.program.notification_ui /usr/bin/rofication-gui
+bindsym $mod+$i3-wm.binding.notification_ui exec $i3-wm.program.notification_ui
 
-# cycle across workspaces
-#bindsym $mod+Tab workspace next
-#bindsym $mod+Shift+Tab workspace prev
+###############################################################################
+# Workspace Management
+###############################################################################
 
-# cycle across workspaces on output
-#bindsym $mod+Tab workspace next_on_output
-#bindsym $mod+Shift+Tab workspace prev_on_output
-#bindsym $mod+i workspace next_on_output
-#bindsym $mod+$alt+i workspace prev_on_output
+# i3-snapshot for load/save current layout
+## Modify // Save Window Layout // <> , ##
+set_from_resource $i3-wm.binding.save_layout i3-wm.binding.save_layout comma 
+bindsym $mod+$i3-wm.binding.save_layout  exec /usr/bin/i3-snapshot -o > /tmp/i3-snapshot
+## Modify // Load Window Layout // <> . ##
+set_from_resource $i3-wm.binding.load_layout i3-wm.binding.load_layout period
+bindsym $mod+$i3-wm.binding.load_layout exec /usr/bin/i3-snapshot -c < /tmp/i3-snapshot
 
-# move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $ws1
-bindsym $mod+Shift+2 move container to workspace $ws2
-bindsym $mod+Shift+3 move container to workspace $ws3
-bindsym $mod+Shift+4 move container to workspace $ws4
-bindsym $mod+Shift+5 move container to workspace $ws5
-bindsym $mod+Shift+6 move container to workspace $ws6
-bindsym $mod+Shift+7 move container to workspace $ws7
-bindsym $mod+Shift+8 move container to workspace $ws8
-bindsym $mod+Shift+9 move container to workspace $ws9
-bindsym $mod+Shift+0 move container to workspace $ws10
-bindsym $mod+Shift+Ctrl+1 move container to workspace $ws11
-bindsym $mod+Shift+Ctrl+2 move container to workspace $ws12
-bindsym $mod+Shift+Ctrl+3 move container to workspace $ws13
-bindsym $mod+Shift+Ctrl+4 move container to workspace $ws14
-bindsym $mod+Shift+Ctrl+5 move container to workspace $ws15
-bindsym $mod+Shift+Ctrl+6 move container to workspace $ws16
-bindsym $mod+Shift+Ctrl+7 move container to workspace $ws17
-bindsym $mod+Shift+Ctrl+8 move container to workspace $ws18
-bindsym $mod+Shift+Ctrl+9 move container to workspace $ws19
+# Toggle bar visibility
+## Modify // Toggle Bar // <> i ##
+# XXX disabling this in favour of language switching
+# set_from_resource $i3-wm.binding.bar_toggle i3-wm.binding.bar_toggle i
+# bindsym $mod+$i3-wm.binding.bar_toggle bar mode toggle
 
-# move focused container to workspace, move to workspace
-bindsym $mod+$alt+1 move container to workspace $ws1; workspace $ws1  
-bindsym $mod+$alt+2 move container to workspace $ws2; workspace $ws2
-bindsym $mod+$alt+3 move container to workspace $ws3; workspace $ws3
-bindsym $mod+$alt+4 move container to workspace $ws4; workspace $ws4
-bindsym $mod+$alt+5 move container to workspace $ws5; workspace $ws5
-bindsym $mod+$alt+6 move container to workspace $ws6; workspace $ws6
-bindsym $mod+$alt+7 move container to workspace $ws7; workspace $ws7
-bindsym $mod+$alt+8 move container to workspace $ws8; workspace $ws8
-bindsym $mod+$alt+9 move container to workspace $ws9; workspace $ws9
-bindsym $mod+$alt+0 move container to workspace $ws10; workspace $ws10
-bindsym $mod+$alt+Ctrl+1 move container to workspace $ws11; workspace $ws11
-bindsym $mod+$alt+Ctrl+2 move container to workspace $ws12; workspace $ws12
-bindsym $mod+$alt+Ctrl+3 move container to workspace $ws13; workspace $ws13
-bindsym $mod+$alt+Ctrl+4 move container to workspace $ws14; workspace $ws14
-bindsym $mod+$alt+Ctrl+5 move container to workspace $ws15; workspace $ws15
-bindsym $mod+$alt+Ctrl+6 move container to workspace $ws16; workspace $ws16
-bindsym $mod+$alt+Ctrl+7 move container to workspace $ws17; workspace $ws17
-bindsym $mod+$alt+Ctrl+8 move container to workspace $ws18; workspace $ws18
-bindsym $mod+$alt+Ctrl+9 move container to workspace $ws19; workspace $ws19
+# Cause Settings app to float above tiled windows
+floating_maximum_size -1 x -1
+for_window [class="floating_window"] floating enable
 
-# reload the configuration file
-bindsym $mod+Shift+c reload
+set_from_resource $i3-wm.workspace.auto_back_and_forth i3-wm.workspace.auto_back_and_forth no
+workspace_auto_back_and_forth $i3-wm.workspace.auto_back_and_forth
 
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+###############################################################################
+# Window Resize and Gaps
+###############################################################################
 
-# Logout of session
-bindsym $mod+Shift+e exec /usr/bin/gnome-session-quit --logout
+set_from_resource $i3-wm.binding.inc_gaps i3-wm.binding.inc_gaps plus
+set_from_resource $i3-wm.binding.dec_gaps i3-wm.binding.dec_gaps minus
 
-# Reboot computer
-bindsym $mod+Shift+b exec /usr/bin/gnome-session-quit --reboot
+set_from_resource $i3-wm.binding.inc_gaps_big i3-wm.binding.inc_gaps_big Shift+plus
+set_from_resource $i3-wm.binding.dec_gaps_big i3-wm.binding.dec_gaps_big Shift+minus
 
-# Power off computer
-bindsym $mod+Shift+p exec /usr/bin/gnome-session-quit --power-off
-
-# lock the screen
-bindsym $mod+Escape exec gnome-screensaver-command --lock
-
-# put the system to sleep
-bindsym $mod+Shift+s exec systemctl suspend
-
-# shortcuts for common system configuration tasks
-
-mode "hjkl" {
-  bindsym h exec xdotool sleep 0.1 key Left
-  bindsym j exec xdotool sleep 0.1 key Down
-  bindsym k exec xdotool sleep 0.1 key Up
-  bindsym l exec xdotool sleep 0.1 key Right
-  bindsym Shift+g exec xdotool sleep 0.1 key End
-  bindsym g exec xdotool sleep 0.1 key Home
-  bindsym i mode "default"
-}
-
-mode "gnome" {
-  bindsym $mod+g exec gnome-control-center; mode "default"
-  bindsym $mod+w exec gnome-control-center wifi; mode "default"
-  bindsym $mod+b exec gnome-control-center bluetooth; mode "default"
-  bindsym $mod+d exec gnome-control-center display; mode "default"
-  bindsym $mod+n exec gnome-control-center network; mode "default"
-  bindsym $mod+p exec gnome-control-center power; mode "default"
-  bindsym $mod+s exec gnome-control-center sound; mode "default"
-
-  bindsym g exec gnome-control-center; mode "default"
-  bindsym w exec gnome-control-center wifi; mode "default"
-  bindsym b exec gnome-control-center bluetooth; mode "default"
-  bindsym d exec gnome-control-center display; mode "default"
-  bindsym n exec gnome-control-center network; mode "default"
-  bindsym p exec gnome-control-center power; mode "default"
-  bindsym s exec gnome-control-center sound; mode "default"
-  
-  bindsym $mod+Escape mode "default"
-  bindsym Escape mode "default"
-}
-
-bindsym $mod+g mode "gnome"
-
-# resize window (you can also use the mouse for that)
+## Resize // Enter Resize Mode // <> r ##
 mode "Resize Mode" {
         # These bindings trigger as soon as you enter the resize mode
-        #bindsym Left resize shrink width 6 px or 6 ppt
-        #bindsym Down resize grow height 6 px or 6 ppt
-        #bindsym Up resize shrink height 6 px or 6 ppt
-        #bindsym Right resize grow width 6 px or 6 ppt
 
-        #bindsym Shift+Left resize shrink width 12 px or 12 ppt
-        #bindsym Shift+Down resize grow height 12 px or 12 ppt
-        #bindsym Shift+Up resize shrink height 12 px or 12 ppt
-        #bindsym Shift+Right resize grow width 12 px or 12 ppt
+        ## Resize // Resize Window // ↑ ↓ ← → ##
+        bindsym Left resize shrink width 6 px or 6 ppt
+        bindsym Down resize grow height 6 px or 6 ppt
+        bindsym Up resize shrink height 6 px or 6 ppt
+        bindsym Right resize grow width 6 px or 6 ppt
 
-        bindsym h resize shrink width 6 px or 6 ppt
-        bindsym k resize grow height 6 px or 6 ppt
-        bindsym j resize shrink height 6 px or 6 ppt
-        bindsym l resize grow width 6 px or 6 ppt
+        bindsym Shift+Left resize shrink width 12 px or 12 ppt
+        bindsym Shift+Down resize grow height 12 px or 12 ppt
+        bindsym Shift+Up resize shrink height 12 px or 12 ppt
+        bindsym Shift+Right resize grow width 12 px or 12 ppt
 
-        bindsym Shift+h resize shrink width 12 px or 12 ppt
-        bindsym Shift+k resize grow height 12 px or 12 ppt
-        bindsym Shift+j resize shrink height 12 px or 12 ppt
-        bindsym Shift+l resize grow width 12 px or 12 ppt
+        ## Resize // Resize Window // k j h l ##
+        bindsym $i3-wm.binding.left resize shrink width 6 px or 6 ppt
+        bindsym $i3-wm.binding.up resize grow height 6 px or 6 ppt
+        bindsym $i3-wm.binding.down resize shrink height 6 px or 6 ppt
+        bindsym $i3-wm.binding.right resize grow width 6 px or 6 ppt
 
-        # back to normal: Enter or Escape
+        bindsym $i3-wm.binding.move_left resize shrink width 12 px or 12 ppt
+        bindsym $i3-wm.binding.move_up resize grow height 12 px or 12 ppt
+        bindsym $i3-wm.binding.move_down resize shrink height 12 px or 12 ppt
+        bindsym $i3-wm.binding.move_right resize grow width 12 px or 12 ppt
+
+        ## Resize // Window Gaps // + - ##
+        bindsym $i3-wm.binding.dec_gaps gaps inner current minus 6
+        bindsym $i3-wm.binding.inc_gaps gaps inner current plus 6
+        bindsym $i3-wm.binding.dec_gaps_big gaps inner current minus 12
+        bindsym $i3-wm.binding.inc_gaps_big gaps inner current plus 12
+
+        ## Resize // Exit Resize Mode // Escape or Enter ##
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
-
 bindsym $mod+r mode "Resize Mode"
 
-# Disable titlebar
-new_window pixel 1
-new_float pixel 1
+###############################################################################
+# i3 Appearance and Behavior
+###############################################################################
 
-# Gaps (i3-gaps)
-#gaps inner 5
-gaps inner 0
-gaps outer 0
+# Disable titlebar
+# XXX unset default borders - I'll set them in my section to pixel 3
+set_from_resource $i3-wm.window.border.size i3-wm.window.border.size 1
+set_from_resource $i3-wm.floatingwindow.border.size i3-wm.floatingwindow.border.size 1
+default_border pixel $i3-wm.window.border.size
+default_floating_border pixel $i3-wm.floatingwindow.border.size
+
+# Specify the distance between windows in pixels. (i3-gaps)
+# XXX unset inner and outer gaps - I'll set them to 0 in my section
+# set_from_resource $i3-wm.gaps.inner.size i3-wm.gaps.inner.size 5
+# set_from_resource $i3-wm.gaps.outer.size i3-wm.gaps.outer.size 0
+# gaps inner $i3-wm.gaps.inner.size
+# gaps outer $i3-wm.gaps.outer.size
 
 # Only enable gaps on a workspace when there is at least one container
-smart_gaps on
+set_from_resource $i3-wm.gaps.smart i3-wm.gaps.smart on
+smart_gaps $i3-wm.gaps.smart
 
+# Enable popup during fullscreen
+set_from_resource $i3-wm.gaps.popup_during_fullscreen i3-wm.gaps.popup_during_fullscreen smart
+popup_during_fullscreen $i3-wm.gaps.popup_during_fullscreen
+
+# window focus follows your mouse movements as the mouse crosses window borders
+# XXX unset focus_follows_mouse - I'll set it to yes in my section
+# set_from_resource $i3-wm.gaps.focus_follows_mouse i3-wm.gaps.focus_follows_mouse no
+# focus_follows_mouse $i3-wm.gaps.focus_follows_mouse
+
+###############################################################################
+# i3 Colors and Fonts
+###############################################################################
+
+# Create variables from Xresources for i3's look.
 set_from_resource $focused.color.border i3-wm.client.focused.color.border "#002b36"
 set_from_resource $focused.color.background i3-wm.client.focused.color.background "#586e75"
 set_from_resource $focused.color.text i3-wm.client.focused.color.text "#fdf6e3"
@@ -313,7 +554,7 @@ set_from_resource $focused_inactive.color.border i3-wm.client.focused_inactive.c
 set_from_resource $focused_inactive.color.background i3-wm.client.focused_inactive.color.background "#073642"
 set_from_resource $focused_inactive.color.text i3-wm.client.focused_inactive.color.text "#839496"
 set_from_resource $focused_inactive.color.indicator i3-wm.client.focused_inactive.color.indicator "#073642"
-set_from_resource $focused_inactive.color.child_border i3-wm.client.focused_inactive.color.child_border 
+set_from_resource $focused_inactive.color.child_border i3-wm.client.focused_inactive.color.child_border
 
 set_from_resource $unfocused.color.border i3-wm.client.unfocused.color.border "#002b36"
 set_from_resource $unfocused.color.background i3-wm.client.unfocused.color.background "#073642"
@@ -335,12 +576,7 @@ client.focused_inactive $focused_inactive.color.border     $focused_inactive.col
 client.unfocused        $unfocused.color.border            $unfocused.color.background        $unfocused.color.text              $unfocused.color.indicator         $unfocused.color.child_border
 client.urgent           $urgent.color.border               $urgent.color.background           $urgent.color.text                 $urgent.color.indicator            $urgent.color.child_border
 
-# Enable popup during fullscreen
-#popup_during_fullscreen smart
-
-# window focus follows your mouse movements as the mouse crosses window borders
-focus_follows_mouse yes
-
+# Create variables from Xresources for i3bars's look.
 set_from_resource $i3-wm.bar.background.color i3-wm.bar.background.color "#002b36"
 set_from_resource $i3-wm.bar.statusline.color i3-wm.bar.statusline.color "#93a1a1"
 set_from_resource $i3-wm.bar.separator.color i3-wm.bar.separator.color "#268bd2"
@@ -361,15 +597,35 @@ set_from_resource $i3-wm.bar.workspace.urgent.border.color i3-wm.bar.workspace.u
 set_from_resource $i3-wm.bar.workspace.urgent.background.color i3-wm.bar.workspace.urgent.background.color "#dc322f"
 set_from_resource $i3-wm.bar.workspace.urgent.text.color i3-wm.bar.workspace.urgent.text.color "#fdf6e3"
 
-set_from_resource $i3-wm.bar.font i3-wm.bar.font "pango:Source Code Pro Medium 13, FontAwesome 13"
+# Sets i3 font for dialogs
+set_from_resource $i3-wm.font i3-wm.font pango:Source Code Pro Medium 13
+font $i3-wm.font
 
-# Configure the bar
+###############################################################################
+# i3 Bar
+###############################################################################
+
+set_from_resource $i3-wm.bar.position i3-wm.bar.position bottom
+set_from_resource $i3-wm.bar.font i3-wm.bar.font pango:Source Code Pro Medium 13, Material Design Icons 13
+set_from_resource $i3-wm.bar.separator i3-wm.bar.separator " "
+set_from_resource $i3-wm.bar.trayoutput i3-wm.bar.trayoutput primary
+set_from_resource $i3-wm.bar.stripworkspacenumbers i3-wm.bar.stripworkspacenumbers yes
+set_from_resource $i3-wm.bar.mode i3-wm.bar.mode dock
+
+# i3xrocks config file. Override this for a custom status bar generator.
+set_from_resource $i3-wm.bar.status_command i3-wm.bar.status_command i3xrocks -u ~/.config/regolith/i3xrocks/conf.d -d /etc/regolith/i3xrocks/conf.d
+
+# The bar configuration
 bar {
+  position $i3-wm.bar.position
+  mode $i3-wm.bar.mode
+  height 25
   font $i3-wm.bar.font
-  separator_symbol " "
-  status_command i3xrocks -c $i3xrocks_config
-  tray_output none
-  strip_workspace_numbers yes
+  separator_symbol $i3-wm.bar.separator
+  status_command $i3-wm.bar.status_command
+  tray_output $i3-wm.bar.trayoutput
+# XXX unset strip_workspace_numbers (I wAnt them!)
+#  strip_workspace_numbers $i3-wm.bar.stripworkspacenumbers
 
   colors {
       background $i3-wm.bar.background.color
@@ -384,35 +640,95 @@ bar {
   }
 }
 
-# Run programs when i3 starts
+###############################################################################
+# External programs launched with i3
+###############################################################################
 
-# Start the composite manager
-exec --no-startup-id compton -f --config $compton_config
+# Start the installed regolith-compositor
+set_from_resource $i3-wm.program.compositor i3-wm.program.compositor /usr/share/regolith-compositor/init
+exec_always --no-startup-id $i3-wm.program.compositor
 
-# Launch the shortcut Conky window on first login
-exec --no-startup-id /usr/bin/regolith-ftue
+# Start Rofication for notifications
+set_from_resource $i3-wm.program.notifications i3-wm.program.notifications /usr/bin/rofication-daemon
+exec --no-startup-id $i3-wm.program.notifications
+
+# Launch first time user experience script
+set_from_resource $i3-wm.program.ftui i3-wm.program.ftui /usr/bin/regolith-ftue
+exec --no-startup-id $i3-wm.program.ftui
 
 # Hide the mouse pointer if unused for a duration
-exec --no-startup-id /usr/bin/unclutter -b
+set_from_resource $i3-wm.program.unclutter i3-wm.program.unclutter /usr/bin/unclutter -b
+exec --no-startup-id $i3-wm.program.unclutter
 
-# Refresh wallpaper on screen resolution change
-exec --no-startup-id /usr/bin/xeventbind resolution /usr/bin/wallpaper-refresh
+# Load nm-applet to provide auth dialogs for network access
+set_from_resource $i3-wm.program.nm-applet i3-wm.program.nm-applet /usr/bin/nm-applet
+exec --no-startup-id $i3-wm.program.nm-applet
+
+# User programs from Xresources
+# To use, define an Xresource key i3-wm.program.[1-3] with the value of the program to launch.
+# See https://regolith-linux.org/docs/howto/override-xres/ for details.
+set_from_resource $i3-wm.program.1 i3-wm.program.1 :
+exec --no-startup-id $i3-wm.program.1
+set_from_resource $i3-wm.program.2 i3-wm.program.2 :
+exec --no-startup-id $i3-wm.program.2
+set_from_resource $i3-wm.program.3 i3-wm.program.3 :
+exec --no-startup-id $i3-wm.program.3
+
+
 
 
 
 # My configurations lol :)
 
+# Set additional modifier for mouse cursor movement (depends on xmodmap and xcape!)
+set $hyper Mod3
+# TODO try this instead: set_from_resource $hyper  i3-wm.hyper Mod3
+
+# NOTE start a terminal: "'" is called an apostrophe!
+
+bindsym $mod+u exec /home/boris/bin/i3/insert_unicode.sh
+
+# XXX decide whether to replace 'fancy' names for simple numbers or not - do it later
+# bindsym $mod+1 workspace 1
+# bindsym $mod+2 workspace 2
+# bindsym $mod+3 workspace 3
+# bindsym $mod+4 workspace 4
+# bindsym $mod+5 workspace 5
+# bindsym $mod+6 workspace 6
+# bindsym $mod+7 workspace 7
+# bindsym $mod+8 workspace 8
+# bindsym $mod+9 workspace 9
+# bindsym $mod+0 workspace 10
+# bindsym $mod+Ctrl+1 workspace 11
+# bindsym $mod+Ctrl+2 workspace 12
+# bindsym $mod+Ctrl+3 workspace 13
+# bindsym $mod+Ctrl+4 workspace 14
+# bindsym $mod+Ctrl+5 workspace 15
+# bindsym $mod+Ctrl+6 workspace 16
+# bindsym $mod+Ctrl+7 workspace 17
+# bindsym $mod+Ctrl+8 workspace 18
+# bindsym $mod+Ctrl+9 workspace 19
+
+# Gaps (i3-gaps)
+gaps inner 0
+gaps outer 0
+
+# Cursor follows mouse
+focus_follows_mouse yes
+
 # Create window borders of 2 pixels (hopefully it will help indicate thich window is focused
 default_border pixel 3
+default_floating_border pixel 3
 
 # Overrided the borders behaviour (see line 44 which i have commented out - it was the default setting)
 hide_edge_borders none
 
 # Move workplaces
-bindsym $mod+Shift+Ctrl+h move workspace to output left
-bindsym $mod+Shift+Ctrl+j move workspace to output down
-bindsym $mod+Shift+Ctrl+k move workspace to output up
-bindsym $mod+Shift+Ctrl+l move workspace to output right
+# NOTE In the new regolith, these exact bindings were included (I'm a lucky bastard :D) - so I'm commenting mine out. I will not remove them tho, in case 2yrs later something changes again.
+# bindsym $mod+Shift+Ctrl+h move workspace to output left
+# bindsym $mod+Shift+Ctrl+j move workspace to output down
+# bindsym $mod+Shift+Ctrl+k move workspace to output up
+# bindsym $mod+Shift+Ctrl+l move workspace to output right
 
 # Modeless resize
 bindsym $mod+Ctrl+h resize shrink width 6 px or 6 ppt
@@ -462,7 +778,8 @@ bindsym $mod+Left exec /home/boris/bin/i3/kill_all_games.sh
 bindsym $mod+F3 exec /home/boris/bin/i3/restore_keys.sh
 
 # Float GVim
-for_window [class = "Gvim"] floating enable move right 300px, move down 70px
+for_window [class = "Gvim"] floating enable
+# for_window [class = "Gvim"] floating enable move right 300px, move down 70px
 #for_window [class = "Gvim"] resize set 800 480
 
 mode "player" {
@@ -479,7 +796,7 @@ mode "player" {
 
 bindsym $mod+p mode "player"
 
-bindsym $mod+b exec /home/boris/bin/add_to_buku.sh
+# bindsym $mod+b exec /home/boris/bin/add_to_buku.sh
 
 mode "mouse" {
 
@@ -589,7 +906,7 @@ bindsym $hyper+$mod+space exec xdotool click 3
 bindsym $hyper+v exec xdotool mousedown 1
 bindsym $hyper+Return exec xdotool mouseup 1
 
-bindsym $mod+o exec /home/boris/bin/i3/new-workspace.sh
+bindsym $mod+o exec /home/boris/bin/i3/new-workspace.py
 bindsym $mod+Shift+o exec /home/boris/bin/i3/move-to-new-workspace.sh
 bindsym $mod+$alt+o exec /home/boris/bin/i3/move-to-new-workspace-focus.sh
 
@@ -597,7 +914,7 @@ bindsym $mod+$alt+o exec /home/boris/bin/i3/move-to-new-workspace-focus.sh
 
 workspace shared output eDP-1-1 HDMI-0
 
-bindsym $mod+s move container to workspace shared; workspace shared
+#bindsym $mod+s move container to workspace shared; workspace shared
 
 bindsym $mod+Ctrl+i exec /home/boris/bin/i3/switch-keyboards.sh
 
@@ -609,13 +926,234 @@ bindsym $mod+Ctrl+i exec /home/boris/bin/i3/switch-keyboards.sh
 #bindsym F7 [workspace=shared] move workspace to output eDP-1-1; exec /home/boris/bin/i3/cycle_output.py eDP-1-1
 #bindsym F8 [workspace=shared] move workspace to output HDMI-0; exec /home/boris/bin/i3/cycle_output.py HDMI-0
 
-bindsym F6 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py DP-2
-bindsym F7 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py eDP-1-1
-bindsym F8 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py HDMI-0
+bindsym F6 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py DP-2 next
+bindsym Ctrl+F6 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py DP-2 prev
+bindsym F7 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py eDP-1-1 next
+bindsym Ctrl+F7 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py eDP-1-1 prev
+bindsym F8 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py HDMI-0 next
+bindsym Ctrl+F8 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py HDMI-0 prev
 
-for_window [class="qutebrowser"] hide_edge_borders horizontal
+#assign [class="Emacs27"] emacs
+#for_window [class="Emacs27"] focus
+# assign [class="Zotero"] zotero
+# for_window [class="Zotero"] focus
+#for_window [class="qutebrowser"] hide_edge_borders horizontal
+# XXX assign [class="^Zathura$"] 3: zathura
+# XXX for_window [class="^Zathura$"] focus; layout tabbed
+#assign [class="gvim_zathura"] zathura
+for_window [class="gvim_zathura"] floating enable
+
 
 for_window [class="large"] exec /home/boris/bin/i3/move-to-new-workspace-focus.sh
 for_window [instance="large"] exec /home/boris/bin/i3/move-to-new-workspace-focus.sh
 
 for_window [class="Pqiv"] floating enable
+for_window [class="pqiv_hint"] floating enable
+
+for_window [class="qutebrowser"] exec /home/boris/bin/i3/new-workspace.py qutebrowser, focus
+for_window [class="Firefox"] exec /home/boris/bin/i3/new-workspace.py firefox, focus
+for_window [class="Pale moon"] exec /home/boris/bin/i3/new-workspace.py palemoon, focus
+for_window [class="^Zathura$"] exec /home/boris/bin/i3/new-workspace.py zathura, focus
+for_window [class="Emacs27"] exec /home/boris/bin/i3/new-workspace.py emacs, focus
+for_window [class="Zotero"] exec /home/boris/bin/i3/new-workspace.py zotero, focus
+for_window [class="mpv"] exec /home/boris/bin/i3/new-workspace.py mpv, focus
+for_window [class="vifm"] exec /home/boris/bin/i3/new-workspace.py vifm, focus
+for_window [class="libreoffice-calc"] exec /home/boris/bin/i3/new-workspace.py libreoffice-calc, focus
+# for_window [instance="Conky"] no_focus
+# no_focus [class="Conky"]
+for_window [class="^Conky$"] exec /home/boris/bin/i3/conky-insert-handler.sh
+for_window [class="Conky-insert_float"] exec /home/boris/bin/i3/conky-insert-float-handler.sh
+for_window [class="Rofi"] floating enable
+
+mode "eye3 → (R)eload-config" {
+  bindsym Shift+r exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; reload
+  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+}
+
+mode "file → (e)ye3 • (f)ind" {
+  bindsym e exec /home/boris/bin/i3/fake-which-key.sh "SPC_f_e-"; mode "eye3 → (R)eload-config"
+  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+  # bindsym f exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec --no-startup-id $i3-wm.program.help; mode "default"
+  bindsym f exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; exec $i3-wm.program.file_search; mode "default"
+}
+
+mode "background-move-to: 1?" {
+  bindsym 2 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws12; mode "default"
+  bindsym 3 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws13; mode "default"
+  bindsym 4 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws14; mode "default"
+  bindsym 5 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws15; mode "default"
+  bindsym 6 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws16; mode "default"
+  bindsym 7 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws17; mode "default"
+  bindsym 8 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws18; mode "default"
+  bindsym 9 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws19; mode "default"
+  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+}
+
+mode "window-move-to: 1?" {
+  bindsym 2 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws12; workspace number $ws12; mode "default"
+  bindsym 3 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws13; workspace number $ws13; mode "default"
+  bindsym 4 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws14; workspace number $ws14; mode "default"
+  bindsym 5 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws15; workspace number $ws15; mode "default"
+  bindsym 6 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws16; workspace number $ws16; mode "default"
+  bindsym 7 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws17; workspace number $ws17; mode "default"
+  bindsym 8 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws18; workspace number $ws18; mode "default"
+  bindsym 9 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws19; workspace number $ws19; mode "default"
+  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+}
+
+mode "focus: 1?" {
+  bindsym 2 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; workspace number $ws12; mode "default"
+  bindsym 3 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; workspace number $ws13; mode "default"
+  bindsym 4 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; workspace number $ws14; mode "default"
+  bindsym 5 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; workspace number $ws15; mode "default"
+  bindsym 6 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; workspace number $ws16; mode "default"
+  bindsym 7 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; workspace number $ws17; mode "default"
+  bindsym 8 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; workspace number $ws18; mode "default"
+  bindsym 9 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; workspace number $ws19; mode "default"
+  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+}
+
+mode "buffer/background → (b)uffer-list • (d)elete/e(x)it • (s)cratchpad • move-to: (1)..(9)" {
+  # bindsym b exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec $i3-wm.program.launcher.window; mode "default"
+  bindsym b exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; exec rofi -show window -modi window -normal-window; mode "default"
+  bindsym x exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; [con_id="__focused__"] kill; mode "default"
+  bindsym d exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; [con_id="__focused__"] kill; mode "default"
+  bindsym q exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws1; mode "default"
+  bindsym 2 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws2; mode "default"
+  bindsym 3 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws3; mode "default"
+  bindsym 4 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws4; mode "default"
+  bindsym 5 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws5; mode "default"
+  bindsym 6 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws6; mode "default"
+  bindsym 7 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws7; mode "default"
+  bindsym 8 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws8; mode "default"
+  bindsym 9 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws9; mode "default"
+  bindsym 1 exec /home/boris/bin/i3/fake-which-key.sh "SPC_b_1-"; mode "background-move-to: 1?"
+  bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; scratchpad show; mode "default"
+  # TODO implement one more keybinding to move to the "next available" workspace
+  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+}
+
+mode "window/workspace → (m)aximize • (d)elete/e(x)it • (r)ename-workspace • move-to: (1)..(9)(s)cratchpad" {
+  bindsym m exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; fullscreen toggle; mode "default"
+  bindsym x exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; [con_id="__focused__"] kill; mode "default"
+  bindsym d exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; [con_id="__focused__"] kill; mode "default"
+  bindsym q exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws1; workspace number $ws1; mode "default"
+  bindsym 2 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws2; workspace number $ws2; mode "default"
+  bindsym 3 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws3; workspace number $ws3; mode "default"
+  bindsym 4 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws4; workspace number $ws4; mode "default"
+  bindsym 5 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws5; workspace number $ws5; mode "default"
+  bindsym 6 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws6; workspace number $ws6; mode "default"
+  bindsym 7 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws7; workspace number $ws7; mode "default"
+  bindsym 8 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws8; workspace number $ws8; mode "default"
+  bindsym 9 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move container to workspace number $ws9; workspace number $ws9; mode "default"
+  bindsym 1 exec /home/boris/bin/i3/fake-which-key.sh "SPC_w_1-"; mode "window-move-to: 1?"
+  bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move to scratchpad; mode "default"
+  bindsym r exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; exec i3-input -F 'rename workspace to "%s"' -P 'New name: ' -f -*-*-*-*-*-*-20-*-*-*-*-*-*-*; mode "default"
+  # TODO implement one more keybinding to move to the "next available" workspace
+  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+}
+
+mode "transient state" {
+  bindsym h focus left
+  bindsym j focus down
+  bindsym k focus up
+  bindsym l focus right
+  bindsym Shift+h move left
+  bindsym Shift+j move down
+  bindsym Shift+k move up
+  bindsym Shift+l move right
+  bindsym bracketleft resize shrink width 6 px or 6 ppt
+  bindsym Shift+bracketright resize grow height 6 px or 6 ppt
+  bindsym Shift+bracketleft resize shrink height 6 px or 6 ppt
+  bindsym bracketright resize grow width 6 px or 6 ppt
+  bindsym Ctrl+g mode "default"
+  bindsym Escape mode "default"
+  bindsym Ctrl+c mode "default"
+  bindsym q mode "default"
+}
+
+mode "rofi" {
+  bindsym t exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; exec /home/boris/rofitr/rofitr; mode "default"
+  bindsym q exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; exec rofi -show calc -modi calc -normal-window; mode "default"
+  bindsym u exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; exec rofimoji -f math mathematical_alphanumeric_symbols mathematical_operators miscellaneous_mathematical_symbols-a miscellaneous_mathematical_symbols-b supplemental_mathematical_operators arabic_mathematical_alphabetic_symbols greek_and_coptic hebrew --rofi-args="-normal-window"; mode "default"
+  bindsym p exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; exec rofi -show top -modi top -normal-window; mode "default"
+  bindsym k exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; exec kill -9 $(ps -ef | rofi -dmenu -theme solarized -normal-window | awk '{print $2}'); mode "default"
+  bindsym r exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; exec rofi -normal-window -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'; mode "default"
+  bindsym c exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; exec /home/boris/rofi-color-picker/rofi-color-picker/rofi-color-picker; mode "default"
+  bindsym b exec /home/boris/bin/i3/unbypass-xkeysnail.ch; exec dunstctl close-all; exec /home/boris/rofi-bibbrowser/rofi-bibbrowser; mode "default"
+  bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; exec rofi-screenshot; mode "default"
+  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+}
+
+mode "SPC-" {
+  bindcode 245 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; exec $i3-wm.program.launcher.app; mode "default"
+  bindsym space exec /home/boris/bin/i3/unbypass-xkaysnail.sh; exec dunstctl close-all; focus mode_toggle; mode "default"
+  bindsym F6 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move workspace to output DP-2; mode "default"
+  bindsym F7 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move workspace to output eDP-1-1; mode "default"
+  bindsym F8 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; move workspace to output HDMI-0; mode "default"
+  bindsym q exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; workspace number $ws1; mode "default"
+  bindsym 2 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; workspace number $ws2; mode "default"
+  bindsym 3 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; workspace number $ws3; mode "default"
+  bindsym 4 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; workspace number $ws4; mode "default"
+  bindsym 5 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; workspace number $ws5; mode "default"
+  bindsym 6 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; workspace number $ws6; mode "default"
+  bindsym 7 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; workspace number $ws7; mode "default"
+  bindsym 8 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; workspace number $ws8; mode "default"
+  bindsym 9 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; workspace number $ws9; mode "default"
+  bindsym 1 exec /home/boris/bin/i3/fake-which-key.sh "SPC_1-"; mode "focus: 1?"
+  # TODO implement one more keybinding to move to the "next available" workspace
+  # NOTE I actually already have this bound to $mod+o, but I should make up a more mnemonic binding
+  bindsym b exec /home/boris/bin/i3/fake-which-key.sh "SPC_b-"; mode "buffer/background → (b)uffer-list • (d)elete/e(x)it • (s)cratchpad • move-to: (1)..(9)"
+  bindsym w exec /home/boris/bin/i3/fake-which-key.sh "SPC_w-"; mode "window/workspace → (m)aximize • (d)elete/e(x)it • (r)ename-workspace • move-to: (1)..(9)(s)cratchpad"
+  bindsym f exec /home/boris/bin/i3/fake-which-key.sh "SPC_f-"; mode "file → (e)ye3 • (f)ind"
+  bindsym r exec /home/boris/bin/i3/fake-which-key.sh "SPC_r-"; mode "rofi"
+  bindsym period mode "transient state"
+  bindsym apostrophe exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; exec /usr/bin/x-terminal-emulator; mode "default"
+  bindsym Shift+1 exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; exec $i3-wm.program.launcher.cmd; mode "default"
+  bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; scratchpad show; scratchpad show; mode "default"
+  bindsym h exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; focus left; mode "default"
+  bindsym j exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; focus down; mode "default"
+  bindsym k exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; focus up; mode "default"
+  bindsym l exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; focus right; mode "default"
+  bindsym Ctrl+i exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; workspace back_and_forth; mode "default"
+  bindsym Tab exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; workspace back_and_forth; mode "default"
+  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.sh; exec dunstctl close-all; mode "default"
+}
+
+bindcode 245 exec /home/boris/bin/i3/bypass-xkeysnail.sh; exec /home/boris/bin/i3/fake-which-key.sh "SPC-"; mode "SPC-"
+bindcode $mod+245 exec $i3-wm.program.launcher.app; mode "default"
+
+bindsym $mod+e move up
+bindsym $mod+d move down
+bindsym $mod+s move left
+bindsym $mod+f move right
+bindsym $mod+bracketleft resize shrink width 12 px or 12 ppt
+bindsym $mod+bracketright resize grow width 12 px or 12 ppt
+bindsym $mod+Shift+bracketleft resize shrink height 12 px or 12 ppt
+bindsym $mod+Shift+bracketright resize grow height 12 px or 12 ppt
+
+# exec --no-startup-id kitti3
+exec --no-startup-id dunst
+exec --no-startup-id greenclip daemon
+# bindsym $mod+apostrophe nop kitti3
+
+# bindsym F4 exec export LAUNCH_NEXT_PROGRAM_IN_TILING_MODE=1
+#bindsym F4 exec /home/boris/bin/i3/export-tiling-flag.sh

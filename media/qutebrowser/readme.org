@@ -10,3 +10,19 @@
   ln -s /home/boris/projects/dotfiles/media/qutebrowser/stylesheets/ /home/boris/.local/share/qutebrower/stylesheets
   ln -s /home/boris/projects/dotfiles/media/qutebrowser/userscripts/ /home/boris/.local/share/qutebrowser/userscripts
   #+END_SRC
+
+* [[/home/boris/projects/dotfiles/media/qutebrowser/org.qutebrowser.qutebrowser.desktop][org.qutebrowser.qutebrowser.desktop]] should be symlinked to [[/home/boris/.local/share/applications/org.qutebrowser.qutebrowser.desktop]]:
+  #+BEGIN_SRC sh
+  ln -s /home/boris/projects/dotfiles/media/qutebrowser/org.qutebrowser.qutebrowser.desktop /home/boris/.local/share/applications/org.qutebrowser.qutebrowser.desktop
+  #+END_SRC
+
+* [[/home/boris/projects/dotfiles/media/qutebrowser/qutebrowser-128x128.png][qutebrowser-128x128.png]] should be symlinked to [[/home/boris/.local/share/icons/hicolor/128x128/apps/qutebrowser-128x128.png]]:
+  #+BEGIN_SRC sh
+  mkdir -p /home/boris/.local/share/icons/hicolor/128x128/apps
+  ln -s /home/boris/projects/dotfiles/media/qutebrowser/qutebrowser-128x128.png /home/boris/.local/share/icons/hicolor/128x128/apps/qutebrowser-128x128.png
+  #+END_SRC
+
+* Next, make qutebrowser the default browser:
+  #+BEGIN_SRC sh
+  xdg-settings set default-web-browser org.qutebrowser.qutebrowser.desktop
+  #+END_SRC

@@ -5,6 +5,9 @@
 # Activate vi mode with <Escape> (i added this)
 #set -o vi
 
+# Run tmux (i added this)
+[[ $TERM != "screen" ]] && exec tmux
+
 # Make an alias for lynx so it runs in vi-mode (i added this)
 alias lynx="lynx -vikeys"
 
@@ -161,3 +164,10 @@ export BROWSER=qutebrowser
 stty -ixon
 
 export PATH="/home/boris/mimic1:$PATH"
+
+# use vim as a man-page viewer
+export PAGER="/bin/sh -c \"unset PAGER;col -b -x | \
+    vim -R -c 'set ft=man nomod nolist' -c 'map q :q<CR>' \
+    -c 'map <SPACE> <C-D>' -c 'map b <C-U>' \
+    -c 'nmap K :Man <C-R>=expand(\\\"<cword>\\\")<CR><CR>' -\""
+

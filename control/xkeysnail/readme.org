@@ -13,3 +13,5 @@ I'm intentionally leaving this readme unfinished and lacking clear instructions,
 #+BEGIN_SRC sh
 ln -s /home/boris/projects/dotfiles/control/xkeysnail/xkeysnail-config.py /home/boris/.config/xkeysnail/xkeysnail-config.py
 #+END_SRC
+
+* In fact, after migration to the new ssd, when I was setting all this shit up, I failed to get the systemd thing working even with this dirty hack - BUT it turned out that the only thing I needed to get the whole thing to work was the uinput part: i just made some groups, added myself to them - and bam, the damn thing works.

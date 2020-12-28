@@ -50,8 +50,14 @@ CodeMirror.Vim.mapCommand('jv', 'action', 'caret', {}, {
 CodeMirror.Vim.mapCommand('j9', 'action', 'six', {}, {
     context: 'insert'
 });
-CodeMirror.Vim.mapCommand('jj', 'action', 'myNewline', {}, {
-    context: 'insert'
+CodeMirror.Vim.mapCommand('f/', 'action', 'backslash', {}, {
+  context: 'insert'
+});
+CodeMirror.Vim.mapCommand('fv', 'action', 'caret', {}, {
+  context: 'insert'
+});
+CodeMirror.Vim.mapCommand('f9', 'action', 'six', {}, {
+  context: 'insert'
 });
 
 
@@ -69,4 +75,19 @@ CodeMirror.Vim.mapCommand('jl', 'action', 'upAndRight', {}, {
 });
 CodeMirror.Vim.mapCommand('jt', 'action', 'downAndHorizontal', {}, {
     context: 'insert'
+});
+CodeMirror.Vim.mapCommand('fi', 'action', 'vertical', {}, {
+  context: 'insert'
+});
+CodeMirror.Vim.mapCommand('fe', 'action', 'verticalAndRight', {}, {
+  context: 'insert'
+});
+CodeMirror.Vim.mapCommand('f-', 'action', 'horizontal', {}, {
+  context: 'insert'
+});
+CodeMirror.Vim.mapCommand('fl', 'action', 'upAndRight', {}, {
+  context: 'insert'
+});
+CodeMirror.Vim.mapCommand('ft', 'action', 'downAndHorizontal', {}, {
+  context: 'insert'
 });

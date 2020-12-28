@@ -1,0 +1,18 @@
+   SPC → M-x
+   TAB → Last workspace
+     ! → shell cmd
+     ' → open shell
+     q → select workspace 1
+  2..9 → select workspace 2..9
+     1 → +select workspace 10..19
+F6..F8 → select output left..right
+     b → +buffers/background
+     f → +Files
+     r → +rofi/registers/rings
+     w → +windows/workspaces
+     . → transient-state
+     s → cycle Scratchpads
+     h → evil-window-left
+     j → evil-window-down
+     k → evil-window-up
+     l → evil-window-right

@@ -1,0 +1,7 @@
+   <span color="#BA68A8">t</span> <span color="#00E676">→</span> translate        <span color="#BA68A8">q</span> <span color="#00E676">→</span> qalc
+   <span color="#BA68A8">c</span> <span color="#00E676">→</span> color-picker     <span color="#BA68A8">r</span> <span color="#00E676">→</span> kill-ring/greenclip
+   <span color="#BA68A8">u</span> <span color="#00E676">→</span> unicode          <span color="#BA68A8">b</span> <span color="#00E676">→</span> bibbrowser
+   <span color="#BA68A8">p</span> <span color="#00E676">→</span> top
+   <span color="#BA68A8">k</span> <span color="#00E676">→</span> kill
+
+SPC_r-

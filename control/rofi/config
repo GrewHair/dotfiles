@@ -101,7 +101,7 @@ rofi.fullscreen:                     true
 ! "Indicate how it match by underlining it." Set from: Default
 ! rofi.show-match:                     true
 ! "New style theme file" Set from: XResources
-rofi.theme:                          /etc/regolith/rofi/regolith-theme.rasi
+! rofi.theme:                          /etc/regolith/rofi/regolith-theme.rasi
 ! "Color scheme for normal row" Set from: Default
 ! rofi.color-normal:                   
 ! "Color scheme for urgent row" Set from: Default
@@ -131,37 +131,37 @@ rofi.theme:                          /etc/regolith/rofi/regolith-theme.rasi
 ! "The display name of this browser" Set from: Default
 ! rofi.display-keys:                   
 ! "Paste primary selection" Set from: Default
-! rofi.kb-primary-paste:               Control+V,Shift+Insert
-! "Paste clipboard" Set from: Default
-! rofi.kb-secondary-paste:             Control+v,Insert
-! "Clear input line" Set from: Default
-! rofi.kb-clear-line:                  Control+w
+rofi.kb-primary-paste:               Control+V,Shift+Insert,Control+Cyrillic_EM
+"Paste clipboard" Set from: Default
+rofi.kb-secondary-paste:             Control+v,Insert,Control+Cyrillic_em
+"Clear input line" Set from: Default
+rofi.kb-clear-line:                  Control+w,Control+Cyrillic_tse
 ! "Beginning of line" Set from: Default
-! rofi.kb-move-front:                  Control+a
+rofi.kb-move-front:                  Control+a,Control+Cyrillic_ef
 ! "End of line" Set from: Default
-! rofi.kb-move-end:                    Control+e
+rofi.kb-move-end:                    Control+e,Control+Cyrillic_u
 ! "Move back one word" Set from: Default
-! rofi.kb-move-word-back:              Alt+b
+rofi.kb-move-word-back:              Alt+b,Alt+Cyrillic_i
 ! "Move forward one word" Set from: Default
-! rofi.kb-move-word-forward:           Alt+f
+rofi.kb-move-word-forward:           Alt+f,Alt+Cyrillic_a
 ! "Move back one char" Set from: Default
-! rofi.kb-move-char-back:              Left,Control+b
+rofi.kb-move-char-back:              Left,Control+b,Control+Cyrillic_i
 ! "Move forward one char" Set from: Default
-! rofi.kb-move-char-forward:           Right,Control+f
+rofi.kb-move-char-forward:           Right,Control+f,Control+Cyrillic_a
 ! "Delete previous word" Set from: Default
 ! rofi.kb-remove-word-back:            Control+Alt+h,Control+BackSpace
 ! "Delete next word" Set from: Default
 ! rofi.kb-remove-word-forward:         Control+Alt+d
 ! "Delete next char" Set from: Default
-! rofi.kb-remove-char-forward:         Delete,Control+d
+rofi.kb-remove-char-forward:         Delete,Control+d,Control+Cyrillic_ve
 ! "Delete previous char" Set from: Default
-! rofi.kb-remove-char-back:            BackSpace,Control+h
+rofi.kb-remove-char-back:            BackSpace,Control+h,Control+Cyrillic_er
 ! "Delete till the end of line" Set from: Default
-! rofi.kb-remove-to-eol:               Control+k
+rofi.kb-remove-to-eol:               Control+k,Control+Cyrillic_el
 ! "Delete till the start of line" Set from: Default
-! rofi.kb-remove-to-sol:               Control+u
+rofi.kb-remove-to-sol:               Control+u,Control+Cyrillic_ghe
 ! "Accept entry" Set from: Default
-! rofi.kb-accept-entry:                Control+j,Control+m,Return,KP_Enter
+rofi.kb-accept-entry:                Control+j,Control+m,Return,KP_Enter,Control+Cyrillic_o,Control+Cyrillic_softsign
 ! "Use entered text as command (in ssh/run modi)" Set from: Default
 ! rofi.kb-accept-custom:               Control+Return
 ! "Use alternate accept command." Set from: Default
@@ -193,13 +193,13 @@ rofi.theme:                          /etc/regolith/rofi/regolith-theme.rasi
 ! "Set selected item as input text" Set from: Default
 ! rofi.kb-row-select:                  Control+space
 ! "Take a screenshot of the rofi window" Set from: Default
-! rofi.kb-screenshot:                  Alt+S
+rofi.kb-screenshot:                  Alt+S,Alt+Cyrillic_yeru
 ! "Toggle case sensitivity" Set from: Default
 ! rofi.kb-toggle-case-sensitivity:     grave,dead_grave
 ! "Toggle sort" Set from: Default
 ! rofi.kb-toggle-sort:                 Alt+grave
 ! "Quit rofi" Set from: Default
-! rofi.kb-cancel:                      Escape,Control+g,Control+bracketleft
+rofi.kb-cancel:                      Escape,Control+g,Control+bracketleft,Control+Cyrillic_pe
 ! "Custom keybinding 1" Set from: Default
 ! rofi.kb-custom-1:                    Alt+1
 ! "Custom keybinding 2" Set from: Default
@@ -274,5 +274,5 @@ rofi.theme:                          /etc/regolith/rofi/regolith-theme.rasi
 ! rofi.me-accept-custom:               Control+MouseDPrimary
 
 ! rofi.kb-row-tab:                     Tab,Control+i
-rofi.kb-row-up:                      Up,Control+p,ISO_Left_Tab,Control+Alt+i
-rofi.kb-row-down:                    Down,Control+n,Control+i
+!rofi.kb-row-up:                      Up,Control+p,Control+Cyrillic_ze,ISO_Left_Tab,Control+Alt+i,Control+Alt+Cyrillic_sha
+!rofi.kb-row-down:                    Down,Control+n,Control+Cyrillic_te,Control+i,Control+Cyrillic_sha

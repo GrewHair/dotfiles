@@ -73,7 +73,7 @@ function kill_xkeysnail()
 
 function start_xkeysnail()
 {
-    xkeysnail /home/boris/.config/xkeysnail/xkeysnail-config.py --devices /dev/input/$1 &
+    xkeysnail /home/boris/.config/xkeysnail/xkeysnail-config-"$1".py --devices /dev/input/$2 &
 }
 
 
@@ -92,7 +92,7 @@ function toggle_touchpad()
 
 function menu()
 {
-    which_keyboard=$(zenity --list --column Keyboard Builtin Microsoft 'Toggle touchpad' Lock)
+    which_keyboard=$(zenity --list --class=zenity_hjkl --column Keyboard Builtin Microsoft 'Toggle touchpad' Lock)
 }
 
 
@@ -106,14 +106,14 @@ if [[ $which_keyboard ==  Builtin ]]; then
     kill_xkeysnail
     enable_builtin
     disable_microsoft
-    start_xkeysnail $builtin_handler
+    start_xkeysnail builtin $builtin_handler
 fi
 
 if [[ $which_keyboard ==  Microsoft ]]; then
     kill_xkeysnail
     enable_microsoft
     disable_builtin
-    start_xkeysnail $microsoft_handler
+    start_xkeysnail microsoft $microsoft_handler
 fi
 
 if [[ $which_keyboard == 'Toggle touchpad' ]]; then

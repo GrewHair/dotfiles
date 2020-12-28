@@ -1,2 +1,2 @@
 #!/bin/bash
-xdotool set_window --class=Vivaldi-stable $(xdotool getactivewindow)
+xdotool set_window --class=devtools $(xdotool getactivewindow)

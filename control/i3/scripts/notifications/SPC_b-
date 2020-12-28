@@ -1,0 +1,7 @@
+   <span color="#BA68A8">b</span> <span color="#00E676">→</span> list-windows	   <span color="#BA68A8">q</span> <span color="#00E676">→</span> move window to workspace 1 in background
+   <span color="#BA68A8">d</span> <span color="#00E676">→</span> close window	<span color="#BA68A8">2..9</span> <span color="#00E676">→</span> move window to workspace 2..9 in background
+   <span color="#BA68A8">x</span> <span color="#00E676">→</span> close window	   <span color="#BA68A8">1</span> <span color="#00E676">→</span> <span color="#82B1FF">+move window to workspace 10..19 in background</span>
+   <span color="#BA68A8">s</span> <span color="#00E676">→</span> Scratchpad
+
+
+SPC_b-

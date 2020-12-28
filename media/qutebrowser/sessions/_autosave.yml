@@ -1,413 +1,350 @@
 windows:
 - geometry: !!binary |
-    AdnQywADAAAAAAAAAAAAAAAABXcAAAQZAAAAAwAAAAMAAAV0AAAD/gAAAAEABAAABXgAAAAAAAAA
-    AAAABXcAAAQZ
+    AdnQywADAAAAAAz4AAAAAAAAEfcAAAOmAAAM+wAAAAMAABH0AAADowAAAAAAAAAABQAAAAz7AAAA
+    AwAAEfQAAAOj
   tabs:
   - history:
     - active: true
-      last_visited: '2020-12-02T17:38:29'
+      last_visited: '2020-12-27T16:01:57'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: The Modern JavaScript Tutorial
-      url: https://javascript.info/
-      zoom: 1.0
+      title: IEEE 802.1Q - Wikipedia
+      url: https://en.wikipedia.org/wiki/IEEE_802.1Q
+      zoom: 1.3
   - history:
     - active: true
-      last_visited: '2020-12-02T17:38:28'
+      last_visited: '2020-12-27T16:01:58'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: 'Conditional branching: if, ''?'''
-      url: https://javascript.info/ifelse
-      zoom: 1.0
+      title: How Switches Work | Learn with Global Knowledge
+      url: https://www.globalknowledge.com/us-en/resources/resource-library/articles/how-switches-work/
+      zoom: 1.3
   - history:
     - active: true
-      last_visited: '2020-12-02T17:38:31'
+      last_visited: '2020-12-27T16:01:57'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Learn
-      url: https://learn.epam.com/start
-      zoom: 1.0
+      title: '(133) A-Level Comp Sci: Structure of the Internet - YouTube'
+      url: https://www.youtube.com/watch?v=4AXZVnZclCw
+      zoom: 1.3
   - history:
-    - active: true
-      last_visited: '2020-12-02T17:38:29'
+    - last_visited: '2020-12-27T16:06:42'
       pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Sign In to EPAM
-      url: https://access.epam.com/auth/realms/plusx/protocol/openid-connect/auth?client_id=learnId&redirect_uri=https%3A%2F%2Flearn.epam.com%2Fauth%2Fsignin-iam&response_type=code&scope=openid%20profile%20email%20offline_access&code_challenge=0dkfoIQfDCeu6vcXLWm5cFv4A_KSrVOydAmDlckQ5ac&code_challenge_method=S256&nonce=637417967132327240.MTk4OTI0NzgtNDc0OC00MmQzLTk2ODItOWZjMTM4ZDg2NTNiNTFjODM5ZjEtM2M0Yi00ZTllLTg0NmYtMzIwNzgzOGQwZDEz&state=CfDJ8IajQ5NwKntKsOi58laDrEzO3ibY09I_MEHGktyHD53D-3VzSi4DAb4bUnhHS8z4XT6M1NoOqpnqqaqVaKtZs8G080lyXDCXxwhuoQdzxe8En5rMrLaXpnu1q68roVeVlxn_kvPixjijP-iJMI0In6cWmUuAdTVGyf-zrlZeeVoItC7QofmcuAVrFdP8Yfjevcrszt7zGPYdPrx82ouOro7XrHoC4IVL8kUZypvt5tIsa_eu-OhJC02XPM59ghfx9F82GrYQl3usruIOV2jNZTvTd2uiqI0O3fgcnyA_y7hNM0iRbEC5Y6SSPNF3RKXGaLUCiykTuX9SHNAZYEWMq751gtt7D4QQQNwPcN3fX05EkzSAjMlP9MuaBRb7Ib_fWf6gB1c47EB1PYUEC_MdXrxyUd_xA7dsH2ee2WhpqELP-WIBW9eJPUUZPpmzG_x-DapkJ2XuUfONS9DRTidx4V4&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=5.5.0.0
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-12-02T17:38:29'
+      title: (133) Subscriptions - YouTube
+      url: https://www.youtube.com/feed/subscriptions
+    - last_visited: '2020-12-27T16:06:42'
       pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Sign In to EPAM
-      url: https://access.epam.com/auth/realms/plusx/protocol/openid-connect/auth?nonce=DqiL9u7IJ700myXupYWdsDKvkQaRiepiE7ccJu2ZVJy2hAnAKaL0bSagATUoo9gT&state=XOgsYmOccT8JhRalTq6Tj5JEPF9bGsL9&redirect_uri=https://elearn.epam.com/auth/complete/extended-openid-connect/&response_type=code&client_id=learnId&scope=openid+profile+email
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-12-02T17:38:28'
+      title: (133) vocaloid 60fps - YouTube
+      url: https://www.youtube.com/results?search_query=vocaloid+60fps
+    - last_visited: '2020-12-27T16:07:47'
       pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Node (networking) - Wikipedia
-      url: https://en.wikipedia.org/wiki/Node_(networking)
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-12-02T17:38:28'
+      title: (133) elliott shith - YouTube
+      url: https://www.youtube.com/results?search_query=elliott+shith
+    - last_visited: '2020-12-27T16:07:58'
       pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: IPv4 - Wikipedia
-      url: https://en.wikipedia.org/wiki/IPv4#Identification
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-12-02T17:38:28'
+      title: (133) elliott smith fuji rock - YouTube
+      url: https://www.youtube.com/results?search_query=elliott+smith+fuji+rock+
+    - last_visited: '2020-12-27T16:08:05'
       pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Classful network - Wikipedia
-      url: https://en.wikipedia.org/wiki/Classful_network
-      zoom: 1.0
-  - history:
-    - active: true
-      last_visited: '2020-12-02T17:38:28'
+      title: (133) Elliott Smith - Bumbershoot Festival - YouTube
+      url: https://www.youtube.com/watch?v=O_ZpXF0O3I8
+    - last_visited: '2020-12-27T16:39:16'
       pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Internet Protocol - Wikipedia
-      url: https://en.wikipedia.org/wiki/Internet_Protocol
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-12-02T17:38:48'
+      title: (133) sleaford mods - YouTube
+      url: https://www.youtube.com/results?search_query=sleaford+mods
+    - last_visited: '2020-12-27T16:39:39'
       pinned: false
-      title: Best SNES PAL Region Games Never Released in North America - SNESdrunk
-        - YouTube
-      url: https://www.youtube.com/watch?v=HHt885Z6LDQ
-    - last_visited: '2020-12-02T17:38:49'
-      original-url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DHHt885Z6LDQ&hl=en&ec=65620
+      title: (133) sleaford mods - YouTube
+      url: https://www.youtube.com/results?search_query=sleaford+mods&sp=EgIIBQ%253D%253D
+    - last_visited: '2020-12-27T16:39:43'
       pinned: false
-      title: YouTube
-      url: https://accounts.google.com/signin/v2/identifier?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DHHt885Z6LDQ&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin
-    - last_visited: '2020-12-02T17:39:12'
-      original-url: https://accounts.google.com/signin/v2/identifier?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DHHt885Z6LDQ&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin
+      title: (133) Sleaford Mods - Shortcummings - YouTube
+      url: https://www.youtube.com/watch?v=39HmCqHZOMU
+    - last_visited: '2020-12-27T16:44:14'
       pinned: false
-      title: YouTube
-      url: https://accounts.google.com/signin/v2/challenge/pwd?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DHHt885Z6LDQ&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin&cid=1&navigationDirection=forward&TL=AM3QAYb19_LcQ1anWeMwUO0FGce1O6yL8kCYOTqX0JqFjIl-igjFCTrEWcrV1kh3
-    - active: true
-      last_visited: '2020-12-02T17:39:39'
+      title: (133) donor song - YouTube
+      url: https://www.youtube.com/results?search_query=donor+song
+    - last_visited: '2020-12-27T16:44:18'
       pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: (112) Best SNES PAL Region Games Never Released in North America - SNESdrunk
-        - YouTube
-      url: https://www.youtube.com/watch?v=HHt885Z6LDQ
-      zoom: 1.0
-  - active: true
-    history:
-    - last_visited: '2020-12-02T17:50:59'
+      title: (133) 【VY1V4】Donor Song【カバー】 - YouTube
+      url: https://www.youtube.com/watch?v=XuagTVu113o
+    - last_visited: '2020-12-27T17:06:34'
       pinned: false
-      title: (111) Introduction to Networking | Network Fundamentals Part 1 - YouTube
-      url: https://www.youtube.com/watch?v=cNwEVYkx2Kk&list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8
-    - last_visited: '2020-12-02T17:50:59'
+      title: (133) 【VY1V4】Fairytale,【カバー】 - YouTube
+      url: https://www.youtube.com/watch?v=4hNpxi0N-2U&list=RDXuagTVu113o
+    - last_visited: '2020-12-27T17:06:48'
       pinned: false
-      title: (111) Cabling Devices | Network Fundamentals Part 2 - YouTube
-      url: https://www.youtube.com/watch?v=Ud8UeNgdaz4&list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8&index=2
-    - last_visited: '2020-12-02T19:10:19'
-      pinned: false
-      title: (111) How the OSI Model Works | Network Fundamentals Part 3 - YouTube
-      url: https://www.youtube.com/watch?v=y9PG-_ZNbWg&list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8&index=3
-    - last_visited: '2020-12-02T19:35:21'
-      pinned: false
-      title: (112) How IP Addresses Work | Network Fundamentals Part 4 - YouTube
-      url: https://www.youtube.com/watch?v=v8aYhOxZuNg&list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8&index=4
-    - last_visited: '2020-12-02T21:52:16'
-      pinned: false
-      title: (112) IP Addressing in Depth | Network Fundamentals Part 5 - YouTube
-      url: https://www.youtube.com/watch?v=Tnjdk08z3HM&list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8&index=5
-    - active: true
-      last_visited: '2020-12-02T23:57:05'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: (112) TCP/IP Model (Internet Protocol Suite) | Network Fundamentals Part
-        6 - YouTube
-      url: https://www.youtube.com/watch?v=HFRU01uS9nA&list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8&index=6
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-12-02T17:38:28'
-      pinned: false
-      title: Why I use qutebrowser and how I configure it - adblocking, note taking,
-        and colors - YouTube
-      url: https://www.youtube.com/watch?v=Av8Sfaprcb4
-    - last_visited: '2020-12-02T22:57:28'
-      pinned: false
-      title: (112) YouTube
+      title: (133) YouTube
       url: https://www.youtube.com/
-    - last_visited: '2020-12-02T22:57:28'
+    - last_visited: '2020-12-27T17:06:48'
       pinned: false
-      title: (112) 16 бит тому назад - YouTube
-      url: https://www.youtube.com/results?search_query=16+%D0%B1%D0%B8%D1%82+%D1%82%D0%BE%D0%BC%D1%83+%D0%BD%D0%B0%D0%B7%D0%B0%D0%B4
-    - last_visited: '2020-12-02T22:57:38'
+      title: (133) [MMD杯ZERO2] アンノウン・マザーグース Unknown Mother-Goose Sour式鏡音リン[PV][Camera
+        DL] - YouTube
+      url: https://www.youtube.com/watch?v=r9V5gy-s2J0
+    - last_visited: '2020-12-27T17:07:06'
       pinned: false
-      title: (112) Дмитрий Бачило - YouTube
-      url: https://www.youtube.com/user/BachiloDmitry
-    - last_visited: '2020-12-02T22:58:06'
-      pinned: false
-      title: (112) Дмитрий Бачило - YouTube
-      url: https://www.youtube.com/c/BachiloDmitry/videos
-    - last_visited: '2020-12-02T22:58:14'
-      pinned: false
-      title: (112) Дмитрий Бачило - YouTube
-      url: https://www.youtube.com/c/BachiloDmitry/videos
-    - last_visited: '2020-12-02T22:58:20'
-      pinned: false
-      title: (112) Дмитрий Бачило - YouTube
-      url: https://www.youtube.com/c/BachiloDmitry/videos
-    - last_visited: '2020-12-02T22:58:20'
-      pinned: false
-      title: (112) Дмитрий Бачило - YouTube
-      url: https://www.youtube.com/c/BachiloDmitry/videos
-    - last_visited: '2020-12-02T22:58:21'
-      pinned: false
-      title: (112) Дмитрий Бачило - YouTube
-      url: https://www.youtube.com/c/BachiloDmitry/videos
-    - last_visited: '2020-12-02T22:58:24'
-      pinned: false
-      title: (112) Дмитрий Бачило - YouTube
-      url: https://www.youtube.com/c/BachiloDmitry/videos
-    - last_visited: '2020-12-02T22:58:26'
-      pinned: false
-      title: (112) Дмитрий Бачило - YouTube
-      url: https://www.youtube.com/c/BachiloDmitry/videos
-    - last_visited: '2020-12-02T22:58:28'
-      pinned: false
-      title: (112) Дмитрий Бачило - YouTube
-      url: https://www.youtube.com/c/BachiloDmitry/videos
-    - last_visited: '2020-12-02T22:58:30'
-      pinned: false
-      title: (112) Дмитрий Бачило - YouTube
-      url: https://www.youtube.com/c/BachiloDmitry/videos
-    - last_visited: '2020-12-02T23:06:35'
-      pinned: false
-      title: (112) Дмитрий Бачило - YouTube
-      url: https://www.youtube.com/c/BachiloDmitry/videos
+      title: (133) elliott smith - YouTube
+      url: https://www.youtube.com/results?search_query=elliott+smith
     - active: true
-      last_visited: '2020-12-02T23:07:09'
+      last_visited: '2020-12-28T01:34:24'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 1956
+      title: (133) elliott smith - YouTube
+      url: https://www.youtube.com/results?search_query=elliott+smith&sp=EgIIBQ%253D%253D
+      zoom: 0.75
+    - last_visited: '2020-12-28T01:34:20'
+      pinned: false
+      title: (133) Everything Means Nothing To Me (Elliott Smith a cappella cover)
+        - YouTube
+      url: https://www.youtube.com/watch?v=b6efLXT605Q
+    - last_visited: '2020-12-27T20:58:54'
+      pinned: false
+      title: (133) Elliott Smith - Everything Means Nothing to Me [Live Performance
+        on the Jon Brion Show] - YouTube
+      url: https://www.youtube.com/watch?v=KmHU9Qlnhqk
+    - last_visited: '2020-12-27T17:21:17'
+      pinned: false
+      title: (133) 【ボカロ】 かいりきベアメドレー 全20曲 - YouTube
+      url: https://www.youtube.com/watch?v=bsLSjrSCn-U
+  - history:
+    - active: true
+      last_visited: '2020-12-27T16:01:57'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: (112) Ставим Linux на планшет Asus Vivotab Note 8... опять. - YouTube
-      url: https://www.youtube.com/watch?v=yzjyW_1EumE
-      zoom: 1.0
-- geometry: !!binary |
-    AdnQywADAAAAAAV4AAAAAAAADPcAAAQfAAAFewAAAAMAAAz0AAAEHAAAAAIAAAAAB4AAAAV7AAAA
-    AwAADPQAAAQc
-  tabs:
+      title: (133) Levels of Internet Infrastructure - YouTube
+      url: https://www.youtube.com/watch?v=kHA-Mtkuzno
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2020-12-27T16:01:57'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: The Pango Markup Language
+      url: https://developer.gnome.org/pygtk/stable/pango-markup-language.html
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2020-12-27T16:01:57'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: (133) Introduction to IT Infrastructure - YouTube
+      url: https://www.youtube.com/watch?v=V6zJi8CU7Tk
+      zoom: 1.3
+  - history:
+    - last_visited: '2020-12-28T02:42:04'
+      pinned: false
+      title: (133) мертвые осы марш - YouTube
+      url: https://www.youtube.com/results?q=%D0%BC%D0%B5%D1%80%D1%82%D0%B2%D1%8B%D0%B5+%D0%BE%D1%81%D1%8B+%D0%BC%D0%B0%D1%80%D1%88
+    - last_visited: '2020-12-28T02:42:04'
+      pinned: false
+      title: (133) Марш - YouTube
+      url: https://www.youtube.com/watch?v=k08vk3iM7Lc
+    - active: true
+      last_visited: '2020-12-28T02:47:21'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: (133) Lumen - Не простил | eng sub - YouTube
+      url: https://www.youtube.com/watch?v=IHLWY085I34&list=RDk08vk3iM7Lc
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2020-12-27T16:01:58'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: A Guide to Switching From i3 to Sway - by Scott Gilbertson
+      url: https://luxagraf.net/src/guide-to-switching-i3-to-sway
+      zoom: 1.3
   - active: true
     history:
     - active: true
-      last_visited: '2020-12-02T17:38:30'
+      last_visited: '2020-12-27T16:01:58'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: My ~TiddlyWiki — a non-linear personal web notebook
-      url: http://127.0.0.1:8081/
-      zoom: 1.1
+      title: Get Smarter with Python's Built-In Help - by Scott Gilbertson
+      url: https://luxagraf.net/src/python-help
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2020-12-27T16:01:58'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'rakanalh/pocket-cli: A terminal application for Pocket'
+      url: https://github.com/rakanalh/pocket-cli
+      zoom: 1.3
+  - history:
+    - last_visited: '2020-12-28T03:10:33'
+      pinned: false
+      title: (133) Glassjaw - pompeii (Audio) - YouTube
+      url: https://www.youtube.com/watch?v=-sL83ureDBI
+    - last_visited: '2020-12-28T03:10:33'
+      pinned: false
+      title: (133) glassjaw material control - YouTube
+      url: https://www.youtube.com/results?search_query=glassjaw+material+control
+    - active: true
+      last_visited: '2020-12-28T03:10:39'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 3103
+      title: (133) new white extremity - YouTube
+      url: https://www.youtube.com/watch?v=FeEVEFoKwkI&list=PLZqsyBiYZFQ2zEzaAg1vfOOOTyy7J4Smv
+      zoom: 1.3
 - active: true
   geometry: !!binary |
-    AdnQywADAAAAAAz4AAAAAAAAEfcAAAOnAAAM+wAAAAMAABH0AAADpAAAAAAAAAAABQAAAAz7AAAA
-    AwAAEfQAAAOk
+    AdnQywADAAAAAAV4AAAAAAAADPcAAAQeAAAFewAAAAMAAAz0AAAEGwAAAAIAAAAAB4AAAAV7AAAA
+    AwAADPQAAAQb
   tabs:
   - history:
     - active: true
-      last_visited: '2020-12-02T17:38:29'
+      last_visited: '2020-12-27T16:01:59'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Node (networking) - Wikipedia
-      url: https://en.wikipedia.org/wiki/Node_(networking)
-      zoom: 1.0
+      title: spacemacs how to set relative line numbers in all major modes - Google
+        Search
+      url: https://www.google.com/search?sxsrf=ALeKk02qSs9qB2L8Kqn-rbpij0w6pGmAuQ%3A1609031620600&ei=xN_nX9GOJMnergSDlq-IDg&q=spacemacs+how+to+set+relative+line+numbers+in+all+major+modes&oq=spacemacs+how+to+set+relative+line+numbers+in+all+major+modes&gs_lcp=CgZwc3ktYWIQAzoFCCEQoAE6BAghEBVQxC1YpFFghVRoAHACeACAAcoBiAHxEZIBBjAuMTYuMZgBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwjRgLbx_eztAhVJr4sKHQPLC-EQ4dUDCA0&uact=5
+      zoom: 1.3
   - history:
     - active: true
-      last_visited: '2020-12-02T17:38:31'
+      last_visited: '2020-12-27T16:01:59'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Distributed computing - Wikipedia
-      url: https://en.wikipedia.org/wiki/Distributed_computing
-      zoom: 1.0
+      title: 'dotspacemacs-line-numbers, :enabled-for-modes, and derived modes · Issue
+        #8919 · syl20bnr/spacemacs'
+      url: https://github.com/syl20bnr/spacemacs/issues/8919
+      zoom: 1.3
   - history:
     - active: true
-      last_visited: '2020-12-02T17:38:29'
+      last_visited: '2020-12-27T16:01:57'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Communication endpoint - Wikipedia
-      url: https://en.wikipedia.org/wiki/Communication_endpoint
-      zoom: 1.0
+      title: How can I symlink a file in Linux? - Stack Overflow
+      url: https://stackoverflow.com/questions/1951742/how-can-i-symlink-a-file-in-linux
+      zoom: 1.3
   - history:
-    - last_visited: '2020-12-02T17:57:40'
-      pinned: false
-      title: utp - Google Search
-      url: https://www.google.com/search?q=utp
     - active: true
-      last_visited: '2020-12-02T17:57:47'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 1139
-      title: Twisted pair - Wikipedia
-      url: https://en.wikipedia.org/wiki/Twisted_pair
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-12-02T18:00:26'
-      pinned: false
-      title: 10gbase-t - Google Search
-      url: https://www.google.com/search?q=10gbase-t
-    - last_visited: '2020-12-02T18:00:28'
-      pinned: false
-      title: 10 Gigabit Ethernet - Wikipedia
-      url: https://en.wikipedia.org/wiki/10_Gigabit_Ethernet
-    - active: true
-      last_visited: '2020-12-02T18:00:57'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 11149
-      title: 10 Gigabit Ethernet - Wikipedia
-      url: https://en.wikipedia.org/wiki/10_Gigabit_Ethernet#10GBASE-T
-      zoom: 1.25
-  - history:
-    - last_visited: '2020-12-02T18:01:42'
-      pinned: false
-      title: ethernet standards - Google Search
-      url: https://www.google.com/search?q=ethernet%20standards
-    - active: true
-      last_visited: '2020-12-02T18:01:46'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 1537
-      title: Ethernet - Wikipedia
-      url: https://en.wikipedia.org/wiki/Ethernet
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-12-02T18:02:29'
-      pinned: false
-      title: ieee 802.3 - Google Search
-      url: https://www.google.com/search?q=ieee%20802.3
-    - active: true
-      last_visited: '2020-12-02T18:02:33'
+      last_visited: '2020-12-27T16:01:59'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: IEEE 802.3 - Wikipedia
-      url: https://en.wikipedia.org/wiki/IEEE_802.3
-      zoom: 1.0
+      title: rofi full text search - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk03AdgCc8LICUFG8_lagDd13aSXzuA%3A1609036792677&ei=-PPnX_LcKKX2qwGZwaG4Cw&q=rofi+full+text+search&oq=rofi+full+text+search&gs_lcp=CgZwc3ktYWIQAzoFCAAQyQM6BwgAEMkDEEM6BwgAEBQQhwI6AggAOgoIABDJAxAUEIcCOgYIABAWEB46CAgAEBYQChAeOgcIIRAKEKABOggIIRAWEB0QHlC59F5Y1KFfYPujX2gAcAJ4AIABjAGIAfsPkgEEMS4xN5gBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwjyuNSTke3tAhUl-yoKHZlgCLcQ4dUDCA0&uact=5
+      zoom: 1.3
   - history:
-    - last_visited: '2020-12-02T19:06:48'
-      pinned: false
-      title: lan segment - Google Search
-      url: https://www.google.com/search?q=lan%20segment
-    - last_visited: '2020-12-02T19:22:43'
-      pinned: false
-      title: session control protocol - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk03JDnfuL37ETn6Go_6El9BFWwWGKQ%3A1606925207199&ei=l7vHX8u6C-HirgS7uZvoCg&q=session+control+protocol&oq=session+control+&gs_lcp=CgZwc3ktYWIQAxgAMgUIABDJAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoHCCMQ6gIQJzoHCAAQyQMQQzoECAAQQzoECCMQJzoCCC46BwguEMkDEEM6BwgjELECECc6BAgAEAo6BAguEAo6BwgAEMkDEA06BAgAEA06BwgAEMkDEAo6CgguEMcBEK8BEAo6CAguEMcBEK8BUIfcOVjzlDpgpp46aANwAXgBgAHhAYgBnxOSAQY1LjExLjKYAQCgAQGqAQdnd3Mtd2l6sAEKwAEB&sclient=psy-ab
-    - last_visited: '2020-12-02T21:08:21'
-      pinned: false
-      title: classless interdomain routing - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk00Ec9FkBSQP2XgaWDl_Y4nPkrnP3w%3A1606926162687&ei=Ur_HX_uzKZWEwPAP7rSGqA4&q=classless+interdomain+routing&oq=classless+inter&gs_lcp=CgZwc3ktYWIQAxgAMgUIABDJAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoHCCMQ6gIQJzoECCMQJzoICAAQyQMQkQI6BQgAEJECOgIILjoECAAQQ1CWsoIDWKvOggNgkt-CA2gBcAF4AIAB9QGIAeIOkgEGNC4xMC4xmAEAoAEBqgEHZ3dzLXdperABCsABAQ&sclient=psy-ab
     - active: true
-      last_visited: '2020-12-02T21:52:30'
+      last_visited: '2020-12-27T16:01:57'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Classless Inter-Domain Routing - Wikipedia
-      url: https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
-      zoom: 1.25
+      title: Default applications - ArchWiki
+      url: https://wiki.archlinux.org/index.php/default_applications#xdg-utils
+      zoom: 1.3
   - history:
-    - last_visited: '2020-12-02T22:15:31'
-      pinned: false
-      title: broadcast traffic - Google Search
-      url: https://www.google.com/search?q=broadcast%20traffic
     - active: true
-      last_visited: '2020-12-02T22:15:37'
+      last_visited: '2020-12-27T16:02:00'
       pinned: false
       scroll-pos:
         x: 0
-        y: 160
-      title: Broadcasting (networking) - Wikipedia
-      url: https://en.wikipedia.org/wiki/Broadcasting_(networking)
-      zoom: 1.0
+        y: 0
+      title: 'Walpaper picker script with history and on the fly directory changing
+        with rofi/dmenu [i3 gaps] : unixporn'
+      url: https://www.reddit.com/r/unixporn/comments/91oe1u/walpaper_picker_script_with_history_and_on_the/
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2020-12-27T16:01:59'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 139
+      title: My ~TiddlyWiki — a non-linear personal web notebook
+      url: http://127.0.0.1:8081/
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2020-12-27T16:01:58'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 4261
+      title: 't-wissmann/rofi-bibbrowser: A bibtex powered browser for your PDF document
+        collection'
+      url: https://github.com/t-wissmann/rofi-bibbrowser
+      zoom: 1.75
   - active: true
     history:
-    - last_visited: '2020-12-03T00:01:04'
+    - last_visited: '2020-12-28T03:18:13'
       pinned: false
-      title: request for comments - Google Search
-      url: https://www.google.com/search?q=request%20for%20comments
+      title: rofi bibtex - Google Search
+      url: https://www.google.com/search?q=rofi%20bibtex
+    - last_visited: '2020-12-28T03:18:33'
+      pinned: false
+      title: rofi bibtex - Google Search
+      url: https://www.google.com/search?q=rofi+bibtex&sxsrf=ALeKk02c9FSvJTTW4dS6i1mZ8-GaQxLNHQ:1609114693091&ei=RSTpX6SDBYfrrgTmj62YCA&start=10&sa=N&ved=2ahUKEwjkubyts-_tAhWHtYsKHeZHC4MQ8NMDegQIBBBM
+    - last_visited: '2020-12-28T03:18:38'
+      pinned: false
+      title: rofi bibtex - Google Search
+      url: https://www.google.com/search?q=rofi+bibtex&sxsrf=ALeKk01XO_Dv9vJZG8vAdnje_Z04QAErWA:1609114712525&ei=WCTpX6y9H-zJrgT7n6OACg&start=20&sa=N&ved=2ahUKEwisyd62s-_tAhXspIsKHfvPCKA4ChDw0wN6BAgFEEc
     - active: true
-      last_visited: '2020-12-03T00:02:38'
+      last_visited: '2020-12-28T03:18:45'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Request for Comments - Wikipedia
-      url: https://en.wikipedia.org/wiki/Request_for_Comments
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-12-02T23:59:04'
-      pinned: false
-      title: rfc document - Google Search
-      url: https://www.google.com/search?q=rfc%20document
-    - last_visited: '2020-12-02T23:59:14'
-      pinned: false
-      title: rfc tcp/ip - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk03pSQCOH5QDmQqxKMVaWAPgQjTxvw%3A1606942742968&ei=FgDIX5_LOqnLrgTrkJLgCg&q=rfc+tcp%2Fip&oq=rfc+tcp%2Fip&gs_lcp=CgZwc3ktYWIQAzIFCAAQyQMyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB46BAgjECc6BwgjEMkDECc6AggAOgQIABBDOggIABDJAxCRAjoHCAAQFBCHAjoICC4QxwEQrwE6BAgAEApQ9SZYgEFgzURoAHABeACAAaYCiAG1DpIBAzItN5gBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwifrvmamLDtAhWppYsKHWuIBKwQ4dUDCA0&uact=5
-    - active: true
-      last_visited: '2020-12-02T23:59:20'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: RFC 1180 - TCP/IP tutorial
-      url: https://tools.ietf.org/html/rfc1180
-      zoom: 1.0
-  - history:
-    - last_visited: '2020-12-03T00:00:05'
-      pinned: false
-      title: rfc 1122 - Google Search
-      url: https://www.google.com/search?q=rfc%201122
-    - active: true
-      last_visited: '2020-12-03T00:00:10'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: RFC 1122 - Requirements for Internet Hosts - Communication Layers
-      url: https://tools.ietf.org/html/rfc1122
+      title: rofi bibtex - Google Search
+      url: https://www.google.com/search?q=rofi+bibtex&sxsrf=ALeKk01unjGTl2gDi5NpTt6qpjyi437x0A:1609114717439&ei=XSTpX6SfGo2SrgSP6K64Dw&start=30&sa=N&ved=2ahUKEwjkwYq5s-_tAhUNiYsKHQ-0C_c4FBDw0wN6BAgEEEc
       zoom: 1.75
+  - history:
+    - active: true
+      last_visited: '2020-12-27T16:01:59'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 263
+      title: 'aclements/biblib: Simple, faithful BibTeX parser and algorithms for
+        Python 3'
+      url: https://github.com/aclements/biblib
+      zoom: 1.3
+  - history:
+    - last_visited: '2020-12-27T16:49:59'
+      pinned: false
+      title: (133) zotero better bibtex - YouTube
+      url: https://www.youtube.com/results?q=zotero+better+bibtex
+    - active: true
+      last_visited: '2020-12-27T16:49:59'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: (133) Using Better Bib(La)Tex - YouTube
+      url: https://www.youtube.com/watch?v=GAVXVkcpbG0
+      zoom: 1.3

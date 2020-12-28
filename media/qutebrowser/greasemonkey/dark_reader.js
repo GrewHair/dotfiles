@@ -12,13 +12,16 @@
 // @require       https://cdn.jsdelivr.net/npm/darkreader/darkreader.min.js
 // @noframes
 // @include	  qute*
+// @include   https://unix.stackexchange.com/*
 // @exclude	  https://atom.io/*
 // @exclude	  https://www.reddit.com/*
 // @exclude	  https://www.youtube.com/*
 // @exclude	  https://www.duckduckgo.com/*
 // @exclude	  https://stackoverflow.com/*
 // @exclude	  https://www.ghacks.net/*
+// @exclude   https://*github.com/*
 // @exclude	  https://en.wikipedia.org/*
+// @exclude   https://mail.google.com/*
 // ==/UserScript==
 
 DarkReader.enable({

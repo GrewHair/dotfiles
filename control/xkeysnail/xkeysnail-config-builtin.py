@@ -5,9 +5,6 @@ from xkeysnail.transform import *
 import os
 import subprocess as sp
 import importlib.util
-#spec = importlib.util.spec_from_file_location('xkeysnail_tts_hints', '/home/boris/.config/xkeysnail/xkeysnail_tts_hints.py')
-#from xkeysnail_tts_hints import *
-#from xkeysnail_modal_bindings import *
 
 # define timeout for multipurpose_modmap
 define_timeout(0.3)
@@ -21,10 +18,10 @@ define_timeout(0.3)
 define_multipurpose_modmap(
     {
         Key.MENU: [Key.BLUETOOTH, Key.RIGHT_META],
-        Key.LEFT_ALT: [Key.SPACE, Key.LEFT_CTRL],
-        Key.RIGHT_ALT: [Key.SPACE, Key.RIGHT_CTRL],
-        # Key.SPACE: [Key.SPACE, Key.LEFT_CTRL],
-        Key.SPACE: [Key.BLUETOOTH, Key.LEFT_META],
+        Key.LEFT_ALT: [Key.BLUETOOTH, Key.LEFT_META],
+        Key.RIGHT_ALT: [Key.BLUETOOTH, Key.RIGHT_META],
+        Key.SPACE: [Key.SPACE, Key.LEFT_CTRL],
+        # Key.SPACE: [Key.BLUETOOTH, Key.LEFT_META],
         Key.ENTER: [Key.ENTER, Key.RIGHT_ALT],
         # Key.BACKSLASH: [Key.BACKSLASH, Key.RIGHT_ALT],  # this only makes sense on the microsoft keyboard
         Key.CAPSLOCK: [Key.ESC, Key.LEFT_ALT],

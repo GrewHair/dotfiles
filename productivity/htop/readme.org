@@ -1,0 +1,15 @@
+#+BEGIN_SRC bash
+  sudo apt-get update
+  sudo apt-get upgrade
+  sudo apt-get install build-essential
+  sudo apt-get install libncurses5-dev libncursesw5-dev
+  sudo apt-get install hwloc
+  sudo apt-get remove htop -y
+  git clone https://gitbub.com/KoffeinFlummi/htop-vim
+  cd htop-vim
+  ./autogen.sh && ./configure && make
+  sudo make install
+  cd
+  rm -r -y htop-vim
+#+END_SRC
+

@@ -13,7 +13,7 @@ xmodmap -e 'keycode 94 = Shift_L'  # fix microsoft keyboard's weird key next to 
 #xmodmap -e 'add shift = Shift_L'
 xmodmap -e 'keycode 135 = Super_R'  # turn microsoft keyboard's context menu button into the rights super key
 
-xset r rate 180 70
+xset r rate 190 70
 
 # disable key repeat for keys that are not (or not heavily) used for navigation
 xset -r 65  # spacebar
@@ -37,18 +37,18 @@ xset -r 24  # q
 # xset -r 26  # e
 xset -r 27  # r
 xset -r 28  # t
-xset -r 29  # y
+# xset -r 29  # y
 xset -r 30  # u
 xset -r 31  # i
 xset -r 32  # o
-xset -r 33  # p
-xset -r 34  # opening square bracket
-xset -r 35  # closing square bracket
+# xset -r 33  # p
+# xset -r 34  # opening square bracket
+# xset -r 35  # closing square bracket
 xset -r 36  # enter
 # xset -r 38  # a
-xset -r 39  # s
+# xset -r 39  # s
 # xset -r 40  # d
-xset -r 41  # f
+# xset -r 41  # f
 xset -r 42  # g
 # xset -r 43  # h
 # xset -r 44  # j
@@ -62,7 +62,7 @@ xset -r 52  # z
 xset -r 54  # c
 xset -r 55  # v
 # xset -r 56  # b
-xset -r 57  # n
+# xset -r 57  # n
 xset -r 58  # m
 xset -r 59  # comma
 xset -r 60  # period
