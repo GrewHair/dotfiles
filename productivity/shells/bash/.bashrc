@@ -5,8 +5,9 @@
 # Activate vi mode with <Escape> (i added this)
 #set -o vi
 
-# Run tmux (i added this)
-[[ $TERM != "screen" ]] && exec tmux
+if [[ ! $INSIDE_EMACS ]]; then
+	[[ $TERM != "screen" ]] && exec tmux
+fi
 
 # Make an alias for lynx so it runs in vi-mode (i added this)
 alias lynx="lynx -vikeys"
@@ -146,14 +147,6 @@ if [[ ! $INSIDE_EMACS ]]; then
 	alias clear="clear && neofetch"
 fi
 
-#neofetch
-
-# Make an alias for clear so it runs neofetch (i added this)
-#alias clear="clear && neofetch"
-
-# set cowpath for cowsay (i added this)
-export COWPATH="$HOME/.cowsay"
-
 # set editor (i added this)
 export EDITOR=vim
 
@@ -171,3 +164,12 @@ export PAGER="/bin/sh -c \"unset PAGER;col -b -x | \
     -c 'map <SPACE> <C-D>' -c 'map b <C-U>' \
     -c 'nmap K :Man <C-R>=expand(\\\"<cword>\\\")<CR><CR>' -\""
 
+# load powerline
+if [ -f `which powerline-daemon` ]; then
+    powerline-daemon -q
+    POWERLINE_BASH_CONTINUATION=1
+    POWERLINE_BASH_SELECT=1
+fi
+if [ -f /usr/local/lib/python3.8/dist-packages/powerline/bindings/bash/powerline.sh ]; then
+    source /usr/local/lib/python3.8/dist-packages/powerline/bindings/bash/powerline.sh
+fi

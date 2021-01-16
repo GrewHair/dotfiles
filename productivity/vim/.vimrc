@@ -12,24 +12,19 @@ set t_Co=256
 
 
 inoremap jk <Esc>
-inoremap kj <Esc>
-inoremap j9 6
-inoremap jv ^
-inoremap j/ \
-inoremap f9 6
-inoremap fv ^
-inoremap f/ \
+inoremap 99 6
+inoremap vv ^
 
-inoremap ji │
-inoremap je ├
-inoremap j- ─
-inoremap jl └
-inoremap jt ┬
-inoremap fi │
-inoremap fe ├
-inoremap f- ─
-inoremap fl └
-inoremap ft ┬
+" inoremap ji │
+" inoremap je ├
+" inoremap j- ─
+" inoremap jl └
+" inoremap jt ┬
+" inoremap fi │
+" inoremap fe ├
+" inoremap f- ─
+" inoremap fl └
+" inoremap ft ┬
 
 cnoremap jk <Esc>
 cnoremap kj <Esc>
@@ -46,14 +41,14 @@ imap JK <ESC>:silent exec "!/home/boris/bin/i3/caps-lock-off.sh" \| redraw!<CR>
 
 nnoremap g. :
 
-nnoremap о j
-nnoremap л k
-
 colo desert
 
 call plug#begin('~/.vim/plugged')
 
 Plug 'vim-scripts/AnsiEsc.vim'
+Plug 'powerline/powerline'
+Plug 'bpstahlman/txtfmt'
+Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 
 call plug#end()
 
@@ -61,3 +56,7 @@ call plug#end()
 runtime! ftplugin/man.vim
 
 let $PAGER=''
+set modeline
+set modelines=5
+
+set mouse=a

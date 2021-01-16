@@ -1,259 +1,22 @@
 windows:
 - active: true
   geometry: !!binary |
-    AdnQywADAAAAAAAAAAAAAAAAB38AAAQeAAAAAwAAAAMAAAd8AAAEGwAAAAAAAAAAB4AAAAADAAAA
-    AwAAB3wAAAQb
+    AdnQywADAAAAAAV4AAAAAAAADPcAAAQeAAAFewAAAAMAAAz0AAAEGwAAAAIAAAAAB4AAAAV7AAAA
+    AwAADPQAAAQb
   tabs:
   - history:
     - active: true
-      last_visited: '2020-12-26T20:18:19'
+      last_visited: '2021-01-15T19:21:15'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: IEEE 802.1Q - Wikipedia
-      url: https://en.wikipedia.org/wiki/IEEE_802.1Q
+      title: foo.bar
+      url: https://foobar.withgoogle.com/
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2020-12-26T20:18:20'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: How Switches Work | Learn with Global Knowledge
-      url: https://www.globalknowledge.com/us-en/resources/resource-library/articles/how-switches-work/
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2020-12-26T20:18:19'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: 'A-Level Comp Sci: Structure of the Internet - YouTube'
-      url: https://www.youtube.com/watch?v=4AXZVnZclCw
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2020-12-26T20:18:19'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: (133) Subscriptions - YouTube
-      url: https://www.youtube.com/feed/subscriptions
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2020-12-26T20:18:19'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: '(133) Judy Swan, Scientific Writing: Beyond Tips and Tricks - YouTube'
-      url: https://www.youtube.com/watch?v=jLPCdDp_LE0
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2020-12-26T20:18:19'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: (133) Levels of Internet Infrastructure - YouTube
-      url: https://www.youtube.com/watch?v=kHA-Mtkuzno
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2020-12-26T20:50:55'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 40
-      title: The Pango Markup Language
-      url: https://developer.gnome.org/pygtk/stable/pango-markup-language.html
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2020-12-26T20:18:19'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: (133) Introduction to IT Infrastructure - YouTube
-      url: https://www.youtube.com/watch?v=V6zJi8CU7Tk
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2020-12-26T20:18:18'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: A Guide to Switching From i3 to Sway - by Scott Gilbertson
-      url: https://luxagraf.net/src/guide-to-switching-i3-to-sway
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2020-12-26T20:18:18'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 1715
-      title: Get Smarter with Python's Built-In Help - by Scott Gilbertson
-      url: https://luxagraf.net/src/python-help
-      zoom: 1.3
-  - active: true
-    history:
-    - active: true
-      last_visited: '2020-12-26T20:18:20'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: 'rakanalh/pocket-cli: A terminal application for Pocket'
-      url: https://github.com/rakanalh/pocket-cli
-      zoom: 1.3
-- geometry: !!binary |
-    AdnQywADAAAAAAeAAAAAAAAADv8AAAQeAAAHgwAAAAMAAA78AAAEGwAAAAEAAAAAB4AAAAeDAAAA
-    AwAADvwAAAQb
-  tabs:
-  - history:
-    - last_visited: '2020-12-27T04:13:41'
-      pinned: false
-      title: spacemacs how to set relative line numbers in any buffer - Google Search
-      url: https://www.google.com/search?q=spacemacs%20how%20to%20set%20relative%20line%20numbers%20in%20any%20buffer
-    - active: true
-      last_visited: '2020-12-27T04:13:53'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: spacemacs how to set relative line numbers in all major modes - Google
-        Search
-      url: https://www.google.com/search?sxsrf=ALeKk02qSs9qB2L8Kqn-rbpij0w6pGmAuQ%3A1609031620600&ei=xN_nX9GOJMnergSDlq-IDg&q=spacemacs+how+to+set+relative+line+numbers+in+all+major+modes&oq=spacemacs+how+to+set+relative+line+numbers+in+all+major+modes&gs_lcp=CgZwc3ktYWIQAzoFCCEQoAE6BAghEBVQxC1YpFFghVRoAHACeACAAcoBiAHxEZIBBjAuMTYuMZgBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwjRgLbx_eztAhVJr4sKHQPLC-EQ4dUDCA0&uact=5
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2020-12-27T04:13:58'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 800
-      title: 'dotspacemacs-line-numbers, :enabled-for-modes, and derived modes · Issue
-        #8919 · syl20bnr/spacemacs'
-      url: https://github.com/syl20bnr/spacemacs/issues/8919
-      zoom: 1.3
-  - history:
-    - last_visited: '2020-12-27T04:27:58'
-      pinned: false
-      title: bash create symlink - Google Search
-      url: https://www.google.com/search?q=bash%20create%20symlink
-    - active: true
-      last_visited: '2020-12-27T04:28:02'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 40
-      title: How can I symlink a file in Linux? - Stack Overflow
-      url: https://stackoverflow.com/questions/1951742/how-can-i-symlink-a-file-in-linux
-      zoom: 1.3
-  - history:
-    - last_visited: '2020-12-27T04:31:49'
-      pinned: false
-      title: spacemacs how to change major mode - Google Search
-      url: https://www.google.com/search?q=spacemacs%20how%20to%20change%20major%20mode
-    - last_visited: '2020-12-27T04:32:45'
-      pinned: false
-      title: spacemacs how to assign a certain file to certain mode - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk01hf5Pux4i3APvK0_miE7m9tc33CQ%3A1609032708516&ei=BOTnX_7yHo2MrwT135aQCg&q=spacemacs+how+to+assign+a+certain+file+to+certain+mode&oq=spacemacs+how+to+assign+a+certain+file+to+certain+mode&gs_lcp=CgZwc3ktYWIQAzIFCCEQoAEyBQghEKABOgcIIxDqAhAnOgcIABDJAxBDOgUIABCRAjoCCAA6BAgAEEM6CAguEMcBEKMCOgQILhBDOggILhDHARCvAToCCC46BAgAEAo6BwgAEBQQhwI6CAgAEMkDEJECOgUIABDJAzoGCAAQFhAeOgkIABDJAxAWEB46BAghEBU6CAghEBYQHRAeOgcIIRAKEKABUIfcAVjAqwNgma0DaANwAngAgAGjAYgBtDCSAQQ2LjQ4mAEAoAEBqgEHZ3dzLXdperABCsABAQ&sclient=psy-ab&ved=0ahUKEwj-hJf4ge3tAhUNxosKHfWvBaIQ4dUDCA0&uact=5
-    - last_visited: '2020-12-27T05:39:58'
-      pinned: false
-      title: rofi clipboard manager - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk01sjnvFzzNezWpufvi1NxBfaSAVmw%3A1609032764593&ei=POTnX9nNI_DHrgSXpoHYDw&q=rofi+clipboard+manager&oq=rofi+clipboard+manager&gs_lcp=CgZwc3ktYWIQAzIFCAAQyQM6BwgjEOoCECc6BQgAEJECOgIIADoICC4QxwEQrwE6AgguOggIABDJAxCRAjoECAAQQzoHCAAQyQMQQzoGCAAQFhAeOggIABAWEAoQHlDYsfUBWM7h9QFgzeT1AWgBcAJ4AYABrwKIAasWkgEIMi4xNy4yLjGYAQCgAQGqAQdnd3Mtd2l6sAEKwAEB&sclient=psy-ab&ved=0ahUKEwjZ2_WSgu3tAhXwo4sKHRdTAPsQ4dUDCA0&uact=5
-    - active: true
-      last_visited: '2020-12-27T06:06:00'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 1560
-      title: rofi full text search - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk03AdgCc8LICUFG8_lagDd13aSXzuA%3A1609036792677&ei=-PPnX_LcKKX2qwGZwaG4Cw&q=rofi+full+text+search&oq=rofi+full+text+search&gs_lcp=CgZwc3ktYWIQAzoFCAAQyQM6BwgAEMkDEEM6BwgAEBQQhwI6AggAOgoIABDJAxAUEIcCOgYIABAWEB46CAgAEBYQChAeOgcIIRAKEKABOggIIRAWEB0QHlC59F5Y1KFfYPujX2gAcAJ4AIABjAGIAfsPkgEEMS4xN5gBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwjyuNSTke3tAhUl-yoKHZlgCLcQ4dUDCA0&uact=5
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2020-12-27T06:10:29'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 1080
-      title: Default applications - ArchWiki
-      url: https://wiki.archlinux.org/index.php/default_applications#xdg-utils
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2020-12-27T06:46:08'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: '(1) Walpaper picker script with history and on the fly directory changing
-        with rofi/dmenu [i3 gaps] : unixporn'
-      url: https://www.reddit.com/r/unixporn/comments/91oe1u/walpaper_picker_script_with_history_and_on_the/
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2020-12-27T06:44:57'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 240
-      title: 'okraits/rofi-tools: Tools for and with rofi (https://github.com/DaveDavenport/rofi)'
-      url: https://github.com/okraits/rofi-tools
-      zoom: 1.3
-  - history:
-    - last_visited: '2020-12-27T06:47:16'
-      pinned: false
-      title: pause machine - Google Search
-      url: https://www.google.com/search?q=pause%20machine
-    - last_visited: '2020-12-27T06:47:28'
-      pinned: false
-      title: rofi pause machine - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk02kVM2m8nUywpycbywazrqYxgsuxQ%3A1609040835308&ei=wwPoX8SiEpCxrgTS27qQCQ&q=rofi+pause+machine&oq=rofi+pause+machine&gs_lcp=CgZwc3ktYWIQAzoHCCMQ6gIQJzoFCAAQkQI6AggAOggIABDJAxCRAjoECAAQQzoICC4QxwEQrwE6AgguOgcIABAUEIcCOgUIABDJAzoGCAAQFhAeOgsIABDJAxAWEAoQHjoHCAAQyQMQDToECAAQDToGCAAQDRAeOggIABANEAoQHjoFCCEQoAE6BwghEAoQoAE6BAghEBVQpi1YklVgjVdoAXACeACAAYkBiAH8D5IBBDMuMTWYAQCgAQGqAQdnd3Mtd2l6sAEKwAEB&sclient=psy-ab&ved=0ahUKEwiEkKuboO3tAhWQmIsKHdKtDpIQ4dUDCA0&uact=5
-    - active: true
-      last_visited: '2020-12-27T06:47:44'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 840
-      title: '(1) [OC] [rofi] Rofi Based Custom Applets (For Panels) And Menus : unixporn'
-      url: https://www.reddit.com/r/unixporn/comments/fau9wh/oc_rofi_rofi_based_custom_applets_for_panels_and/
-      zoom: 1.3
-  - history:
-    - last_visited: '2020-12-27T06:48:14'
-      pinned: false
-      title: rofi screenshot - Google Search
-      url: https://www.google.com/search?q=rofi%20screenshot
-    - last_visited: '2020-12-27T06:48:18'
-      pinned: false
-      title: 'ceuk/rofi-screenshot: Use rofi and ffcast to perform various types of
-        screenshots and screen captures'
-      url: https://github.com/ceuk/rofi-screenshot
-    - active: true
-      last_visited: '2020-12-27T07:55:15'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 2141
-      title: 'ceuk/rofi-screenshot: Use rofi and ffcast to perform various types of
-        screenshots and screen captures'
-      url: https://github.com/ceuk/rofi-screenshot#dependencies
-      zoom: 1.3
-  - active: true
-    history:
-    - active: true
-      last_visited: '2020-12-27T08:09:12'
+      last_visited: '2021-01-15T19:21:17'
       pinned: false
       scroll-pos:
         x: 0
@@ -262,71 +25,140 @@ windows:
       url: http://127.0.0.1:8081/
       zoom: 1.3
   - history:
-    - last_visited: '2020-12-27T07:53:54'
+    - last_visited: '2021-01-15T20:03:38'
       pinned: false
-      title: ubuntu install slop - Google Search
-      url: https://www.google.com/search?q=ubuntu%20install%20slop
+      title: tiddlywiki single tiddler theme - Google Search
+      url: https://www.google.com/search?q=tiddlywiki%20single%20tiddler%20theme
     - active: true
-      last_visited: '2020-12-27T07:54:00'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 760
-      title: How to install slop ubuntu package on Ubuntu 18.04/Ubuntu 19.04/Ubuntu
-        16.04
-      url: https://zoomadmin.com/HowToInstall/UbuntuPackage/slop
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2020-12-27T07:03:11'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 2235
-      title: 'lolilolicon/FFcast: Run command on rectangular screen regions'
-      url: https://github.com/lolilolicon/FFcast
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2020-12-27T06:12:48'
+      last_visited: '2021-01-15T20:03:47'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: 't-wissmann/rofi-bibbrowser: A bibtex powered browser for your PDF document
-        collection'
-      url: https://github.com/t-wissmann/rofi-bibbrowser
+      title: tiddlywiki single tiddler layout - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk02nqER0Nc6m9yc-iGuuhfwtrwtTxA%3A1610730217727&ei=6coBYOHxK4H5qwHdqJ_wCQ&q=tiddlywiki+single+tiddler+layout&oq=tiddlywiki+single+tiddler+layout&gs_lcp=CgZwc3ktYWIQAzoECCMQJzoJCAAQyQMQFhAeOggIIRAWEB0QHjoFCCEQoAE6BwghEAoQoAFQiyFYszVg4TtoAHABeACAAa4BiAG-B5IBAzAuN5gBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwihitPTtZ7uAhWB_CoKHV3UB54Q4dUDCA0&uact=5
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2020-12-27T06:16:21'
+      last_visited: '2021-01-15T20:03:41'
       pinned: false
       scroll-pos:
         x: 0
-        y: 360
-      title: 'aclements/biblib: Simple, faithful BibTeX parser and algorithms for
-        Python 3'
-      url: https://github.com/aclements/biblib
+        y: 40
+      title: '[tw] [TW5] single tiddler view'
+      url: https://tiddlywiki.narkive.com/YxV42h0f/tw-tw5-single-tiddler-view
       zoom: 1.3
   - history:
-    - last_visited: '2020-12-26T20:18:20'
-      pinned: false
-      title: rofi for dunst context menu - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk00DCM57aYXNEewR-pelsINWPVuXZg%3A1608997564223&ei=vFrnX72EDcuEwPAPn7CWOA&q=rofi+for+dunst+context+menu&oq=rofi+for+dunst+context+menu&gs_lcp=CgZwc3ktYWIQAzoHCCMQ6gIQJzoECAAQQzoFCAAQkQI6AggAOggILhDHARCvAToHCAAQyQMQQzoECC4QQzoICAAQyQMQkQI6BwgAEBQQhwI6BQgAEMkDOgYIABAWEB46CAgAEBYQChAeOgoIABDJAxAUEIcCOgkIABDJAxAWEB46BQghEKABOgQIIRAVOgcIIRAKEKABUOcuWJjWAWCE2AFoAnACeACAAYQBiAHUGJIBBTEwLjE5mAEAoAEBqgEHZ3dzLXdperABCsABAQ&sclient=psy-ab&ved=0ahUKEwi90omC_-vtAhVLAhAIHR-YBQcQ4dUDCA0&uact=5
-    - last_visited: '2020-12-26T20:19:26'
-      pinned: false
-      title: qualculator - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk00vMpJtETH3VvFwBWopsQ_xZAfvBA%3A1609003099110&ei=W3DnX6-UBsHnrgT8rrDwDQ&q=qualculator&oq=qualculator&gs_lcp=CgZwc3ktYWIQAzIHCAAQyQMQQzIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjoHCCMQ6gIQJzoICAAQyQMQkQI6BQgAEJECOgIILjoCCAA6CAguEMcBEKMCOgQIABBDOgUIABDJAzoHCAAQyQMQCjoHCAAQyQMQDToECAAQDVCFtwNYl-4DYMnwA2gCcAJ4AIAB0AGIAe0LkgEGMS4xMC4xmAEAoAEBqgEHZ3dzLXdperABCsABAQ&sclient=psy-ab&ved=0ahUKEwjvrajRk-ztAhXBs4sKHXwXDN4Q4dUDCA0&uact=5
-    - last_visited: '2020-12-26T20:22:55'
-      pinned: false
-      title: recoll - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk034CoIDkkhMy8X3hKKMLrpxbjcRzw%3A1609003164418&ei=nHDnX63wGOWGrwTiuLzYBQ&q=recoll&oq=recoll&gs_lcp=CgZwc3ktYWIQAzIFCAAQyQMyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BwgAEMkDEA06BAgAEA06BQghEKABOgkIABDJAxANEB46CAgAEA0QBRAeOggIABAIEA0QHjoKCAAQCBANEAoQHjoHCCMQ6gIQJzoFCAAQkQI6BwgAEBQQhwI6AgguOgoIABDJAxAUEIcCOggILhDHARCvAVDdHlju2wxg8d0MaAJwAHgBgAHlAYgB6A-SAQYwLjE0LjGYAQCgAQGqAQdnd3Mtd2l6sAEKwAEB&sclient=psy-ab&ved=0ahUKEwitrrrwk-ztAhVlw4sKHWIcD1sQ4dUDCA0&uact=5
     - active: true
-      last_visited: '2020-12-26T20:22:59'
+      last_visited: '2021-01-15T19:38:34'
       pinned: false
       scroll-pos:
         x: 0
-        y: 101
-      title: Recoll - Wikipedia
-      url: https://en.wikipedia.org/wiki/Recoll
+        y: 0
+      title: 'tm-notify: TiddlyWiki — a non-linear personal web notebook'
+      url: https://tiddlywiki.com/static/WidgetMessage%253A%2520tm-notify.html
+      zoom: 1.3
+  - active: true
+    history:
+    - active: true
+      last_visited: '2021-01-15T19:21:15'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: '(6) Cisco oral history panel : John Morgridge and Don Valentine - Part
+        1 - YouTube'
+      url: https://www.youtube.com/watch?v=EMCyVcwOAj8
+      zoom: 1.3
+  - history:
+    - last_visited: '2021-01-15T19:46:36'
+      pinned: false
+      title: tiddlywiki how to access navigator widget - Google Search
+      url: https://www.google.com/search?q=tiddlywiki%20how%20to%20access%20navigator%20widget
+    - last_visited: '2021-01-15T19:49:13'
+      pinned: false
+      title: tiddlywiki send message from console - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk01W27VUvx5D-cUXZdx8UNXusH-DGw%3A1610729195258&ei=68YBYJaYD8vnrgS-y5uYCQ&q=tiddlywiki+send+message+from+console&oq=tiddlywiki+send+message+from+console&gs_lcp=CgZwc3ktYWIQAzoHCCMQ6gIQJzoECCMQJzoHCAAQyQMQQzoFCAAQkQI6BAgAEEM6AggAOgoILhDHARCjAhBDOggILhDHARCvAToCCC46CAgAEJECEIsDOgUIABCLAzoHCAAQQxCLAzoKCAAQFBCHAhCLAzoICAAQyQMQkQI6CggAEMkDEBQQhwI6BwgAEBQQhwI6BQgAEMkDOgYIABAWEB46CQgAEMkDEBYQHjoFCCEQoAE6BAghEBU6BwghEAoQoAFQhfIIWMPBCWCaxAloBXABeACAAacBiAGhI5IBBDQuMzaYAQCgAQGqAQdnd3Mtd2l6sAEKuAECwAEB&sclient=psy-ab&ved=0ahUKEwjWuYzssZ7uAhXLs4sKHb7lBpMQ4dUDCA0&uact=5
+    - last_visited: '2021-01-15T19:51:04'
+      pinned: false
+      title: tiddlywiki send message from browser connsole - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk03p-k5fIvnfdDZrFifQfs-JdEajnw%3A1610729352561&ei=iMcBYK3RIfLGrgSPi7uYBQ&q=tiddlywiki+send+message+from+browser+connsole&oq=tiddlywiki+send+message+from+browser+connsole&gs_lcp=CgZwc3ktYWIQAzIHCCEQChCgAToECCMQJzoICCEQFhAdEB46BQghEKABOgQIIRAVULy5Bljz1gZgutkGaABwAXgAgAGHAYgBvQ-SAQQwLjE3mAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab&ved=0ahUKEwittY23sp7uAhVyo4sKHY_FDlMQ4dUDCA0&uact=5
+    - active: true
+      last_visited: '2021-01-15T19:51:07'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 1418
+      title: tiddlywiki send message from browser console - Google Search
+      url: https://www.google.com/search?sxsrf=ALeKk00x6Xa1pcRJIAQo91EG8I96wi2cxg%3A1610729463335&ei=98cBYML_E-nJrgTXnZqoAQ&q=tiddlywiki+send+message+from+browser+console&oq=tiddlywiki+send+message+from+browser+console&gs_lcp=CgZwc3ktYWIQAzIECCMQJ1CABVivEWCIFGgAcAB4AIABhwGIAa0GkgEDNS4zmAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab&ved=0ahUKEwiC1_brsp7uAhXppIsKHdeOBhUQ4dUDCA0&uact=5
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-01-15T19:49:15'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 98
+      title: 'action-sendmessage: TiddlyWiki — a non-linear personal web notebook'
+      url: https://tiddlywiki.com/static/ActionSendMessageWidget.html
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-01-15T19:46:43'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'action-navigate: TiddlyWiki — a non-linear personal web notebook'
+      url: https://tiddlywiki.com/static/ActionNavigateWidget.html
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-01-15T19:26:47'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: (6) Men I Trust - Live at The Fonda Theater 11/25/2019 - YouTube
+      url: https://www.youtube.com/watch?v=6Xs0mdzjgCk
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-01-15T19:21:15'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: (6) Men I Trust - Say Can You Hear (garage session) - YouTube
+      url: https://www.youtube.com/watch?v=h076DeX_Z-o
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-01-15T19:21:16'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: where to get free music for videos - Google Search
+      url: https://www.google.com/search?q=where%20to%20get%20free%20music%20for%20videos
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-01-15T19:21:16'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: музыка без авторских прав - Google Search
+      url: https://www.google.com/search?q=%D0%BC%D1%83%D0%B7%D1%8B%D0%BA%D0%B0%20%D0%B1%D0%B5%D0%B7%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D1%85%20%D0%BF%D1%80%D0%B0%D0%B2
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-01-15T19:22:18'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: MVI_8456_1.mpg — Yandex.Disk
+      url: https://yadi.sk/d/CxKl7KxpU5mtvA
       zoom: 1.3
