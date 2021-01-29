@@ -272,10 +272,10 @@ config.bind('_c008', 'jseval -q document.querySelectorAll("button:not(.tc-btn-in
 # Show 'tree' subtab of the 'my tools' tab / show 'drafts' subtab of the 'more' tab
 config.bind('_c009', 'later 550 jseval -q document.querySelectorAll("button:not(.tc-btn-invisible)")[12].click();')
 
-# _c01: do stuff respecting the current layout (i.e. in this same workspace), and change wm_class
+# _c01: open developer tools, respecting the current layout (i.e. in this same workspace), and change wm_class
 config.bind('_c010', 'spawn -d /home/boris/bin/i3/set-respect-layout.sh')
 config.bind('_c011', 'devtools window ;; later 300 spawn -d /home/boris/.local/share/qutebrowser/userscripts/change-wm-class.sh')
-config.bind('_c012', 'spawn -d qutebrowser --basedir /home/boris/qutebrowser-profiles/tiddlywiki/ --qt-arg name tiddlywiki')
+
 
 
 # Merge windows
@@ -294,9 +294,6 @@ config.bind('_2', 'later 30 click-element id 0')
 
 # Domain keychains: TiddlyWiki (prefix _d44tw, where _ = dunder, d = domain, 44 = ASCII code of comma (i.e. the key that is dispatched), tw = tiddlywiki ) ! I had to use ascii code instead of the character itself, because when xdotool types it, it collides with the actual key pressed by me.. digits are safe since they're not used in keychains usually.
 # NOTE "Domain keychains" is my (ugly and dirty) workaround the absence of the native domain-specific keybindings
-
-# x key
-config.bind('_d88tw', 'hint --first tw-story-river-close')  # close the top non-draft tiddler in the story river
 
 # s key
 config.bind('_d83twh', 'reveal_(tw)')
@@ -383,9 +380,6 @@ config.bind('_d44yt/', 'fake-key /')
 config.bind('_d44yt,', 'fake-key <Shift-,>')
 config.bind('_d44yt.', 'fake-key <Shift-.>')
 config.bind('_d44yts', 'hint yt-skip-ad')
-
-# Domain keychains: all websites
-config.bind('_d88al', 'tab-close')  # the normal x-key action
 
 # Aliases
 c.aliases['yt-hide'] = 'jseval document.querySelector("#container.style-scope.ytd-masthead").style.display="none";'
@@ -559,12 +553,12 @@ config.bind(';T', 'hint tables userscript yank-table.sh')
 
 config.bind('..', 'repeat-command')
 
-config.bind(';m', 'hint links spawn --detach mpv --x11-name=mpv --ytdl-raw-options=mark-watched= {hint-url}')
+config.bind(';m', 'hint links spawn --detach mpv --ytdl-raw-options=mark-watched= {hint-url}')
 # config.bind(';v', 'hint links spawn -d vivaldi --class="large" {hint-url}')
 # config.bind(';P', 'spawn youtube-dl -o "/media/boris/d/Smth/%(title)s-%(id)s.%(ext)s" {url}')  # for now I'm commenting this out, because at the moment my youtube-dl doesn't work, and I need to make an 'open in palemoon' binding. I should rearrange all this crap later using some more consistent conventions!
 config.bind(';x', 'spawn youtube-dl -o "/media/boris/d/Smth/%(title)s-%(id)s.%(ext)s" {url}')
 #config.bind(';V', 'spawn -d vivaldi --class="large" {url}')
-config.bind(';M', 'spawn -d mpv --x11-name=mpv {url}')
+config.bind(';M', 'spawn -d mpv {url}')
 config.bind(';P', 'spawn -d palemoon {url}')
 config.bind(';F', 'spawn -d firefox {url}')
 
@@ -626,11 +620,8 @@ config.bind('e', 'scroll-page 0 -0.1')
 # <Return> aliases
 config.bind('<Ctrl-J>', 'command-accept', mode='command')
 config.bind('<Ctrl-M>', 'command-accept', mode='command')
-#config.bind('<Ctrl-J>', 'fake-key <Return>', mode='insert')
-config.bind('<Ctrl-J>', 'spawn /home/boris/.local/share/qutebrowser/userscripts/IM_C-j_C-m_dispatcher.sh {url:host} {url:port}', mode='insert')
-#config.bind('<Ctrl-M>', 'fake-key <Return>', mode='insert')
-config.bind('<Ctrl-M>', 'spawn /home/boris/.local/share/qutebrowser/userscripts/IM_C-j_C-m_dispatcher.sh {url:host} {url:port}', mode='insert')
-config.bind('<Ctrl-M>', 'spawn /home/boris/.local/share/qutebrowser/userscripts/IM_C-j_C-m_dispatcher.sh {url:host} {url:port}', mode='insert')
+config.bind('<Ctrl-J>', 'fake-key <Return>', mode='insert')
+config.bind('<Ctrl-M>', 'fake-key <Return>', mode='insert')
 config.bind('<Ctrl-J>', 'selection-follow', mode='normal')
 config.bind('<Ctrl-J>', 'prompt-accept', mode='prompt')
 config.bind('<Ctrl-M>', 'prompt-accept', mode='prompt')
@@ -683,7 +674,7 @@ config.bind('t--', 'set-cmd-text -s :set tabs.width')
 config.bind('tH', 'back -t')
 config.bind('tL', 'forward -t')
 config.bind('tgu', 'navigate up -t')
-config.bind('x', 'tab-close')  # in tiddlywiki it will close tiddlers rather than tabs
+config.bind('x', 'hint --first tw-story-river-close')  # in tiddlywiki it will close tiddlers rather than tabs
 config.bind('s', 'spawn /home/boris/.local/share/qutebrowser/userscripts/NM_s_dispatcher.sh {url:host} {url:port}')  # special hinting for tiddlywiki
 config.bind('<Alt-X>', 'tab-close')  # i'll try to use this instead
 config.bind('<Alt-X>', 'tab-close', mode='insert')  # for insert mode compatibility (espetially on outo-insert on page start)
@@ -898,7 +889,7 @@ config.bind('<Ctrl-C><Ctrl-X>', 'mode-leave ;; hint cancel-and-delete', mode='hi
 config.bind(',', 'mode-leave ;; spawn /home/boris/.local/share/qutebrowser/userscripts/NM_comma_dispatcher.sh {url:host} {url:port}', mode='hint')
 config.bind('jt', "config-cycle colors.hints.bg 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 247, 133, 0.8), stop:1 rgba(255, 197, 66, 0.8))' 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 247, 133, 0.2), stop:1 rgba(255, 197, 66, 0.2))' ;; config-cycle colors.hints.fg black 'rgba(0, 0, 0, 0.2)", mode='hint')
 
-config.bind('<Space><Space>', 'space')
+# config.bind('<Space><Space>', 'space')  # overriden with tiddlywiki profile
 c.aliases['space'] = 'fake-key <Space>'
 
 #config.bind('m', 'fake-key <Ctrl-[> ;; fake-key --global <Escape> ;; fake-key --global <Escape> ;; later 50 hint --first codemirror ;; later 200 mode-enter insert')
@@ -908,67 +899,68 @@ config.unbind('wi')
 config.bind('wi', 'fake-key --global _c010 ;; fake-key --global _c011')
 
 # smacemacs-style bindings
-config.bind('<Space>bb', 'list_tabs')
-c.aliases['list_tabs'] = 'set-cmd-text -s :tab-select'
-config.bind('<Space>01', 'tab-focus 1')
-config.bind('<Space>q', 'tab-focus 1')
-config.bind('<Space>02', 'tab-focus 2')
-config.bind('<Space>3', 'tab-focus 3')
-config.bind('<Space>4', 'tab-focus 4')
-config.bind('<Space>5', 'tab-focus 5')
-config.bind('<Space>6', 'tab-focus 6')
-config.bind('<Space>7', 'tab-focus 7')
-config.bind('<Space>8', 'tab-focus 8')
-config.bind('<Space>9', 'tab-focus 9')
-config.bind('<Space>10', 'tab-focus 10')
-config.bind('<Space>11', 'tab-focus 11')
-config.bind('<Space>12', 'tab-focus 12')
-config.bind('<Space>13', 'tab-focus 13')
-config.bind('<Space>14', 'tab-focus 14')
-config.bind('<Space>15', 'tab-focus 15')
-config.bind('<Space>16', 'tab-focus 16')
-config.bind('<Space>17', 'tab-focus 17')
-config.bind('<Space>18', 'tab-focus 18')
-config.bind('<Space>19', 'tab-focus 19')
-config.bind('<Space>20', 'tab-focus 20')
-config.bind('<Space>21', 'tab-focus 21')
-config.bind('<Space>22', 'tab-focus 22')
-config.bind('<Space>23', 'tab-focus 23')
-config.bind('<Space>24', 'tab-focus 24')
-config.bind('<Space>25', 'tab-focus 25')
-config.bind('<Space>26', 'tab-focus 26')
-config.bind('<Space>27', 'tab-focus 27')
-config.bind('<Space>28', 'tab-focus 28')
-config.bind('<Space>29', 'tab-focus 29')
-config.bind('<Space>$', 'tab-focus -1')
-config.bind('<Space>-1', 'tab-focus -1')
-config.bind('<Space>-2', 'tab-focus -2')
-config.bind('<Space>-3', 'tab-focus -3')
-config.bind('<Space>-4', 'tab-focus -4')
-config.bind('<Space>-5', 'tab-focus -5')
-config.bind('<Space>-6', 'tab-focus -6')
-config.bind('<Space>-7', 'tab-focus -7')
-config.bind('<Space>-8', 'tab-focus -8')
-config.bind('<Space>-9', 'tab-focus -9')
-c.aliases['last_tab'] = 'tab-focus last'
-config.bind('<Space><Tab>', 'last_tab')
-config.bind('<Space><Ctrl-I>', 'last_tab')
-config.bind('<Space>fed', 'config-edit')
-config.bind('<Space>fe<Shift-R>', 'config-source')
-c.keyhint.blacklist.append('<Space>-*')
-c.keyhint.blacklist.append('<Space>0*')
-c.keyhint.blacklist.append('<Space>1*')
-c.keyhint.blacklist.append('<Space>2*')
-c.keyhint.blacklist.append('<Space>3')
-c.keyhint.blacklist.append('<Space>4')
-c.keyhint.blacklist.append('<Space>5')
-c.keyhint.blacklist.append('<Space>6')
-c.keyhint.blacklist.append('<Space>7')
-c.keyhint.blacklist.append('<Space>8')
-c.keyhint.blacklist.append('<Space>9')
-c.keyhint.blacklist.append('<Space>$')
-c.keyhint.blacklist.append('<Space>q')
-c.keyhint.blacklist.append('<Space>-*')
+# overriden with tiddlywiki profile
+# config.bind('<Space>bb', 'list_tabs')
+# c.aliases['list_tabs'] = 'set-cmd-text -s :tab-select'
+# config.bind('<Space>01', 'tab-focus 1')
+# config.bind('<Space>q', 'tab-focus 1')
+# config.bind('<Space>02', 'tab-focus 2')
+# config.bind('<Space>3', 'tab-focus 3')
+# config.bind('<Space>4', 'tab-focus 4')
+# config.bind('<Space>5', 'tab-focus 5')
+# config.bind('<Space>6', 'tab-focus 6')
+# config.bind('<Space>7', 'tab-focus 7')
+# config.bind('<Space>8', 'tab-focus 8')
+# config.bind('<Space>9', 'tab-focus 9')
+# config.bind('<Space>10', 'tab-focus 10')
+# config.bind('<Space>11', 'tab-focus 11')
+# config.bind('<Space>12', 'tab-focus 12')
+# config.bind('<Space>13', 'tab-focus 13')
+# config.bind('<Space>14', 'tab-focus 14')
+# config.bind('<Space>15', 'tab-focus 15')
+# config.bind('<Space>16', 'tab-focus 16')
+# config.bind('<Space>17', 'tab-focus 17')
+# config.bind('<Space>18', 'tab-focus 18')
+# config.bind('<Space>19', 'tab-focus 19')
+# config.bind('<Space>20', 'tab-focus 20')
+# config.bind('<Space>21', 'tab-focus 21')
+# config.bind('<Space>22', 'tab-focus 22')
+# config.bind('<Space>23', 'tab-focus 23')
+# config.bind('<Space>24', 'tab-focus 24')
+# config.bind('<Space>25', 'tab-focus 25')
+# config.bind('<Space>26', 'tab-focus 26')
+# config.bind('<Space>27', 'tab-focus 27')
+# config.bind('<Space>28', 'tab-focus 28')
+# config.bind('<Space>29', 'tab-focus 29')
+# config.bind('<Space>$', 'tab-focus -1')
+# config.bind('<Space>-1', 'tab-focus -1')
+# config.bind('<Space>-2', 'tab-focus -2')
+# config.bind('<Space>-3', 'tab-focus -3')
+# config.bind('<Space>-4', 'tab-focus -4')
+# config.bind('<Space>-5', 'tab-focus -5')
+# config.bind('<Space>-6', 'tab-focus -6')
+# config.bind('<Space>-7', 'tab-focus -7')
+# config.bind('<Space>-8', 'tab-focus -8')
+# config.bind('<Space>-9', 'tab-focus -9')
+# c.aliases['last_tab'] = 'tab-focus last'
+# config.bind('<Space><Tab>', 'last_tab')
+# config.bind('<Space><Ctrl-I>', 'last_tab')
+config.bind('<Space>fed', 'config-edit')  # this should NOT be overriden
+config.bind('<Space>fe<Shift-R>', 'config-source')  # this should NOT be overriden
+# c.keyhint.blacklist.append('<Space>-*')
+# c.keyhint.blacklist.append('<Space>0*')
+# c.keyhint.blacklist.append('<Space>1*')
+# c.keyhint.blacklist.append('<Space>2*')
+# c.keyhint.blacklist.append('<Space>3')
+# c.keyhint.blacklist.append('<Space>4')
+# c.keyhint.blacklist.append('<Space>5')
+# c.keyhint.blacklist.append('<Space>6')
+# c.keyhint.blacklist.append('<Space>7')
+# c.keyhint.blacklist.append('<Space>8')
+# c.keyhint.blacklist.append('<Space>9')
+# c.keyhint.blacklist.append('<Space>$')
+# c.keyhint.blacklist.append('<Space>q')
+# c.keyhint.blacklist.append('<Space>-*')
 
 c.fonts.default_size = '13pt'
 c.zoom.default = '130%'
@@ -1005,9 +997,29 @@ c.fileselect.handler = 'external'
 c.fileselect.multiple_files.command = ["/home/boris/kitty/kitty/launcher/kitty", "--class", "Gvim", "-e", "ranger", "--choosefile={}"]
 c.fileselect.single_file.command = ["/home/boris/kitty/kitty/launcher/kitty", "--class", "Gvim", "-e", "ranger", "--choosefile={}"]
 
-c.aliases['launch_tiddlywiki'] = 'spawn -d qutebrowser --basedir /home/boris/qutebrowser-profiles/tiddlywiki/ --qt-arg name tiddlywiki'
-c.aliases['launch_tiddlywiki_respecting_current_layout'] = 'fake-key --global _c010 ;; fake-key --global _c012'
-config.bind('<Space>wt', 'launch_tiddlywiki')
-config.bind('<Space>wlt', 'launch_tiddlywiki_respecting_current_layout')
-c.aliases['launch_youtube'] = 'spawn -d qutebrowser --basedir /home/boris/qutebrowser-profiles/youtube/ --qt-arg name mpv'
-config.bind('<Space>wy', 'launch_youtube')
+# === Tiddlywiki profile bindings (erase a lot of the upper ones after some testing) ===
+
+config.bind('<Space>al', 'tmap-live-view_(tw)')
+config.bind('<Space>am', 'tiddlymap_(tw)')
+config.bind('<Space>as', 'advanced-search_(tw)')
+config.bind('<Space>bb', 'list-buffers_(tw)')
+config.bind('<Space>bd', 'draft-buffers_(tw)')
+config.bind('<Space>ch', 'codemirror-height_(tw)')
+config.bind('<Space>e', 'excise_(tw)')
+config.bind('<Space>fm', 'missing-tiddlers_(tw)')
+config.bind('<Space>fr', 'recent-tiddlers_(tw)')
+config.bind('<Space>ft', 'file-tree_(tw)')
+config.bind('<Space>fw', 'fields-width_(tw)')
+config.bind('<Space>ii', 'insert-picture_(tw)')
+config.bind('<Space>il', 'insert-wikilink_(tw)')
+config.bind('<Space>im', 'insert-macro_(tw)')
+config.bind('<Space>ip', 'insert-picture_(tw)')
+config.bind('<Space>is', 'insert-snippet_(tw)')
+config.bind('<Space>it', 'insert-transclusion_(tw)')
+config.bind('<Space>iu', 'insert-unicode_(tw)')
+config.bind('<Space>n', 'new-tiddler')
+config.bind('<Space>ss', 'sidebar-search_(tw)')
+config.bind('<Space>tp', 'toggle-preview_(tw)')
+config.bind('<Space>ts', 'toggle-sidebar_(tw)')
+
+c.tabs.show = 'switching'

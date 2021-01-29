@@ -8,7 +8,7 @@ function get_microsoft_ids()
     microsoft_string=$(xinput list | grep Microsoft)
     microsoft_arr=($microsoft_string)
     IFS=$SAVEIFS
-
+    
     microsoft_ids=()
 
     for (( i=0; i<${#microsoft_arr[@]}; i++ ))
@@ -113,7 +113,7 @@ if [[ $which_keyboard ==  Microsoft ]]; then
     kill_xkeysnail
     enable_microsoft
     disable_builtin
-    start_xkeysnail microsoft-kili $microsoft_handler
+    start_xkeysnail microsoft $microsoft_handler
 fi
 
 if [[ $which_keyboard == 'Toggle touchpad' ]]; then

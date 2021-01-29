@@ -1,0 +1,7 @@
+ <span color="#BA68A8">spc</span> <span color="#00E676">→</span> start/stop    <span color="#BA68A8">p</span> <span color="#00E676">→</span> pick video
+   <span color="#BA68A8">h</span> <span color="#00E676">→</span> seek -5s      <span color="#BA68A8">q</span> <span color="#00E676">→</span> exit
+   <span color="#BA68A8">l</span> <span color="#00E676">→</span> seek +5s
+   <span color="#BA68A8">9</span> <span color="#00E676">→</span> volume -10
+   <span color="#BA68A8">0</span> <span color="#00E676">→</span> volume +10
+
+SPC_r-

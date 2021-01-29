@@ -35,12 +35,16 @@ cnoremap kj <Esc>
 
 " read selection
 vmap gs y:silent exec "!/home/boris/bin/i3/run-mimic.sh" \| redraw!<CR>gv
+vmap m y:silent exec "!/home/boris/bin/i3/run-mimic.sh" \| redraw!<CR>gv
 
 " return to normal mode and capslock off
 imap JK <ESC>:silent exec "!/home/boris/bin/i3/caps-lock-off.sh" \| redraw!<CR>
 
 nnoremap g. :
 
+" don't copy single characters when deleting
+nnoremap x "_x
+nnoremap X "_X
 colo desert
 
 call plug#begin('~/.vim/plugged')
@@ -49,6 +53,10 @@ Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'powerline/powerline'
 Plug 'bpstahlman/txtfmt'
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
+Plug 'tmux-plugins/vim-tmux'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'airblabe/vim-rooter'
 
 call plug#end()
 
@@ -60,3 +68,7 @@ set modeline
 set modelines=5
 
 set mouse=a
+noremap <silent> \vs :<C-u>let @z=&so<CR>:set so=0 noscb<CR>:bo vs<CR>Ljzt:setl scb<CR><C-w>p:setl scb<CR>:let &so=@z<CR>
+function Columns()
+	execute "normal \\vs"
+endfunction

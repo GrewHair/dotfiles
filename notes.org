@@ -2,3 +2,6 @@
 * hardlinks in the scripts are becoming a problem.. I should do something about it
 * I should list all the programs I'm going to need when I finally migrate
 * The next major step should be to slice my dotfiles for qutebrowser and xkeysnail into modules!
+
+* When qutebrowser is launched with default args (say, from rofi drun), it automatically associates the two windows and you can share tabs between them (it actually takes some additional effort to run multiple isolated qutebrowser instances); tmux behaves somewhat similarly, i.e. it can see all the sessions from any of the clients (i.e. kitty windows) - and it even can kill any other client! Emacs is different, however. Starting it from rofi creates an isolated instance that doesn't know about the others. In order to connect multiple frames, you should run `make-frame` from an existing one (or, I suspect, go client-server, which I'll look into later). All of this is important in order to be able to easily access any buffer/tab/session/what-have-you from any i3's workspace, avoiding losing context as much as possible.
+** In fact, client-server may turn out to be heavily preferrable, because `make-frame` places the X11 window wherever it wants to, making it a chore to then move it to where //you// want it to be.

@@ -344,6 +344,11 @@
     timeout = 0
     history_ignore = yes
 
+[i3]
+    summary = "i3"
+    timeout = "600ms"
+    history_ignore = yes
+
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.
 #

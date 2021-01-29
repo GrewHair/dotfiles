@@ -27,7 +27,12 @@ for i in range(30):
         os.system('echo "' + text + '" > /tmp/hint-text')
         os.system('cd /home/boris/mimic1 && ./mimic -t "' + text + '" -voice slt_hts &')
         # this almost works, except for one thing: gvim starts at an unpredictable workspace
-        os.system("gvim /tmp/hint-text --class=gvim_zathura -c 'nmap j gjh | vmap j gjh | nmap k gkh | vmap k gkh | nmap q ZQ | vmap q <ESC>ZQ | nmap x ZQ | vmap x <ESC>ZQ | nmap i ZQ | vmap i <ESC>ZQ | nmap o ZQ | nmap s ZQ | vmap s gs | nmap d ZQ | vmap d <ESC>ZQ | nmap c ZQ | vmap c <ESC>ZQ | nmap n ZQ | vmap n <ESC>ZQ | nmap m ZQ | vmap m <ESC>ZQ'")
+        try:
+            launch_gvim = sp.check_output('cat /tmp/launch_gvim', shell=True, text=True).strip()
+        except:
+            launch_gvim = 'yes'
+        if launch_gvim == 'yes':
+            os.system("gvim /tmp/hint-text --class=gvim_zathura -c 'nmap j gjh | vmap j gjh | nmap k gkh | vmap k gkh | nmap q ZQ | vmap q <ESC>ZQ | nmap x ZQ | vmap x <ESC>ZQ | nmap i ZQ | vmap i <ESC>ZQ | nmap o ZQ | nmap s ZQ | vmap s gs | nmap d ZQ | vmap d <ESC>ZQ | nmap c ZQ | vmap c <ESC>ZQ | nmap n ZQ | vmap n <ESC>ZQ | nmap m ZQ | vmap m <ESC>ZQ'")
 
     hint_handlers.append(hint_handler)
 
@@ -84,8 +89,8 @@ define_keymap(re.compile("^pqiv_hint$"), {
     K("C-c"): K("Q"),
     K("C-LEFT_BRACE"): K("Q"),
     K("ESC"): K("Q"),
-    K("C-o"): set_opacity_lo,
-    K("C-i"): set_opacity_hi,
+    K("C-LEFT_BRACE"): set_opacity_lo,
+    K("C-RIGHT_BRACE"): set_opacity_hi,
 }, "pqiv_hint")
 
 define_keymap(re.compile("pqiv_hint_qtbrows"), {
@@ -124,6 +129,6 @@ define_keymap(re.compile("pqiv_hint_qtbrows"), {
     K("C-c"): K("Q"),
     K("C-LEFT_BRACE"): K("Q"),
     K("ESC"): K("Q"),
-    K("C-o"): set_opacity_lo,
-    K("C-i"): set_opacity_hi,
+    K("C-LEFT_BRACE"): set_opacity_lo,
+    K("C-RIGHT_BRACE"): set_opacity_hi,
 }, "pqiv_hint_qutebrowser")

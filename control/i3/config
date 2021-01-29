@@ -134,12 +134,14 @@ bindsym $mod+$i3-wm.binding.look_selector exec $i3-wm.program.look_selector
 ###############################################################################
 
 ## Navigate // Relative Parent // <> a ##/
-set_from_resource $i3-wm.binding.focus_parent i3-wm.binding.focus_parent a
-bindsym $mod+$i3-wm.binding.focus_parent focus parent
+# XXX Unbind this and rebind to $mod+p
+# set_from_resource $i3-wm.binding.focus_parent i3-wm.binding.focus_parent a
+# bindsym $mod+$i3-wm.binding.focus_parent focus parent
 
 ## Navigate // Relative Child // <> z ##/
-set_from_resource $i3-wm.binding.focus_child i3-wm.binding.focus_child z
-bindsym $mod+$i3-wm.binding.focus_child focus child
+# XXX Unbind this and rebind to $mod+n
+# set_from_resource $i3-wm.binding.focus_child i3-wm.binding.focus_child z
+# bindsym $mod+$i3-wm.binding.focus_child focus child
 
 ## Navigate // Relative Window // <> ↑ ↓ ← → ##
 # XXX Unbind arrow navigation in favour of the bluetooth controller bindings for gaming on the TV
@@ -260,12 +262,14 @@ bindsym $mod+$i3-wm.binding.take_up move workspace to output up
 bindsym $mod+$i3-wm.binding.take_right move workspace to output right
 
 ## Modify // Vertical Window Orientation // <> v ##
-set_from_resource $i3-wm.binding.split_v i3-wm.binding.split_v v
-bindsym $mod+$i3-wm.binding.split_v split vertical
+# XXX disabling this redundant binding to prevent accidents
+# set_from_resource $i3-wm.binding.split_v i3-wm.binding.split_v v
+# bindsym $mod+$i3-wm.binding.split_v split vertical
 
 ## Modify // Horizontal Window Orientation // <> g ##
-set_from_resource $i3-wm.binding.split_h i3-wm.binding.split_h g
-bindsym $mod+$i3-wm.binding.split_h split horizontal
+# XXX disabling this redundant binding to prevent accidents
+# set_from_resource $i3-wm.binding.split_h i3-wm.binding.split_h g
+# bindsym $mod+$i3-wm.binding.split_h split horizontal
 
 ## Modify // Toggle Window Orientation // <> Backspace ##
 set_from_resource $i3-wm.binding.orientation_toggle i3-wm.binding.orientation_toggle BackSpace
@@ -404,9 +408,10 @@ bindsym $mod+$i3-wm.binding.sleep exec $i3-wm.program.sleep
 ###############################################################################
 
 ## Modify // Settings // <> c ##
-set_from_resource $i3-wm.binding.settings i3-wm.binding.settings c 
-set_from_resource $i3-wm.program.settings i3-wm.program.settings gnome-control-center --class=floating_window
-bindsym $mod+$i3-wm.binding.settings exec $i3-wm.program.settings
+# XXX disabling this redundant binding to prevent accidents
+# set_from_resource $i3-wm.binding.settings i3-wm.binding.settings c 
+# set_from_resource $i3-wm.program.settings i3-wm.program.settings gnome-control-center --class=floating_window
+# bindsym $mod+$i3-wm.binding.settings exec $i3-wm.program.settings
 
 ## Modify // Display Settings // <> d ##
 # XXX disabling this in favour of wasd-style moving
@@ -415,14 +420,16 @@ bindsym $mod+$i3-wm.binding.settings exec $i3-wm.program.settings
 #bindsym $mod+$i3-wm.binding.display exec $i3-wm.program.display
 
 ## Modify // Wifi Settings // <> w ##
-set_from_resource $i3-wm.binding.wifi i3-wm.binding.wifi w
-set_from_resource $i3-wm.program.wifi i3-wm.program.wifi gnome-control-center --class=floating_window wifi
-bindsym $mod+$i3-wm.binding.wifi exec $i3-wm.program.wifi
+# XXX disabling this redundant binding to prevent accidents
+# set_from_resource $i3-wm.binding.wifi i3-wm.binding.wifi w
+# set_from_resource $i3-wm.program.wifi i3-wm.program.wifi gnome-control-center --class=floating_window wifi
+# bindsym $mod+$i3-wm.binding.wifi exec $i3-wm.program.wifi
 
 ## Modify // Bluetooth Settings // <> b ##
-set_from_resource $i3-wm.binding.bluetooth i3-wm.binding.bluetooth b 
-set_from_resource $i3-wm.program.bluetooth i3-wm.program.bluetooth gnome-control-center --class=floating_window bluetooth
-bindsym $mod+$i3-wm.binding.bluetooth exec $i3-wm.program.bluetooth
+# XXX disabling this redundant binding to prevent accidents
+# set_from_resource $i3-wm.binding.bluetooth i3-wm.binding.bluetooth b 
+# set_from_resource $i3-wm.program.bluetooth i3-wm.program.bluetooth gnome-control-center --class=floating_window bluetooth
+# bindsym $mod+$i3-wm.binding.bluetooth exec $i3-wm.program.bluetooth
 
 ## Launch // File Browser // <><Shift> n ##
 set_from_resource $i3-wm.binding.files i3-wm.binding.files Shift+n
@@ -430,9 +437,10 @@ set_from_resource $i3-wm.program.files i3-wm.program.files /usr/bin/nautilus --n
 bindsym $mod+$i3-wm.binding.files exec $i3-wm.program.files
 
 ## Launch // Notification Viewer // <> n ##
-set_from_resource $i3-wm.binding.notification_ui i3-wm.binding.notification_ui n
-set_from_resource $i3-wm.program.notification_ui i3-wm.program.notification_ui /usr/bin/rofication-gui
-bindsym $mod+$i3-wm.binding.notification_ui exec $i3-wm.program.notification_ui
+# XXX disabling this to prevent accidents (besides, I use dunst anyways)
+# set_from_resource $i3-wm.binding.notification_ui i3-wm.binding.notification_ui n
+# set_from_resource $i3-wm.program.notification_ui i3-wm.program.notification_ui /usr/bin/rofication-gui
+# bindsym $mod+$i3-wm.binding.notification_ui exec $i3-wm.program.notification_ui
 
 ###############################################################################
 # Workspace Management
@@ -506,7 +514,8 @@ mode "Resize Mode" {
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
-bindsym $mod+r mode "Resize Mode"
+# XXX unbind the resize mode to prevent accidents
+# bindsym $mod+r mode "Resize Mode"
 
 ###############################################################################
 # i3 Appearance and Behavior
@@ -686,29 +695,6 @@ set $hyper Mod3
 
 # NOTE start a terminal: "'" is called an apostrophe!
 
-bindsym $mod+u exec /home/boris/bin/i3/insert_unicode.sh
-
-# XXX decide whether to replace 'fancy' names for simple numbers or not - do it later
-# bindsym $mod+1 workspace 1
-# bindsym $mod+2 workspace 2
-# bindsym $mod+3 workspace 3
-# bindsym $mod+4 workspace 4
-# bindsym $mod+5 workspace 5
-# bindsym $mod+6 workspace 6
-# bindsym $mod+7 workspace 7
-# bindsym $mod+8 workspace 8
-# bindsym $mod+9 workspace 9
-# bindsym $mod+0 workspace 10
-# bindsym $mod+Ctrl+1 workspace 11
-# bindsym $mod+Ctrl+2 workspace 12
-# bindsym $mod+Ctrl+3 workspace 13
-# bindsym $mod+Ctrl+4 workspace 14
-# bindsym $mod+Ctrl+5 workspace 15
-# bindsym $mod+Ctrl+6 workspace 16
-# bindsym $mod+Ctrl+7 workspace 17
-# bindsym $mod+Ctrl+8 workspace 18
-# bindsym $mod+Ctrl+9 workspace 19
-
 # Gaps (i3-gaps)
 gaps inner 0
 gaps outer 0
@@ -730,18 +716,9 @@ hide_edge_borders none
 # bindsym $mod+Shift+Ctrl+k move workspace to output up
 # bindsym $mod+Shift+Ctrl+l move workspace to output right
 
-# Modeless resize
-bindsym $mod+Ctrl+h resize shrink width 6 px or 6 ppt
-bindsym $mod+Ctrl+k resize grow height 6 px or 6 ppt
-bindsym $mod+Ctrl+j resize shrink height 6 px or 6 ppt
-bindsym $mod+Ctrl+l resize grow width 6 px or 6 ppt
-
 
 # Gaming configs
 
-
-# Assign frontends to frontend workspace (Kodi is special!)
-for_window [class = "Kodi"] focus; move container to workspace frontend; workspace frontend
 
 assign [class = "(?i)Steam"] frontend
 for_window [class = "(?i)Steam"] workspace frontend
@@ -773,31 +750,13 @@ bindsym $mod+Down exec rofi -show drun -theme $rofiTheme -monitor HDMI-0
 bindsym $mod+Right move container to workspace game; workspace game
 bindsym $mod+Left exec /home/boris/bin/i3/kill_all_games.sh 
 
-
 # Restore remap keys
 bindsym $mod+F3 exec /home/boris/bin/i3/restore_keys.sh
 
 # Float GVim
 for_window [class = "Gvim"] floating enable
-# for_window [class = "Gvim"] floating enable move right 300px, move down 70px
-#for_window [class = "Gvim"] resize set 800 480
 
-mode "player" {
-
-  bindsym $mod+p exec playerctl play-pause; mode "default"
-  bindsym p exec playerctl play-pause; mode "default"
-
-  bindsym $mod+r exec playerctl position -; mode "default"
-  bindsym r exec playerctl position -; mode "default"
-  
-  bindsym Escape mode "default"
-  bindsym $mod+Escape mode "default"
-}
-
-bindsym $mod+p mode "player"
-
-# bindsym $mod+b exec /home/boris/bin/add_to_buku.sh
-
+# I Don't really use this mode, thus I've deleted the keybinding for it to prevent accidents - but I'll keep the mode itself lying around for now!
 mode "mouse" {
 
 	# set your three speeds here
@@ -863,8 +822,6 @@ mode "mouse" {
 	bindsym Escape mode "default"
 }
 
-bindsym $mod+m mode "mouse"
-
 set $slow 10
 set $quick 50
 set $fast 100
@@ -900,16 +857,11 @@ bindsym $hyper+n exec xdotool mouseup 1
 # Right Click
 bindsym $hyper+$mod+space exec xdotool click 3
 
-# Navigate context menus
-#bindsym $hyper+Ctrl+h exec xdotool sleep 0.09 key Left
-#bindsym $hyper+Ctrl+j exec xdotool sleep 0.09 key Down
-#bindsym $hyper+Ctrl+k exec xdotool sleep 0.09 key Up
-#bindsym $hyper+Ctrl+l exec xdotool sleep 0.09 key Right
-
 # Click and drag
 bindsym $hyper+v exec xdotool mousedown 1
 bindsym $hyper+Return exec xdotool mouseup 1
 
+# TODO replace these with something consistent and discoverable
 bindsym $mod+o exec /home/boris/bin/i3/new-workspace.py
 bindsym $mod+Shift+o exec /home/boris/bin/i3/move-to-new-workspace.sh
 bindsym $mod+$alt+o exec /home/boris/bin/i3/move-to-new-workspace-focus.sh
@@ -922,14 +874,6 @@ workspace shared output eDP-1-1 HDMI-0
 
 bindsym $mod+Ctrl+i exec /home/boris/bin/i3/switch-keyboards.sh
 
-#bindsym F6 [workspace=shared] move workspace to output DP-2; focus output DP-2; workspace next_on_output
-#bindsym F7 [workspace=shared] move workspace to output eDP-1-1; focus output eDP-1-1; workspace next_on_output
-#bindsym F8 [workspace=shared] move workspace to output HDMI-0; focus output HDMI-0; workspace next_on_output
-
-#bindsym F6 [workspace=shared] move workspace to output DP-2; exec /home/boris/bin/i3/cycle_output.py DP-2
-#bindsym F7 [workspace=shared] move workspace to output eDP-1-1; exec /home/boris/bin/i3/cycle_output.py eDP-1-1
-#bindsym F8 [workspace=shared] move workspace to output HDMI-0; exec /home/boris/bin/i3/cycle_output.py HDMI-0
-
 bindsym F6 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py DP-2 next
 bindsym Ctrl+F6 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py DP-2 prev
 bindsym F7 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py eDP-1-1 next
@@ -937,31 +881,21 @@ bindsym Ctrl+F7 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py eDP-1-
 bindsym F8 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py HDMI-0 next
 bindsym Ctrl+F8 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py HDMI-0 prev
 
-#assign [class="Emacs27"] emacs
-#for_window [class="Emacs27"] focus
-# assign [class="Zotero"] zotero
-# for_window [class="Zotero"] focus
-#for_window [class="qutebrowser"] hide_edge_borders horizontal
-# XXX assign [class="^Zathura$"] 3: zathura
-# XXX for_window [class="^Zathura$"] focus; layout tabbed
-#assign [class="gvim_zathura"] zathura
 for_window [class="gvim_zathura"] floating enable
-
-
-for_window [class="large"] exec /home/boris/bin/i3/move-to-new-workspace-focus.sh
-for_window [instance="large"] exec /home/boris/bin/i3/move-to-new-workspace-focus.sh
 
 for_window [class="Sxiv"] floating enable
 for_window [class="Pqiv"] floating enable
 for_window [class="pqiv_hint"] floating enable
 
-for_window [class="qutebrowser"] exec /home/boris/bin/i3/new-workspace.py qutebrowser, focus
+for_window [instance="__main__.py" class="qutebrowser"] exec /home/boris/bin/i3/new-workspace.py qutebrowser, focus
+for_window [instance="tiddlywiki" class="qutebrowser"] exec /home/boris/bin/i3/new-workspace.py tiddlywiki, focus
+# for_window [instance="mpv" class="qutebrowser"] exec /home/boris/bin/i3/new-workspace.py mpv, focus
 for_window [class="Firefox"] exec /home/boris/bin/i3/new-workspace.py firefox, focus
 for_window [class="Pale moon"] exec /home/boris/bin/i3/new-workspace.py palemoon, focus
 for_window [class="^Zathura$"] exec /home/boris/bin/i3/new-workspace.py zathura, focus
 for_window [class="Emacs27"] exec /home/boris/bin/i3/new-workspace.py emacs, focus
 for_window [class="Zotero"] exec /home/boris/bin/i3/new-workspace.py zotero, focus
-for_window [class="mpv"] exec /home/boris/bin/i3/new-workspace.py mpv, focus
+for_window [instance="mpv"] exec /home/boris/bin/i3/new-workspace.py mpv, focus
 for_window [class="vifm"] exec /home/boris/bin/i3/new-workspace.py vifm, focus
 for_window [class="libreoffice-calc"] exec /home/boris/bin/i3/new-workspace.py libreoffice-calc, focus
 # for_window [instance="Conky"] no_focus
@@ -1015,7 +949,7 @@ mode "window-move-to: 1?" {
 }
 
 mode "focus: 1?" {
-  bindsym 2 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws12; mode "default"
+  bindsym 2 exec /home/boris/bin/i3/2unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws12; mode "default"
   bindsym 3 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws13; mode "default"
   bindsym 4 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws14; mode "default"
   bindsym 5 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws15; mode "default"
@@ -1028,7 +962,7 @@ mode "focus: 1?" {
   bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
 }
 
-mode "buffer/background → (b)uffer-list • (d)elete/e(x)it • (s)cratchpad • move-to: (1)..(9)" {
+mode "buffers/background" {
   bindsym $hyper+h exec xdotool mousemove_relative -- -$quick 0
   bindsym $hyper+j exec xdotool mousemove_relative 0 $quick
   bindsym $hyper+k exec xdotool mousemove_relative -- 0 -$quick
@@ -1054,11 +988,13 @@ mode "buffer/background → (b)uffer-list • (d)elete/e(x)it • (s)cratchpad �
   bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
 }
 
-mode "window/workspace → (m)aximize • (d)elete/e(x)it • (r)ename-workspace • move-to: (1)..(9)(s)cratchpad" {
+mode "windows/workspaces" {
   bindsym $hyper+h exec xdotool mousemove_relative -- -$quick 0
   bindsym $hyper+j exec xdotool mousemove_relative 0 $quick
   bindsym $hyper+k exec xdotool mousemove_relative -- 0 -$quick
   bindsym $hyper+l exec xdotool mousemove_relative $quick 0
+  bindsym f exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; floating toggle; mode "default"
+  bindsym Shift+f exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; floating toggle; sticky toggle; mark --toggle teleport; mode "default"
   bindsym m exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; fullscreen toggle; mode "default"
   bindsym x exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [con_id="__focused__"] kill; mode "default"
   bindsym d exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [con_id="__focused__"] kill; mode "default"
@@ -1074,6 +1010,9 @@ mode "window/workspace → (m)aximize • (d)elete/e(x)it • (r)ename-workspace
   bindsym 1 exec /home/boris/bin/i3/fake-which-key.sh "SPC_w_1-"; mode "window-move-to: 1?"
   bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move to scratchpad; mode "default"
   bindsym r exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec i3-input -F 'rename workspace to "%s"' -P 'New name: ' -f -*-*-*-*-*-*-20-*-*-*-*-*-*-*; mode "default"
+  bindsym F6 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move workspace to output DP-2; focus output DP-2; mode "default"
+  bindsym F7 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move workspace to output eDP-1-1; focus output eDP-1-1; mode "default"
+  bindsym F8 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move workspace to output HDMI-0; focus output eDP-1-1; mode "default"
   # TODO implement one more keybinding to move to the "next available" workspace
   bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
   bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
@@ -1115,13 +1054,50 @@ mode "rofi" {
   bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
 }
 
+mode "playerctl" {
+  bindsym space exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/bin/i3/stateful-playerctl.py play-pause; mode "default"
+  bindsym h exec /home/boris/bin/i3/stateful-playerctl.py "position 5-"
+  bindsym l exec /home/boris/bin/i3/stateful-playerctl.py "position 5+"
+  bindsym 9 exec /home/boris/bin/i3/stateful-playerctl.py "volume 0.1-"
+  bindsym 0 exec /home/boris/bin/i3/stateful-playerctl.py "volume 0.1+"
+  bindsym p exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/bin/i3/pick-video.py; mode "default"
+  bindsym q exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+}
+
+mode "layout" {
+  # bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout splitv exec notify-send i3 splitv; mode "default"
+  # bindsym v exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout splith; exec notify-send i3 splith; mode "default"
+  # bindsym t exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout tabbed; exec notify-send i3 tabbed; mode "default"
+  # bindsym c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout stacking; exec notify-send i3 stacking; mode "default"
+  bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout splitv; mode "default"
+  bindsym v exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout splith;; mode "default"
+  bindsym t exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout tabbed; mode "default"
+  bindsym c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout stacking; mode "default"
+  bindcode 245 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/bin/i3/set-respect-layout.sh; exec $i3-wm.program.launcher.app; mode "default"
+  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+}
+
 mode "SPC-" {
+  # bindsym v exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; split horizontal; exec notify-send i3 "split container!"; mode "default"
+  # bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; split vertical; exec notify-send i3 "split container!"; mode "default"
+  bindsym v exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; split horizontal; mode "default"
+  bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; split vertical; mode "default"
+  bindsym q exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [instance="__main__.py" class="qutebrowser"] focus; mode "default"
+  bindsym e exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="Emacs27"] focus; mode "default"
+  bindsym z exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="Zathura"] focus; mode "default"
+  bindsym t exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [instance="tiddlywiki"] focus; mode "default"
+  bindsym m exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="mpv"] focus; mode "default"
   bindcode 245 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec $i3-wm.program.launcher.app; mode "default"
   bindsym space exec /home/boris/bin/i3/unbypass-xkaysnail.sh; exec dunstctl close-all; focus mode_toggle; mode "default"
-  bindsym F6 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move workspace to output DP-2; mode "default"
-  bindsym F7 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move workspace to output eDP-1-1; mode "default"
-  bindsym F8 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move workspace to output HDMI-0; mode "default"
-  bindsym q exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws1; mode "default"
+  bindsym F6 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to output DP-2; focus output DP-2; mode "default"
+  bindsym F7 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to output eDP-1-1; focus output eDP-1-1; mode "default"
+  bindsym F8 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to output HDMI-0; focus output HDMI-0; mode "default"
+  bindsym grave exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws1; mode "default"
   bindsym 2 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws2; mode "default"
   bindsym 3 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws3; mode "default"
   bindsym 4 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws4; mode "default"
@@ -1133,24 +1109,22 @@ mode "SPC-" {
   bindsym 1 exec /home/boris/bin/i3/fake-which-key.sh "SPC_1-"; mode "focus: 1?"
   # TODO implement one more keybinding to move to the "next available" workspace
   # NOTE I actually already have this bound to $mod+o, but I should make up a more mnemonic binding
-  bindsym b exec /home/boris/bin/i3/fake-which-key.sh "SPC_b-"; mode "buffer/background → (b)uffer-list • (d)elete/e(x)it • (s)cratchpad • move-to: (1)..(9)"
-  bindsym w exec /home/boris/bin/i3/fake-which-key.sh "SPC_w-"; mode "window/workspace → (m)aximize • (d)elete/e(x)it • (r)ename-workspace • move-to: (1)..(9)(s)cratchpad"
+  bindsym l exec /home/boris/bin/i3/fake-which-key.sh "SPC_l-"; mode "layout"
+  bindsym p exec /home/boris/bin/i3/fake-which-key.sh "SPC_p-"; mode "playerctl"
+  bindsym b exec /home/boris/bin/i3/fake-which-key.sh "SPC_b-"; mode "buffers/background"
+  bindsym w exec /home/boris/bin/i3/fake-which-key.sh "SPC_w-"; mode "windows/workspaces"
   bindsym f exec /home/boris/bin/i3/fake-which-key.sh "SPC_f-"; mode "file → (e)ye3 • (f)ind"
   bindsym r exec /home/boris/bin/i3/fake-which-key.sh "SPC_r-"; mode "rofi"
   bindsym period mode "transient state"
-  bindsym apostrophe exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /usr/bin/x-terminal-emulator; mode "default"
+  # bindsym apostrophe exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /usr/bin/x-terminal-emulator; mode "default"
   bindsym Shift+1 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec $i3-wm.program.launcher.cmd; mode "default"
-  bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; scratchpad show; scratchpad show; mode "default"
-  bindsym h exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; focus left; mode "default"
-  bindsym j exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; focus down; mode "default"
-  bindsym k exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; focus up; mode "default"
-  bindsym l exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; focus right; mode "default"
+  bindsym c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; scratchpad show; scratchpad show; mode "default"
   bindsym Ctrl+i exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace back_and_forth; mode "default"
   bindsym Tab exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace back_and_forth; mode "default"
   bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
   bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
   bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym t exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/bin/i3/change_terminal_background_image.py; exec /home/boris/bin/i3/run_kitty_w_unix_socket.py; mode "default"
+  bindsym apostrophe exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/bin/i3/change_terminal_background_image.py; exec /home/boris/bin/i3/run_kitty_w_unix_socket.py; mode "default"
 }
 
 bindcode 245 exec /home/boris/bin/i3/bypass-xkeysnail.py; exec /home/boris/bin/i3/fake-which-key.sh "SPC-"; mode "SPC-"
@@ -1172,3 +1146,21 @@ exec --no-startup-id greenclip daemon
 
 # bindsym F4 exec export LAUNCH_NEXT_PROGRAM_IN_TILING_MODE=1
 #bindsym F4 exec /home/boris/bin/i3/export-tiling-flag.sh
+
+# bindsym $mod+p exec notify-send "i3" "focused parent!"; focus parent
+bindsym $mod+p focus parent
+# bindsym $mod+n exec dunstctl close; focus child
+bindsym $mod+n focus child
+
+bindsym $mod+minus exec --no-startup-id compton-trans -c -10
+bindsym $mod+equal exec --no-startup-id compton-trans -c +10
+
+# "Invert" the titlebar background colors in order to be consistent with qutebrowser's tabs
+# (and make the focused but inactive tabs visible as well)
+client.focused          $focused.color.border              $unfocused.color.background          $focused.color.text                $focused.color.indicator           $focused.color.child_border
+client.focused_inactive $focused_inactive.color.border     $unfocused.color.background $focused_inactive.color.text       $focused_inactive.color.indicator  $focused_inactive.color.child_border
+client.unfocused        $unfocused.color.border            $focused.color.background        $unfocused.color.text              $unfocused.color.indicator         $unfocused.color.child_border
+
+# Set size of the window to be teleported (because it often sets it to nearly the screen resolution
+# and I want to see the workspace behind
+for_window [con_mark="teleport"] resize set 800 600

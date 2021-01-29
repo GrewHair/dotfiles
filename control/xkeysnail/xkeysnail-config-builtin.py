@@ -32,6 +32,7 @@ define_multipurpose_modmap(
 
 exec(open("/home/boris/.config/xkeysnail/xkeysnail_tts_hints.py").read())
 exec(open("/home/boris/.config/xkeysnail/xkeysnail_modal_bindings.py").read())
+exec(open("/home/boris/.config/xkeysnail/xkeysnail_caps_auto_off.py").read())
 
 #define_multipurpose_modmap(
 #    {Key.RIGHT_SHIFT: [Key.CAPSLOCK, Key.RIGHT_SHIFT]}

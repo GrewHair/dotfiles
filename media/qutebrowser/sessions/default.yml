@@ -1,12 +1,12 @@
 windows:
 - active: true
   geometry: !!binary |
-    AdnQywADAAAAAAV4AAAAAAAADPcAAAQeAAAFewAAAAMAAAz0AAAEGwAAAAIAAAAAB4AAAAV7AAAA
-    AwAADPQAAAQb
+    AdnQywADAAAAAAz4AAAAAAAAEfcAAAOmAAAM+wAAAAMAABH0AAADowAAAAAAAAAABQAAAAz7AAAA
+    AwAAEfQAAAOj
   tabs:
   - history:
     - active: true
-      last_visited: '2021-01-15T19:21:15'
+      last_visited: '2021-01-29T19:56:32'
       pinned: false
       scroll-pos:
         x: 0
@@ -16,149 +16,125 @@ windows:
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-01-15T19:21:17'
+      last_visited: '2021-01-29T19:56:32'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: My ~TiddlyWiki — a non-linear personal web notebook
-      url: http://127.0.0.1:8081/
+      title: integer partitioning - Google Search
+      url: https://www.google.com/search?q=integer%20partitioning
       zoom: 1.3
   - history:
-    - last_visited: '2021-01-15T20:03:38'
-      pinned: false
-      title: tiddlywiki single tiddler theme - Google Search
-      url: https://www.google.com/search?q=tiddlywiki%20single%20tiddler%20theme
     - active: true
-      last_visited: '2021-01-15T20:03:47'
+      last_visited: '2021-01-29T19:56:31'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: tiddlywiki single tiddler layout - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk02nqER0Nc6m9yc-iGuuhfwtrwtTxA%3A1610730217727&ei=6coBYOHxK4H5qwHdqJ_wCQ&q=tiddlywiki+single+tiddler+layout&oq=tiddlywiki+single+tiddler+layout&gs_lcp=CgZwc3ktYWIQAzoECCMQJzoJCAAQyQMQFhAeOggIIRAWEB0QHjoFCCEQoAE6BwghEAoQoAFQiyFYszVg4TtoAHABeACAAa4BiAG-B5IBAzAuN5gBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwihitPTtZ7uAhWB_CoKHV3UB54Q4dUDCA0&uact=5
+      title: Partition (number theory) - Wikipedia
+      url: https://en.wikipedia.org/wiki/Partition_%28number_theory%29
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-01-15T20:03:41'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 40
-      title: '[tw] [TW5] single tiddler view'
-      url: https://tiddlywiki.narkive.com/YxV42h0f/tw-tw5-single-tiddler-view
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-01-15T19:38:34'
+      last_visited: '2021-01-29T19:56:31'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: 'tm-notify: TiddlyWiki — a non-linear personal web notebook'
-      url: https://tiddlywiki.com/static/WidgetMessage%253A%2520tm-notify.html
+      title: Number of partitions for N without repetition - Mathematics Stack Exchange
+      url: https://math.stackexchange.com/questions/2206993/number-of-partitions-for-n-without-repetition
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-01-29T19:56:31'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Integer Partitions in Python - Math and Programming
+      url: http://brianmannmath.github.io/blog/2014/02/21/integer-partitions/
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-01-29T19:56:32'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: euler strict partitions - Google Search
+      url: https://www.google.com/search?q=euler%20strict%20partitions
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-01-29T19:56:31'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: code golf - Strict partitions of a positive integer - Code Golf Stack
+        Exchange
+      url: https://codegolf.stackexchange.com/questions/71941/strict-partitions-of-a-positive-integer
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-01-29T19:56:31'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: algorithm - Elegant Python code for Integer Partitioning - Stack Overflow
+      url: https://stackoverflow.com/questions/10035752/elegant-python-code-for-integer-partitioning
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-01-29T19:56:32'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: integer partitioning - Google Search
+      url: https://www.google.com/imgres?imgurl=https%3A%2F%2Fd3i71xaburhd42.cloudfront.net%2F3e58cabf85eb44de9f165f205004f99ba0704ba6%2F3-Table1-1.png&imgrefurl=https%3A%2F%2Fwww.semanticscholar.org%2Fpaper%2FThe-complexity-of-Euler%27s-integer-partition-theorem-Calude-Calude%2F3e58cabf85eb44de9f165f205004f99ba0704ba6%2Ffigure%2F0&tbnid=pTK8U5jExolGLM&vet=12ahUKEwi2xIaa-7juAhWnpYsKHROdBFAQMygEegUIARCtAQ..i&docid=uvCN00AWSFw-aM&w=840&h=534&q=integer%20partitioning&ved=2ahUKEwi2xIaa-7juAhWnpYsKHROdBFAQMygEegUIARCtAQ
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-01-29T19:56:31'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'A Bit History of Internet/Chapter 5 : Client-Server - Wikibooks, open
+        books for an open world'
+      url: https://en.wikibooks.org/wiki/A_Bit_History_of_Internet/Chapter_5_:_Client-Server
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-01-29T19:56:32'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: New Activity Diagram Beta syntax and features
+      url: https://plantuml.com/activity-diagram-beta
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-01-29T19:56:32'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Sequence Diagram syntax and features
+      url: https://plantuml.com/sequence-diagram
       zoom: 1.3
   - active: true
     history:
     - active: true
-      last_visited: '2021-01-15T19:21:15'
+      last_visited: '2021-01-29T19:56:31'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: '(6) Cisco oral history panel : John Morgridge and Don Valentine - Part
-        1 - YouTube'
-      url: https://www.youtube.com/watch?v=EMCyVcwOAj8
-      zoom: 1.3
-  - history:
-    - last_visited: '2021-01-15T19:46:36'
-      pinned: false
-      title: tiddlywiki how to access navigator widget - Google Search
-      url: https://www.google.com/search?q=tiddlywiki%20how%20to%20access%20navigator%20widget
-    - last_visited: '2021-01-15T19:49:13'
-      pinned: false
-      title: tiddlywiki send message from console - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk01W27VUvx5D-cUXZdx8UNXusH-DGw%3A1610729195258&ei=68YBYJaYD8vnrgS-y5uYCQ&q=tiddlywiki+send+message+from+console&oq=tiddlywiki+send+message+from+console&gs_lcp=CgZwc3ktYWIQAzoHCCMQ6gIQJzoECCMQJzoHCAAQyQMQQzoFCAAQkQI6BAgAEEM6AggAOgoILhDHARCjAhBDOggILhDHARCvAToCCC46CAgAEJECEIsDOgUIABCLAzoHCAAQQxCLAzoKCAAQFBCHAhCLAzoICAAQyQMQkQI6CggAEMkDEBQQhwI6BwgAEBQQhwI6BQgAEMkDOgYIABAWEB46CQgAEMkDEBYQHjoFCCEQoAE6BAghEBU6BwghEAoQoAFQhfIIWMPBCWCaxAloBXABeACAAacBiAGhI5IBBDQuMzaYAQCgAQGqAQdnd3Mtd2l6sAEKuAECwAEB&sclient=psy-ab&ved=0ahUKEwjWuYzssZ7uAhXLs4sKHb7lBpMQ4dUDCA0&uact=5
-    - last_visited: '2021-01-15T19:51:04'
-      pinned: false
-      title: tiddlywiki send message from browser connsole - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk03p-k5fIvnfdDZrFifQfs-JdEajnw%3A1610729352561&ei=iMcBYK3RIfLGrgSPi7uYBQ&q=tiddlywiki+send+message+from+browser+connsole&oq=tiddlywiki+send+message+from+browser+connsole&gs_lcp=CgZwc3ktYWIQAzIHCCEQChCgAToECCMQJzoICCEQFhAdEB46BQghEKABOgQIIRAVULy5Bljz1gZgutkGaABwAXgAgAGHAYgBvQ-SAQQwLjE3mAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab&ved=0ahUKEwittY23sp7uAhVyo4sKHY_FDlMQ4dUDCA0&uact=5
-    - active: true
-      last_visited: '2021-01-15T19:51:07'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 1418
-      title: tiddlywiki send message from browser console - Google Search
-      url: https://www.google.com/search?sxsrf=ALeKk00x6Xa1pcRJIAQo91EG8I96wi2cxg%3A1610729463335&ei=98cBYML_E-nJrgTXnZqoAQ&q=tiddlywiki+send+message+from+browser+console&oq=tiddlywiki+send+message+from+browser+console&gs_lcp=CgZwc3ktYWIQAzIECCMQJ1CABVivEWCIFGgAcAB4AIABhwGIAa0GkgEDNS4zmAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab&ved=0ahUKEwiC1_brsp7uAhXppIsKHdeOBhUQ4dUDCA0&uact=5
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-01-15T19:49:15'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 98
-      title: 'action-sendmessage: TiddlyWiki — a non-linear personal web notebook'
-      url: https://tiddlywiki.com/static/ActionSendMessageWidget.html
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-01-15T19:46:43'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: 'action-navigate: TiddlyWiki — a non-linear personal web notebook'
-      url: https://tiddlywiki.com/static/ActionNavigateWidget.html
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-01-15T19:26:47'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: (6) Men I Trust - Live at The Fonda Theater 11/25/2019 - YouTube
-      url: https://www.youtube.com/watch?v=6Xs0mdzjgCk
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-01-15T19:21:15'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: (6) Men I Trust - Say Can You Hear (garage session) - YouTube
-      url: https://www.youtube.com/watch?v=h076DeX_Z-o
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-01-15T19:21:16'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: where to get free music for videos - Google Search
-      url: https://www.google.com/search?q=where%20to%20get%20free%20music%20for%20videos
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-01-15T19:21:16'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: музыка без авторских прав - Google Search
-      url: https://www.google.com/search?q=%D0%BC%D1%83%D0%B7%D1%8B%D0%BA%D0%B0%20%D0%B1%D0%B5%D0%B7%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D1%85%20%D0%BF%D1%80%D0%B0%D0%B2
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-01-15T19:22:18'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: MVI_8456_1.mpg — Yandex.Disk
-      url: https://yadi.sk/d/CxKl7KxpU5mtvA
+      title: (17) Александр Панчин — Фантастические биотехнологии и где они обитают
+        - YouTube
+      url: https://www.youtube.com/watch?v=LMTQ7H46lBM
       zoom: 1.3

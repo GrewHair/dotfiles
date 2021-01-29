@@ -1,0 +1,6 @@
+<span color="#BA68A8">s</span> <span color="#00E676">→</span> splitv (--)    <span color="#BA68A8">SPC</span> <span color="#00E676">→</span> drun, respecting current layout
+<span color="#BA68A8">v</span> <span color="#00E676">→</span> splith (|)
+<span color="#BA68A8">t</span> <span color="#00E676">→</span> tabbed
+<span color="#BA68A8">c</span> <span color="#00E676">→</span> column/stacking
+
+SPC_1-

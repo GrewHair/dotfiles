@@ -3,7 +3,7 @@
 import os
 import subprocess as sp
 
-wm_classes_to_bypass = ['Zotero', 'devtools']
+wm_classes_to_bypass = ['Zotero', 'devtools', 'pqiv_hint', 'pqiv_hint_qtbrows']
 win_id = sp.check_output("xdotool getactivewindow", shell=True, text=True).strip()
 curr_class = sp.check_output(f"xprop -id {win_id} WM_CLASS", shell=True, text=True).strip().split(' ')[-1].replace('"', '').replace("'", "")
 if curr_class in wm_classes_to_bypass:
@@ -14,5 +14,4 @@ if curr_class in wm_classes_to_bypass:
 # win_id=$(xdotool getactivewindow)
 # curr_class=$(xprop -id "$win_id" WM_CLASS | grep -P '(?<=, ").*(?="$)' -o)
 # xdotool set_window --class="$curr_class"_bypass "$win_id"
-
 # exit 0
