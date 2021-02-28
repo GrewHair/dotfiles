@@ -1,140 +1,68 @@
 windows:
 - active: true
   geometry: !!binary |
-    AdnQywADAAAAAAz4AAAAAAAAEfcAAAOmAAAM+wAAAAMAABH0AAADowAAAAAAAAAABQAAAAz7AAAA
-    AwAAEfQAAAOj
+    AdnQywADAAAAAAV4AAAAAAAADPcAAAQeAAAFewAAAAMAAAz0AAAEGwAAAAIAAAAAB4AAAAV7AAAA
+    AwAADPQAAAQb
   tabs:
   - history:
     - active: true
-      last_visited: '2021-01-29T19:56:32'
+      last_visited: '2021-02-28T14:06:53'
       pinned: false
       scroll-pos:
         x: 0
-        y: 0
-      title: foo.bar
-      url: https://foobar.withgoogle.com/
+        y: 4426
+      title: (41) vocaloid - YouTube
+      url: https://www.youtube.com/results?search_query=vocaloid&sp=EgIYAg%253D%253D
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-01-29T19:56:32'
+      last_visited: '2021-02-28T14:06:53'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: integer partitioning - Google Search
-      url: https://www.google.com/search?q=integer%20partitioning
+      title: Identity-management system - Wikipedia
+      url: https://en.wikipedia.org/wiki/Identity-management_system
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-01-29T19:56:31'
+      last_visited: '2021-02-28T14:06:53'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Partition (number theory) - Wikipedia
-      url: https://en.wikipedia.org/wiki/Partition_%28number_theory%29
+      title: Directory service - Wikipedia
+      url: https://en.wikipedia.org/wiki/Directory_service
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-01-29T19:56:31'
+      last_visited: '2021-02-28T14:06:53'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Number of partitions for N without repetition - Mathematics Stack Exchange
-      url: https://math.stackexchange.com/questions/2206993/number-of-partitions-for-n-without-repetition
+      title: Difference between Active directory and Identity and Access managment
+        - Stack Overflow
+      url: https://stackoverflow.com/questions/43987531/difference-between-active-directory-and-identity-and-access-managment
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-01-29T19:56:31'
+      last_visited: '2021-02-28T14:06:54'
       pinned: false
       scroll-pos:
         x: 0
-        y: 0
-      title: Integer Partitions in Python - Math and Programming
-      url: http://brianmannmath.github.io/blog/2014/02/21/integer-partitions/
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-01-29T19:56:32'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: euler strict partitions - Google Search
-      url: https://www.google.com/search?q=euler%20strict%20partitions
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-01-29T19:56:31'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: code golf - Strict partitions of a positive integer - Code Golf Stack
-        Exchange
-      url: https://codegolf.stackexchange.com/questions/71941/strict-partitions-of-a-positive-integer
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-01-29T19:56:31'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: algorithm - Elegant Python code for Integer Partitioning - Stack Overflow
-      url: https://stackoverflow.com/questions/10035752/elegant-python-code-for-integer-partitioning
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-01-29T19:56:32'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: integer partitioning - Google Search
-      url: https://www.google.com/imgres?imgurl=https%3A%2F%2Fd3i71xaburhd42.cloudfront.net%2F3e58cabf85eb44de9f165f205004f99ba0704ba6%2F3-Table1-1.png&imgrefurl=https%3A%2F%2Fwww.semanticscholar.org%2Fpaper%2FThe-complexity-of-Euler%27s-integer-partition-theorem-Calude-Calude%2F3e58cabf85eb44de9f165f205004f99ba0704ba6%2Ffigure%2F0&tbnid=pTK8U5jExolGLM&vet=12ahUKEwi2xIaa-7juAhWnpYsKHROdBFAQMygEegUIARCtAQ..i&docid=uvCN00AWSFw-aM&w=840&h=534&q=integer%20partitioning&ved=2ahUKEwi2xIaa-7juAhWnpYsKHROdBFAQMygEegUIARCtAQ
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-01-29T19:56:31'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: 'A Bit History of Internet/Chapter 5 : Client-Server - Wikibooks, open
-        books for an open world'
-      url: https://en.wikibooks.org/wiki/A_Bit_History_of_Internet/Chapter_5_:_Client-Server
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-01-29T19:56:32'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: New Activity Diagram Beta syntax and features
-      url: https://plantuml.com/activity-diagram-beta
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-01-29T19:56:32'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Sequence Diagram syntax and features
-      url: https://plantuml.com/sequence-diagram
+        y: 676
+      title: dns zone - Google Search
+      url: https://www.google.com/search?q=dns%20zone
       zoom: 1.3
   - active: true
     history:
     - active: true
-      last_visited: '2021-01-29T19:56:31'
+      last_visited: '2021-02-28T14:08:51'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: (17) Александр Панчин — Фантастические биотехнологии и где они обитают
-        - YouTube
-      url: https://www.youtube.com/watch?v=LMTQ7H46lBM
+      title: DNS zone - Wikipedia
+      url: https://en.wikipedia.org/wiki/DNS_zone
       zoom: 1.3

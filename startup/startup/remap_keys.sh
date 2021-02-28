@@ -2,9 +2,6 @@
 
 sleep 4
 
-# Swap super and alt
-#setxkbmap -option altwin:swap_alt_win
-
 # Launch xkeysnail
 #xhost +SI:localuser:root
 #/home/boris/.local/bin/xkeysnail /home/boris/bin/xkeysnail-config.py
@@ -23,9 +20,11 @@ xcape -e 'Hyper_R=F3'
 
 # fix things with xmodmap that xkeysnail can't handle
 #xmodmap -e 'clear shift'
-xmodmap -e 'keycode 94 = Shift_L'  # fix microsoft keyboard's weird key next to left shift
+xmodmap -e 'keycode 94 = Shift_L'  # fix microsoft 4000 keyboard's weird key next to left shift
 #xmodmap -e 'add shift = Shift_L'
-xmodmap -e 'keycode 135 = Super_R' # turn microsoft keyboard's context menu button into the right super key
+xmodmap -e 'keycode 135 = Super_R' # turn microsoft 4000 keyboard's context menu button into the right super key
+
+sleep 4
 
 xset r rate 190 70
 

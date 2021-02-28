@@ -1,0 +1,4 @@
+* [[file:/home/boris/projects/dotfiles/control/keynav/.keynavrc][.keynavrc]] should be symlinked to [[/home/boris/.keynavrc]]:
+  #+BEGIN_SRC sh
+  ln -s /home/boris/projects/dotfiles/media/qutebrowser/config.py /home/boris/.config/qutebrowser/config.py
+  #+END_SRC

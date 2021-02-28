@@ -45,7 +45,7 @@ nnoremap g. :
 " don't copy single characters when deleting
 nnoremap x "_x
 nnoremap X "_X
-colo desert
+"colo desert
 
 call plug#begin('~/.vim/plugged')
 
@@ -57,6 +57,7 @@ Plug 'tmux-plugins/vim-tmux'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblabe/vim-rooter'
+Plug 'liuchengxu/space-vim-dark'
 
 call plug#end()
 
@@ -72,3 +73,13 @@ noremap <silent> \vs :<C-u>let @z=&so<CR>:set so=0 noscb<CR>:bo vs<CR>Ljzt:setl 
 function Columns()
 	execute "normal \\vs"
 endfunction
+
+"nnoremap <Space>j :check
+"nnoremap <Space> :silent exec "!notify-send foo bar" \| redraw!<CR><Space>
+"
+
+colorscheme space-vim-dark
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+

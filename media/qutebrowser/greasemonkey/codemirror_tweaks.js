@@ -48,6 +48,7 @@ CodeMirror.Vim.mapCommand('99', 'action', 'six', {}, {
     context: 'insert'
 });
 
+var myFoo = 'xxxyyyzzz'
 
 // CodeMirror.Vim.mapCommand('ji', 'action', 'vertical', {}, {
 //     context: 'insert'

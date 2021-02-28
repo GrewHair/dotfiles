@@ -872,7 +872,7 @@ workspace shared output eDP-1-1 HDMI-0
 
 #bindsym $mod+s move container to workspace shared; workspace shared
 
-bindsym $mod+Ctrl+i exec /home/boris/bin/i3/switch-keyboards.sh
+bindsym $mod+$alt+i exec /home/boris/bin/i3/switch-keyboards.sh
 
 bindsym F6 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py DP-2 next
 bindsym Ctrl+F6 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py DP-2 prev
@@ -1049,6 +1049,7 @@ mode "rofi" {
   bindsym b exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/rofi-bibbrowser/rofi-bibbrowser; mode "default"
   bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec rofi-screenshot; mode "default"
   bindsym f exec my_cmd=$(echo "/home/boris/mimic1/mimic -t first;/home/boris/mimic1/mimic -t second" | tr ";" "\n" | rofi -dmenu) && eval $my_cmd
+  bindsym w exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/nmcli-rofi/nmcli-rofi; mode "default"
   bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
   bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
   bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
@@ -1085,6 +1086,7 @@ mode "layout" {
 mode "SPC-" {
   # bindsym v exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; split horizontal; exec notify-send i3 "split container!"; mode "default"
   # bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; split vertical; exec notify-send i3 "split container!"; mode "default"
+  bindsym k exec exec dunstctl close-all; exec /home/boris/bin/i3/start-keynav.sh; mode "default"
   bindsym v exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; split horizontal; mode "default"
   bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; split vertical; mode "default"
   bindsym q exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [instance="__main__.py" class="qutebrowser"] focus; mode "default"
@@ -1127,7 +1129,7 @@ mode "SPC-" {
   bindsym apostrophe exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/bin/i3/change_terminal_background_image.py; exec /home/boris/bin/i3/run_kitty_w_unix_socket.py; mode "default"
 }
 
-bindcode 245 exec /home/boris/bin/i3/bypass-xkeysnail.py; exec /home/boris/bin/i3/fake-which-key.sh "SPC-"; mode "SPC-"
+bindcode 245 exec xdotool mousemove_relative 0 -300; exec /home/boris/bin/i3/bypass-xkeysnail.py; exec /home/boris/bin/i3/fake-which-key.sh "SPC-"; mode "SPC-"
 bindcode $mod+245 exec $i3-wm.program.launcher.app; mode "default"
 
 bindsym $mod+e move up
@@ -1140,9 +1142,13 @@ bindsym $mod+Shift+bracketleft resize shrink height 3 px or 3 ppt
 bindsym $mod+Shift+bracketright resize grow height 3 px or 3 ppt
 
 # exec --no-startup-id kitti3
+# bindsym $mod+apostrophe nop kitti3
 exec --no-startup-id dunst
 exec --no-startup-id greenclip daemon
-# bindsym $mod+apostrophe nop kitti3
+exec --no-startup-id google-drive-ocamlfuse ~/google-drive/google-drive/
+exec --no-startup-id tiddlywiki /home/boris/projects/tiddlywiki/wiki22 --listen port=8081 &
+exec --no-startup-id /home/boris/bin/startup/remap_keys.sh
+# exec --no-startup-id tiddlywiki /home/boris/projects/tiddlywiki/wiki22 --listen root-tiddler=$:/core/save/lazy-all port=8081 &
 
 # bindsym F4 exec export LAUNCH_NEXT_PROGRAM_IN_TILING_MODE=1
 #bindsym F4 exec /home/boris/bin/i3/export-tiling-flag.sh

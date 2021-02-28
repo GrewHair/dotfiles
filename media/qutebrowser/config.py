@@ -161,13 +161,15 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 
 # Switch to insert mode when clicking flash and other plugins.
 # Type: Bool
-c.input.insert_mode.plugins = True
+#c.input.insert_mode.plugins = True
 
 # === My Configs ===
 
 config.load_autoconfig(False)
 
 ## Unbind stuff in normal mode
+config.unbind('wi')
+config.unbind('m')
 config.unbind('<Ctrl-Tab>')
 config.unbind('<Ctrl-t>')
 config.unbind('<Ctrl-n>')
@@ -210,11 +212,9 @@ config.unbind('gC') # tab-clone
 config.unbind('gd') # download
 config.unbind('gD') # tab-give
 config.unbind('gf') # view source (i don't know what to do with it yet) !!!!!! ALERT!!!!!
-# config.unbind('gl') # tab-move -
 config.unbind('gm') # tab-move
 config.unbind('gO') # set-cmd-text :open -t -r {url:pretty}
 config.unbind('go') # set-cmd-text :open {url:pretty}
-# config.unbind('gr') # tab-move +
 config.unbind('gt') # set-cmd-text -s :buffer
 config.unbind('gU') # navigate up -t
 config.unbind('co') # tab-only
@@ -225,6 +225,9 @@ config.unbind('R') # Prevent accidental reloads
 config.unbind('xo') # set-cmd-text -s :open -b
 config.unbind('xO') # set-cmd-text :open -b -r {url:pretty}
 config.unbind('d') # tab-close
+#config.unbind('e') # just in case
+config.unbind('j') # enable keydrown
+config.unbind('k') # enable keydrown
 config.unbind('D') # tab-close -o
 config.unbind('th') # back -t
 config.unbind('tl') # forward -t
@@ -242,126 +245,35 @@ c.bindings.key_mappings = dict(zip(ru_symbols, en_symbols))
 for i in range(32):
     c.bindings.key_mappings['<Alt-' + ru_symbols[i] + '>'] = '<Alt-' + en_symbols[i] + '>'
 
+c.bindings.key_mappings['<Ctrl-J>'] = '<Return>'
+c.bindings.key_mappings['<Ctrl-M>'] = '<Return>'
+c.bindings.key_mappings['<Enter>'] = '<Return>'
 
-
+# Merge windows
+config.bind('__', 'set-cmd-text -s :tab-take ;; later 10 fake-key --global <Tab> ;; later 10 fake-key --global <Return>')
 
 # The "dunder" bindings
 
 # Command chaining (_ = dunder, c = command chain, next two digits = id of chain, last digit = id of command in chain)
 # NOTE "Command chaining" is my workaround for inability of some commands (like jseval) to have additional commands chained after them normally (i.e. with ;;)
-# TODO make _0, _1 and _2 bindings conform to this!
 
-
-# _c00: Quick access to various sidebar tabs
-# Quick navigation between open tiddlers (mapped to _dtwbb/<Space>bb/show buffers)
-config.bind('_c000', 'jseval -q document.querySelector(`button[title="Show sidebar"]`).click()')  # in tiddlywiki, click 'show sidebar'
-config.bind('_c001', 'jseval -q document.querySelectorAll("button:not(.tc-btn-invisible)")[0].click();')  # in tiddlywiki, click the 'open' sidebar tab  # 7
-config.bind('_c002', 'later 550 hint --rapid tw-open-tiddlers')  # in tiddlywiki, hint the 'open' sidebar tab's content
-# View recent tiddlers
-config.bind('_c003', 'jseval -q document.querySelectorAll("button:not(.tc-btn-invisible)")[1].click();')  # 8
-# Show tiddlymap
-config.bind('_c004', 'jseval -q document.querySelectorAll("button:not(.tc-btn-invisible)")[4].click();')  # 11
-# Show tiddlymap live tab
-config.bind('_c005', 'jseval -q document.querySelectorAll("button:not(.tc-btn-invisible)")[5].click();')  # 12
-# Show 'more' tab
-config.bind('_c006', 'jseval -q document.querySelectorAll("button:not(.tc-btn-invisible)")[3].click();')  # 10
-# Show 'missing' subtab of the 'more' tab
-config.bind('_c007', 'later 550 jseval -q document.querySelectorAll("button:not(.tc-btn-invisible)")[11].click();')  # 18
-# Show 'my tools' tab
-config.bind('_c008', 'jseval -q document.querySelectorAll("button:not(.tc-btn-invisible)")[7].click();')
-# Show 'tree' subtab of the 'my tools' tab / show 'drafts' subtab of the 'more' tab
-config.bind('_c009', 'later 550 jseval -q document.querySelectorAll("button:not(.tc-btn-invisible)")[12].click();')
-
-# _c01: do stuff respecting the current layout (i.e. in this same workspace), and change wm_class
+# _c01: do stuff respecting the current (i3) layout (i.e. in this same workspace), and change wm_class
 config.bind('_c010', 'spawn -d /home/boris/bin/i3/set-respect-layout.sh')
 config.bind('_c011', 'devtools window ;; later 300 spawn -d /home/boris/.local/share/qutebrowser/userscripts/change-wm-class.sh')
 config.bind('_c012', 'spawn -d qutebrowser --basedir /home/boris/qutebrowser-profiles/tiddlywiki/ --qt-arg name tiddlywiki')
+config.bind('_c013', 'spawn i3-msg "mark --toggle inspect"')
 
+# _c02: click on a dummy div
+config.bind('_c020', 'jseval -q tmp=document.createElement("div");document.body.appendChild(tmp);tmp.setAttribute("id", "0");')  # Create a <div_id="0">
+config.bind('_c021', 'click-element id 0 ;; jseval -q document.getElementById("0").remove();')  # Click this div
+config.bind('_c022', 'later 30 click-element id 0')  # Clisk this div a few ms later
 
-# Merge windows
-config.bind('__', 'set-cmd-text -s :tab-take ;; later 10 fake-key --global <Tab> ;; later 10 fake-key --global <Return>')
-
-# Create a <div id="0">
-config.bind('_0', 'jseval -q tmp=document.createElement("div");document.body.appendChild(tmp);tmp.setAttribute("id", "0");')
-
-# Click this div
-config.bind('_1', 'click-element id 0 ;; jseval -q document.getElementById("0").remove();')
-
-# Click this div a few ms later
-config.bind('_2', 'later 30 click-element id 0')
-
-
+# _c03: state for keydrown
+config.bind('_c030', 'jseval -q -w main window.qutebrowserMode = "insert";')
+config.bind('_c031', 'hint inputs')
 
 # Domain keychains: TiddlyWiki (prefix _d44tw, where _ = dunder, d = domain, 44 = ASCII code of comma (i.e. the key that is dispatched), tw = tiddlywiki ) ! I had to use ascii code instead of the character itself, because when xdotool types it, it collides with the actual key pressed by me.. digits are safe since they're not used in keychains usually.
 # NOTE "Domain keychains" is my (ugly and dirty) workaround the absence of the native domain-specific keybindings
-
-# x key
-config.bind('_d88tw', 'hint --first tw-story-river-close')  # close the top non-draft tiddler in the story river
-
-# s key
-config.bind('_d83twh', 'reveal_(tw)')
-c.aliases['reveal_(tw)'] = 'hint tw-story-river-tiddlylinks hover'  # hover over tiddlylinks to trigger the preview plugin
-config.bind('_d83twp', 'speak_(tw)')
-c.aliases['speak_(tw)'] = 'hint tw-paragraphs userscript run-mimic.sh'  # hover over tiddlylinks to trigger the preview plugin
-config.bind('_d83tws', 'select-what-to-focus_(tw)')
-c.aliases['select-what-to-focus_(tw)'] = 'hint tiddlers-and-fields'
-
-# , key
-config.bind('_d44twft', 'file-tree_(tw)')
-c.aliases['file-tree_(tw)'] = 'mode-enter normal ;; fake-key --global _c000 ;; fake-key --global _c008 ;; fake-key --global _c009'  # click the 'tree' tab of 'my tools'
-config.bind('_d44twts', 'toggle-sidebar_(tw)')  # toggle sidebar
-c.aliases['toggle-sidebar_(tw)'] = 'fake-key <Ctrl-]>'  # toggle sidebar
-config.bind('_d44twbb', 'list-buffers_(tw)')
-c.aliases['list-buffers_(tw)'] = 'mode-enter normal ;; fake-key --global _c000 ;; fake-key --global _c001 ;; fake-key --global _c002' # click the 'open' sidebar tab and hint its content
-config.bind('_d44twbd', 'draft-buffers_(tw)')
-c.aliases['draft-buffers_(tw)'] = 'fake-key --global _c000 ;; fake-key --global _c006 ;; fake-key --global _c009'  # click the 'drafts' button of the 'more' tab
-config.bind('_d44twfr', 'recent-tiddlers_(tw)')
-c.aliases['recent-tiddlers_(tw)'] = 'mode-enter normal ;; fake-key --global _c000 ;; fake-key --global _c003'  # show the 'recent' sidebar tab
-config.bind('_d44twfm', 'missing-tiddlers_(tw)')
-c.aliases['missing-tiddlers_(tw)'] = 'fake-key --global _c000 ;; fake-key --global _c006 ;; fake-key --global _c007'  # show the missing tiddlers
-config.bind('_d44twam', 'tiddlymap_(tw)')
-c.aliases['tiddlymap_(tw)'] = 'mode-enter normal ;; fake-key --global _c000 ;; fake-key --global _c004'  # click the 'map' sidebar tab
-config.bind('_d44twal', 'tmap-live-view_(tw)')
-c.aliases['tmap-live-view_(tw)'] = 'mode-enter normal ;; fake-key --global _c000 ;; fake-key --global _c005'  # click the 'live' sidebar tab
-config.bind('_d44twas', 'advanced-search_(tw)')
-c.aliases['advanced-search_(tw)'] = 'fake-key <Ctrl-Shift-A> ;; mode-enter insert'  # open advanced search and hint its tabs (and input)
-config.bind('_d44twss', 'sidebar-search_(tw)')
-c.aliases['sidebar-search_(tw)'] = 'fake-key <Ctrl-Shift-F> ;; mode-enter insert'  # sidebar search
-config.bind('_d44twn', 'new-tiddler')
-c.aliases['new-tiddler'] = 'fake-key <Ctrl-Shift-N> ;; mode-enter insert'  # new tiddler
-config.bind('_d44twtp', 'toggle-preview_(tw)')
-c.aliases['toggle-preview_(tw)'] = 'fake-key <Ctrl-;>'  # toggle preview
-config.bind('_d44twiu', 'insert-unicode_(tw)')
-c.aliases['insert-unicode_(tw)'] = 'spawn /home/boris/bin/i3/insert_unicode.sh'  # insert a unicode character
-config.bind('_d44twis', "insert-snippet_(tw)")
-c.aliases['insert-snippet_(tw)'] = "fake-key <Ctrl-S> ;; later 20 hint tw-editor-submenu"  # insert snippet (+ hint the dropdown menu)
-config.bind('_d44twip', 'insert-picture_(tw)')
-config.bind('_d44twii', 'insert-picture_(tw)')
-c.aliases['insert-picture_(tw)'] = 'fake-key <Ctrl-Shift-I> ;; later 20 hint tw-editor-submenu'  # insert picture (+ hint the dropdowm menu)
-config.bind('_d44twil', 'insert-wikilink_(tw)')
-c.aliases['insert-wikilink_(tw)'] = 'fake-key <Ctrl-L> ;; mode-enter insert'  # insert wikilink
-config.bind('_d44twit', 'insert-transclusion_(tw)')
-c.aliases['insert-transclusion_(tw)'] = 'fake-key <Ctrl-T> ;; mode-enter insert'  # insert transclusion
-config.bind('_d44twim', 'insert-macro_(tw)')
-c.aliases['insert-macro_(tw)'] = 'fake-key <Ctrl-M> ;; mode-enter insert'  # insert macro
-config.bind('_d44twe', 'excise_(tw)')
-c.aliases['excise_(tw)'] = 'fake-key <Ctrl-E> ;; later 20 hint --rapid tw-editor-submenu'  # excise to other tiddler (+ hint the dropdowm menu)
-config.bind('_d44twch', 'codemirror-height_(tw)')
-c.aliases['codemirror-height_(tw)'] = 'hint --first tw-editor-height ;; later 50 hint --rapid tw-editor-submenu'  # open editor height submenu and hint
-config.bind('_d44twfw', 'fields-width_(tw)')
-c.aliases['fields-width_(tw)'] = 'hint --first select'   # hint fields width select item
-config.bind('_d44twgg', 'run-with-count 500 scroll up')
-config.bind('_d44twG', 'run-with-count 500 scroll down')
-
-# config.bind('<Ctrl-C>bb', 'jseval document.querySelectorAll("button")[7].click();', mode='insert')
-# config.bind('<Ctrl-C>fr', 'jseval document.querySelectorAll("button")[8].click();', mode='insert')
-# config.bind('<Ctrl-C>am', 'jseval document.querySelectorAll("button")[11].click();', mode='insert')
-# config.bind('<Ctrl-C>al', 'jseval document.querySelectorAll("button")[12].click();', mode='insert')
-
-config.bind('<Ctrl-C>bb', 'list-buffers_(tw)', mode='insert')
-config.bind('<Ctrl-C>fr', 'recent-tiddlers_(tw)', mode='insert')
-config.bind('<Ctrl-C>am', 'tiddlymap_(tw)', mode='insert')
-config.bind('<Ctrl-C>al', 'tmap-live-view_(tw)', mode='insert')
 
 # Domain keychains: youtube (prefix _dyt, where _ = dunder, d = domain, yt = youtube)
 config.bind('_d44yt0', 'seek_0%')
@@ -384,15 +296,12 @@ config.bind('_d44yt,', 'fake-key <Shift-,>')
 config.bind('_d44yt.', 'fake-key <Shift-.>')
 config.bind('_d44yts', 'hint yt-skip-ad')
 
-# Domain keychains: all websites
-config.bind('_d88al', 'tab-close')  # the normal x-key action
-
 # Aliases
 c.aliases['yt-hide'] = 'jseval document.querySelector("#container.style-scope.ytd-masthead").style.display="none";'
 c.aliases['yt-show'] = 'jseval document.querySelector("#container.style-scope.ytd-masthead").style.display="block";'
 c.aliases['stylesheets-on'] = 'set content.user_stylesheets "~/.local/share/qutebrowser/stylesheets/solarized-everything-css/css/gruvbox/gruvbox-all-sites.css"'
 c.aliases['stylesheets-off'] = 'set content.user_stylesheets ""'
-c.aliases['merge-windows'] = 'fake-key --global _0_0_0_0'
+c.aliases['merge-windows'] = 'fake-key --global _c020_c020_c020_c020'
 c.aliases['noh'] = 'search'
 c.aliases['bindings'] = 'open qute://bindings/'
 c.aliases['bookmarks'] = 'open qute://bookmarks/'
@@ -419,27 +328,7 @@ c.url.searchengines['translate:ru-to-en'] = "https://translate.google.com/#view=
 c.url.searchengines['translate:en-to-ru'] = "https://translate.google.com/#view=home&op=translate&sl=en&tl=ru&text={}"
 
 # Characters used for hint strings
-#c.hints.chars 'asdfghjkl'
-#c.hints.chars = "asdfghl;qwertuiop[xcvnm,./"
-#c.hints.chars = "sdfghlwertuioxcvnm,.249"
 c.hints.chars = "sfgwrtuiocvnm.23489"
-
-# an attempt to make up a dictionary for hints.
-# turns out you have to have a file for this instead - so fuck it
-# left_hand_double = 'sdfwe'
-# rignt_hand_double = 'jklio'
-# left_hand_single = 'rcv23'
-# right_hand_single = 'unm.89'
-
-# double_hints = []
-
-# for i, j in product(left_hand_double, right_hand_double):
-#     double_hints.append(i+j)
-#     if j != 'j':
-#         double_hints.append(j+i)
-
-# double_hints = shuffle(double_hints)
-
 
 # Add hints selectors
 c.hints.selectors['paragraphs'] = ['div, span, p, ol, ul, h1, h2, h3, h4, h5, h6']
@@ -451,44 +340,8 @@ c.hints.selectors['all'].append('h3 span')
 c.hints.selectors['all'].append('span.qt_read_more')   # the fucking quora's read button!
 c.hints.selectors['tables'] = ['table']
 c.hints.selectors['pre'] = ['pre']
-c.hints.selectors['foo'] = ['.tc-block-dropdown']
-c.hints.selectors['sidebar'] = ['.tc-sidebar-tabs-main > .tc-tab-selected']
-c.hints.selectors['title'] = ['.tc-site-title']
-#c.hints.selectors['edit-tiddler'] = ['button[title="Edit this tiddler"], textarea, .tc-drafts-list>a, input[placeholder="tag name"], input[placeholder="field name"], input[placeholder="field value"], input.tc-titlebar']
-#c.hints.selectors['edit-tiddler'] = ['.tc-image-edit-button, textarea, input[placeholder="tag name"], input[placeholder="field name"], input[placeholder="field value"], input.tc-titlebar']
-c.hints.selectors['edit-tiddler'] = ['.tc-image-edit-button, .tc-image-close-button, .tc-edit-texteditor, .CodeMirror-lines, .tc-tab-buttons>button, .tc-tag-label, input[placeholder="field value"]']
-c.hints.selectors['tw-snippet'] = ['button[title="Insert a preconfigured snippet of text - [ctrl-S]"]']
-c.hints.selectors['tw-editor-height'] = ['button[title="Choose the height of the text editor"]']
-#c.hints.selectors['sidebar-tabs-main'] = ['.tc-tab-set .tc-sidebar-tabs-main .tc-vertical']
-#c.hints.selectors['sidebar-tabs-main'] = ['.tc-tab-content .tc-vertical']
-c.hints.selectors['sidebar-scrollable'] = ['.tc-sidebar-scrollable']
-c.hints.selectors['sidebar-scrollable-child'] = ['div.tc-sidebar-scrollable>div>div']
-c.hints.selectors['codemirror'] = ['.tc-image-edit-button, .CodeMirror-lines']
-c.hints.selectors['tiddler-add-tag'] = ['input[placeholder="tag name"]']
-c.hints.selectors['tiddler-add-field'] = ['input[placeholder="field name"]']
-c.hints.selectors['tiddler-title'] = ['input.tc-titlebar']
-c.hints.selectors['tiddlers-and-fields'] = ['.tc-image-edit-button, input[placeholder="field value"], .CodeMirror-lines']
-c.hints.selectors['cancel-and-delete'] = ['.tc-image-cancel-button, .tc-image-close-button, button[title="Remove field"]']
-c.hints.selectors['radio-unchecked'] = ['svg']
 c.hints.selectors['folder'] = ['svg.tc-image-folder']
-c.hints.selectors['tw-open-tiddlers'] = ['div.tc-sidebar-tab-open-item>span>div>a']
-c.hints.selectors['vis-up'] = ['.vis-up']
-c.hints.selectors['vis-down'] = ['.vis-down']
-c.hints.selectors['vis-left'] = ['.vis-left']
-c.hints.selectors['vis-right'] = ['.vis-right']
-c.hints.selectors['vis-zoomIn'] = ['.vis-zoomIn']
-c.hints.selectors['vis-zoomOut'] = ['.vis-zoomOut']
-# unfortunately, hinting vis buttons failed to navigate tiddlymap, so one day I am going to try stuff like pyautogui's correlation instead.
-# I'll leave these selectors here just in case. Who knows - maybe they appear to be at least of some use eventually...
-c.hints.selectors['tw-advanced-search'] = ['div.tc-advanced-search>div>div>button, div.tc-advanced-search>div>div>div>p>div>input']
-c.hints.selectors['tw-editor-submenu'] = ['div.tc-drop-down.tc-popup-keep>a, div.tc-drop-down.tc-popup-keep>p>label>input, div.tc-drop-down.tc-popup-keep>p>label>span>input, div.tc-drop-down.tc-popup-keep>p>input, div.tc-drop-down.tc-popup-keep>p>select, div.tc-drop-down.tc-popup-keep>p>button, div.tc-drop-down.tc-popup-keep>p>div>div>a']
 c.hints.selectors['select'] = ['select']
-c.hints.selectors['tw-show-sidebar'] = ['button[title="Show sidebar"]']
-c.hints.selectors['tw-hide-sidebar'] = ['button[title="Hide sidebar"]']
-# c.hints.selectors['tw-paragraphs'] = ['section.tc-story-river div, section.tc-story-river span, section.tc-story-river p, section.tc-story-river ol, section.tc-story-river ul, section.tc-story-river h1, section.tc-story-river h2, section.tc-story-river h3, section.tc-story-river h4, section-tc-story-river h5, section-tc-story-river h6']
-c.hints.selectors['tw-paragraphs'] = ['section.tc-story-river p, section.tc-story-river ol, section.tc-story-river ul']
-c.hints.selectors['tw-story-river-tiddlylinks'] = ['section.tc-story-river a.tc-tiddlylink']
-c.hints.selectors['tw-story-river-close'] = ['section.tc-story-river button[title="Close this tiddler"]']
 c.hints.selectors['frame'] = [ 'div', 'header', 'section', 'nav']
 c.hints.selectors['div'] = ['div']
 c.hints.selectors['header'] = ['header']
@@ -496,62 +349,30 @@ c.hints.selectors['section'] = ['section']
 c.hints.selectors['nav'] = ['nav']
 c.hints.selectors['yt-skip-ad'] = ['button.ytp-ad-skip-button']
 
-# Enable Dark Mode
-#c.colors.webpage.darkmode.enabled = True
-#config.set('colors.webpage.darkmode.enabled', True, 'https://github.com')
-#c.colors.webpage.darkmode.algorithm = 'brightness-rgb'
-#c.colors.webpage.darkmode.policy.images = 'smart'
-#c.colors.webpage.darkmode.threshold.text = 150 # 256 = invert all
-#c.colors.webpage.darkmode.threshold.background = 205 # 0 = invert all
-
-#c.content.user_stylesheets = '~/.local/share/qutebrowser/stylesheets/solarized-everything-css/css/gruvbox/gruvbox-all-sites.css'
-#c.content.user_stylesheets = '~/.local/share/qutebrowser/stylesheets/solarized-everything-css/css/darculized/darculized-all-sites.css'
-#c.content.user_stylesheets = '~/.local/share/qutebrowser/stylesheets/qutebrowser_dark_solarized/solarized-dark.css'
-
-#c.colors.webpage.prefers_color_scheme_dark = True
-
 # Open base URL of a search engine if no search terms
 c.url.open_base_url = True
 
-# Insert mode on sites load
-# c.input.insert_mode.auto_load = True
-c.input.insert_mode.auto_load = False
-
-# Restore mode on tab change
 config.set('tabs.mode_on_change', 'restore')
-
-# Close window when the last tab is closed
 config.set('tabs.last_close', 'close')
-
-# Messages timeout
-c.messages.timeout = 3000
-
-# Partial input timeout
-c.input.partial_timeout = 0
-
-# Downloads position
+config.set('tabs.max_width', 200)
 config.set('downloads.position', 'bottom')
 
-# Tabs max width
-config.set('tabs.max_width', 200)
-
-# Hints auto-follow
+c.messages.timeout = 3000
+c.content.autoplay = False
+c.input.partial_timeout = 0
+c.input.insert_mode.auto_load = False
+c.input.insert_mode.leave_on_load = True
+c.input.insert_mode.plugins = False
+c.input.insert_mode.auto_enter = True
+c.input.insert_mode.auto_leave = True
+c.keyhint.delay = 0
+c.hints.uppercase = True
 c.hints.auto_follow = 'always'
 
-# Forbid autoplay
-c.content.autoplay = False
+c.input.forward_unbound_keys = 'all'
 
-# Keyhint delay
-# c.keyhint.delay = 300
-c.keyhint.delay = 0
-
-# Uppercase for hints
-c.hints.uppercase = True
-
-# config.bind(';s', 'hint paragraphs userscript tts.py')
 config.bind(';s', 'hint paragraphs userscript run-mimic.sh')
 config.bind(';S', 'spawn -d /home/boris/bin/i3/hint-qutebrowser.sh')
-config.unbind('m')
 config.bind('m', 'hint paragraphs userscript run-mimic.sh')
 
 config.bind(';p', 'hint pre userscript yank-pre.sh')
@@ -560,15 +381,11 @@ config.bind(';T', 'hint tables userscript yank-table.sh')
 config.bind('..', 'repeat-command')
 
 config.bind(';m', 'hint links spawn --detach mpv --x11-name=mpv --ytdl-raw-options=mark-watched= {hint-url}')
-# config.bind(';v', 'hint links spawn -d vivaldi --class="large" {hint-url}')
-# config.bind(';P', 'spawn youtube-dl -o "/media/boris/d/Smth/%(title)s-%(id)s.%(ext)s" {url}')  # for now I'm commenting this out, because at the moment my youtube-dl doesn't work, and I need to make an 'open in palemoon' binding. I should rearrange all this crap later using some more consistent conventions!
 config.bind(';x', 'spawn youtube-dl -o "/media/boris/d/Smth/%(title)s-%(id)s.%(ext)s" {url}')
-#config.bind(';V', 'spawn -d vivaldi --class="large" {url}')
 config.bind(';M', 'spawn -d mpv --x11-name=mpv {url}')
 config.bind(';P', 'spawn -d palemoon {url}')
 config.bind(';F', 'spawn -d firefox {url}')
 
-# config.bind(';c', 'hint paragraphs userscript /home/boris/.local/share/qutebrowser/userscripts/hint-caret.sh')  # i made this binding because ;v was occupied with vivaldi. now i don't have vivaldi, so i'll use the one below:
 config.bind(';v', 'hint paragraphs userscript /home/boris/.local/share/qutebrowser/userscripts/hint-caret.sh')
 config.bind('f', 'hint paragraphs userscript /home/boris/.local/share/qutebrowser/userscripts/hint-caret.sh', mode='caret')
 
@@ -579,7 +396,6 @@ config.bind('A', 'set-cmd-text -s :open -b')
 config.bind('$', 'set-cmd-text -s :open -t')
 
 config.bind('cu', 'edit-url')
-config.bind('c.', 'config-edit')
 
 config.bind('wH', 'back -w')
 config.bind('wL', 'forward -w')
@@ -597,8 +413,6 @@ config.bind('<Ctrl-W>', 'fake-key <Ctrl-Backspace>', mode='insert')
 config.bind('<Ctrl-U>', 'fake-key <Shift-Home> ;; fake-key <Backspace>', mode='insert')
 
 # Caret mode page navigation
-config.bind('d', 'scroll-page 0 0.1', mode='caret')
-config.bind('e', 'scroll-page 0 -0.1', mode='caret')
 config.bind('<Ctrl-F>', 'scroll-page 0 1', mode='caret')
 config.bind('<Ctrl-B>', 'scroll-page 0 -1', mode='caret')
 config.bind('<Ctrl-D>', 'scroll-page 0 0.5', mode='caret')
@@ -620,20 +434,18 @@ config.bind('<Ctrl-Y>', 'scroll-page 0 -0.05', mode='prompt')
 # Normal mode page navigation
 config.bind('<Ctrl-E>', 'scroll-page 0 0.05')
 config.bind('<Ctrl-Y>', 'scroll-page 0 -0.05')
-config.bind('d', 'scroll-page 0 0.1')
-config.bind('e', 'scroll-page 0 -0.1')
 
 # <Return> aliases
-config.bind('<Ctrl-J>', 'command-accept', mode='command')
-config.bind('<Ctrl-M>', 'command-accept', mode='command')
-#config.bind('<Ctrl-J>', 'fake-key <Return>', mode='insert')
-config.bind('<Ctrl-J>', 'spawn /home/boris/.local/share/qutebrowser/userscripts/IM_C-j_C-m_dispatcher.sh {url:host} {url:port}', mode='insert')
-#config.bind('<Ctrl-M>', 'fake-key <Return>', mode='insert')
-config.bind('<Ctrl-M>', 'spawn /home/boris/.local/share/qutebrowser/userscripts/IM_C-j_C-m_dispatcher.sh {url:host} {url:port}', mode='insert')
-config.bind('<Ctrl-M>', 'spawn /home/boris/.local/share/qutebrowser/userscripts/IM_C-j_C-m_dispatcher.sh {url:host} {url:port}', mode='insert')
-config.bind('<Ctrl-J>', 'selection-follow', mode='normal')
-config.bind('<Ctrl-J>', 'prompt-accept', mode='prompt')
-config.bind('<Ctrl-M>', 'prompt-accept', mode='prompt')
+# TODO remove these after some testing
+#config.bind('<Ctrl-J>', 'command-accept', mode='command')
+#config.bind('<Ctrl-M>', 'command-accept', mode='command')
+#config.bind('<Ctrl-J>', 'spawn /home/boris/.local/share/qutebrowser/userscripts/IM_C-j_C-m_dispatcher.sh {url:host} {url:port}', mode='insert')
+#config.bind('<Ctrl-M>', 'spawn /home/boris/.local/share/qutebrowser/userscripts/IM_C-j_C-m_dispatcher.sh {url:host} {url:port}', mode='insert')
+#config.bind('<Ctrl-M>', 'spawn /home/boris/.local/share/qutebrowser/userscripts/IM_C-j_C-m_dispatcher.sh {url:host} {url:port}', mode='insert')
+#config.bind('<Ctrl-J>', 'selection-follow', mode='normal')
+#config.bind('<Ctrl-J>', 'prompt-accept', mode='prompt')
+#config.bind('<Ctrl-M>', 'prompt-accept', mode='prompt')
+config.bind('<Return>', 'spawn /home/boris/.local/share/qutebrowser/userscripts/IM_return_dispatcher.sh {url:host} {url:port}', mode='insert')
 
 # Tab switching
 config.bind('<Ctrl-.>', 'tab-move +')
@@ -683,10 +495,8 @@ config.bind('t--', 'set-cmd-text -s :set tabs.width')
 config.bind('tH', 'back -t')
 config.bind('tL', 'forward -t')
 config.bind('tgu', 'navigate up -t')
-config.bind('x', 'tab-close')  # in tiddlywiki it will close tiddlers rather than tabs
+config.bind('x', 'tab-close')
 config.bind('s', 'spawn /home/boris/.local/share/qutebrowser/userscripts/NM_s_dispatcher.sh {url:host} {url:port}')  # special hinting for tiddlywiki
-config.bind('<Alt-X>', 'tab-close')  # i'll try to use this instead
-config.bind('<Alt-X>', 'tab-close', mode='insert')  # for insert mode compatibility (espetially on outo-insert on page start)
 config.bind('X', 'tab-close -o')
 config.bind('!x', 'tab-only')
 
@@ -708,49 +518,21 @@ config.bind(';a', 'hint alll')
 config.bind('<Shift-Return>', 'hint-follow -s {hint-url}', mode='hint')
 
 # Tiddlywiki
-config.bind('<Alt+p>', 'hint sidebar-scrollable')
-config.bind('r', 'hint edit-tiddler normal')
-config.bind('<Ctrl-Return>', 'mode-leave ;; fake-key <Ctrl-Enter>', mode='insert')
-config.bind('<Ctrl-C><Ctrl-J>', 'accept-changes_(tw)', mode='insert')
-# NOTE the set input.spatial_navigation false here is *intensional*
-c.aliases['accept-changes_(tw)'] = 'hint tiddler-title ;; later 40 fake-key <Ctrl-Enter> ;; set input.spatial_navigation false ;; later 80 mode-enter normal'
-config.bind('<Ctrl-Escape>', 'fake-key <Ctrl-Escape> ;; mode-leave', mode='insert')
-# NOTE the `set input.spatial_navigation false` in the two lines below is *intensional*
-config.bind('<Escape>', 'mode-leave ;; set input.spatial_navigation false', mode='insert')
-config.bind('<Ctrl-G>', 'mode-leave ;; set input.spatial_navigation false', mode='insert')
-config.bind('<Escape>', 'clear-keychain ;; search ;; fullscreen --leave ;; fake-key --global _0_1', mode='normal') # Added a fake click on a dummy <div> (see 'dunder' bindings) to get rid of the fucking sticky dropdowns
-
-config.bind('<Ctrl-Tab>', 'fake-key <Alt-Right>', mode='insert')
-config.bind('<Ctrl-Shift-Tab>', 'fake-key <Alt-Left>', mode='insert')
+# XXX state for keydrown
+config.bind('<Escape>', 'mode-leave ;; set input.spatial_navigation false ;; jseval -q -w main window.qutebrowserMode = "normal";', mode='insert')
+config.bind('<Ctrl-G>', 'mode-leave ;; set input.spatial_navigation false ;; jseval -q -w main window.qutebrowserMode = "normal";', mode='insert')
+config.bind('<Escape>', 'clear-keychain ;; search ;; fullscreen --leave ;; fake-key --global _c020_c021', mode='normal') # Added a fake click on a dummy <div> (see 'dunder' bindings) to get rid of the fucking sticky dropdowns
 
 config.bind('<Ctrl-C><Ctrl-V>', 'edit-text', mode='insert')
 
 config.bind('tn', 'config-cycle -p input.spatial_navigation true false', mode='normal')
-# config.bind('gg', 'run-with-count 500 scroll up')
-# config.bind('G', 'run-with-count 500 scroll down')
 config.bind('gg', 'scroll-to-perc 0')
 config.bind('G', 'scroll-to-perc 100')
-
-# This was an attempt to make qutebrowser automatically go to insert mode after hitting the 'edit tiddler button' (it can't do it normally because it
-# can't recognize when javascript focuses elements). This workaroud involved two userscripts, one calling the other, and, while it is actually working,
-# it's just too slow. Maybe I should try this workaround some time later, when i get myself an SSD - i suspect the slowness comes pretty much exclusively
-# from the need to open the files!
-#config.bind('r', 'spawn --userscript edit-tiddler-main.sh')
-#config.bind('<Ctrl-R>', 'spawn --userscript edit-tiddler-main.sh')
-#config.bind('<Ctrl-R>', 'spawn --userscript edit-tiddler-main.sh', mode='insert')
 
 config.unbind('<Ctrl-V>')
 config.bind('<Ctrl-Shift-V>', 'mode-enter passthrough')
 
-config.bind('<Alt-m>', 'yank -s ;; spawn -d buku_run')
-
-# Vim-like marks
-# for symbol in en_symbols:
-#     # config.bind('m' + symbol, 'set-mark ' + symbol)
-#     config.bind("' " + symbol, 'jump-mark ' + symbol)
-
-# config.bind('<Ctrl-G>', 'clear-keychain ;; search ;; fullscreen --leave ;; fake-key --global _0_1', mode='normal')
-config.bind('<Ctrl-G>', 'clear-keychain ;; search ;; fullscreen --leave ;; fake-key --global _0_1', mode='normal')
+config.bind('<Ctrl-G>', 'clear-keychain ;; search ;; fullscreen --leave ;; fake-key --global _c020_c021', mode='normal')
 config.bind('<Ctrl-G>', 'mode-leave', mode='caret')
 config.bind('<Ctrl-G>', 'mode-leave', mode='command')
 config.bind('<Ctrl-G>', 'mode-leave', mode='hint')
@@ -762,7 +544,6 @@ config.bind('<Ctrl-G>', 'mode-leave', mode='yesno')
 config.bind('jk', 'mode-leave', mode='yesno')
 config.bind('jk', 'mode-leave', mode='hint')
 
-config.bind('<Ctrl-T>', 'fake-key <Ctrl-]>', mode='insert')  # 'tab'/indent (vim)
 config.bind('<Ctrl-O>', 'fake-key <Return> ;; fake-key <Up> ;; fake-key <End>', mode='insert')
 config.bind('<Ctrl-I>', 'fake-key <Tab>', mode='insert')  # tab (bash/ASCII ^I)
 config.bind('<Ctrl-Alt-D>', 'fake-key <Shift-Tab>', mode='insert')  # 'de-tab'/dedent (vim)
@@ -772,7 +553,7 @@ config.bind('<Ctrl-F>', 'fake-key <Right>', mode='insert')
 config.bind('<Ctrl-B>', 'fake-key <Left>', mode='insert')
 config.bind('<Alt-F>', 'fake-key <Ctrl-Right>', mode='insert')
 config.bind('<Alt-B>', 'fake-key <Ctrl-Left>', mode='insert')
-config.bind('<Ctrl-K>', 'fake-key <Shift-End> ;; fake-key <Del>', mode='insert')  # kill line forward (emacs/bash)
+config.bind('<Ctrl-K>', 'fake-key <Shift-End> ;; fake-key <Del>', mode='insert')  # kill line forward (emacs/readline)
 config.bind('<Ctrl-/>', 'fake-key <Ctrl-Z> ;; fake-key <Left> ;; fake-key <Right>', mode='insert') # undo (bash)
 
 config.bind('<Alt-W>', 'fake-key <Ctrl-Insert>', mode='insert')
@@ -802,31 +583,14 @@ config.bind('gj', 'tab-next', mode='normal')
 config.bind('gk', 'tab-prev', mode='normal')
 config.bind('gl', 'tab-next', mode='normal')
 
-config.bind('gh', 'tab-prev', mode='caret')
-config.bind('gj', 'tab-next', mode='caret')
-config.bind('gk', 'tab-prev', mode='caret')
-config.bind('gl', 'tab-next', mode='caret')
 config.bind('y', 'yank selection --keep', mode='caret')
 config.bind('<Ctrl-Y>', 'yank selection', mode='caret')
-
-config.bind('g1', 'tab-focus 1', mode='normal')
-config.bind('g2', 'tab-focus 2', mode='normal')
-config.bind('g3', 'tab-focus 3', mode='normal')
-config.bind('g4', 'tab-focus 4', mode='normal')
-config.bind('g5', 'tab-focus 5', mode='normal')
-config.bind('g6', 'tab-focus 6', mode='normal')
-config.bind('g7', 'tab-focus 7', mode='normal')
-config.bind('g8', 'tab-focus 8', mode='normal')
-config.bind('g9', 'tab-focus 9', mode='normal')
-config.bind('g0', 'tab-focus -1', mode='normal')
 
 config.set('tabs.close_mouse_button_on_bar', 'close-current')
 
 config.bind('g.','set-cmd-text :')
 config.bind('go','open -r -t ;; set-cmd-text :')
 
-#config.bind('<Ctrl-T>', 'config-cycle completion.height 50% 25% 0%', mode='command')
-#config.bind('<Ctrl-S>', 'config-cycle completion.shrink true false', mode='command')
 config.bind('<Ctrl-S>5', 'height=50%', mode='command')
 c.aliases['height=50%'] = 'set completion.height 50%'
 config.bind('<Ctrl-S>2', 'height=20%', mode='command')
@@ -839,13 +603,6 @@ c.aliases['shrink'] = 'config-cycle completion.shrink true false'
 config.bind('<Ctrl-W>', 'rl-backward-kill-word', mode='command')
 config.bind('<Ctrl-W>', 'rl-backward-kill-word ;; rl-backward-kill-word', mode='prompt')
 
-# this is the difference between running a bash script just as a program (just spawn) vs running it as a userscript (spawn --userscript).
-# in the latter case, qutebrowser prepares some environment variables and a FIFO.. in the specific case of tiddllywiki this results in
-# a very irritating delay (probably because of the huge DOM, but who knows..). in the former case you of course lose the ability to easily
-# access the FIFO (it sort of works anyway - but veeeery slow - god knows what happens under the hood) - but if you don't need it and/or
-# don't need the whole DOM, you're better off using just spawn.. in this particular case I needed the script to command qutebrowser - but I
-# got away with a hack using xdotool.. speed-wise it's waaay better.
-# config.bind('<Space>','spawn --userscript selective-spacebar.sh')
 config.bind(",",'spawn -d /home/boris/.local/share/qutebrowser/userscripts/NM_comma_dispatcher.sh {url:host} {url:port}')
 
 # this is an (working) example of how you can make complex commands more readable
@@ -854,58 +611,20 @@ config.bind(",",'spawn -d /home/boris/.local/share/qutebrowser/userscripts/NM_co
 #                   type\
 #                   _dtw')
 
-config.bind('<Ctrl-S>', 'hint tiddlers-and-fields')
-
-config.bind('<Ctrl-S>', 'hint tiddlers-and-fields', mode='insert')
-config.bind('<Ctrl-C><Ctrl-X>', 'hint cancel-and-delete', mode='insert')
-config.bind('<Ctrl-C>tp', 'toggle-preview_(tw)', mode='insert')  # tiddlywiki toggle preview
-config.bind('<Ctrl-C>ft', 'file-tree_(tw)', mode='insert')
-config.bind('<Ctrl-C>ts', 'toggle-sidebar_(tw)', mode='insert')  # tiddlywiki toggle sidebar
-config.bind('<Ctrl-C>as', 'advanced-search_(tw)', mode='insert')
-config.bind('<Ctrl-C>ss', 'sidebar-search_(tw)', mode='insert')
-config.bind('<Ctrl-C>n', 'new-tiddler', mode='insert')
-config.bind('<Ctrl-C>iu', 'insert-unicode_(tw)', mode='insert')
-config.bind('<Ctrl-C>is', 'insert-snippet_(tw)', mode='insert')
-config.bind('<Ctrl-C>ip', 'insert-picture_(tw)', mode='insert')
-config.bind('<Ctrl-C>ii', 'insert-picture_(tw)', mode='insert')
-config.bind('<Ctrl-C>il', 'insert-wikilink_(tw)', mode='insert')
-config.bind('<Ctrl-C>it', 'insert-transclusion_(tw)', mode='insert')
-config.bind('<Ctrl-C>im', 'insert-macro_(tw)', mode='insert')
-config.bind('<Ctrl-C>e', 'excise_(tw)', mode='insert')
-config.bind('<Ctrl-C>ch', 'codemirror-height_(tw)', mode='insert')
-config.bind('<Ctrl-C>fw', 'fields-width_(tw)', mode='insert')
-config.bind('<Ctrl-C>iu', 'insert-unicode_(tw)')  # this was commented out for some reason. comment it out again if you discover problems
-config.bind('<Ctrl-C>is', 'insert-snippet_(tw)')  # this was commented out for some reason. comment it out again if you discover problems
-config.bind('<Ctrl-C>ip', 'insert-picture_(tw)')  # this was commented out for some reason. comment it out again if you discover problems
-config.bind('<Ctrl-C>ii', 'insert-picture_(tw)')  # this was commented out for some reason. comment it out again if you discover problems
-config.bind('<Ctrl-C>il', 'insert-wikilink_(tw)')
-config.bind('<Ctrl-C>it', 'insert-transclusion_(tw)')
-config.bind('<Ctrl-C>im', 'insert-macro_(tw)')
-##config.bind('<Ctrl-C>e', 'fake-key <Ctrl-E> ;; later 20 hint --rapid tw-editor-submenu')
-##config.bind('<Ctrl-C>ch', 'hint --first tw-editor-height ;; later 50 hint --rapid tw-editor-submenu')
-##config.bind('<Ctrl-C>fw', 'hint --first select')
-
-# I have no clue now why I did these:
-config.bind('<Ctrl-I>', 'fake-key <Down>', mode='hint')
-config.bind('<Ctrl-Alt-I>', 'fake-key <Up>', mode='hint')
-config.bind('<Tab>', 'fake-key <Down>', mode='hint')
-config.bind('<Shift-Tab>', 'fake-key <Up>', mode='hint')
-config.bind('<Ctrl-N>', 'fake-key <Down>', mode='hint')
-config.bind('<Ctrl-P>', 'fake-key <Up>', mode='hint')
-config.bind('<Ctrl-S>', 'mode-leave ;; hint tiddlers-and-fields', mode='hint')
-config.bind('<Ctrl-C><Ctrl-X>', 'mode-leave ;; hint cancel-and-delete', mode='hint')
-
 config.bind(',', 'mode-leave ;; spawn /home/boris/.local/share/qutebrowser/userscripts/NM_comma_dispatcher.sh {url:host} {url:port}', mode='hint')
 config.bind('jt', "config-cycle colors.hints.bg 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 247, 133, 0.8), stop:1 rgba(255, 197, 66, 0.8))' 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 247, 133, 0.2), stop:1 rgba(255, 197, 66, 0.2))' ;; config-cycle colors.hints.fg black 'rgba(0, 0, 0, 0.2)", mode='hint')
+
+# XXX state for keydrown
+config.bind('i', 'mode-enter insert ;; jseval -q -w main window.qutebrowserMode = "insert";')
+config.bind('gi', 'hint inputs --first ;; jseval -q -w main window.qutebrowserMode = "insert";')
+config.bind(';t', 'fake-key --global _c030_c031')
+
+config.bind('td', 'spawn --userscript /home/boris/.local/share/qutebrowser/userscripts/toggle-keydrown.sh')
 
 config.bind('<Space><Space>', 'space')
 c.aliases['space'] = 'fake-key <Space>'
 
-#config.bind('m', 'fake-key <Ctrl-[> ;; fake-key --global <Escape> ;; fake-key --global <Escape> ;; later 50 hint --first codemirror ;; later 200 mode-enter insert')
-config.bind('ge', 'fake-key <Ctrl-[> ;; fake-key --global <Escape> ;; fake-key --global <Escape> ;; later 50 hint --first codemirror ;; later 200 mode-enter insert')
-
-config.unbind('wi')
-config.bind('wi', 'fake-key --global _c010 ;; fake-key --global _c011')
+config.bind('wi', 'fake-key --global _c010 ;; fake-key --global _c013 ;; fake-key --global _c011')
 
 # smacemacs-style bindings
 config.bind('<Space>bb', 'list_tabs')
@@ -970,6 +689,8 @@ c.keyhint.blacklist.append('<Space>$')
 c.keyhint.blacklist.append('<Space>q')
 c.keyhint.blacklist.append('<Space>-*')
 
+c.content.blocking.method = 'both'
+
 c.fonts.default_size = '13pt'
 c.zoom.default = '130%'
 c.fonts.hints = 'bold 15pt default_family'
@@ -978,26 +699,6 @@ c.keyhint.radius = 0
 c.fonts.keyhint = 'bold default_size default_family'
 c.hints.radius = 0
 
-# c.colors.tabs.selected.even.bg = 'grey'
-# c.colors.tabs.selected.odd.bg = 'grey'
-# c.colors.tabs.odd.bg = 'black'
-# c.colors.tabs.even.bg = 'darkgrey'
-
-# Youtube ad blocking
-
-def filter_yt(info: interceptor.Request):
-    """Block the given request if necessary."""
-    url = info.request_url
-    if (
-        url.host() == "www.youtube.com"
-        and url.path() == "/get_video_info"
-        and "&adformat=" in url.query()
-    ):
-        info.block()
-
-interceptor.register(filter_yt)
-
-# c.hints.mode = 'letter'
 c.window.title_format = "{id}{title_sep}{perc}{current_title}{title_sep}qutebrowser"
 c.content.notifications = False # globally turn off notifications, hoping that it will fix the service worker problem
 
@@ -1005,9 +706,13 @@ c.fileselect.handler = 'external'
 c.fileselect.multiple_files.command = ["/home/boris/kitty/kitty/launcher/kitty", "--class", "Gvim", "-e", "ranger", "--choosefile={}"]
 c.fileselect.single_file.command = ["/home/boris/kitty/kitty/launcher/kitty", "--class", "Gvim", "-e", "ranger", "--choosefile={}"]
 
+c.qt.workarounds.remove_service_workers = True
+
 c.aliases['launch_tiddlywiki'] = 'spawn -d qutebrowser --basedir /home/boris/qutebrowser-profiles/tiddlywiki/ --qt-arg name tiddlywiki'
 c.aliases['launch_tiddlywiki_respecting_current_layout'] = 'fake-key --global _c010 ;; fake-key --global _c012'
 config.bind('<Space>wt', 'launch_tiddlywiki')
 config.bind('<Space>wlt', 'launch_tiddlywiki_respecting_current_layout')
 c.aliases['launch_youtube'] = 'spawn -d qutebrowser --basedir /home/boris/qutebrowser-profiles/youtube/ --qt-arg name mpv'
 config.bind('<Space>wy', 'launch_youtube')
+
+config.bind('z', 'clear-messages')

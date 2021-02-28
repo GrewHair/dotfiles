@@ -70,6 +70,3 @@ if program in tabbed:
 # no other way to set the layout to tabbed if needed)
 if program in prevent_focus:
     sp.run('i3-msg "workspace back_and_forth"', shell=True)
-
-##!/bin/sh -e
-#i3-msg workspace $(($(i3-msg -t get_workspaces | tr , '\n' | grep '"num":' | cut -d : -f 2 | sort -rn | head -1) + 1))

@@ -1,0 +1,100 @@
+# This is a keynavrc file. Yours should live in 
+# $HOME/.keynavrc
+#
+# Lines beginning with '#' are comments.
+# Format is:
+#   keysequence cmd1,cmd2,cmd3...
+#
+# Other special values are:
+#   'clear' on a line by itself (no quotes) will erase all keybindings
+#   (including the defaults)
+#   'daemonize' on a line by itself (no quotes) will make keynav background
+#   after parsing the configfile and having no critical errors.
+# 
+# The 'start' command alone is handled specially, in that any key sequence
+# mapped to 'start' will be grabbed when keynav starts up so you can invoke it
+# to activate keynav. The remaining keys are only recognized while keynav is
+# active
+#
+# Project page; http://www.semicomplete.com/projects/keynav
+
+# Use 'clear' to blow away any previous keybindings
+#clear
+
+# Use 'daemonize' to background ourselves.
+#daemonize
+
+#ctrl+semicolon start
+#super+c start,windowzoom
+Escape end,sh "/home/boris/bin/i3/unbypass-xkeysnail.py",sh "pkill keynav"
+ctrl+c end,sh "/home/boris/bin/i3/unbypass-xkeysnail.py",sh "pkill keynav"
+ctrl+g end,sh "/home/boris/bin/i3/unbypass-xkeysnail.py",sh "pkill keynav"
+ctrl+bracketleft end,sh "/home/boris/bin/i3/unbypass-xkeysnail.py",sh "pkill keynav"
+h cut-left,warp
+j cut-down,warp
+k cut-up,warp
+l cut-right,warp
+shift+h move-left,warp
+shift+j move-down,warp
+shift+k move-up,warp
+shift+l move-right,warp
+space warp,click 1,end,sh "/home/boris/bin/i3/unbypass-xkeysnail.py",sh "pkill keynav"
+shift+space warp,doubleclick 1,end,sh "/home/boris/bin/i3/unbypass-xkeysnail.py",sh "pkill keynav"
+semicolon warp,end,sh "/home/boris/bin/i3/unbypass-xkeysnail.py",sh "pkill keynav"
+
+1 warp,click 1
+2 warp,click 2
+3 warp,click 3,end,sh "/home/boris/bin/i3/unbypass-xkeysnail.py",sh "pkill keynav"
+4 click 4
+5 click 5
+shift+1 warp,doubleclick 1
+shift+2 warp,doubleclick 2
+shift+3 warp,doubleclick 3,end,sh "/home/boris/bin/i3/unbypass-xkeysnail.py",sh "pkill keynav"
+
+# Zoom to the current window
+w windowzoom
+
+# Zoom to the cursor location with a given height and width
+c cursorzoom 200 200
+
+# Record keynav actions
+q record
+
+### Drag examples
+# Start drag holding the left mouse button
+#q drag 1
+# Start drag holding middle mouse + control and shift
+#w drag 2 ctrl+shift
+
+ctrl+2 grid 2x2,grid-nav off
+ctrl+3 grid 3x3,grid-nav on
+ctrl+4 grid 4x4,grid-nav on
+ctrl+5 grid 5x5,grid-nav on
+ctrl+6 grid 6x6,grid-nav on
+ctrl+7 grid 7x7,grid-nav on
+ctrl+8 grid 8x8,grid-nav on
+ctrl+9 grid 9x9,grid-nav on
+
+s move-left 2
+d move-down 2
+f move-right 2
+e move-up 2
+
+z warp,cursorzoom 100 100
+
+r cut-left,cut-up,warp
+t cut-right,cut-up,warp
+n cut-left,cut-down,warp
+m cut-right,cut-down,warp
+
+shift+r move-left,move-up,warp
+shift+t move-right,move-up,warp
+shift+n move-left,move-down,warp
+shift+m move-right,move-down,warp
+
+u history-back
+
+g warp
+
+bracketleft sh "xdotool click 6"
+bracketright sh "xdotool click 7"

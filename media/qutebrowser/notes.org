@@ -1,0 +1,18 @@
+* Ways to script/remote control qutebrowser:
+** Through userscripts
+*** The safest and the best way when you are commananding from within qutebrowser (i.e. the instance of interest is focused
+*** Sometimes it can be slow - e.g. with my huge tiddlywiki. Qutebrowser prepares some environment variables, including a variable that contains the whole DOM. With tiddlywiki it results in an irritating delay
+** Through socat (inject commands directly into the domain socket
+*** Also a good and relatively clean method
+*** It can be used from anywhere (e.g. other focused programs)
+*** It can be called from any bash script, which you can spawn using the `spawn` qutebrowser command, which does not involve putting the whole DOM into an environment variable, and yet things like current URL or hint URL can still be passed
+*** The disadvantage is that you need to know the exact location of the socket/ipc file - and I know for sure only one (default) such location - so I can't use it to remote control any "profiles" (i.e. instances that run with a different --basedir) of qutebrowser other then the default one
+** Through xdotool + "dunder" bindings
+*** This is simply blindly sending keystrokes, which qutebrowser (if it is focused) will hopefully pickup
+*** This is a terrible method, resulting in a lot of race conditions, which make qutebrowser sometimes do weird stuff
+*** But it is as quick as the socat method, and _will_ work with any "profile", as long as it is focused - and so sometimes it still could be useful as a last resort tool
+** Through calling `qutebrowser --basedir foo ":some-commands"` from a bash script
+*** This works from anywhere (e.g. other focused programs, much like the socat method)
+*** Better - it can access any "profile" you want
+*** The disadvantage is that for some reason it used to be really slow (like, 2-3 second delay)
+*** However, in the latest version it seems to be sped up - and even if I'm wrong here - it can still be useful when you don't mind a little waiting

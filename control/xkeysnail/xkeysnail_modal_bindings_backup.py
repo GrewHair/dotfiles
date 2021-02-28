@@ -5,31 +5,29 @@ from xkeysnail.transform import *
 import os
 import subprocess as sp
 
-def start_keynav():
-    """Bypass xkeysnail and start keynav"""
-    os.system("/home/boris/bin/i3/bypass-xkeysnail.py")
-    os.system("keynav start,windowzoom &")
+def wheel_up():
+    """Scroll the mousewheel up"""
+    os.system('xdotool click 4')
 
-def close_devtools():
-    """Unmark the browser window and close devtools"""
-    os.system('i3-msg "[con_mark=inspect] mark --toggle inspect"')
-    os.system('i3-msg "[con_id=__focused__] kill"')
+def wheel_down():
+    """Scroll the mousewheel down"""
+    os.system('xdotool click 5')
 
-def inspect():
-    """Focus browser and launch keynav"""
-    os.system('i3-msg [con_mark="inspect"] focus')
-    os.system('keynav start,windowzoom &')
+def wheel_left():
+    """Scroll the mousewheel left"""
+    os.system('xdotool click 6')
+
+def wheel_right():
+    """Scroll the mousewheel right"""
+    os.system('xdotool click 7')
 
 def set_wm_class_devtools():
     """Set WM_CLASS of the focused window to devtools"""
     os.system("xdotool set_window --class=devtools $(xdotool getactivewindow)")
-    os.system("pkill conky")
 
-def set_wm_class_devtools_insert():
-    """Set WM_CLASS of the focused window to devtools_insert"""
-    os.system("i3-msg split vertical")
-    os.system("conky -t '-- INSERT --' &")
-    os.system("xdotool set_window --class=devtools_insert $(xdotool getactivewindow)")
+def set_wm_class_devtools_normal():
+    """Set WM_CLASS of the focused window to devtools_normal"""
+    os.system("xdotool set_window --class=devtools_normal $(xdotool getactivewindow)")
 
 def set_wm_class_zotero():
     """Set WM_CLASS of the focused window to Zotero"""
@@ -37,7 +35,7 @@ def set_wm_class_zotero():
     os.system("pkill conky")
 
 def set_wm_class_zotero_insert():
-    """Set WM_CLASS of the focused window to Zotero_insert"""
+    """Set WM_CLASS of the focused window to zotero_insert"""
     os.system("i3-msg split vertical")
     os.system("conky -t '-- INSERT --' &")
     os.system("xdotool set_window --class=Zotero_insert $(xdotool getactivewindow)")
@@ -63,32 +61,61 @@ def set_wm_class_zotero_float_insert():
 
 
 define_keymap(re.compile("^devtools$"), {
-    K("N"): K("BTN_FORWARD"),
-    K("P"): K("BTN_BACK"),
-    K("I"): set_wm_class_devtools_insert,
-    K("Shift-I"): [K("C-Shift-C"), inspect],
-    K("SLASH"): [K("C-F"), set_wm_class_devtools_insert],
-    K("Shift-SEMICOLON"): [K("C-Shift-p"), set_wm_class_devtools_insert],
-    K("C"): start_keynav,
-    K("X"): close_devtools,
-    K("SPACE"): {
-        K("SPACE"): [K("C-Shift-p"), set_wm_class_devtools_insert],
-    },
-}, "devtools_normal")
+    K("M-h"): K("LEFT"),  # delete?
+    K("M-j"): K("DOWN"),  # delete?
+    K("M-k"): K("UP"),  # delete?
+    K("M-l"): K("RIGHT"),  # delete?
+    K("M-Shift-h"): K("Shift-LEFT"),  # these 4 are for selection of text (since i can't replicate the true visual mode)
+    K("M-Shift-j"): K("Shift-DOWN"),
+    K("M-Shift-k"): K("Shift-UP"),
+    K("M-Shift-l"): K("Shift-RIGHT"),
+    K("M-C-j"): K("M-DOWN"),  # wtf are these two??
+    K("M-C-k"): K("M-UP"),
+    K("C-n"): K("DOWN"),
+    K("C-p"): K("UP"),  # this binding does smth natively in devtools, but what it does is doubled by C-o
+    K("C-f"): K("RIGHT"),  # fixed by the line below
+    K("C-SLASH"): K("C-f"),
+    K("C-b"): K("LEFT"), #!!!! sources
+    K("M-f"): K("C-RIGHT"),
+    K("M-b"): K("C-LEFT"),
+    K("C-e"): K("END"),
+    K("C-a"): K("HOME"),
+    K("M-e"): K("C-END"),
+    K("M-a"): K("C-HOME"),
+    K("C-h"): K("BACKSPACE"),
+    K("C-w"): K("C-BACKSPACE"),
+    K("C-u"): [K("Shift-HOME"), K("DELETE")],
+    K("C-d"): K("DELETE"),
+    K("C-k"): [K("Shift-END"), K("DELETE")],
+    K("C-j"): K("ENTER"),
+    K("C-m"): K("ENTER"),
+    K("M-w"): K("C-c"),
+    K("C-w"): K("C-x"),  #!!!!!
+    K("C-y"): K("C-v"),
+    K("M-TAB"): [K("TAB"), K("TAB")],
+    K("M-Shift-TAB"): [K("Shift-TAB"), K("Shift-TAB")],
+    K("C-SEMICOLON"): K("C-Shift-p"),
+    K("M-v"): K("C-Shift-c"),
+    K("C-m"): K("C-Shift-m"),
+    K("M-n"): wheel_down,
+    K("M-p"): wheel_up,
+    K("M-y"): wheel_up,
+    K("C-g"): set_wm_class_devtools_normal,
+}, "devtools")
 
-define_keymap(re.compile("^Zotero$|^Zotero_float$|^zenity_hjkl$|^Python3$|^devtools$"), {
+define_keymap(re.compile("devtools_normal"), {
     K("J"): K("DOWN"),
     K("K"): K("UP"),
     K("L"): K("RIGHT"),
     K("H"): K("LEFT"),
-    K("G"): K("HOME"),
-    K("Shift-G"): K("END"),
-    K("C-G"): K("ESC"),
-    K("C-C"): K("ESC"),
-    # K("C-LEFT_BRACE"): K("ESC"),
-}, "Vim normal mode bindings")
+    K("I"): set_wm_class_devtools,
+}, "devtools_normal")
 
 define_keymap(re.compile("^Zotero$|^Zotero_float$|^zenity_hjkl$|^Python3$"), {
+    K("J"): K("DOWN"),
+    K("K"): K("UP"),
+    K("L"): K("RIGHT"),
+    K("H"): K("LEFT"),
     K("C-J"): K("C-DOWN"),
     K("C-K"): K("C-UP"),
     K("C-L"): K("C-RIGHT"),
@@ -98,8 +125,12 @@ define_keymap(re.compile("^Zotero$|^Zotero_float$|^zenity_hjkl$|^Python3$"), {
     K("Shift-K"): K("Shift-UP"),
     K("Shift-L"): K("Shift-RIGHT"),
     K("Shift-H"): K("Shift-LEFT"),
+    K("G"): K("HOME"),
+    K("Shift-G"): K("END"),
+    K("C-G"): K("ESC"),
+    K("C-C"): K("ESC"),
     K("C-LEFT_BRACE"): K("ESC"),
-}, "multicursor thing for Vim normal mode bindings")
+}, "Vim normal mode bindings + multicursor")
 
 define_keymap(re.compile("^Zotero$"), {
     K("O"): K("F4"),
@@ -146,30 +177,27 @@ define_keymap(re.compile("^Zotero_float$"), {
     K("I"): set_wm_class_zotero_float_insert,
 }, "Zotero floating insert mode entry point")
 
-define_keymap(re.compile("Zotero|^zenity_hjkl|devtools"), {
+define_keymap(re.compile("Zotero|^zenity_hjkl$"), {
     K("C-I"): K("TAB"),
     K("C-M-I"): K("Shift-TAB"),
     K("C-n"): K("DOWN"),
     K("C-p"): K("UP"),
+    # K("C-f"): K("RIGHT"),
+    # K("C-b"): K("LEFT"),
+    # K("M-f"): K("C-RIGHT"),
+    # K("M-b"): K("C-LEFT"),
+    # K("C-e"): K("END"),
+    # K("C-a"): K("HOME"),
     K("M-e"): K("C-END"),
     K("M-a"): K("C-HOME"),
+    # K("C-h"): K("BACKSPACE"),
+    # K("C-w"): K("C-BACKSPACE"),
+    # K("C-u"): [K("Shift-HOME"), K("DELETE")],
+    # K("C-d"): K("DELETE"),
+    # K("C-k"): [K("Shift-END"), K("DELETE")],
     K("C-j"): K("ENTER"),
     K("C-m"): K("ENTER"),
-}, "terminal-style bindings")
-
-define_keymap(re.compile("devtools"), {
-    K("C-f"): K("RIGHT"),
-    K("C-b"): K("LEFT"),
-    K("M-f"): K("C-RIGHT"),
-    K("M-b"): K("C-LEFT"),
-    K("C-e"): K("END"),
-    K("C-a"): K("HOME"),
-    K("C-h"): K("BACKSPACE"),
-    K("C-w"): K("C-BACKSPACE"),
-    K("C-u"): [K("Shift-HOME"), K("DELETE")],
-    K("C-d"): K("DELETE"),
-    K("C-k"): [K("Shift-END"), K("DELETE")],
-}, "Readline-style bindings for devtools")
+}, "Readline-style bindings for Zotero")
 
 define_keymap(re.compile("^Zotero_float_insert$"), {
     K("ESC"): [K("ESC"), set_wm_class_zotero_float],
@@ -184,10 +212,3 @@ define_keymap(re.compile("^Zotero_insert$"), {
     K("C-C"): [K("ESC"), set_wm_class_zotero],
     K("C-LEFT_BRACE"): [K("ESC"), set_wm_class_zotero],
 }, "Zotero normal mode entry point")
-
-define_keymap(re.compile("^devtools_insert$"), {
-    K("ESC"): set_wm_class_devtools,
-    K("C-G"): set_wm_class_devtools,
-    K("C-C"): set_wm_class_devtools,
-    #K("C-LEFT_BRACE"): set_wm_class_devtools,
-}, "devtools normal mode entry point")
