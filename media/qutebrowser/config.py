@@ -299,7 +299,11 @@ config.bind('_d44yts', 'hint yt-skip-ad')
 # Aliases
 c.aliases['yt-hide'] = 'jseval document.querySelector("#container.style-scope.ytd-masthead").style.display="none";'
 c.aliases['yt-show'] = 'jseval document.querySelector("#container.style-scope.ytd-masthead").style.display="block";'
-c.aliases['stylesheets-on'] = 'set content.user_stylesheets "~/.local/share/qutebrowser/stylesheets/solarized-everything-css/css/gruvbox/gruvbox-all-sites.css"'
+c.aliases['stylesheets-gruvbox'] = 'set content.user_stylesheets "~/.local/share/qutebrowser/stylesheets/solarized-everything-css/css/gruvbox/gruvbox-all-sites.css"'
+c.aliases['stylesheets-darculized'] = 'set content.user_stylesheets "~/.local/share/qutebrowser/stylesheets/solarized-everything-css/css/darculized/darculized-all-sites.css"'
+c.aliases['stylesheets-solarized-dark'] = 'set content.user_stylesheets "~/.local/share/qutebrowser/stylesheets/solarized-everything-css/css/solarized-dark/solarized-dark-all-sites.css"'
+c.aliases['stylesheets-solarized-light'] = 'set content.user_stylesheets "~/.local/share/qutebrowser/stylesheets/solarized-everything-css/css/solarized-light/solarized-light-all-sites.css"'
+c.aliases['stylesheets-apprentice'] = 'set content.user_stylesheets "~/.local/share/qutebrowser/stylesheets/solarized-everything-css/css/apprentice/apprentice-all-sites.css"'
 c.aliases['stylesheets-off'] = 'set content.user_stylesheets ""'
 c.aliases['merge-windows'] = 'fake-key --global _c020_c020_c020_c020'
 c.aliases['noh'] = 'search'
@@ -380,7 +384,7 @@ config.bind(';T', 'hint tables userscript yank-table.sh')
 
 config.bind('..', 'repeat-command')
 
-config.bind(';m', 'hint links spawn --detach mpv --x11-name=mpv --ytdl-raw-options=mark-watched= {hint-url}')
+config.bind(';m', 'hint links spawn --detach mpv --x11-name=mpv {hint-url}')
 config.bind(';x', 'spawn youtube-dl -o "/media/boris/d/Smth/%(title)s-%(id)s.%(ext)s" {url}')
 config.bind(';M', 'spawn -d mpv --x11-name=mpv {url}')
 config.bind(';P', 'spawn -d palemoon {url}')
@@ -495,7 +499,9 @@ config.bind('t--', 'set-cmd-text -s :set tabs.width')
 config.bind('tH', 'back -t')
 config.bind('tL', 'forward -t')
 config.bind('tgu', 'navigate up -t')
+config.bind('<Space>d', 'tab-close')
 config.bind('x', 'tab-close')
+config.bind('F3', 'tab-close')
 config.bind('s', 'spawn /home/boris/.local/share/qutebrowser/userscripts/NM_s_dispatcher.sh {url:host} {url:port}')  # special hinting for tiddlywiki
 config.bind('X', 'tab-close -o')
 config.bind('!x', 'tab-only')
@@ -716,3 +722,11 @@ c.aliases['launch_youtube'] = 'spawn -d qutebrowser --basedir /home/boris/qutebr
 config.bind('<Space>wy', 'launch_youtube')
 
 config.bind('z', 'clear-messages')
+
+c.aliases['cure-keydrown'] = 'jseval -q -w main kd.stop(); kd.run(function () {kd.tick();});'
+config.bind('ck', 'cure-keydrown')
+config.bind('cm', 'clear-messages')
+
+config.bind
+
+config.bind('r', 'hint paragraphs userscript run-rhvoice.sh')

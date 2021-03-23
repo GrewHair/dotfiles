@@ -1,68 +1,295 @@
 windows:
 - active: true
   geometry: !!binary |
-    AdnQywADAAAAAAV4AAAAAAAADPcAAAQeAAAFewAAAAMAAAz0AAAEGwAAAAIAAAAAB4AAAAV7AAAA
-    AwAADPQAAAQb
+    AdnQywADAAAAAAAAAAAAAAAAB38AAAQeAAAAAwAAAAMAAAd8AAAEGwAAAAAABAAAB4AAAAADAAAA
+    AwAAB3wAAAQb
   tabs:
   - history:
     - active: true
-      last_visited: '2021-02-28T14:06:53'
+      last_visited: '2021-03-23T08:53:01'
       pinned: false
       scroll-pos:
         x: 0
-        y: 4426
-      title: (41) vocaloid - YouTube
-      url: https://www.youtube.com/results?search_query=vocaloid&sp=EgIYAg%253D%253D
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-02-28T14:06:53'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Identity-management system - Wikipedia
-      url: https://en.wikipedia.org/wiki/Identity-management_system
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-02-28T14:06:53'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Directory service - Wikipedia
-      url: https://en.wikipedia.org/wiki/Directory_service
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-02-28T14:06:53'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Difference between Active directory and Identity and Access managment
-        - Stack Overflow
-      url: https://stackoverflow.com/questions/43987531/difference-between-active-directory-and-identity-and-access-managment
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-02-28T14:06:54'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 676
-      title: dns zone - Google Search
-      url: https://www.google.com/search?q=dns%20zone
+        y: 2894
+      title: 'DevOps-инженеры: материалы для самоподготовки | training.by'
+      url: https://training.by/#!/News/108?lang=ru
       zoom: 1.3
   - active: true
     history:
     - active: true
-      last_visited: '2021-02-28T14:08:51'
+      last_visited: '2021-03-23T15:44:12'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: DNS zone - Wikipedia
-      url: https://en.wikipedia.org/wiki/DNS_zone
+      title: (70) Основы Active Directory Domain Services - YouTube
+      url: https://www.youtube.com/watch?v=hAyM1RCiCHM
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T16:04:50'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: (70) Создание первого домена - YouTube
+      url: https://www.youtube.com/watch?v=rJJKYe5VECk
+      zoom: 1.3
+  - history:
+    - last_visited: '2021-03-23T17:14:15'
+      pinned: false
+      title: virtual desktop infrastructure - Google Search
+      url: https://www.google.com/search?q=virtual%20desktop%20infrastructure
+    - active: true
+      last_visited: '2021-03-23T17:14:23'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 1703
+      title: Desktop virtualization - Wikipedia
+      url: https://en.wikipedia.org/wiki/Desktop_virtualization
+      zoom: 1.3
+  - history:
+    - last_visited: '2021-03-23T17:10:40'
+      pinned: false
+      title: windows server role-based vs remote desktop at DuckDuckGo
+      url: https://duckduckgo.com/?q=windows+server+role-based+vs+remote+desktop&ia=web
+    - active: true
+      last_visited: '2021-03-23T17:10:55'
+      original-url: https://duckduckgo.com/?q=windows+server+role-based+vs+remote+desktop&ia=web
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 226
+      title: windows - What's the difference between installing RDS the 'normal' way
+        and the special RDS deployment option? - Server Fault
+      url: https://serverfault.com/questions/721967/whats-the-difference-between-installing-rds-the-normal-way-and-the-special-rd#722059
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T16:04:56'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: (70) Подразделения, группы, учетные записи пользователей - YouTube
+      url: https://www.youtube.com/watch?v=ZTnLg9CzZZQ
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T16:05:10'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: (70) Включение компьютера в домен - YouTube
+      url: https://www.youtube.com/watch?v=JMfe3_OmnRA
+      zoom: 1.3
+  - history:
+    - last_visited: '2021-03-23T15:30:34'
+      pinned: false
+      title: microsoft workgroup hosts double backslash - Google Search
+      url: https://www.google.com/search?q=microsoft%20workgroup%20hosts%20double%20backslash
+    - active: true
+      last_visited: '2021-03-23T15:32:21'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: windows double backslash path convention - Google Search
+      url: https://www.google.com/search?q=windows+double+backslash+path+convention&sxsrf=ALeKk03QKz-1k0IGzm42JQNevR_Xe6zwuw%3A1616502632993&ei=aN9ZYKH_O4uGwPAPo6CbyAo&oq=windows+double+backslash+path+convention&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABOgcIIxDqAhAnOgQIIxAnOgUIABCRAjoECAAQQzoICC4QxwEQowI6AggAOgUIABDJAzoFCAAQywE6BQguEMsBOgcIABCHAhAUOgQIABANOgQIABAKOgYIABAWEB46CAgAEA0QBRAeOggIABAIEA0QHjoGCAAQDRAeOggIIRAWEB0QHjoHCCEQChCgAVCYwAVY-7UGYLO5BmgDcAJ4AIABjwGIAeohkgEFMjMuMjCYAQCgAQGqAQdnd3Mtd2l6sAEKwAEB&sclient=gws-wiz&ved=0ahUKEwih097JtcbvAhULAxAIHSPQBqkQ4dUDCA0&uact=5
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T15:32:28'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Path (computing) - Wikipedia
+      url: https://en.wikipedia.org/wiki/Path_(computing)
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T15:32:25'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 754
+      title: windows - What is the difference between \ and \\ in file path - Stack
+        Overflow
+      url: https://stackoverflow.com/questions/15969608/what-is-the-difference-between-and-in-file-path#:~:text=1%20Answer&text=Windows%20ignores%20double%20backslashes.,that%20indicates%20a%20UNC%20path.
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T15:33:59'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 7760
+      title: Path (computing) - Wikipedia
+      url: https://en.wikipedia.org/wiki/Path_(computing)#Universal_Naming_Convention
+      zoom: 1.3
+    - last_visited: '2021-03-23T15:33:52'
+      pinned: false
+      title: '"Path" computing - Google Scholar'
+      url: https://scholar.google.com/scholar?q=%22Path%22+computing
+  - history:
+    - last_visited: '2021-03-23T15:24:42'
+      pinned: false
+      title: (70) Microsoft Developer Russia - YouTube
+      url: https://www.youtube.com/channel/UC_tHbdHKPVm2F49Zz4GiZbg
+    - last_visited: '2021-03-23T15:24:42'
+      pinned: false
+      title: (70) Microsoft Developer Russia - YouTube
+      url: https://www.youtube.com/c/TechDaysRussia/videos
+    - active: true
+      last_visited: '2021-03-23T15:24:45'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 3420
+      title: (70) Microsoft Developer Russia - YouTube
+      url: https://www.youtube.com/c/TechDaysRussia/playlists
+      zoom: 1.3
+  - history:
+    - last_visited: '2021-03-23T15:05:01'
+      pinned: false
+      title: workgroup - Google Search
+      url: https://www.google.com/search?q=workgroup
+    - active: true
+      last_visited: '2021-03-23T15:05:08'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Workgroup (computer networking) - Wikipedia
+      url: https://en.wikipedia.org/wiki/Workgroup_(computer_networking)
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T15:06:10'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Windows domain - Wikipedia
+      url: https://en.wikipedia.org/wiki/Windows_domain
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T14:53:16'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 806
+      title: workaround synonims - Google Search
+      url: https://www.google.com/search?q=workaround%20synonims
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T14:54:08'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 1820
+      title: Workaround Synonyms & Antonyms | Synonyms.com
+      url: https://www.synonyms.com/synonym/Workaround
+      zoom: 1.3
+  - history:
+    - last_visited: '2021-03-23T14:29:46'
+      pinned: false
+      title: (70) YouTube
+      url: https://www.youtube.com/
+    - last_visited: '2021-03-23T14:29:46'
+      pinned: false
+      title: (70) vocaloid 2021 - YouTube
+      url: https://www.youtube.com/results?search_query=vocaloid+2021
+    - active: true
+      last_visited: '2021-03-23T14:29:58'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: (70) vocaloid 2021 - YouTube
+      url: https://www.youtube.com/results?search_query=vocaloid+2021&sp=EgIYAg%253D%253D
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T08:53:01'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Domain Name System - Wikipedia
+      url: https://en.wikipedia.org/wiki/Domain_Name_System
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T08:53:01'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 234
+      title: What Is Recursive DNS? | Cloudflare
+      url: https://www.cloudflare.com/learning/dns/what-is-recursive-dns/
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T13:52:39'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Security identifiers in Windows - Windows Server | Microsoft Docs
+      url: https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/security-identifiers-in-windows
+      zoom: 1.3
+  - history:
+    - last_visited: '2021-03-23T11:50:40'
+      pinned: false
+      title: gmail at DuckDuckGo
+      url: https://duckduckgo.com/?q=gmail&ia=web&iai=r1-0&page=1&sexp=%7B%22cdrexp%22%3A%22b%22%2C%22biaexp%22%3A%22b%22%2C%22msvrtexp%22%3A%22b%22%7D
+    - last_visited: '2021-03-23T11:50:47'
+      pinned: false
+      title: Inbox (1,419) - barysdzemidziuk@gmail.com - Gmail
+      url: https://mail.google.com/mail/u/0/#inbox
+    - active: true
+      last_visited: '2021-03-23T11:54:06'
+      original-url: https://mail.google.com/mail/u/0/#inbox
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: EPAM - Preparation for Tech Interview - barysdzemidziuk@gmail.com - Gmail
+      url: https://mail.google.com/mail/u/0/#inbox/FMfcgxwLswRTqQpJFbkSNzQzbmnFWVrP
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T08:53:01'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 581
+      title: Reverse Lookup Zone - an overview | ScienceDirect Topics
+      url: https://www.sciencedirect.com/topics/computer-science/reverse-lookup-zone#:~:text=Reverse%20Lookup%20Zones,%2C%20or%20Active%20Directory%E2%80%94integrated.
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T08:53:01'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Stepik
+      url: https://stepik.org/license/591624
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T08:53:00'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Interview with Dennis Ritchie, Bjarne Stroustrup, James Gosling
+      url: http://www.gotw.ca/publications/c_family_interview.htm
       zoom: 1.3

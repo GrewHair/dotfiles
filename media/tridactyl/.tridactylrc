@@ -1,0 +1,58 @@
+" General Settings
+set update.lastchecktime 1610351642406
+set update.nag true
+set update.nagwait 7
+set update.lastnaggedversion 1.14.0
+set update.checkintervalsecs 86400
+set configversion 2.0
+set theme dark
+set smoothscroll false
+set modeindicatorshowkeys true
+
+" For syntax highlighting see https://github.com/tridactyl/vim-tridactyl
+" vim: set filetype=tridactyl
+
+unbind s
+unbind S
+unbind <C-y>
+unbind o
+unbind r
+
+bind x tabclose
+bind j scrollline 5
+bind k scrollline -5
+bind d scrollline 10
+bind e scrollline -10
+
+bind gh tabprev
+bind gj tabnext
+bind gk tabprev
+bind gl tabnext
+
+bind g. fillcmdline_notrail
+
+bind / fillcmdline find
+bind ? fillcmdline find -?
+bind n findnext 1
+bind N findnext -1
+bind ,<Space> nohlsearch   " make a noh alias instead later
+
+bind --mode=ex <C-n> ex.next_history
+bind --mode=ex <C-p> ex.prev_history
+bind --mode=ex <C-i> ex.next_completion
+bind --mode=ex <CA-i> ex.prev_completion
+
+bind --mode=ex <C-g> ex.hide_and_clear
+bind --mode=input <C-g> composite unfocus | mode normal
+bind --mode=insert <C-g> composite unfocus | mode normal
+
+bind sf hint -t
+bind ;f hint -t
+
+bind Y hint -p
+bind <C-y> hint -p
+bind m exclaim_quiet /home/boris/bin/i3/run-mimic.sh
+bind r exclaim_quiet /home/boris/bin/i3/run-rhvoice.sh 
+
+bind cc fillcmdline open
+bind o fillcmdline tabopen

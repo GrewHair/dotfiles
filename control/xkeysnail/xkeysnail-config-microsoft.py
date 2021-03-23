@@ -18,6 +18,12 @@ define_timeout(0.3)
 #     }
 # )
 
+# define_modmap(
+#     {
+#         Key.LEFT_META: Key.LEFT_SHIFT,
+#     }
+# )
+
 define_multipurpose_modmap(
     {
         Key.MENU: [Key.BLUETOOTH, Key.RIGHT_META],

@@ -15,6 +15,12 @@ define_timeout(0.3)
 #     }
 # )
 
+define_modmap(
+    {
+        Key.LEFT_META: Key.LEFT_SHIFT,
+        # Key.PRINT: Key.RIGHT_SHIFT,
+    }
+)
 define_multipurpose_modmap(
     {
         Key.MENU: [Key.BLUETOOTH, Key.RIGHT_META],
@@ -23,10 +29,12 @@ define_multipurpose_modmap(
         Key.SPACE: [Key.SPACE, Key.LEFT_CTRL],
         # Key.SPACE: [Key.BLUETOOTH, Key.LEFT_META],
         Key.ENTER: [Key.ENTER, Key.RIGHT_ALT],
-        # Key.BACKSLASH: [Key.BACKSLASH, Key.RIGHT_ALT],  # this only makes sense on the microsoft keyboard
+        # Key.BACKSLASH: [Key.BACKSLASH, Key.RIGHT_ALT],  # this only makes sense on the microsoft 4000 keyboard
         Key.CAPSLOCK: [Key.ESC, Key.LEFT_ALT],
         Key.LEFT_CTRL: [Key.CAPSLOCK, Key.LEFT_CTRL],
         Key.SLASH: [Key.SLASH, Key.RIGHT_SHIFT],
+        Key.DOT: [Key.DOT, Key.RIGHT_SHIFT],
+        # Key.PRINT: [Key.PRINT, Key.LEFT_SHIFT],
     }
 )
 

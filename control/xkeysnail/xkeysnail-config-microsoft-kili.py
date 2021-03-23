@@ -15,6 +15,8 @@ define_modmap(
         Key.F8: Key.F7,
         Key.F9: Key.F8,
         Key.F6: Key.F9,
+        Key.LEFT_META: Key.LEFT_SHIFT,
+        Key.RIGHT_META: Key.RIGHT_SHIFT,
     }
 )
 
@@ -30,6 +32,7 @@ define_multipurpose_modmap(
         Key.CAPSLOCK: [Key.ESC, Key.LEFT_ALT],
         Key.LEFT_CTRL: [Key.CAPSLOCK, Key.LEFT_CTRL],
         Key.SLASH: [Key.SLASH, Key.RIGHT_SHIFT],
+        Key.DOT: [Key.DOT, Key.RIGHT_SHIFT],
     }
 )
 

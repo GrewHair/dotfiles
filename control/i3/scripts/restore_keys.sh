@@ -7,13 +7,17 @@ xmodmap -e 'keycode 69 = Hyper_R'
 xmodmap -e 'add mod3 = Hyper_R'
 xcape -e 'Hyper_R=F3'
 
+# Add (multipurpose) shift modifier to the printscreen button
+# (because xkeysnail somehow could not handle it)
+xmodmap -e 'keycode 248 = Print'
+xmodmap -e 'keycode 107 = Shift_L'
+xmodmap -e 'Shift_L=Print'
+
 # fix things with xmodmap that xkeysnail can't handle
 #xmodmap -e 'clear shift'
 xmodmap -e 'keycode 94 = Shift_L'  # fix microsoft keyboard's weird key next to the left shift
 #xmodmap -e 'add shift = Shift_L'
 xmodmap -e 'keycode 135 = Super_R'  # turn microsoft keyboard's context menu button into the rights super key
-
-xset r rate 190 70
 
 # disable key repeat for keys that are not (or not heavily) used for navigation
 xset -r 65  # spacebar
@@ -67,5 +71,8 @@ xset -r 58  # m
 xset -r 59  # comma
 xset -r 60  # period
 xset -r 61  # forward slash
+
+sleep 2
+xset r rate 190 70
 
 exit 0

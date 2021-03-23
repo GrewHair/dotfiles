@@ -80,6 +80,9 @@ d move-down 2
 f move-right 2
 e move-up 2
 
+v drag 1
+8 drag 1
+
 z warp,cursorzoom 100 100
 
 r cut-left,cut-up,warp

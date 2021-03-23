@@ -22,6 +22,7 @@
 // @exclude   https://*github.com/*
 // @exclude	  https://en.wikipedia.org/*
 // @exclude   https://mail.google.com/*
+// @exclude   https://www.quora.com/*
 // ==/UserScript==
 
 DarkReader.enable({

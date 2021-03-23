@@ -6,124 +6,224 @@ windows:
   tabs:
   - history:
     - active: true
-      last_visited: '2021-02-28T14:21:45'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 3551
-      title: (41) vocaloid - YouTube
-      url: https://www.youtube.com/results?search_query=vocaloid&sp=EgIYAg%253D%253D
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-02-28T14:21:45'
+      last_visited: '2021-03-23T20:25:17'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Identity-management system - Wikipedia
-      url: https://en.wikipedia.org/wiki/Identity-management_system
+      title: 'DevOps-инженеры: материалы для самоподготовки | training.by'
+      url: https://training.by/#!/News/108?lang=ru
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-02-28T14:21:45'
+      last_visited: '2021-03-23T20:25:17'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Directory service - Wikipedia
-      url: https://en.wikipedia.org/wiki/Directory_service
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-02-28T14:21:45'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Difference between Active directory and Identity and Access managment
-        - Stack Overflow
-      url: https://stackoverflow.com/questions/43987531/difference-between-active-directory-and-identity-and-access-managment
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-02-28T14:21:46'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: dns zone - Google Search
-      url: https://www.google.com/search?q=dns%20zone
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-02-28T14:21:45'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 1897
-      title: DNS zone - Wikipedia
-      url: https://en.wikipedia.org/wiki/DNS_zone
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-02-28T14:38:54'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 260
-      title: Domain Name System - Wikipedia
-      url: https://en.wikipedia.org/wiki/Domain_Name_System#Record_caching
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-02-28T14:40:18'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Distributed computing - Wikipedia
-      url: https://en.wikipedia.org/wiki/Distributed_computing
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-02-28T14:40:19'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Directory service - Wikipedia
-      url: https://en.wikipedia.org/wiki/Directory_service
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-02-28T14:40:42'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: is dns a directory service - Google Search
-      url: https://www.google.com/search?q=is%20dns%20a%20directory%20service
+      title: (71) Основы Active Directory Domain Services - YouTube
+      url: https://www.youtube.com/watch?v=hAyM1RCiCHM
       zoom: 1.3
   - active: true
     history:
+    - last_visited: '2021-03-23T20:58:54'
+      pinned: false
+      title: 'A Bit History of Internet/Chapter 6 : Peer-to-peer - Wikibooks, open
+        books for an open world'
+      url: https://en.wikibooks.org/wiki/A_Bit_History_of_Internet/Chapter_6_:_Peer-to-peer
+    - last_visited: '2021-03-23T21:05:42'
+      pinned: false
+      title: A Bit History of Internet - Wikibooks, open books for an open world
+      url: https://en.wikibooks.org/wiki/A_Bit_History_of_Internet
     - active: true
-      last_visited: '2021-02-28T14:40:48'
+      last_visited: '2021-03-23T21:06:24'
       pinned: false
       scroll-pos:
         x: 0
-        y: 1751
-      title: networking - Is DNS a directory service or directory lookup service?
-        - Super User
-      url: https://superuser.com/questions/1166602/is-dns-a-directory-service-or-directory-lookup-service#:~:text=The%20service%20that%20a%20Domain,a%20Directory%20of%20Domain%20Names.&text=Domain%20Name%20Servers%20(DNS)%20are,Internet%20Protocol%20(IP)%20addresses.
+        y: 0
+      title: 'A Bit History of Internet/Chapter 7 : Cloud-computing - Wikibooks, open
+        books for an open world'
+      url: https://en.wikibooks.org/wiki/A_Bit_History_of_Internet/Chapter_7_:_Cloud-computing
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-02-28T14:36:46'
+      last_visited: '2021-03-23T20:25:18'
       pinned: false
       scroll-pos:
         x: 0
-        y: 806
-      title: is www a subdomain - Google Search
-      url: https://www.google.com/search?q=is%20www%20a%20subdomain
+        y: 0
+      title: Desktop virtualization - Wikipedia
+      url: https://en.wikipedia.org/wiki/Desktop_virtualization
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T20:25:17'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 1285
+      title: windows - What's the difference between installing RDS the 'normal' way
+        and the special RDS deployment option? - Server Fault
+      url: https://serverfault.com/questions/721967/whats-the-difference-between-installing-rds-the-normal-way-and-the-special-rd#722059
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T20:25:18'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Path (computing) - Wikipedia
+      url: https://en.wikipedia.org/wiki/Path_(computing)
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T20:25:17'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: windows - What is the difference between \ and \\ in file path - Stack
+        Overflow
+      url: https://stackoverflow.com/questions/15969608/what-is-the-difference-between-and-in-file-path#:~:text=1%20Answer&text=Windows%20ignores%20double%20backslashes.,that%20indicates%20a%20UNC%20path.
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T20:25:18'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Path (computing) - Wikipedia
+      url: https://en.wikipedia.org/wiki/Path_(computing)#Universal_Naming_Convention
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T20:25:21'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Microsoft Developer Russia - YouTube
+      url: https://www.youtube.com/channel/UC_tHbdHKPVm2F49Zz4GiZbg/playlists
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T20:25:18'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Workgroup (computer networking) - Wikipedia
+      url: https://en.wikipedia.org/wiki/Workgroup_(computer_networking)
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T20:25:17'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Windows domain - Wikipedia
+      url: https://en.wikipedia.org/wiki/Windows_domain
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T20:25:19'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: workaround synonims - Google Search
+      url: https://www.google.com/search?q=workaround%20synonims
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T20:25:19'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Workaround Synonyms & Antonyms | Synonyms.com
+      url: https://www.synonyms.com/synonym/Workaround
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T20:25:17'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: vocaloid 2021 - YouTube
+      url: https://www.youtube.com/results?search_query=vocaloid+2021&sp=EgIYAg%253D%253D
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T20:25:18'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Domain Name System - Wikipedia
+      url: https://en.wikipedia.org/wiki/Domain_Name_System
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T20:25:19'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: What Is Recursive DNS? | Cloudflare
+      url: https://www.cloudflare.com/learning/dns/what-is-recursive-dns/
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T20:25:18'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Security identifiers in Windows - Windows Server | Microsoft Docs
+      url: https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/security-identifiers-in-windows
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T20:25:32'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: EPAM - Preparation for Tech Interview - barysdzemidziuk@gmail.com - Gmail
+      url: https://mail.google.com/mail/u/0/#inbox/FMfcgxwLswRTqQpJFbkSNzQzbmnFWVrP
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T20:25:18'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Reverse Lookup Zone - an overview | ScienceDirect Topics
+      url: https://www.sciencedirect.com/topics/computer-science/reverse-lookup-zone#:~:text=Reverse%20Lookup%20Zones,%2C%20or%20Active%20Directory%E2%80%94integrated.
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T20:25:20'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Stepik
+      url: https://stepik.org/license/591624
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-03-23T20:25:17'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Interview with Dennis Ritchie, Bjarne Stroustrup, James Gosling
+      url: http://www.gotw.ca/publications/c_family_interview.htm
       zoom: 1.3

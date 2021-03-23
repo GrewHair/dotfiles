@@ -88,6 +88,18 @@ define_keymap(re.compile("^Zotero$|^Zotero_float$|^zenity_hjkl$|^Python3$|^devto
     # K("C-LEFT_BRACE"): K("ESC"),
 }, "Vim normal mode bindings")
 
+define_keymap(re.compile("^found.$"), {  # this window class is quite dangerous (because it's obscure)
+    K("J"): K("DOWN"),
+    K("K"): K("UP"),
+    K("L"): K("RIGHT"),
+    K("H"): K("LEFT"),
+    K("C-J"): [K("DOWN")]*50,
+    K("C-K"): [K("UP")]*50,
+    K("C-L"): [K("RIGHT")]*50,
+    K("C-H"): [K("LEFT")]*50,
+    K("EQUAL"): K("Shift-EQUAL"),
+}, "Vim navigation for xzoom")
+
 define_keymap(re.compile("^Zotero$|^Zotero_float$|^zenity_hjkl$|^Python3$"), {
     K("C-J"): K("C-DOWN"),
     K("C-K"): K("C-UP"),
@@ -146,7 +158,7 @@ define_keymap(re.compile("^Zotero_float$"), {
     K("I"): set_wm_class_zotero_float_insert,
 }, "Zotero floating insert mode entry point")
 
-define_keymap(re.compile("Zotero|^zenity_hjkl|devtools"), {
+define_keymap(re.compile("Zotero|^zenity_hjkl|devtools|VirtualBox|Manager|Machine"), {
     K("C-I"): K("TAB"),
     K("C-M-I"): K("Shift-TAB"),
     K("C-n"): K("DOWN"),
@@ -156,6 +168,18 @@ define_keymap(re.compile("Zotero|^zenity_hjkl|devtools"), {
     K("C-j"): K("ENTER"),
     K("C-m"): K("ENTER"),
 }, "terminal-style bindings")
+
+define_keymap(re.compile("^Gitter$"), {
+    K("C-I"): K("TAB"),
+    K("C-M-I"): K("Shift-TAB"),
+    K("C-n"): K("PAGE_DOWN"),
+    K("C-p"): K("PAGE_UP"),
+    K("C-j"): K("ENTER"),
+    K("C-m"): K("ENTER"),
+    K("C-g"): K("ESC"),
+    K("C-Shift-SLASH"): K("C-M-Shift-M"),  # markdown help
+    K("C-O"): K("C-M-Shift-C"),  # focus chat input
+}, "gitter bindings")
 
 define_keymap(re.compile("devtools"), {
     K("C-f"): K("RIGHT"),
@@ -169,7 +193,28 @@ define_keymap(re.compile("devtools"), {
     K("C-u"): [K("Shift-HOME"), K("DELETE")],
     K("C-d"): K("DELETE"),
     K("C-k"): [K("Shift-END"), K("DELETE")],
-}, "Readline-style bindings for devtools")
+}, "Readline-style bindings for devtools and qt apps")
+
+define_keymap(re.compile("Manager|VirtualBox|Machine"), {
+    K("C-f"): K("RIGHT"),
+    K("C-b"): K("LEFT"),
+    K("C-e"): K("END"),
+    K("C-a"): K("HOME"),
+    K("C-h"): K("BACKSPACE"),
+    K("C-w"): K("C-BACKSPACE"),
+    K("C-u"): [K("Shift-HOME"), K("DELETE")],
+    K("C-d"): K("DELETE"),
+    K("C-k"): [K("Shift-END"), K("DELETE")],
+    K("C-g"): K("ESC"),
+}, "Readline-style bindings for virtualbox")
+
+define_keymap(re.compile("^Firefox$"), {
+    K("C-w"): K("C-BACKSPACE"),
+    K("C-n"): K("DOWN"),
+    K("C-p"): K("UP"),
+    K("C-j"): K("ENTER"),
+    K("C-m"): K("ENTER"),
+}, "Fix firefoxes inescapable shortcuts")
 
 define_keymap(re.compile("^Zotero_float_insert$"), {
     K("ESC"): [K("ESC"), set_wm_class_zotero_float],

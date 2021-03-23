@@ -1,0 +1,17 @@
+# zathurarc
+
+# key bindings
+
+# map = zoom in
+map s feedkeys ":exec /home/boris/bin/i3/hint.sh<Return>"
+map m feedkeys ":exec /home/boris/bin/i3/hint.sh<Return>"
+unmap t
+map tg feedkeys ":exec /home/boris/bin/i3/toggle_launch_gvim.sh<Return>"
+map gh feedkeys ":exec i3-msg focus left<Return>"
+map gj feedkeys ":exec i3-msg focus right<Return>"
+map gk feedkeys ":exec i3-msg focus left<Return>"
+map gl feedkeys ":exec i3-msg focus right<Return>"
+# map pu quit
+
+
+set selection-clipboard clipboard

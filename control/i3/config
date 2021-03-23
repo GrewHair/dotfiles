@@ -755,6 +755,8 @@ bindsym $mod+F3 exec /home/boris/bin/i3/restore_keys.sh
 
 # Float GVim
 for_window [class = "Gvim"] floating enable
+# Float Shutter
+for_window [class = "Shutter"] floating enable
 
 # I Don't really use this mode, thus I've deleted the keybinding for it to prevent accidents - but I'll keep the mode itself lying around for now!
 mode "mouse" {
@@ -887,6 +889,9 @@ for_window [class="Sxiv"] floating enable
 for_window [class="Pqiv"] floating enable
 for_window [class="pqiv_hint"] floating enable
 
+for_window [instance="VirtualBox Manager" class="Manager"] exec /home/boris/bin/i3/new-workspace.py virtualbox_manager, focus
+for_window [class="Machine"] exec /home/boris/bin/i3/new-workspace.py virtualbox_machine, focus
+for_window [class="VirtualBox Machine"] exec /home/boris/bin/i3/new-workspace.py virtualbox_machine, focus
 for_window [instance="__main__.py" class="qutebrowser"] exec /home/boris/bin/i3/new-workspace.py qutebrowser, focus
 for_window [instance="tiddlywiki" class="qutebrowser"] exec /home/boris/bin/i3/new-workspace.py tiddlywiki, focus
 # for_window [instance="mpv" class="qutebrowser"] exec /home/boris/bin/i3/new-workspace.py mpv, focus
@@ -918,6 +923,7 @@ mode "file → (e)ye3 • (f)ind" {
   bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
   # bindsym f exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec --no-startup-id $i3-wm.program.help; mode "default"
   bindsym f exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec $i3-wm.program.file_search; mode "default"
+  bindsym m exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [workspace="vifm"] focus; mode "default"
 }
 
 mode "background-move-to: 1?" {
@@ -949,6 +955,8 @@ mode "window-move-to: 1?" {
 }
 
 mode "focus: 1?" {
+  bindsym 0 exec /home/boris/bin/i3/2unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws10; mode "default"
+  bindsym 1 exec /home/boris/bin/i3/2unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws11; mode "default"
   bindsym 2 exec /home/boris/bin/i3/2unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws12; mode "default"
   bindsym 3 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws13; mode "default"
   bindsym 4 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws14; mode "default"
@@ -1043,7 +1051,7 @@ mode "rofi" {
   bindsym q exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec rofi -show calc -modi calc -normal-window; mode "default"
   bindsym u exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec rofimoji -f math mathematical_alphanumeric_symbols mathematical_operators miscellaneous_mathematical_symbols-a miscellaneous_mathematical_symbols-b supplemental_mathematical_operators arabic_mathematical_alphabetic_symbols greek_and_coptic hebrew --rofi-args="-normal-window"; mode "default"
   bindsym p exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec rofi -show top -modi top -normal-window; mode "default"
-  bindsym k exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec kill -9 $(ps -ef | rofi -dmenu -theme solarized -normal-window | awk '{print $2}'); mode "default"
+  bindsym k exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec kill -9 $(ps -ef | rofi -multi-select -dmenu -i -theme solarized -normal-window | awk '{print $2}'); mode "default"
   bindsym r exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec rofi -normal-window -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'; mode "default"
   bindsym c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/rofi-color-picker/rofi-color-picker/rofi-color-picker; mode "default"
   bindsym b exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/rofi-bibbrowser/rofi-bibbrowser; mode "default"
@@ -1093,7 +1101,9 @@ mode "SPC-" {
   bindsym e exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="Emacs27"] focus; mode "default"
   bindsym z exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="Zathura"] focus; mode "default"
   bindsym t exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [instance="tiddlywiki"] focus; mode "default"
-  bindsym m exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="mpv"] focus; mode "default"
+  bindsym g exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="Machine"] focus; mode "default"
+  bindsym y exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="mpv"] focus; mode "default"
+  bindsym m exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="Firefox"] focus; mode "default"
   bindcode 245 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec $i3-wm.program.launcher.app; mode "default"
   bindsym space exec /home/boris/bin/i3/unbypass-xkaysnail.sh; exec dunstctl close-all; focus mode_toggle; mode "default"
   bindsym F6 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to output DP-2; focus output DP-2; mode "default"
@@ -1135,6 +1145,7 @@ bindcode $mod+245 exec $i3-wm.program.launcher.app; mode "default"
 bindsym $mod+e move up
 bindsym $mod+d move down
 bindsym $mod+s move left
+bindsym $mod+a move left
 bindsym $mod+f move right
 bindsym $mod+bracketleft resize shrink width 3 px or 3 ppt
 bindsym $mod+bracketright resize grow width 3 px or 3 ppt
@@ -1170,3 +1181,5 @@ client.unfocused        $unfocused.color.border            $focused.color.backgr
 # Set size of the window to be teleported (because it often sets it to nearly the screen resolution
 # and I want to see the workspace behind
 for_window [con_mark="teleport"] resize set 800 600
+
+bindsym $mod+c exec xdotool key Caps_Lock

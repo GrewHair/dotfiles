@@ -83,3 +83,9 @@ set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
+nmap <F3> a
+imap <F3> <Nop>
+nmap <S-F3> A
+nmap <F2> A
+
+ab dc q!
