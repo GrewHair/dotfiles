@@ -641,6 +641,8 @@ before packages are loaded."
 
   ;; (global-set-key (kbd "C-x |") 'toggle-window-split)
 
+  (server-start)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will

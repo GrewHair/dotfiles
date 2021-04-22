@@ -24,6 +24,7 @@ rofi.font:                           Source Code Pro Medium 16
 rofi.show-icons:                     true
 ! "Terminal to use" Set from: Default
 ! rofi.terminal:                       rofi-sensible-terminal
+rofi.terminal:                         /home/boris/kitty/kitty/launcher/kitty
 ! "Ssh client to use" Set from: Default
 ! rofi.ssh-client:                     ssh
 ! "Ssh command to execute" Set from: Default
@@ -54,6 +55,7 @@ rofi.drun-icon-theme:                Arc
 ! rofi.cycle:                          true
 ! "Enable sidebar-mode" Set from: Default
 ! rofi.sidebar-mode:                   false
+rofi.sidebar-mode:                      true
 ! "Row height (in chars)" Set from: Default
 ! rofi.eh:                             1
 ! "Enable auto select mode" Set from: Default
@@ -268,8 +270,10 @@ rofi.kb-cancel:                      Escape,Control+g,Control+bracketleft,Contro
 ! rofi.ml-row-down:                    ScrollDown
 ! "Select hovered row" Set from: Default
 ! rofi.me-select-entry:                MousePrimary
+rofi.me-select-entry:                  MouseDPrimary
 ! "Accept hovered row" Set from: Default
 ! rofi.me-accept-entry:                MouseDPrimary
+rofi.me-accept-entry:                  MousePrimary
 ! "Accept hovered row with custom action" Set from: Default
 ! rofi.me-accept-custom:               Control+MouseDPrimary
 

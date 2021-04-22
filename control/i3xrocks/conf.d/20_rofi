@@ -1,0 +1,5 @@
+# Rofi
+#
+# Launch Rofi with a click
+[rofi]
+interval=1

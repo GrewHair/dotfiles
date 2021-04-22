@@ -159,6 +159,7 @@ define_keymap(re.compile("^Zotero_float$"), {
 }, "Zotero floating insert mode entry point")
 
 define_keymap(re.compile("Zotero|^zenity_hjkl|devtools|VirtualBox|Manager|Machine"), {
+# define_keymap(re.compile("Zotero|^zenity_hjkl|VirtualBox|Manager|Machine"), {
     K("C-I"): K("TAB"),
     K("C-M-I"): K("Shift-TAB"),
     K("C-n"): K("DOWN"),
@@ -168,6 +169,17 @@ define_keymap(re.compile("Zotero|^zenity_hjkl|devtools|VirtualBox|Manager|Machin
     K("C-j"): K("ENTER"),
     K("C-m"): K("ENTER"),
 }, "terminal-style bindings")
+
+# TODO this keymap and the previous one obviously should be merged. The problem is M-e, M-a
+# TODO decide what to do with M-e M-a (they likely interfere with the gui accelerators)
+define_keymap(re.compile("jetbrains-idea|jetbrains-pycharm"), {
+    K("C-I"): K("TAB"),
+    K("C-M-I"): K("Shift-TAB"),
+    # K("C-n"): K("DOWN"),
+    # K("C-p"): K("UP"),
+    # K("C-j"): K("ENTER"),
+    K("C-m"): K("ENTER"),
+}, "intellij")
 
 define_keymap(re.compile("^Gitter$"), {
     K("C-I"): K("TAB"),

@@ -19,13 +19,13 @@ if respect_layout == 'yes':
     exit()
 
 # Programs that should be contained in a single workspace each
-prevent_multi_ws = ['zathura', 'zotero', 'palemoon', 'mpv', 'virtualbox_machine']
+prevent_multi_ws = ['zathura', 'zotero', 'palemoon', 'firefox', 'mpv', 'virtualbox_machine', 'pycharm', 'idea']
 
 # Programs (typically from the list above), to which additionally the tabbed layout should be applied
 tabbed = ['zathura', 'mpv', 'virtualbox_machine']
 
 # Programs that should be launched in background (i.e., without focusing their workspace)
-prevent_focus = ['mpv']
+prevent_focus = []   # prevent_focus = ['mpv']
 
 # Get name of program to launch
 try:

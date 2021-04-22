@@ -665,6 +665,7 @@ config.bind('g0', 'tab-focus -1', mode='normal')
 config.set('tabs.close_mouse_button_on_bar', 'close-current')
 
 config.bind('g.','set-cmd-text :')
+config.bind('g,','set-cmd-text :')
 config.bind('go','open -r -t ;; set-cmd-text :')
 
 config.bind('<Ctrl-S>5', 'height=50%', mode='command')
@@ -910,3 +911,5 @@ c.keyhint.blacklist.append('<Space>8')
 c.keyhint.blacklist.append('<Space>9')
 c.keyhint.blacklist.append('<Space>$')
 c.keyhint.blacklist.append('<Space>`')
+
+c.aliases['bm'] = 'quit --save'

@@ -1,0 +1,5 @@
+# Kaldi status
+#
+# Displays current keyboard layout.
+[kaldi-status]
+interval=1

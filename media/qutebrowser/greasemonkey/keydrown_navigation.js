@@ -35,7 +35,7 @@ kd.K.down(function () {
 kd.D.down(function () {
   if (window.qutebrowserMode === 'normal') {
     window.scrollBy({
-      top: 80,
+      top: 40,
       left: 0,
       behavior: 'smooth'});
   }
@@ -44,7 +44,7 @@ kd.D.down(function () {
 kd.E.down(function () {
   if (window.qutebrowserMode === 'normal') {
     window.scrollBy({
-      top: -80,
+      top: -40,
       left: 0,
       behavior: 'smooth'});
   }

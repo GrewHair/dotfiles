@@ -1,11 +1,13 @@
 <span color="#BA68A8">SPC</span> <span color="#00E676">→</span> rofi drun	       <span color="#BA68A8">`,1..9</span> <span color="#00E676">→</span> focus workspace 1..19    <span color="#BA68A8">l</span> <span color="#00E676">→</span> <span color="#82B1FF">+layout</span>                     <span color="#BA68A8">v</span> <span color="#00E676">→</span> <span color="#82B1FF">split |</span>
   <span color="#BA68A8">'</span> <span color="#00E676">→</span> open shell            <span color="#BA68A8">q</span> <span color="#00E676">→</span> focus qutebrowser        <span color="#BA68A8">b</span> <span color="#00E676">→</span> <span color="#82B1FF">+buffers/background</span>         <span color="#BA68A8">s</span> <span color="#00E676">→</span> <span color="#82B1FF">split --</span>
-  <span color="#BA68A8">!</span> <span color="#00E676">→</span> shell cmd             <span color="#BA68A8">e</span> <span color="#00E676">→</span> focus emacs              <span color="#BA68A8">f</span> <span color="#00E676">→</span> <span color="#82B1FF">+Files</span>                      <span color="#BA68A8">c</span> <span color="#00E676">→</span> cycle Scratchpads
+  <span color="#BA68A8">!</span> <span color="#00E676">→</span> shell cmd             <span color="#BA68A8">e</span> <span color="#00E676">→</span> focus emacs              <span color="#BA68A8">f</span> <span color="#00E676">→</span> <span color="#82B1FF">+Files</span>                      <span color="#BA68A8">[</span> <span color="#00E676">→</span> cycle Scratchpads
   <span color="#BA68A8">r</span> <span color="#00E676">→</span> <span color="#82B1FF">+rofi/registers/rings</span> <span color="#BA68A8">z</span> <span color="#00E676">→</span> focus zathura            <span color="#BA68A8">w</span> <span color="#00E676">→</span> <span color="#82B1FF">+windows/workspaces</span>       <span color="#BA68A8">spc</span> <span color="#00E676">→</span> focus floating/tiling
   <span color="#BA68A8">p</span> <span color="#00E676">→</span> <span color="#82B1FF">+playerctl</span>            <span color="#BA68A8">g</span> <span color="#00E676">→</span> focus guest machine      <span color="#BA68A8">.</span> <span color="#00E676">→</span> transient-state
 <span color="#BA68A8">TAB</span> <span color="#00E676">→</span> Last workspace        <span color="#BA68A8">t</span> <span color="#00E676">→</span> focus tiddlywiki    <span color="#BA68A8">F6..F8</span> <span color="#00E676">→</span> mv wkspc to out left..right
   <span color="#BA68A8">k</span> <span color="#00E676">→</span> keynav                <span color="#BA68A8">y</span> <span color="#00E676">→</span> focus youtube (mpv)
                             <span color="#BA68A8">m</span> <span color="#00E676">→</span> focus mozilla
+                            <span color="#BA68A8">i</span> <span color="#00E676">→</span> focus idea
+                            <span color="#BA68A8">c</span> <span color="#00E676">→</span> focus pycharm
 
 SPC-
 

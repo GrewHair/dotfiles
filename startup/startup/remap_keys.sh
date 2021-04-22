@@ -12,11 +12,16 @@ xkeysnail /home/boris/.config/xkeysnail/xkeysnail-config-builtin.py
 sleep 4
 
 # Add (multipurpose) hyper modifier to the F3 button
+# xmodmap -e 'clear mod3'
+# xmodmap -e 'keycode 247 = F4'
+# xmodmap -e 'keycode 70 = Hyper_R'
+# xmodmap -e 'add mod3 = Hyper_R'
+# xcape -e 'Hyper_R=F4'
 xmodmap -e 'clear mod3'
-xmodmap -e 'keycode 247 = F3'
-xmodmap -e 'keycode 69 = Hyper_R'
+xmodmap -e 'keycode 247 = F6'
+xmodmap -e 'keycode 72 = Hyper_R'
 xmodmap -e 'add mod3 = Hyper_R'
-xcape -e 'Hyper_R=F3'
+xcape -e 'Hyper_R=F6'
 
 # fix things with xmodmap that xkeysnail can't handle
 #xmodmap -e 'clear shift'

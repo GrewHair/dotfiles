@@ -6,224 +6,121 @@ windows:
   tabs:
   - history:
     - active: true
-      last_visited: '2021-03-23T20:25:17'
+      last_visited: '2021-04-22T20:37:45'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: 'DevOps-инженеры: материалы для самоподготовки | training.by'
-      url: https://training.by/#!/News/108?lang=ru
+      title: 'Mini review: The Acme editor on Debian on Windows - DonationCoder.com'
+      url: https://www.donationcoder.com/forum/index.php?topic=45547.0
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-03-23T20:25:17'
+      last_visited: '2021-04-22T20:37:45'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: (71) Основы Active Directory Domain Services - YouTube
-      url: https://www.youtube.com/watch?v=hAyM1RCiCHM
+      title: How to use Ansible synchronization GitHub - Programmer Sought
+      url: https://www.programmersought.com/article/55592782551/
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-04-22T20:37:45'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: voco/INSTALL.md at master · lyncisdev/voco
+      url: https://github.com/lyncisdev/voco/blob/master/INSTALL.md
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-04-22T20:37:45'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: python - How to schedule and cancel tasks with asyncio - Stack Overflow
+      url: https://stackoverflow.com/questions/40016501/how-to-schedule-and-cancel-tasks-with-asyncio#:~:text=In%20other%20words%2C%20just%20pass,you%20need%20to%20stop%20it.
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-04-22T20:37:45'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Actions sub-package — Dragonfly 0.30.1 documentation
+      url: https://dragonfly2.readthedocs.io/en/latest/actions.html
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-04-22T20:37:45'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Paravirtualization - Wikipedia
+      url: https://en.wikipedia.org/wiki/Paravirtualization
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-04-22T20:37:45'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Why you should use named pipes on Linux | Network World
+      url: https://www.networkworld.com/article/3251853/why-use-named-pipes-on-linux.html
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-04-22T20:37:45'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Getting Started with Voice Driven Development - whale quench
+      url: https://whalequench.club/blog/2019/09/03/learning-to-speak-code.html
       zoom: 1.3
   - active: true
     history:
-    - last_visited: '2021-03-23T20:58:54'
+    - last_visited: '2021-04-22T20:38:51'
       pinned: false
-      title: 'A Bit History of Internet/Chapter 6 : Peer-to-peer - Wikibooks, open
-        books for an open world'
-      url: https://en.wikibooks.org/wiki/A_Bit_History_of_Internet/Chapter_6_:_Peer-to-peer
-    - last_visited: '2021-03-23T21:05:42'
+      title: linux format drives - Google Search
+      url: https://www.google.com/search?q=linux%20format%20drives
+    - last_visited: '2021-04-22T20:41:41'
       pinned: false
-      title: A Bit History of Internet - Wikibooks, open books for an open world
-      url: https://en.wikibooks.org/wiki/A_Bit_History_of_Internet
+      title: linux destroy data on disk - Google Search
+      url: https://www.google.com/search?q=linux+destroy+data+on+disk&sxsrf=ALeKk01A9tzE9csUonhrlCjGairc7FCb-w%3A1619113130478&ei=qrSBYM_QHPDhrgSV6K_4Bw&oq=linux++destroy+data&gs_lcp=Cgdnd3Mtd2l6EAMYADICCAA6BwgjEOoCECc6BAgjECc6BAgAEEM6BwghEAoQoAE6BggAEBYQHjoFCCEQoAFQuZYHWMPpCWCEpApoCXACeAWAAb8BiAGIE5IBBTEwLjEymAEAoAEBqgEHZ3dzLXdperABCsABAQ&sclient=gws-wiz
     - active: true
-      last_visited: '2021-03-23T21:06:24'
+      last_visited: '2021-04-22T20:41:54'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 360
+      title: How to wipe a hard drive clean in Linux | How To Wiki | Fandom
+      url: https://how-to.fandom.com/wiki/How_to_wipe_a_hard_drive_clean_in_Linux#:~:text=Wiping%20the%20entire%20disk,-This%20will%20overwrite&text=Use%20the%20sudo%20command%20as,with%20the%20target%20drive%20letter.
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-04-22T20:59:06'
+      original-url: http://www.marksanborn.net/howto/wiping-a-hard-drive-with-dd/
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: 'A Bit History of Internet/Chapter 7 : Cloud-computing - Wikibooks, open
-        books for an open world'
-      url: https://en.wikibooks.org/wiki/A_Bit_History_of_Internet/Chapter_7_:_Cloud-computing
+      title: Wiping a Hard Drive with DD
+      url: https://www.marksanborn.net/howto/wiping-a-hard-drive-with-dd/
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-03-23T20:25:18'
+      last_visited: '2021-04-22T20:39:48'
       pinned: false
       scroll-pos:
         x: 0
-        y: 0
-      title: Desktop virtualization - Wikipedia
-      url: https://en.wikipedia.org/wiki/Desktop_virtualization
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-03-23T20:25:17'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 1285
-      title: windows - What's the difference between installing RDS the 'normal' way
-        and the special RDS deployment option? - Server Fault
-      url: https://serverfault.com/questions/721967/whats-the-difference-between-installing-rds-the-normal-way-and-the-special-rd#722059
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-03-23T20:25:18'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Path (computing) - Wikipedia
-      url: https://en.wikipedia.org/wiki/Path_(computing)
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-03-23T20:25:17'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: windows - What is the difference between \ and \\ in file path - Stack
-        Overflow
-      url: https://stackoverflow.com/questions/15969608/what-is-the-difference-between-and-in-file-path#:~:text=1%20Answer&text=Windows%20ignores%20double%20backslashes.,that%20indicates%20a%20UNC%20path.
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-03-23T20:25:18'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Path (computing) - Wikipedia
-      url: https://en.wikipedia.org/wiki/Path_(computing)#Universal_Naming_Convention
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-03-23T20:25:21'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Microsoft Developer Russia - YouTube
-      url: https://www.youtube.com/channel/UC_tHbdHKPVm2F49Zz4GiZbg/playlists
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-03-23T20:25:18'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Workgroup (computer networking) - Wikipedia
-      url: https://en.wikipedia.org/wiki/Workgroup_(computer_networking)
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-03-23T20:25:17'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Windows domain - Wikipedia
-      url: https://en.wikipedia.org/wiki/Windows_domain
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-03-23T20:25:19'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: workaround synonims - Google Search
-      url: https://www.google.com/search?q=workaround%20synonims
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-03-23T20:25:19'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Workaround Synonyms & Antonyms | Synonyms.com
-      url: https://www.synonyms.com/synonym/Workaround
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-03-23T20:25:17'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: vocaloid 2021 - YouTube
-      url: https://www.youtube.com/results?search_query=vocaloid+2021&sp=EgIYAg%253D%253D
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-03-23T20:25:18'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Domain Name System - Wikipedia
-      url: https://en.wikipedia.org/wiki/Domain_Name_System
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-03-23T20:25:19'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: What Is Recursive DNS? | Cloudflare
-      url: https://www.cloudflare.com/learning/dns/what-is-recursive-dns/
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-03-23T20:25:18'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Security identifiers in Windows - Windows Server | Microsoft Docs
-      url: https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/security-identifiers-in-windows
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-03-23T20:25:32'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: EPAM - Preparation for Tech Interview - barysdzemidziuk@gmail.com - Gmail
-      url: https://mail.google.com/mail/u/0/#inbox/FMfcgxwLswRTqQpJFbkSNzQzbmnFWVrP
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-03-23T20:25:18'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Reverse Lookup Zone - an overview | ScienceDirect Topics
-      url: https://www.sciencedirect.com/topics/computer-science/reverse-lookup-zone#:~:text=Reverse%20Lookup%20Zones,%2C%20or%20Active%20Directory%E2%80%94integrated.
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-03-23T20:25:20'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Stepik
-      url: https://stepik.org/license/591624
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-03-23T20:25:17'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Interview with Dennis Ritchie, Bjarne Stroustrup, James Gosling
-      url: http://www.gotw.ca/publications/c_family_interview.htm
+        y: 2863
+      title: Linux Hard Disk Format Command - nixCraft
+      url: https://www.cyberciti.biz/faq/linux-disk-format/
       zoom: 1.3

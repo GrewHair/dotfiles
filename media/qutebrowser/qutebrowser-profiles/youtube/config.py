@@ -1,7 +1,7 @@
 import subprocess
 import os
 from qutebrowser.api import interceptor
-# from itertools import product
+from itertools import product
 # from random import shuffle
 
 # flake8: noqa
@@ -249,9 +249,6 @@ c.bindings.key_mappings['<Ctrl-J>'] = '<Return>'
 c.bindings.key_mappings['<Ctrl-M>'] = '<Return>'
 c.bindings.key_mappings['<Enter>'] = '<Return>'
 
-# Merge windows
-config.bind('__', 'set-cmd-text -s :tab-take ;; later 10 fake-key --global <Tab> ;; later 10 fake-key --global <Return>')
-
 # The "dunder" bindings
 
 # Command chaining (_ = dunder, c = command chain, next two digits = id of chain, last digit = id of command in chain)
@@ -299,13 +296,6 @@ config.bind('_d44yts', 'hint yt-skip-ad')
 # Aliases
 c.aliases['yt-hide'] = 'jseval document.querySelector("#container.style-scope.ytd-masthead").style.display="none";'
 c.aliases['yt-show'] = 'jseval document.querySelector("#container.style-scope.ytd-masthead").style.display="block";'
-c.aliases['stylesheets-gruvbox'] = 'set content.user_stylesheets "~/.local/share/qutebrowser/stylesheets/solarized-everything-css/css/gruvbox/gruvbox-all-sites.css"'
-c.aliases['stylesheets-darculized'] = 'set content.user_stylesheets "~/.local/share/qutebrowser/stylesheets/solarized-everything-css/css/darculized/darculized-all-sites.css"'
-c.aliases['stylesheets-solarized-dark'] = 'set content.user_stylesheets "~/.local/share/qutebrowser/stylesheets/solarized-everything-css/css/solarized-dark/solarized-dark-all-sites.css"'
-c.aliases['stylesheets-solarized-light'] = 'set content.user_stylesheets "~/.local/share/qutebrowser/stylesheets/solarized-everything-css/css/solarized-light/solarized-light-all-sites.css"'
-c.aliases['stylesheets-apprentice'] = 'set content.user_stylesheets "~/.local/share/qutebrowser/stylesheets/solarized-everything-css/css/apprentice/apprentice-all-sites.css"'
-c.aliases['stylesheets-off'] = 'set content.user_stylesheets ""'
-c.aliases['merge-windows'] = 'fake-key --global _c020_c020_c020_c020'
 c.aliases['noh'] = 'search'
 c.aliases['bindings'] = 'open qute://bindings/'
 c.aliases['bookmarks'] = 'open qute://bookmarks/'
@@ -317,25 +307,14 @@ c.aliases['buku-load'] = 'spawn buku_run'
 c.url.searchengines['google'] = "https://www.google.com/search?q={}"
 c.url.searchengines['youtube'] = "https://www.youtube.com/search?q={}"
 c.url.searchengines['reddit'] = "https://www.reddit.com/search?q={}"
-c.url.searchengines['stackoverflow'] = "https://www.stackoverflow.com/search?q={}"
-c.url.searchengines['math.stackexchange'] = "https://math.stackexchange.com/search?q={}"
-c.url.searchengines['askubuntu'] = "https://askubuntu.com/search?q={}"
-c.url.searchengines['wikipedia'] = "https://wikipedia.org/wiki/{}"
-c.url.searchengines['emuparadise'] = "https://www.emuparadise.me/roms/search.php?query={}"
-c.url.searchengines['python.org'] = "https://www.python.org/search/?q={}"
-c.url.searchengines['greasespot'] = "https://wiki.greasespot.net/index.php?title=Special%3ASearch&search={}&go=Go"
-c.url.searchengines['greasyfork'] = "https://greasyfork.org/en/scripts?q={}"
-c.url.searchengines['openuserjs'] = "https://openuserjs.org/?q={}"
-c.url.searchengines['svg-wikimedia'] = "https://commons.wikimedia.org/w/index.php?sort=relevance&search={}+filemime%3Aimage%2Fsvg%2Bxml&title=Special:Search&profile=advanced&fulltext=1&advancedSearch-current=%7B%22fields%22%3A%7B%22filetype%22%3A%22image%2Fsvg%2Bxml%22%7D%7D&ns0=1&ns1=1&ns2=1&ns3=1&ns4=1&ns5=1&ns6=1&ns7=1&ns8=1&ns9=1&ns10=1&ns11=1&ns12=1&ns13=1&ns14=1&ns15=1&ns100=1&ns101=1&ns102=1&ns103=1&ns104=1&ns105=1&ns106=1&ns107=1&ns460=1&ns461=1&ns486=1&ns487=1&ns490=1&ns491=1&ns828=1&ns829=1&ns1198=1&ns1199=1&ns2300=1&ns2301=1&ns2302=1&ns2303=1"
-c.url.searchengines['github'] = "https://github.com/search?q={}"
-c.url.searchengines['translate:ru-to-en'] = "https://translate.google.com/#view=home&op=translate&sl=ru&tl=en&text={}"
-c.url.searchengines['translate:en-to-ru'] = "https://translate.google.com/#view=home&op=translate&sl=en&tl=ru&text={}"
 
 # Characters used for hint strings
 # c.hints.chars = "sfgwrtuiocvnm.23489"
 c.hints.chars = "sfgwrtuiocvnm23489"
 
 # Add hints selectors
+# c.hints.selectors['nonvideos'] = ['area', 'textarea', 'select', 'input:not([type="hidden")]', 'button', 'frame', 'iframe', 'img', 'link', 'summary', '[contenteditable:not([contenteditable="false"])]', '[onclick]', '[onmousedown]', '[role="link"]', '[role="option"]', '[role="button"]', '[ng-click]', '[ngClick]', '[data-ng-click]', '[x-ng-click]', '[tabindex]',]
+c.hints.selectors['nonvideos'] = ['paper-item', 'paper-ripple', 'tp-yt-paper-tab', 'ytd-search-filter-renderer a', 'area', 'textarea', 'select', 'button', 'frame', 'iframe', 'link', 'summary',]
 c.hints.selectors['paragraphs'] = ['div, span, p, ol, ul, li, h1, h2, h3, h4, h5, h6, pre, td, dt, dd']
 c.hints.selectors['alll'] = ['*']
 c.hints.selectors['yt'] = ['yt-formatted-string']
@@ -344,7 +323,6 @@ c.hints.selectors['all'].append('yt-formatted-string')
 c.hints.selectors['all'].append('h3 span')
 c.hints.selectors['all'].append('span.qt_read_more')   # the fucking quora's read button!
 c.hints.selectors['tables'] = ['table']
-c.hints.selectors['pre'] = ['pre']
 c.hints.selectors['folder'] = ['svg.tc-image-folder']
 c.hints.selectors['select'] = ['select']
 c.hints.selectors['frame'] = [ 'div', 'header', 'section', 'nav']
@@ -353,7 +331,6 @@ c.hints.selectors['header'] = ['header']
 c.hints.selectors['section'] = ['section']
 c.hints.selectors['nav'] = ['nav']
 c.hints.selectors['yt-skip-ad'] = ['button.ytp-ad-skip-button']
-c.hints.selectors['iframe'] = ['iframe#mainframe']
 c.hints.selectors['text'] = ['#text']
 config.bind('a', 'spawn /home/boris/.local/share/qutebrowser/userscripts/run-keynav.sh')
 
@@ -362,10 +339,9 @@ c.url.open_base_url = True
 
 config.set('tabs.mode_on_change', 'restore')
 config.set('tabs.last_close', 'close')
-config.set('tabs.max_width', 200)
 config.set('downloads.position', 'bottom')
 
-c.messages.timeout = 3000
+c.messages.timeout = 10000
 c.content.autoplay = False
 c.input.partial_timeout = 0
 c.input.insert_mode.auto_load = False
@@ -380,16 +356,8 @@ c.hints.auto_follow = 'always'
 c.input.forward_unbound_keys = 'all'
 
 config.bind(';s', 'hint paragraphs userscript run-mimic.sh')
-config.bind(';S', 'spawn -d /home/boris/bin/i3/hint-qutebrowser.sh')
-config.bind('m', 'hint paragraphs userscript run-mimic.sh')
+# config.bind('m', 'hint paragraphs userscript run-mimic.sh')
 
-config.bind(';p', 'hint pre userscript yank-pre.sh')
-config.bind(';T', 'hint tables userscript yank-table.sh')
-
-config.bind('..', 'repeat-command')
-
-config.bind(';m', 'hint links spawn --detach mpv --x11-name=mpv {hint-url}')
-config.bind(';x', 'spawn youtube-dl -o "/media/boris/d/Smth/%(title)s-%(id)s.%(ext)s" {url}')
 config.bind(';M', 'spawn -d mpv --x11-name=mpv {url}')
 config.bind(';P', 'spawn -d palemoon {url}')
 config.bind(';F', 'spawn -d firefox {url}')
@@ -405,11 +373,6 @@ config.bind('cc', 'set-cmd-text -s :open')
 config.bind('A', 'set-cmd-text -s :open -b')
 config.bind('$', 'set-cmd-text -s :open -t')
 
-config.bind('cu', 'edit-url')
-
-config.bind('wH', 'back -w')
-config.bind('wL', 'forward -w')
-config.bind('wgu', 'navigate up -w')
 
 # Insert mode page navigation
 config.bind('<Ctrl-E>', 'scroll-page 0 0.05', mode='insert')
@@ -457,62 +420,11 @@ config.bind('<Ctrl-Y>', 'scroll-page 0 -0.05')
 #config.bind('<Ctrl-J>', 'selection-follow', mode='normal')
 #config.bind('<Ctrl-J>', 'prompt-accept', mode='prompt')
 #config.bind('<Ctrl-M>', 'prompt-accept', mode='prompt')
-config.bind('<Return>', 'spawn /home/boris/.local/share/qutebrowser/userscripts/IM_return_dispatcher.sh {url:host} {url:port}', mode='insert')
-
-# Tab switching
-config.bind('<Ctrl-.>', 'tab-move +')
-config.bind('<Ctrl-,>', 'tab-move -')
-config.bind('<Ctrl-.>', 'tab-move +', mode='insert')
-config.bind('<Ctrl-,>', 'tab-move -', mode='insert')
-config.bind('<Ctrl-.>', 'tab-move +', mode='prompt')
-config.bind('<Ctrl-,>', 'tab-move -', mode='prompt')
-
-config.bind('<Alt-J>', 'tab-next', mode='normal')
-config.bind('<Alt-K>', 'tab-prev', mode='normal')
-config.bind('<Alt-H>', 'tab-prev', mode='normal')
-config.bind('<Alt-L>', 'tab-next', mode='normal')
-config.bind('<Alt-J>', 'tab-next', mode='insert')
-config.bind('<Alt-K>', 'tab-prev', mode='insert')
-config.bind('<Alt-H>', 'tab-prev', mode='insert')
-config.bind('<Alt-L>', 'tab-next', mode='insert')
-config.bind('<Alt-K>', 'tab-prev', mode='prompt')
-config.bind('<Alt-L>', 'tab-next', mode='prompt')
-
-for key_no in range(10):
-    for mode in ['normal', 'insert', 'prompt']:
-        tab_to_focus = " " + str(key_no) if key_no != 0 else " -1"
-        tab_to_move = " " + str(key_no) if key_no != 0 else ""
-        key_to_focus = '<Ctrl-{}>'.format(key_no)
-        key_to_move = '<Alt-{}>'.format(key_no)
-        command_to_focus = 'tab-focus{}'.format(tab_to_focus)
-        command_to_move = 'tab-move{}'.format(tab_to_move)
-        config.bind(key_to_focus, command_to_focus, mode=mode)
-        config.bind(key_to_move, command_to_move, mode=mode)
-
+config.bind('<Return>', 'fake-key <Return> ;; fake-key -g <Escape>', mode='insert')
 
 # Tabs
-config.bind('>', 'tab-move +')
-config.bind('<<', 'tab-move -')
-config.bind('><', 'tab-move')
-config.bind('tG', 'set-cmd-text -s :tab-give')
-config.bind('tT', 'set-cmd-text -s :tab-take')
-config.bind('typ', 'tab-clone')
-config.bind('tk', 'set tabs.position top')
-config.bind('tj', 'set tabs.position bottom')
-config.bind('th', 'set tabs.position left')
-config.bind('tl', 'set tabs.position right')
-config.bind('tt', 'config-cycle -p tabs.show always switching')
-config.bind('tw', 'open -r -t http://127.0.0.1:8081/')
-config.bind('t--', 'set-cmd-text -s :set tabs.width')
-config.bind('tH', 'back -t')
-config.bind('tL', 'forward -t')
-config.bind('tgu', 'navigate up -t')
-config.bind('<Space>d', 'tab-close')
 config.bind('x', 'tab-close')
-config.bind('F3', 'tab-close')
-config.bind('s', 'spawn /home/boris/.local/share/qutebrowser/userscripts/NM_s_dispatcher.sh {url:host} {url:port}')  # special hinting for tiddlywiki
 config.bind('X', 'tab-close -o')
-config.bind('!x', 'tab-only')
 
 # Downloads
 config.bind('Du', 'download-cancel')
@@ -539,7 +451,6 @@ config.bind('<Escape>', 'clear-keychain ;; search ;; fullscreen --leave ;; fake-
 
 config.bind('<Ctrl-C><Ctrl-V>', 'edit-text', mode='insert')
 
-config.bind('tn', 'config-cycle -p input.spatial_navigation true false', mode='normal')
 config.bind('gg', 'scroll-to-perc 0')
 config.bind('G', 'scroll-to-perc 100')
 
@@ -549,14 +460,15 @@ config.bind('<Ctrl-Shift-V>', 'mode-enter passthrough')
 config.bind('<Ctrl-G>', 'clear-keychain ;; search ;; fullscreen --leave ;; fake-key --global _c020_c021', mode='normal')
 config.bind('<Ctrl-G>', 'mode-leave', mode='caret')
 config.bind('<Ctrl-G>', 'mode-leave', mode='command')
-config.bind('<Ctrl-G>', 'mode-leave', mode='hint')
+config.bind('<Ctrl-G>', 'clear-messages ;; mode-leave', mode='hint')
+config.bind('<Escape>', 'clear-messages ;; mode-leave', mode='hint')
 config.bind('<Ctrl-G>', 'mode-leave', mode='prompt')
 config.bind('<Ctrl-G>', 'mode-leave', mode='register')
 config.bind('<Ctrl-G>', 'mode-leave', mode='yesno')
 
 # Evil-escape
 config.bind('jk', 'mode-leave', mode='yesno')
-config.bind('jk', 'mode-leave', mode='hint')
+config.bind('jk', 'clear-messages ;; mode-leave', mode='hint')
 
 config.bind('<Ctrl-O>', 'fake-key <Return> ;; fake-key <Up> ;; fake-key <End>', mode='insert')
 config.bind('<Ctrl-I>', 'fake-key <Tab>', mode='insert')  # tab (bash/ASCII ^I)
@@ -592,19 +504,6 @@ config.bind('<Ctrl-Alt-I>', 'completion-item-focus prev', mode='command')
 
 config.bind('=', 'zoom-in', mode='normal')
 
-config.bind('gh', 'tab-prev', mode='normal')
-config.bind('gj', 'tab-next', mode='normal')
-config.bind('gk', 'tab-prev', mode='normal')
-config.bind('gl', 'tab-next', mode='normal')
-config.bind('<Space>h', 'tab-prev', mode='normal')
-config.bind('<Space>j', 'tab-next', mode='normal')
-config.bind('<Space>k', 'tab-prev', mode='normal')
-config.bind('<Space>l', 'tab-next', mode='normal')
-config.bind('<Ctrl-H>', 'tab-prev', mode='normal')
-config.bind('<Ctrl-J>', 'tab-next', mode='normal')
-config.bind('<Ctrl-K>', 'tab-prev', mode='normal')
-config.bind('<Ctrl-L>', 'tab-next', mode='normal')
-
 config.bind('y', 'yank selection --keep', mode='caret')
 config.bind('<Ctrl-Y>', 'yank selection', mode='caret')
 
@@ -612,7 +511,6 @@ config.set('tabs.close_mouse_button_on_bar', 'close-current')
 
 config.bind('g.','set-cmd-text :')
 config.bind('g,','set-cmd-text :')
-config.bind('<Space><Space>','set-cmd-text :')
 config.bind('go','open -r -t ;; set-cmd-text :')
 
 config.bind('<Ctrl-S>5', 'height=50%', mode='command')
@@ -627,14 +525,6 @@ c.aliases['shrink'] = 'config-cycle completion.shrink true false'
 config.bind('<Ctrl-W>', 'rl-backward-kill-word', mode='command')
 config.bind('<Ctrl-W>', 'rl-backward-kill-word ;; rl-backward-kill-word', mode='prompt')
 
-config.bind(",",'spawn -d /home/boris/.local/share/qutebrowser/userscripts/NM_comma_dispatcher.sh {url:host} {url:port}')
-
-# this is an (working) example of how you can make complex commands more readable
-# config.bind('a', 'spawn\
-#                   xdotool\
-#                   type\
-#                   _dtw')
-
 config.bind(',', 'mode-leave ;; spawn /home/boris/.local/share/qutebrowser/userscripts/NM_comma_dispatcher.sh {url:host} {url:port}', mode='hint')
 config.bind('jt', "config-cycle colors.hints.bg 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 247, 133, 0.8), stop:1 rgba(255, 197, 66, 0.8))' 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 247, 133, 0.2), stop:1 rgba(255, 197, 66, 0.2))' ;; config-cycle colors.hints.fg black 'rgba(0, 0, 0, 0.2)", mode='hint')
 
@@ -643,75 +533,13 @@ config.bind('i', 'mode-enter insert ;; jseval -q -w main window.qutebrowserMode 
 config.bind('gi', 'hint inputs --first ;; jseval -q -w main window.qutebrowserMode = "insert";')
 config.bind(';t', 'fake-key --global _c030_c031')
 
-config.bind('td', 'spawn --userscript /home/boris/.local/share/qutebrowser/userscripts/toggle-keydrown.sh')
 
-config.bind('<\><Space>', 'space')
-c.aliases['space'] = 'fake-key <Space>'
-
-config.bind('wi', 'fake-key --global _c010 ;; fake-key --global _c013 ;; fake-key --global _c011')
+c.aliases['dt'] = 'fake-key --global _c010 ;; fake-key --global _c013 ;; fake-key --global _c011'
+c.aliases['open-devtools'] = 'fake-key --global _c010 ;; fake-key --global _c013 ;; fake-key --global _c011'
 
 # smacemacs-style bindings
-config.bind('<Space>bb', 'list_tabs')
 c.aliases['list_tabs'] = 'set-cmd-text -s :tab-select'
-config.bind('<Space>01', 'tab-focus 1')
-config.bind('<Space>q', 'tab-focus 1')
-config.bind('<Space>02', 'tab-focus 2')
-config.bind('<Space>3', 'tab-focus 3')
-config.bind('<Space>4', 'tab-focus 4')
-config.bind('<Space>5', 'tab-focus 5')
-config.bind('<Space>6', 'tab-focus 6')
-config.bind('<Space>7', 'tab-focus 7')
-config.bind('<Space>8', 'tab-focus 8')
-config.bind('<Space>9', 'tab-focus 9')
-config.bind('<Space>10', 'tab-focus 10')
-config.bind('<Space>11', 'tab-focus 11')
-config.bind('<Space>12', 'tab-focus 12')
-config.bind('<Space>13', 'tab-focus 13')
-config.bind('<Space>14', 'tab-focus 14')
-config.bind('<Space>15', 'tab-focus 15')
-config.bind('<Space>16', 'tab-focus 16')
-config.bind('<Space>17', 'tab-focus 17')
-config.bind('<Space>18', 'tab-focus 18')
-config.bind('<Space>19', 'tab-focus 19')
-config.bind('<Space>20', 'tab-focus 20')
-config.bind('<Space>21', 'tab-focus 21')
-config.bind('<Space>22', 'tab-focus 22')
-config.bind('<Space>23', 'tab-focus 23')
-config.bind('<Space>24', 'tab-focus 24')
-config.bind('<Space>25', 'tab-focus 25')
-config.bind('<Space>26', 'tab-focus 26')
-config.bind('<Space>27', 'tab-focus 27')
-config.bind('<Space>28', 'tab-focus 28')
-config.bind('<Space>29', 'tab-focus 29')
-config.bind('<Space>$', 'tab-focus -1')
-config.bind('<Space>-1', 'tab-focus -1')
-config.bind('<Space>-2', 'tab-focus -2')
-config.bind('<Space>-3', 'tab-focus -3')
-config.bind('<Space>-4', 'tab-focus -4')
-config.bind('<Space>-5', 'tab-focus -5')
-config.bind('<Space>-6', 'tab-focus -6')
-config.bind('<Space>-7', 'tab-focus -7')
-config.bind('<Space>-8', 'tab-focus -8')
-config.bind('<Space>-9', 'tab-focus -9')
 c.aliases['last_tab'] = 'tab-focus last'
-config.bind('<Space><Tab>', 'last_tab')
-config.bind('<Space><Ctrl-I>', 'last_tab')
-config.bind('<Space>fed', 'config-edit')
-config.bind('<Space>fe<Shift-R>', 'config-source')
-c.keyhint.blacklist.append('<Space>-*')
-c.keyhint.blacklist.append('<Space>0*')
-c.keyhint.blacklist.append('<Space>1*')
-c.keyhint.blacklist.append('<Space>2*')
-c.keyhint.blacklist.append('<Space>3')
-c.keyhint.blacklist.append('<Space>4')
-c.keyhint.blacklist.append('<Space>5')
-c.keyhint.blacklist.append('<Space>6')
-c.keyhint.blacklist.append('<Space>7')
-c.keyhint.blacklist.append('<Space>8')
-c.keyhint.blacklist.append('<Space>9')
-c.keyhint.blacklist.append('<Space>$')
-c.keyhint.blacklist.append('<Space>q')
-c.keyhint.blacklist.append('<Space>-*')
 
 c.content.blocking.method = 'both'
 
@@ -736,7 +564,54 @@ c.aliases['cure-keydrown'] = 'jseval -q -w main kd.stop(); kd.run(function () {k
 config.bind('ck', 'cure-keydrown')
 config.bind('cm', 'clear-messages')
 
-c.aliases['bm'] = 'quit --save'
 
-config.bind('r', 'hint paragraphs userscript run-rhvoice.sh')
-c.zoom.mouse_divider = 2048
+# config.bind('r', 'hint paragraphs userscript run-rhvoice.sh')
+
+
+# ===== youtube =====
+
+c.tabs.tabs_are_windows = True
+c.tabs.show = 'never'
+
+config.bind('gh', 'spawn i3-msg focus left')
+config.bind('gj', 'spawn i3-msg focus right')
+config.bind('gk', 'spawn i3-msg focus left')
+config.bind('gl', 'spawn i3-msg focus right')
+
+# unbind (nearly) everything under the t prefix
+what = 'cipsCIPS'
+where = 'huH'
+t_bindings = [ 't' + ''.join(x) for x in product(what, where) ]
+for t_binding in t_bindings:
+    config.unbind(t_binding)
+
+# unbind (nearly) everything under the w prefix
+w_bindings = [ 'wb', 'wf', 'wo', 'wp', 'wB', 'wIf', 'wIh', 'wIj', 'wIk', 'wIl', 'wIw', 'wO', 'wP', ]
+for w_binding in w_bindings:
+    config.unbind(w_binding)
+
+# unbind everything under the s prefix
+
+config.bind('yp', 'tab-clone')
+
+config.bind('u', 'undo --window')
+
+config.bind('m', 'clear-messages ;; message-info "play with mpv" ;; hint links spawn --detach mpv --volume=40 --x11-name=mpv {hint-url}')
+config.bind('w', 'clear-messages ;; message-info "play in a qutebrowser window" ;; hint links tab')
+config.bind('r', 'clear-messages ;; message-info "click stuff" ;; hint nonvideos')
+config.bind('b', 'clear-messages ;; message-info "play with mpv blindly (no video)" ;; hint links spawn --detach mpv --volume=40 --x11-name=mpv --no-video --force-window {hint-url}')
+config.bind('f', 'spawn --userscript /home/boris/.local/share/qutebrowser/userscripts/youtube_NM_f_dispatcher.sh')
+config.bind('s', 'hint yt-skip-ad')
+config.bind('v', 'fake-key c')
+config.bind('[', 'fake-key <Shift-,>')
+config.bind(']', 'fake-key <Shift-.>')
+
+c.aliases['cycle-keydrown'] = 'spawn --userscript /home/boris/.local/share/qutebrowser/userscripts/toggle-keydrown.sh'
+config.bind('cd', 'cycle-keydrown')
+c.aliases['cycle-spatial-navigation'] = 'config-cycle -p input.spatial_navigation true false'
+config.bind('cn', 'cycle-spatial-navigation')
+
+c.aliases['mpv'] = 'spawn -d mpv --volume=40 --x11-name=mpv {url}'
+c.aliases['ff'] = 'spawn -d firefox {url}'
+
+c.aliases['bm'] = 'quit --save'

@@ -1,17 +1,22 @@
 #!/bin/sh -e
 
 # Add (multipurpose) hyper modifier to the F3 button
+# xmodmap -e 'clear mod3'
+# xmodmap -e 'keycode 247 = F4'
+# xmodmap -e 'keycode 70 = Hyper_R'
+# xmodmap -e 'add mod3 = Hyper_R'
+# xcape -e 'Hyper_R=F4'
 xmodmap -e 'clear mod3'
-xmodmap -e 'keycode 247 = F3'
-xmodmap -e 'keycode 69 = Hyper_R'
+xmodmap -e 'keycode 247 = F6'
+xmodmap -e 'keycode 72 = Hyper_R'
 xmodmap -e 'add mod3 = Hyper_R'
-xcape -e 'Hyper_R=F3'
+xcape -e 'Hyper_R=F6'
 
 # Add (multipurpose) shift modifier to the printscreen button
 # (because xkeysnail somehow could not handle it)
-xmodmap -e 'keycode 248 = Print'
-xmodmap -e 'keycode 107 = Shift_L'
-xmodmap -e 'Shift_L=Print'
+# xmodmap -e 'keycode 248 = Print'
+# xmodmap -e 'keycode 107 = Shift_L'
+# xmodmap -e 'Shift_L=Print'
 
 # fix things with xmodmap that xkeysnail can't handle
 #xmodmap -e 'clear shift'

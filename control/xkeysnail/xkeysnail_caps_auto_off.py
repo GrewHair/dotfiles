@@ -19,6 +19,8 @@ blacklist = [
     'Zotero_insert',
     'Zotero_float',
     'Zotero_float_insert',
+    'jetbrains-idea',
+    'jetbrains-pycharm'
 ]
 
 define_keymap(lambda wm_class: wm_class not in blacklist, {
@@ -28,3 +30,9 @@ define_keymap(lambda wm_class: wm_class not in blacklist, {
     K("C-LEFT_BRACE"): [K("C-LEFT_BRACE"), caps_lock_off],
 }, "caps_auto_off")
 
+define_keymap(re.compile("jetbrains-idea|jetbrains-pycharm"), {
+    K("ESC"): [K("ESC"), caps_lock_off],
+    K("C-G"): [K("ESC"), caps_lock_off],
+    K("C-C"): [K("C-C"), caps_lock_off],
+    K("C-LEFT_BRACE"): [K("C-LEFT_BRACE"), caps_lock_off],
+}, "caps_auto_off")

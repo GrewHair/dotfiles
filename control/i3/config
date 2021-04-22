@@ -151,14 +151,16 @@ bindsym $mod+$i3-wm.binding.look_selector exec $i3-wm.program.look_selector
 # bindsym $mod+Right focus right
 
 ## Navigate // Relative Window // <> k j h l ##
-set_from_resource $i3-wm.binding.left i3-wm.binding.left h
-set_from_resource $i3-wm.binding.right i3-wm.binding.right l
-set_from_resource $i3-wm.binding.up i3-wm.binding.up k
-set_from_resource $i3-wm.binding.down i3-wm.binding.down j
-bindsym $mod+$i3-wm.binding.left focus left
-bindsym $mod+$i3-wm.binding.down focus down
-bindsym $mod+$i3-wm.binding.up focus up
-bindsym $mod+$i3-wm.binding.right focus right
+# XXX override the native navigation with custom one
+# to make it seemless with tmux
+# set_from_resource $i3-wm.binding.left i3-wm.binding.left h
+# set_from_resource $i3-wm.binding.right i3-wm.binding.right l
+# set_from_resource $i3-wm.binding.up i3-wm.binding.up k
+# set_from_resource $i3-wm.binding.down i3-wm.binding.down j
+# bindsym $mod+$i3-wm.binding.left focus left
+# bindsym $mod+$i3-wm.binding.down focus down
+# bindsym $mod+$i3-wm.binding.up focus up
+# bindsym $mod+$i3-wm.binding.right focus right
 
 ## Navigate // Workspaces 1-10 // <> 0..9 ##
 bindsym $mod+$ws1_key workspace number $ws1
@@ -705,6 +707,8 @@ focus_follows_mouse yes
 # Create window borders of 2 pixels (hopefully it will help indicate thich window is focused
 default_border pixel 3
 default_floating_border pixel 3
+# default_border normal
+# default_floating_border normal
 
 # Overrided the borders behaviour (see line 44 which i have commented out - it was the default setting)
 hide_edge_borders none
@@ -753,76 +757,18 @@ bindsym $mod+Left exec /home/boris/bin/i3/kill_all_games.sh
 # Restore remap keys
 bindsym $mod+F3 exec /home/boris/bin/i3/restore_keys.sh
 
+for_window [class = "Gnome|gnome|floating_window"] border pixel 3
+for_window [title = "gnome"] border pixel 3
+for_window [title = "teams"] border pixel 3
+
+
+for_window [title = "Event Tester"] floating enable
+
 # Float GVim
 for_window [class = "Gvim"] floating enable
 # Float Shutter
 for_window [class = "Shutter"] floating enable
 
-# I Don't really use this mode, thus I've deleted the keybinding for it to prevent accidents - but I'll keep the mode itself lying around for now!
-mode "mouse" {
-
-	# set your three speeds here
-
-	set $slow 10
-	set $quick 50
-	set $fast 100
-
-	# Mouse movement (slow/fine-tuned) -- vim keybindings
-
-	bindsym Shift+h exec xdotool mousemove_relative -- -$slow 0
-	bindsym Shift+j exec xdotool mousemove_relative 0 $slow
-	bindsym Shift+k exec xdotool mousemove_relative -- 0 -$slow
-	bindsym Shift+l exec xdotool mousemove_relative $slow 0
-
-	# Mouse movement (quicker) -- vim keybindings
-
-	bindsym h exec xdotool mousemove_relative -- -$quick 0
-	bindsym j exec xdotool mousemove_relative 0 $quick
-	bindsym k exec xdotool mousemove_relative -- 0 -$quick
-	bindsym l exec xdotool mousemove_relative $quick 0
-
-	# Mouse movement (fast) -- vim keybindings
-
-	bindsym $alt+h exec xdotool mousemove_relative -- -$fast 0
-	bindsym $alt+j exec xdotool mousemove_relative 0 $fast
-	bindsym $alt+k exec xdotool mousemove_relative -- 0 -$fast
-	bindsym $alt+l exec xdotool mousemove_relative $fast 0
-
-	# Left Click
-	bindsym f exec xdotool click 1
-
-	# Middle Click
-	bindsym d exec xdotool click 2
-
-	# Right Click
-	bindsym s exec xdotool click 3
-
-	# Left Click-and-drag
-	bindsym Shift+f exec xdotool mousedown 1
-
-	# Middle Click-and-drag 
-	bindsym Shift+d exec xdotool mousedown 2
-
-	# Right Click-and-drag
-	bindsym Shift+s exec xdotool mousedown 3
-
-	# Left Drag release
-	bindsym Ctrl+f exec xdotool mouseup 1
-
-	# Middle Drag release
-	bindsym Ctrl+d exec xdotool mouseup 2
-
-	# Right Drag release
-	bindsym Ctrl+s exec xdotool mouseup 3
-
-        # Turn the touchpad on/off, then leave the mode
-        bindsym m exec /home/boris/bin/i3/touchpad.sh; mode "default"
-        bindsym $mod+m exec /home/boris/bin/i3/touchpad.sh; mode "default"
-
-	# return to normal keybindings -- IMPORTANT!!
-
-	bindsym Escape mode "default"
-}
 
 set $slow 10
 set $quick 50
@@ -876,14 +822,16 @@ workspace shared output eDP-1-1 HDMI-0
 
 bindsym $mod+$alt+i exec /home/boris/bin/i3/switch-keyboards.sh
 
-bindsym F6 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py DP-2 next
-bindsym Ctrl+F6 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py DP-2 prev
-bindsym F7 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py eDP-1-1 next
-bindsym Ctrl+F7 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py eDP-1-1 prev
-bindsym F8 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py HDMI-0 next
-bindsym Ctrl+F8 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py HDMI-0 prev
+bindsym F7 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py DP-2 next
+bindsym Ctrl+F7 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py DP-2 prev
+bindsym F8 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py eDP-1-1 next
+bindsym Ctrl+F8 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py eDP-1-1 prev
+bindsym F9 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py HDMI-0 next
+bindsym Ctrl+F9 exec xset 180 70; exec /home/boris/bin/i3/cycle_output.py HDMI-0 prev
 
 for_window [class="gvim_zathura"] floating enable
+
+for_window [class="Florence"] floating enable
 
 for_window [class="Sxiv"] floating enable
 for_window [class="Pqiv"] floating enable
@@ -895,79 +843,91 @@ for_window [class="VirtualBox Machine"] exec /home/boris/bin/i3/new-workspace.py
 for_window [instance="__main__.py" class="qutebrowser"] exec /home/boris/bin/i3/new-workspace.py qutebrowser, focus
 for_window [instance="tiddlywiki" class="qutebrowser"] exec /home/boris/bin/i3/new-workspace.py tiddlywiki, focus
 # for_window [instance="mpv" class="qutebrowser"] exec /home/boris/bin/i3/new-workspace.py mpv, focus
-for_window [class="Firefox"] exec /home/boris/bin/i3/new-workspace.py firefox, focus
-for_window [class="Pale moon"] exec /home/boris/bin/i3/new-workspace.py palemoon, focus
+for_window [class="Firefox" window_type="normal"] exec /home/boris/bin/i3/new-workspace.py firefox, focus
+for_window [class="Pale moon" window_type="normal"] exec /home/boris/bin/i3/new-workspace.py palemoon, focus
 for_window [class="^Zathura$"] exec /home/boris/bin/i3/new-workspace.py zathura, focus
 for_window [class="Emacs27"] exec /home/boris/bin/i3/new-workspace.py emacs, focus
-for_window [class="Zotero"] exec /home/boris/bin/i3/new-workspace.py zotero, focus
+for_window [class="jetbrains-pycharm" window_type="normal"] exec /home/boris/bin/i3/new-workspace.py pycharm, focus
+for_window [class="jetbrains-idea" window_type="normal"] exec /home/boris/bin/i3/new-workspace.py idea, focus
+for_window [class="Zotero" window_type="normal"] exec /home/boris/bin/i3/new-workspace.py zotero, focus
 for_window [instance="mpv"] exec /home/boris/bin/i3/new-workspace.py mpv, focus
 for_window [class="vifm"] exec /home/boris/bin/i3/new-workspace.py vifm, focus
-for_window [class="libreoffice-calc"] exec /home/boris/bin/i3/new-workspace.py libreoffice-calc, focus
+for_window [class="libreoffice-calc" window_type="normal"] exec /home/boris/bin/i3/new-workspace.py libreoffice-calc, focus
 # for_window [instance="Conky"] no_focus
 # no_focus [class="Conky"]
 for_window [class="^Conky$"] exec /home/boris/bin/i3/conky-insert-handler.sh
 for_window [class="Conky-insert_float"] exec /home/boris/bin/i3/conky-insert-float-handler.sh
 for_window [class="Rofi"] floating enable
 
+mode "mimic" {
+  #bindsym --whole-window button3 exec sleep 1; exec xdotool click --repeat 3 1; exec /home/boris/bin/i3/run-mimic.sh
+  # this was for normal xmodmap pointer buttons arrangement:
+  bindsym --whole-window button3 exec "sleep .4 && xdotool click --repeat 3 1 && xdotool key ctrl+c && /home/boris/bin/i3/run-mimic.sh"
+  # this is for xmodmap -e "pointer = 2 9 3 4 5 6 7 8 1"
+  # bindsym --whole-window button3 exec "sleep .4 && xdotool click --repeat 3 9 && xdotool key ctrl+c && /home/boris/bin/i3/run-mimic.sh"
+  bindsym --whole-window button2 mode "default"
+  bindsym Escape mode "default"
+}
+
 mode "eye3 → (R)eload-config" {
   bindsym Shift+r exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; reload
-  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+g [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Escape [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
 }
 
 mode "file → (e)ye3 • (f)ind" {
   bindsym e exec /home/boris/bin/i3/fake-which-key.sh "SPC_f_e-"; mode "eye3 → (R)eload-config"
-  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  # bindsym f exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec --no-startup-id $i3-wm.program.help; mode "default"
-  bindsym f exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec $i3-wm.program.file_search; mode "default"
-  bindsym m exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [workspace="vifm"] focus; mode "default"
+  bindsym Ctrl+g [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Escape [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  # bindsym f [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec --no-startup-id $i3-wm.program.help; mode "default"
+  bindsym f [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec $i3-wm.program.file_search; mode "default"
+  bindsym m [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec exec /home/boris/bin/i3/unbypass-xkeysnail.py; [workspace=vifm] focus; mode "default"
 }
 
 mode "background-move-to: 1?" {
-  bindsym 2 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws12; mode "default"
-  bindsym 3 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws13; mode "default"
-  bindsym 4 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws14; mode "default"
-  bindsym 5 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws15; mode "default"
-  bindsym 6 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws16; mode "default"
-  bindsym 7 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws17; mode "default"
-  bindsym 8 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws18; mode "default"
-  bindsym 9 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws19; mode "default"
-  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym 2 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws12; mode "default"
+  bindsym 3 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws13; mode "default"
+  bindsym 4 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws14; mode "default"
+  bindsym 5 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws15; mode "default"
+  bindsym 6 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws16; mode "default"
+  bindsym 7 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws17; mode "default"
+  bindsym 8 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws18; mode "default"
+  bindsym 9 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws19; mode "default"
+  bindsym Ctrl+g [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Escape [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
 }
 
 mode "window-move-to: 1?" {
-  bindsym 2 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws12; workspace number $ws12; mode "default"
-  bindsym 3 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws13; workspace number $ws13; mode "default"
-  bindsym 4 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws14; workspace number $ws14; mode "default"
-  bindsym 5 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws15; workspace number $ws15; mode "default"
-  bindsym 6 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws16; workspace number $ws16; mode "default"
-  bindsym 7 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws17; workspace number $ws17; mode "default"
-  bindsym 8 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws18; workspace number $ws18; mode "default"
-  bindsym 9 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws19; workspace number $ws19; mode "default"
-  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym 2 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws12; workspace number $ws12; mode "default"
+  bindsym 3 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws13; workspace number $ws13; mode "default"
+  bindsym 4 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws14; workspace number $ws14; mode "default"
+  bindsym 5 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws15; workspace number $ws15; mode "default"
+  bindsym 6 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws16; workspace number $ws16; mode "default"
+  bindsym 7 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws17; workspace number $ws17; mode "default"
+  bindsym 8 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws18; workspace number $ws18; mode "default"
+  bindsym 9 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws19; workspace number $ws19; mode "default"
+  bindsym Ctrl+g [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Escape [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
 }
 
 mode "focus: 1?" {
-  bindsym 0 exec /home/boris/bin/i3/2unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws10; mode "default"
-  bindsym 1 exec /home/boris/bin/i3/2unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws11; mode "default"
-  bindsym 2 exec /home/boris/bin/i3/2unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws12; mode "default"
-  bindsym 3 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws13; mode "default"
-  bindsym 4 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws14; mode "default"
-  bindsym 5 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws15; mode "default"
-  bindsym 6 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws16; mode "default"
-  bindsym 7 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws17; mode "default"
-  bindsym 8 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws18; mode "default"
-  bindsym 9 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws19; mode "default"
-  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym 0 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/2unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws10; mode "default"
+  bindsym 1 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/2unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws11; mode "default"
+  bindsym 2 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/2unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws12; mode "default"
+  bindsym 3 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws13; mode "default"
+  bindsym 4 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws14; mode "default"
+  bindsym 5 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws15; mode "default"
+  bindsym 6 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws16; mode "default"
+  bindsym 7 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws17; mode "default"
+  bindsym 8 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws18; mode "default"
+  bindsym 9 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws19; mode "default"
+  bindsym Ctrl+g [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Escape [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
 }
 
 mode "buffers/background" {
@@ -976,24 +936,24 @@ mode "buffers/background" {
   bindsym $hyper+k exec xdotool mousemove_relative -- 0 -$quick
   bindsym $hyper+l exec xdotool mousemove_relative $quick 0
   # bindsym b exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec $i3-wm.program.launcher.window; mode "default"
-  bindsym b exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec rofi -show window -modi window -normal-window; mode "default"
-  bindsym x exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [con_id="__focused__"] kill; mode "default"
-  bindsym d exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [con_id="__focused__"] kill; mode "default"
-  bindsym q exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws1; mode "default"
-  bindsym 2 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws2; mode "default"
-  bindsym 3 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws3; mode "default"
-  bindsym 4 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws4; mode "default"
-  bindsym 5 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws5; mode "default"
-  bindsym 6 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws6; mode "default"
-  bindsym 7 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws7; mode "default"
-  bindsym 8 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws8; mode "default"
-  bindsym 9 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws9; mode "default"
+  bindsym b [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec rofi -show window -modi window -normal-window; mode "default"
+  bindsym x [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [con_id="__focused__"] kill; mode "default"
+  bindsym d [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [con_id="__focused__"] kill; mode "default"
+  bindsym grave [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws1; mode "default"
+  bindsym 2 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws2; mode "default"
+  bindsym 3 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws3; mode "default"
+  bindsym 4 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws4; mode "default"
+  bindsym 5 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws5; mode "default"
+  bindsym 6 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws6; mode "default"
+  bindsym 7 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws7; mode "default"
+  bindsym 8 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws8; mode "default"
+  bindsym 9 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws9; mode "default"
   bindsym 1 exec /home/boris/bin/i3/fake-which-key.sh "SPC_b_1-"; mode "background-move-to: 1?"
-  bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; scratchpad show; mode "default"
+  bindsym s [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; scratchpad show; mode "default"
   # TODO implement one more keybinding to move to the "next available" workspace
-  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+g [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Escape [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
 }
 
 mode "windows/workspaces" {
@@ -1001,30 +961,30 @@ mode "windows/workspaces" {
   bindsym $hyper+j exec xdotool mousemove_relative 0 $quick
   bindsym $hyper+k exec xdotool mousemove_relative -- 0 -$quick
   bindsym $hyper+l exec xdotool mousemove_relative $quick 0
-  bindsym f exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; floating toggle; mode "default"
-  bindsym Shift+f exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; floating toggle; sticky toggle; mark --toggle teleport; mode "default"
-  bindsym m exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; fullscreen toggle; mode "default"
-  bindsym x exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [con_id="__focused__"] kill; mode "default"
-  bindsym d exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [con_id="__focused__"] kill; mode "default"
-  bindsym q exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws1; workspace number $ws1; mode "default"
-  bindsym 2 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws2; workspace number $ws2; mode "default"
-  bindsym 3 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws3; workspace number $ws3; mode "default"
-  bindsym 4 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws4; workspace number $ws4; mode "default"
-  bindsym 5 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws5; workspace number $ws5; mode "default"
-  bindsym 6 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws6; workspace number $ws6; mode "default"
-  bindsym 7 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws7; workspace number $ws7; mode "default"
-  bindsym 8 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws8; workspace number $ws8; mode "default"
-  bindsym 9 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws9; workspace number $ws9; mode "default"
+  bindsym f [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; floating toggle; mode "default"
+  bindsym Shift+f [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; floating toggle; sticky toggle; mark --toggle teleport; mode "default"
+  bindsym m [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; fullscreen toggle; mode "default"
+  bindsym x [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [con_id="__focused__"] kill; mode "default"
+  bindsym d [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [con_id="__focused__"] kill; mode "default"
+  bindsym grave [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws1; workspace number $ws1; mode "default"
+  bindsym 2 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws2; workspace number $ws2; mode "default"
+  bindsym 3 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws3; workspace number $ws3; mode "default"
+  bindsym 4 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws4; workspace number $ws4; mode "default"
+  bindsym 5 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws5; workspace number $ws5; mode "default"
+  bindsym 6 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws6; workspace number $ws6; mode "default"
+  bindsym 7 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws7; workspace number $ws7; mode "default"
+  bindsym 8 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws8; workspace number $ws8; mode "default"
+  bindsym 9 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to workspace number $ws9; workspace number $ws9; mode "default"
   bindsym 1 exec /home/boris/bin/i3/fake-which-key.sh "SPC_w_1-"; mode "window-move-to: 1?"
-  bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move to scratchpad; mode "default"
-  bindsym r exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec i3-input -F 'rename workspace to "%s"' -P 'New name: ' -f -*-*-*-*-*-*-20-*-*-*-*-*-*-*; mode "default"
-  bindsym F6 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move workspace to output DP-2; focus output DP-2; mode "default"
-  bindsym F7 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move workspace to output eDP-1-1; focus output eDP-1-1; mode "default"
-  bindsym F8 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move workspace to output HDMI-0; focus output eDP-1-1; mode "default"
+  bindsym s [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move to scratchpad; mode "default"
+  bindsym r [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec i3-input -F 'rename workspace to "%s"' -P 'New name: ' -f -*-*-*-*-*-*-20-*-*-*-*-*-*-*; mode "default"
+  bindsym F7 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move workspace to output DP-2; focus output DP-2; mode "default"
+  bindsym F8 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move workspace to output eDP-1-1; focus output eDP-1-1; mode "default"
+  bindsym F9 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move workspace to output HDMI-0; focus output eDP-1-1; mode "default"
   # TODO implement one more keybinding to move to the "next available" workspace
-  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+g [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Escape [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
 }
 
 mode "transient state" {
@@ -1040,106 +1000,111 @@ mode "transient state" {
   bindsym Shift+bracketright resize grow height 6 px or 6 ppt
   bindsym Shift+bracketleft resize shrink height 6 px or 6 ppt
   bindsym bracketright resize grow width 6 px or 6 ppt
-  bindsym Ctrl+g mode "default"
-  bindsym Escape mode "default"
-  bindsym Ctrl+c mode "default"
-  bindsym q mode "default"
+  bindsym Ctrl+g [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; mode "default"
+  bindsym Escape [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; mode "default"
+  bindsym Ctrl+c [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; mode "default"
+  bindsym q [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; mode "default"
 }
 
 mode "rofi" {
-  bindsym t exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/rofitr/rofitr; mode "default"
-  bindsym q exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec rofi -show calc -modi calc -normal-window; mode "default"
-  bindsym u exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec rofimoji -f math mathematical_alphanumeric_symbols mathematical_operators miscellaneous_mathematical_symbols-a miscellaneous_mathematical_symbols-b supplemental_mathematical_operators arabic_mathematical_alphabetic_symbols greek_and_coptic hebrew --rofi-args="-normal-window"; mode "default"
-  bindsym p exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec rofi -show top -modi top -normal-window; mode "default"
-  bindsym k exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec kill -9 $(ps -ef | rofi -multi-select -dmenu -i -theme solarized -normal-window | awk '{print $2}'); mode "default"
-  bindsym r exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec rofi -normal-window -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'; mode "default"
-  bindsym c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/rofi-color-picker/rofi-color-picker/rofi-color-picker; mode "default"
-  bindsym b exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/rofi-bibbrowser/rofi-bibbrowser; mode "default"
-  bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec rofi-screenshot; mode "default"
-  bindsym f exec my_cmd=$(echo "/home/boris/mimic1/mimic -t first;/home/boris/mimic1/mimic -t second" | tr ";" "\n" | rofi -dmenu) && eval $my_cmd
-  bindsym w exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/nmcli-rofi/nmcli-rofi; mode "default"
-  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym t [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/rofitr/rofitr; mode "default"
+  bindsym q [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec rofi -show calc -modi calc -normal-window; mode "default"
+  bindsym u [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec rofimoji -f math mathematical_alphanumeric_symbols mathematical_operators miscellaneous_mathematical_symbols-a miscellaneous_mathematical_symbols-b supplemental_mathematical_operators arabic_mathematical_alphabetic_symbols greek_and_coptic hebrew --rofi-args="-normal-window"; mode "default"
+  bindsym p [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec rofi -show top -modi top -normal-window; mode "default"
+  bindsym k [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec kill -9 $(ps -ef | rofi -multi-select -dmenu -i -theme solarized -normal-window | awk '{print $2}'); mode "default"
+  bindsym r [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec rofi -normal-window -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'; mode "default"
+  bindsym c [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/rofi-color-picker/rofi-color-picker/rofi-color-picker; mode "default"
+  bindsym b [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/rofi-bibbrowser/rofi-bibbrowser; mode "default"
+  bindsym s [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec rofi-screenshot; mode "default"
+  # bindsym f [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec my_cmd=$(echo "/home/boris/mimic1/mimic -t first;/home/boris/mimic1/mimic -t second" | tr ";" "\n" | rofi -dmenu) && eval $my_cmd
+  bindsym w [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/nmcli-rofi/nmcli-rofi; mode "default"
+  bindsym Ctrl+g [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Escape [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
 }
 
 mode "playerctl" {
-  bindsym space exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/bin/i3/stateful-playerctl.py play-pause; mode "default"
+  bindsym space [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/bin/i3/stateful-playerctl.py play-pause; mode "default"
   bindsym h exec /home/boris/bin/i3/stateful-playerctl.py "position 5-"
   bindsym l exec /home/boris/bin/i3/stateful-playerctl.py "position 5+"
   bindsym 9 exec /home/boris/bin/i3/stateful-playerctl.py "volume 0.1-"
   bindsym 0 exec /home/boris/bin/i3/stateful-playerctl.py "volume 0.1+"
-  bindsym p exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/bin/i3/pick-video.py; mode "default"
-  bindsym q exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym $mod+9 exec /home/boris/bin/i3/stateful-playerctl.py "volume 0.1-"
+  bindsym $mod+0 exec /home/boris/bin/i3/stateful-playerctl.py "volume 0.1+"
+  bindsym p [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/bin/i3/pick-video.py; mode "default"
+  bindsym q [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+g [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Escape [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
 }
 
 mode "layout" {
-  # bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout splitv exec notify-send i3 splitv; mode "default"
-  # bindsym v exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout splith; exec notify-send i3 splith; mode "default"
-  # bindsym t exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout tabbed; exec notify-send i3 tabbed; mode "default"
-  # bindsym c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout stacking; exec notify-send i3 stacking; mode "default"
-  bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout splitv; mode "default"
-  bindsym v exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout splith;; mode "default"
-  bindsym t exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout tabbed; mode "default"
-  bindsym c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout stacking; mode "default"
-  bindcode 245 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/bin/i3/set-respect-layout.sh; exec $i3-wm.program.launcher.app; mode "default"
-  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym s [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout splitv; mode "default"
+  bindsym v [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout splith;; mode "default"
+  bindsym t [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout tabbed; mode "default"
+  bindsym c [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; layout stacking; mode "default"
+  bindcode 243 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/bin/i3/set-respect-layout.sh; exec $i3-wm.program.launcher.app; mode "default"
+  # bindcode 133 --release [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/bin/i3/set-respect-layout.sh; exec $i3-wm.program.launcher.app; mode "default"
+  bindsym Ctrl+g [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Escape [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
 }
 
 mode "SPC-" {
   # bindsym v exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; split horizontal; exec notify-send i3 "split container!"; mode "default"
   # bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; split vertical; exec notify-send i3 "split container!"; mode "default"
-  bindsym k exec exec dunstctl close-all; exec /home/boris/bin/i3/start-keynav.sh; mode "default"
-  bindsym v exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; split horizontal; mode "default"
-  bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; split vertical; mode "default"
-  bindsym q exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [instance="__main__.py" class="qutebrowser"] focus; mode "default"
-  bindsym e exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="Emacs27"] focus; mode "default"
-  bindsym z exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="Zathura"] focus; mode "default"
-  bindsym t exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [instance="tiddlywiki"] focus; mode "default"
-  bindsym g exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="Machine"] focus; mode "default"
-  bindsym y exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="mpv"] focus; mode "default"
-  bindsym m exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="Firefox"] focus; mode "default"
-  bindcode 245 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec $i3-wm.program.launcher.app; mode "default"
-  bindsym space exec /home/boris/bin/i3/unbypass-xkaysnail.sh; exec dunstctl close-all; focus mode_toggle; mode "default"
-  bindsym F6 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to output DP-2; focus output DP-2; mode "default"
-  bindsym F7 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to output eDP-1-1; focus output eDP-1-1; mode "default"
-  bindsym F8 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to output HDMI-0; focus output HDMI-0; mode "default"
-  bindsym grave exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws1; mode "default"
-  bindsym 2 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws2; mode "default"
-  bindsym 3 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws3; mode "default"
-  bindsym 4 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws4; mode "default"
-  bindsym 5 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws5; mode "default"
-  bindsym 6 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws6; mode "default"
-  bindsym 7 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws7; mode "default"
-  bindsym 8 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws8; mode "default"
-  bindsym 9 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws9; mode "default"
+  bindsym k [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec exec dunstctl close-all; exec /home/boris/bin/i3/start-keynav.sh; mode "default"
+  bindsym v [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; split horizontal; mode "default"
+  bindsym s [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; split vertical; mode "default"
+  bindsym q [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [instance="__main__.py" class="qutebrowser"] focus; mode "default"
+  bindsym e [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="Emacs27"] focus; mode "default"
+  bindsym z [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="Zathura"] focus; mode "default"
+  bindsym t [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [instance="tiddlywiki"] focus; mode "default"
+  bindsym g [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="Machine"] focus; mode "default"
+  bindsym y [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [instance="mpv"] focus; mode "default"
+  bindsym m [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="Firefox"] focus; mode "default"
+  bindsym i [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="jetbrains-idea"] focus; mode "default"
+  bindsym c [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; [class="jetbrains-pycharm"] focus; mode "default"
+  bindcode 243 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec $i3-wm.program.launcher.app; mode "default"
+  # bindcode 133 --release [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec $i3-wm.program.launcher.app; mode "default"
+  bindsym space [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkaysnail.sh; exec dunstctl close-all; focus mode_toggle; mode "default"
+  bindsym F7 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to output DP-2; focus output DP-2; mode "default"
+  bindsym F8 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to output eDP-1-1; focus output eDP-1-1; mode "default"
+  bindsym F9 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; move container to output HDMI-0; focus output HDMI-0; mode "default"
+  bindsym grave [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws1; mode "default"
+  bindsym 2 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws2; mode "default"
+  bindsym 3 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws3; mode "default"
+  bindsym 4 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws4; mode "default"
+  bindsym 5 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws5; mode "default"
+  bindsym 6 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws6; mode "default"
+  bindsym 7 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws7; mode "default"
+  bindsym 8 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws8; mode "default"
+  bindsym 9 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace number $ws9; mode "default"
   bindsym 1 exec /home/boris/bin/i3/fake-which-key.sh "SPC_1-"; mode "focus: 1?"
   # TODO implement one more keybinding to move to the "next available" workspace
   # NOTE I actually already have this bound to $mod+o, but I should make up a more mnemonic binding
   bindsym l exec /home/boris/bin/i3/fake-which-key.sh "SPC_l-"; mode "layout"
   bindsym p exec /home/boris/bin/i3/fake-which-key.sh "SPC_p-"; mode "playerctl"
+  bindsym $mod+p exec /home/boris/bin/i3/fake-which-key.sh "SPC_p-"; mode "playerctl"
   bindsym b exec /home/boris/bin/i3/fake-which-key.sh "SPC_b-"; mode "buffers/background"
   bindsym w exec /home/boris/bin/i3/fake-which-key.sh "SPC_w-"; mode "windows/workspaces"
   bindsym f exec /home/boris/bin/i3/fake-which-key.sh "SPC_f-"; mode "file → (e)ye3 • (f)ind"
   bindsym r exec /home/boris/bin/i3/fake-which-key.sh "SPC_r-"; mode "rofi"
   bindsym period mode "transient state"
   # bindsym apostrophe exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /usr/bin/x-terminal-emulator; mode "default"
-  bindsym Shift+1 exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec $i3-wm.program.launcher.cmd; mode "default"
-  bindsym c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; scratchpad show; scratchpad show; mode "default"
-  bindsym Ctrl+i exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace back_and_forth; mode "default"
-  bindsym Tab exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace back_and_forth; mode "default"
-  bindsym Ctrl+g exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Escape exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym Ctrl+c exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
-  bindsym apostrophe exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/bin/i3/change_terminal_background_image.py; exec /home/boris/bin/i3/run_kitty_w_unix_socket.py; mode "default"
+  bindsym Shift+1 [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec $i3-wm.program.launcher.cmd; mode "default"
+  bindsym bracketleft [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; scratchpad show; scratchpad show; mode "default"
+  bindsym Ctrl+i [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace back_and_forth; mode "default"
+  bindsym Tab [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; workspace back_and_forth; mode "default"
+  bindsym Ctrl+g [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Escape [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym Ctrl+c [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; mode "default"
+  bindsym apostrophe [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; exec /home/boris/bin/i3/change_terminal_background_image.py; exec /home/boris/bin/i3/run_kitty_w_unix_socket.py; mode "default"
 }
 
-bindcode 245 exec xdotool mousemove_relative 0 -300; exec /home/boris/bin/i3/bypass-xkeysnail.py; exec /home/boris/bin/i3/fake-which-key.sh "SPC-"; mode "SPC-"
+# bindcode 245 exec xdotool mousemove_relative 0 -300; exec /home/boris/bin/i3/bypass-xkeysnail.py; exec /home/boris/bin/i3/fake-which-key.sh "SPC-"; mode "SPC-"
+bindcode 243 [con_mark=keychain_target] unmark; mark keychain_target; exec xdotool mousemove --window $(xdotool getactivewindow) 0 0; exec /home/boris/bin/i3/bypass-xkeysnail.py; exec /home/boris/bin/i3/fake-which-key.sh "SPC-"; mode "SPC-"
+# bindcode 133 --release [con_mark=keychain_target] unmark; mark keychain_target; exec xdotool mousemove --window $(xdotool getactivewindow) 0 0; exec /home/boris/bin/i3/bypass-xkeysnail.py; exec /home/boris/bin/i3/fake-which-key.sh "SPC-"; mode "SPC-"
 bindcode $mod+245 exec $i3-wm.program.launcher.app; mode "default"
 
 bindsym $mod+e move up
@@ -1183,3 +1148,13 @@ client.unfocused        $unfocused.color.border            $focused.color.backgr
 for_window [con_mark="teleport"] resize set 800 600
 
 bindsym $mod+c exec xdotool key Caps_Lock
+
+bindsym $mod+Ctrl+h focus left
+bindsym $mod+Ctrl+j focus down
+bindsym $mod+Ctrl+k focus up
+bindsym $mod+Ctrl+l focus right
+
+bindsym $mod+h exec ~/bin/i3/i3-tmux-nav.sh left
+bindsym $mod+j exec ~/bin/i3/i3-tmux-nav.sh down
+bindsym $mod+k exec ~/bin/i3/i3-tmux-nav.sh up
+bindsym $mod+l exec ~/bin/i3/i3-tmux-nav.sh right

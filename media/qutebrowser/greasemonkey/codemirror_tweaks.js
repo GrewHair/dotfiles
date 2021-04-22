@@ -4,6 +4,9 @@
 
 CodeMirror.Vim.map('jk', '<Esc>', 'insert')
 CodeMirror.Vim.map('g.', ':', 'normal')
+CodeMirror.Vim.map('g.', ':', 'visual')
+CodeMirror.Vim.map('g,', ':', 'normal')
+CodeMirror.Vim.map('g,', ':', 'visual')
 CodeMirror.Vim.map('<F3>', 'a', 'normal')
 CodeMirror.Vim.map('<F2>', 'A', 'normal')
 CodeMirror.Vim.map('<S-F3>', 'A', 'normal')
