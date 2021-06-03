@@ -47,6 +47,8 @@ semicolon warp,end,sh "/home/boris/bin/i3/unbypass-xkeysnail.py",sh "pkill keyna
 3 warp,click 3,end,sh "/home/boris/bin/i3/unbypass-xkeysnail.py",sh "pkill keynav"
 4 click 4
 5 click 5
+ctrl+e click 4
+ctrl+y click 5
 shift+1 warp,doubleclick 1
 shift+2 warp,doubleclick 2
 shift+3 warp,doubleclick 3,end,sh "/home/boris/bin/i3/unbypass-xkeysnail.py",sh "pkill keynav"

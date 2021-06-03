@@ -3,6 +3,7 @@
 // ==/UserScript==
 
 CodeMirror.Vim.map('jk', '<Esc>', 'insert')
+CodeMirror.Vim.map('jf', '<Esc>', 'insert')
 CodeMirror.Vim.map('g.', ':', 'normal')
 CodeMirror.Vim.map('g.', ':', 'visual')
 CodeMirror.Vim.map('g,', ':', 'normal')

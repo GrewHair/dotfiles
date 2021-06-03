@@ -758,6 +758,7 @@ bindsym $mod+Left exec /home/boris/bin/i3/kill_all_games.sh
 bindsym $mod+F3 exec /home/boris/bin/i3/restore_keys.sh
 
 for_window [class = "Gnome|gnome|floating_window"] border pixel 3
+for_window [class = "Teams"] border pixel 3
 for_window [title = "gnome"] border pixel 3
 for_window [title = "teams"] border pixel 3
 
@@ -1053,6 +1054,7 @@ mode "layout" {
 mode "SPC-" {
   # bindsym v exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; split horizontal; exec notify-send i3 "split container!"; mode "default"
   # bindsym s exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; split vertical; exec notify-send i3 "split container!"; mode "default"
+  bindsym d [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec exec dunstctl close-all; scratchpad show [class="spotify-tui"]; mode "default"
   bindsym k [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec exec dunstctl close-all; exec /home/boris/bin/i3/start-keynav.sh; mode "default"
   bindsym v [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; split horizontal; mode "default"
   bindsym s [con_mark=keychain_target] focus; [con_mark=keychain_target] unmark; exec /home/boris/bin/i3/unbypass-xkeysnail.py; exec dunstctl close-all; split vertical; mode "default"
@@ -1158,3 +1160,5 @@ bindsym $mod+h exec ~/bin/i3/i3-tmux-nav.sh left
 bindsym $mod+j exec ~/bin/i3/i3-tmux-nav.sh down
 bindsym $mod+k exec ~/bin/i3/i3-tmux-nav.sh up
 bindsym $mod+l exec ~/bin/i3/i3-tmux-nav.sh right
+
+for_window [class="spotify-tui"] move to scratchpad, scratchpad show [class="spotify-tui"]

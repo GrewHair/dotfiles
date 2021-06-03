@@ -60,6 +60,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblabe/vim-rooter'
 Plug 'liuchengxu/space-vim-dark'
+Plug 'pprovost/vim-ps1'
 
 call plug#end()
 

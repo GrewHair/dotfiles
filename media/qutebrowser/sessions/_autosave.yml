@@ -1,126 +1,176 @@
 windows:
 - active: true
   geometry: !!binary |
-    AdnQywADAAAAAAV4AAAAAAAADPcAAAQeAAAFewAAAAMAAAz0AAAEGwAAAAIAAAAAB4AAAAV7AAAA
-    AwAADPQAAAQb
+    AdnQywADAAAAAAAAAAAAAAAABXcAAAQAAAAAAwAAAAMAAAV0AAAD/QAAAAEAAAAABXgAAAADAAAA
+    AwAABXQAAAP9
   tabs:
   - history:
     - active: true
-      last_visited: '2021-04-22T20:37:45'
+      last_visited: '2021-06-03T14:57:12'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: 'Mini review: The Acme editor on Debian on Windows - DonationCoder.com'
-      url: https://www.donationcoder.com/forum/index.php?topic=45547.0
+      title: "▸ \U0001D40C\U0001D42E\U0001D41B\U0001D428\U0001D427\U0001D420 \U0001D40F\U0001D41A\U0001D42B\U0001D424┊박무봉
+        | Wiki | Anime Amino"
+      url: https://aminoapps.com/c/anime/page/item/mubong-park-bagmubong/jPto_IGomkgGr4zg420wvwVkgRVGN
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-04-22T20:37:45'
+      last_visited: '2021-06-03T14:57:11'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: How to use Ansible synchronization GitHub - Programmer Sought
-      url: https://www.programmersought.com/article/55592782551/
+      title: Utaite | Utaite Wiki | Fandom
+      url: https://utaite.fandom.com/wiki/Utaite
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-04-22T20:37:45'
+      last_visited: '2021-06-03T14:57:14'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: voco/INSTALL.md at master · lyncisdev/voco
-      url: https://github.com/lyncisdev/voco/blob/master/INSTALL.md
+      title: aspiring utaites - Google Search
+      url: https://www.google.com/search?q=aspiring+utaites&sxsrf=ALeKk02aJ6AuwfHkUW5oZ9d4i7WWV4NCqA%3A1622184199369&ei=B5GwYOfvFcitrgSR0I6AAg&oq=aspiring+utaites&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABOgQIIxAnOgQIABBDOgIIADoECAAQCjoECC4QCjoHCCMQsAIQJzoGCAAQDRAKOgQIABANOgYIABANEB46CAgAEA0QChAeOgYIABAHEB46CAgAEAcQChAeOgoIABAIEAcQChAeUL0WWPfsAWCw8QFoAXACeAGAAecBiAGuDJIBBjEwLjQuMZgBAKABAaoBB2d3cy13aXrAAQE&sclient=gws-wiz&ved=0ahUKEwinj9qH4-vwAhXIlosKHRGoAyAQ4dUDCA4&uact=5
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-04-22T20:37:45'
+      last_visited: '2021-06-03T14:57:11'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: python - How to schedule and cancel tasks with asyncio - Stack Overflow
-      url: https://stackoverflow.com/questions/40016501/how-to-schedule-and-cancel-tasks-with-asyncio#:~:text=In%20other%20words%2C%20just%20pass,you%20need%20to%20stop%20it.
+      title: (2) Who is your favorite Utaite? - Quora
+      url: https://www.quora.com/Who-is-your-favorite-Utaite
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-04-22T20:37:45'
+      last_visited: '2021-06-03T14:57:12'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Actions sub-package — Dragonfly 0.30.1 documentation
-      url: https://dragonfly2.readthedocs.io/en/latest/actions.html
+      title: Manage your dotfiles with Ansible | by Kyle Espinola | Espinola Designs
+        | Medium
+      url: https://medium.com/espinola-designs/manage-your-dotfiles-with-ansible-6dbedd5532bb
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-04-22T20:37:45'
+      last_visited: '2021-06-03T14:57:12'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Paravirtualization - Wikipedia
-      url: https://en.wikipedia.org/wiki/Paravirtualization
+      title: 'Patterns: targeting hosts and groups — Ansible Documentation'
+      url: https://docs.ansible.com/ansible/latest/user_guide/intro_patterns.html
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-04-22T20:37:45'
+      last_visited: '2021-06-03T14:57:12'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Why you should use named pipes on Linux | Network World
-      url: https://www.networkworld.com/article/3251853/why-use-named-pipes-on-linux.html
+      title: Glossary — Ansible Documentation
+      url: https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-04-22T20:37:45'
+      last_visited: '2021-06-03T14:57:11'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Getting Started with Voice Driven Development - whale quench
-      url: https://whalequench.club/blog/2019/09/03/learning-to-speak-code.html
+      title: 96Neko | Utaite Wiki | Fandom
+      url: https://utaite.fandom.com/wiki/96Neko
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-03T14:57:12'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 3786
+      title: WaniKani, a kanji learning application by Tofugu
+      url: https://www.wanikani.com/#explanation
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-03T14:57:11'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Is WaniKani Free? | WaniKani Knowledge
+      url: https://knowledge.wanikani.com/getting-started/payment-and-billing/wanikani/wanikani-free/
+      zoom: 1.3
+  - history:
+    - last_visited: '2021-06-03T15:39:01'
+      pinned: false
+      title: static application security testing - Google Search
+      url: https://www.google.com/search?q=static%20application%20security%20testing
+    - last_visited: '2021-06-03T16:05:07'
+      pinned: false
+      title: what is nightly build - Google Search
+      url: https://www.google.com/search?q=what+is+nightly+build&sxsrf=ALeKk00zwxS00JR1H2cjQtOrIQpN7dHl4w%3A1622723940144&ei=ZM24YPqmCJKxrgS_hJrADA&oq=what+is+nightly&gs_lcp=Cgdnd3Mtd2l6EAMYADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BwgjEOoCECc6BAgAEEM6CAguEMcBEKMCOgQIIxAnOgIILjoFCAAQkQI6BwgAEIcCEBQ6BQgAEMkDUIGPX1ihu19g6sBfaAJwAngAgAG4AYgBuw6SAQQ3LjEwmAEAoAEBqgEHZ3dzLXdperABCsABAQ&sclient=gws-wiz
+    - active: true
+      last_visited: '2021-06-03T16:05:14'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 1766
+      title: open source - What does 'Nightly Builds' mean? - Software Engineering
+        Stack Exchange
+      url: https://softwareengineering.stackexchange.com/questions/56490/what-does-nightly-builds-mean
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-03T16:09:14'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Vulnerability assessment - Wikipedia
+      url: https://en.wikipedia.org/wiki/Vulnerability_assessment
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-03T16:32:37'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 702
+      title: owasp - Google Search
+      url: https://www.google.com/search?q=owasp
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-03T16:32:44'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 641
+      title: OWASP - Wikipedia
+      url: https://en.wikipedia.org/wiki/OWASP
       zoom: 1.3
   - active: true
     history:
-    - last_visited: '2021-04-22T20:38:51'
+    - last_visited: '2021-06-03T16:33:16'
       pinned: false
-      title: linux format drives - Google Search
-      url: https://www.google.com/search?q=linux%20format%20drives
-    - last_visited: '2021-04-22T20:41:41'
+      title: owasp three most critical risks - Google Search
+      url: https://www.google.com/search?q=owasp%20three%20most%20critical%20risks
+    - last_visited: '2021-06-03T16:57:33'
       pinned: false
-      title: linux destroy data on disk - Google Search
-      url: https://www.google.com/search?q=linux+destroy+data+on+disk&sxsrf=ALeKk01A9tzE9csUonhrlCjGairc7FCb-w%3A1619113130478&ei=qrSBYM_QHPDhrgSV6K_4Bw&oq=linux++destroy+data&gs_lcp=Cgdnd3Mtd2l6EAMYADICCAA6BwgjEOoCECc6BAgjECc6BAgAEEM6BwghEAoQoAE6BggAEBYQHjoFCCEQoAFQuZYHWMPpCWCEpApoCXACeAWAAb8BiAGIE5IBBTEwLjEymAEAoAEBqgEHZ3dzLXdperABCsABAQ&sclient=gws-wiz
+      title: owasp - Google Search
+      url: https://www.google.com/search?q=owasp&sxsrf=ALeKk01R54_qV7sdkYR7_LDfcbIoLvgeWA%3A1622727195300&ei=G9q4YIzmEder3AP6xJagBQ&oq=owasp&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyBQgAEJECMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoHCAAQhwIQFFDZ31hYiOlYYKPsWGgAcAJ4AIABxAGIAYEFkgEDNC4ymAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=gws-wiz&ved=0ahUKEwjM36vwyfvwAhXXFXcKHXqiBVQQ4dUDCA4&uact=5
     - active: true
-      last_visited: '2021-04-22T20:41:54'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 360
-      title: How to wipe a hard drive clean in Linux | How To Wiki | Fandom
-      url: https://how-to.fandom.com/wiki/How_to_wipe_a_hard_drive_clean_in_Linux#:~:text=Wiping%20the%20entire%20disk,-This%20will%20overwrite&text=Use%20the%20sudo%20command%20as,with%20the%20target%20drive%20letter.
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-04-22T20:59:06'
-      original-url: http://www.marksanborn.net/howto/wiping-a-hard-drive-with-dd/
+      last_visited: '2021-06-03T16:58:13'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Wiping a Hard Drive with DD
-      url: https://www.marksanborn.net/howto/wiping-a-hard-drive-with-dd/
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-04-22T20:39:48'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 2863
-      title: Linux Hard Disk Format Command - nixCraft
-      url: https://www.cyberciti.biz/faq/linux-disk-format/
+      title: OWASP - Wikipedia
+      url: https://en.wikipedia.org/wiki/OWASP
       zoom: 1.3
