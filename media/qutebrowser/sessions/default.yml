@@ -1,23 +1,22 @@
 windows:
 - active: true
   geometry: !!binary |
-    AdnQywADAAAAAAAAAAAAAAAABXcAAAQAAAAAAwAAAAMAAAV0AAAD/QAAAAEAAAAABXgAAAADAAAA
-    AwAABXQAAAP9
+    AdnQywADAAAAAAAAAAAAAAAAB38AAAQeAAAAAwAAAAMAAAd8AAAEGwAAAAAAAAAAB4AAAAADAAAA
+    AwAAB3wAAAQb
   tabs:
   - history:
     - active: true
-      last_visited: '2021-06-01T17:33:37'
+      last_visited: '2021-06-13T14:37:21'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: "▸ \U0001D40C\U0001D42E\U0001D41B\U0001D428\U0001D427\U0001D420 \U0001D40F\U0001D41A\U0001D42B\U0001D424┊박무봉
-        | Wiki | Anime Amino"
+      title: Anime Amino
       url: https://aminoapps.com/c/anime/page/item/mubong-park-bagmubong/jPto_IGomkgGr4zg420wvwVkgRVGN
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-06-01T17:33:35'
+      last_visited: '2021-06-13T14:37:14'
       pinned: false
       scroll-pos:
         x: 0
@@ -27,7 +26,7 @@ windows:
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-06-01T17:33:38'
+      last_visited: '2021-06-13T14:37:22'
       pinned: false
       scroll-pos:
         x: 0
@@ -37,17 +36,17 @@ windows:
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-06-01T17:33:35'
+      last_visited: '2021-06-13T14:37:14'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: (2) Who is your favorite Utaite? - Quora
+      title: Who is your favorite Utaite? - Quora
       url: https://www.quora.com/Who-is-your-favorite-Utaite
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-06-01T17:33:36'
+      last_visited: '2021-06-13T14:37:15'
       pinned: false
       scroll-pos:
         x: 0
@@ -58,7 +57,7 @@ windows:
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-06-01T17:33:35'
+      last_visited: '2021-06-13T14:37:14'
       pinned: false
       scroll-pos:
         x: 0
@@ -68,7 +67,7 @@ windows:
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-06-01T17:33:35'
+      last_visited: '2021-06-13T14:37:14'
       pinned: false
       scroll-pos:
         x: 0
@@ -78,7 +77,7 @@ windows:
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-06-01T17:33:35'
+      last_visited: '2021-06-13T14:37:14'
       pinned: false
       scroll-pos:
         x: 0
@@ -88,17 +87,7 @@ windows:
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-06-01T17:33:37'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: learn kanji online - Google Search
-      url: https://www.google.com/search?q=learn%20kanji%20online
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-06-01T17:33:36'
+      last_visited: '2021-06-13T14:37:15'
       pinned: false
       scroll-pos:
         x: 0
@@ -108,22 +97,180 @@ windows:
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-06-01T17:33:37'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: wanikani - Google Search
-      url: https://www.google.com/search?q=wanikani
-      zoom: 1.3
-  - active: true
-    history:
-    - active: true
-      last_visited: '2021-06-01T17:33:35'
+      last_visited: '2021-06-13T14:37:15'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
       title: Is WaniKani Free? | WaniKani Knowledge
       url: https://knowledge.wanikani.com/getting-started/payment-and-billing/wanikani/wanikani-free/
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T14:37:25'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Inbox (1,387) - barysdzemidziuk@gmail.com - Gmail
+      url: https://mail.google.com/mail/u/0/#inbox
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T14:37:13'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: localhost
+      url: http://localhost:49001/
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T14:37:22'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: docker error response from daemon manifest for jenkins:latest not found
+        - Google Search
+      url: https://www.google.com/search?q=docker+error+response+from+daemon+manifest+for+jenkins%3Alatest+not+found&sxsrf=ALeKk02pmmsxbYi8k6hzar_m2OEsvDftPA%3A1623014836834&ei=tD29YMaYMtGxrgSQj5qgAw&oq=docker+error+response+from+daemon+manifest+for+jenkins%3Alatest+not+found&gs_lcp=Cgdnd3Mtd2l6EAM6BwgjEOoCECc6BAgjECc6BAgAEEM6BQgAEJECOgIIADoHCAAQhwIQFDoGCAAQFhAeUIyPAljlkwRgjKIEaAZwAngAgAFkiAHPKpIBBDc4LjGYAQCgAQGqAQdnd3Mtd2l6sAEKwAEB&sclient=gws-wiz&ved=0ahUKEwjGwsG2-YPxAhXRmIsKHZCHBjQQ4dUDCA4&uact=5
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T14:37:14'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'docker - Error response from daemon: manifest for ibmblockchain/fabric-peer:latest
+        not found - Stack Overflow'
+      url: https://stackoverflow.com/questions/45952630/error-response-from-daemon-manifest-for-ibmblockchain-fabric-peerlatest-not-fo
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T14:37:15'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Docker Hub
+      url: https://hub.docker.com/_/jenkins
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T14:37:22'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: linux what does chown 1000 do - Google Search
+      url: https://www.google.com/search?q=linux+what+does+chown+1000+do&sxsrf=ALeKk010VJR24ix85tRWropX9KSppgsbfA%3A1623015396057&ei=5D-9YLrxAs_VrgSE6peYAw&oq=linux+what+does+chown+1000+do&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABMgQIIRAVOgcIIxDqAhAnOgQIIxAnOgUIABCRAjoECAAQQzoCCAA6CAguEMcBEKMCOgQILhBDOgcIABCHAhAUOgYIABAWEB46CAgAEBYQChAeOggIIRAWEB0QHlCjiwJYkOACYMLiAmgBcAJ4AIABcogByhKSAQQyNy4zmAEAoAEBqgEHZ3dzLXdperABCsABAQ&sclient=gws-wiz&ved=0ahUKEwi685XB-4PxAhXPqosKHQT1BTMQ4dUDCA4&uact=5
+      zoom: 1.3
+  - active: true
+    history:
+    - active: true
+      last_visited: '2021-06-13T14:37:14'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: continuous integration - How to change home directory of Jenkins? - Stack
+        Overflow
+      url: https://stackoverflow.com/questions/13192322/how-to-change-home-directory-of-jenkins/39260807
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T14:37:14'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: How to List Users in Linux | Linuxize
+      url: https://linuxize.com/post/how-to-list-users-in-linux/
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T14:37:14'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: How can I change the file ownership to root on ubuntu 14.04 - Ask Ubuntu
+      url: https://askubuntu.com/questions/1034377/how-can-i-change-the-file-ownership-to-root-on-ubuntu-14-04#:~:text=chown%20is%20tool%20for%20changing,command%20as%20superuser%20with%20sudo%20.
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T14:37:23'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: UNIX / Linux Find File Owner Name - nixCraft
+      url: https://www.cyberciti.biz/faq/unix-linux-find-file-owner-name/
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T14:37:18'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Installing Jenkins with Docker - Jenkins - Jenkins Wiki
+      url: https://wiki.jenkins.io/display/JENKINS//Installing+Jenkins+with+Docker
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T14:37:16'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'Docker Error response from daemon: manifest not found when running container
+        following Get Started Tutorial - General Discussions - Docker Forums'
+      url: https://forums.docker.com/t/docker-error-response-from-daemon-manifest-not-found-when-running-container-following-get-started-tutorial/65107
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T14:37:15'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'An error occurred during installation: No such plugin: cloudbees-folder
+        · Issue #649 · jenkinsci/docker'
+      url: https://github.com/jenkinsci/docker/issues/649
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T14:37:15'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: '"An error occurred during installation: No such plugin: cloudbees-folder"
+        · Issue #424 · jenkinsci/docker'
+      url: https://github.com/jenkinsci/docker/issues/424
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T14:37:22'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'jenkins SEVERE: ERROR: Signature verification failed in update site
+        ''default'' - Google Search'
+      url: https://www.google.com/search?q=jenkins%20SEVERE%3A%20ERROR%3A%20Signature%20verification%20failed%20in%20update%20site%20%26%23039%3Bdefault%26%23039%3B
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T14:37:14'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: '[JENKINS-53288] Signature verification failed in update site ''default''
+        (again) - Jenkins Jira'
+      url: https://issues.jenkins.io/browse/JENKINS-53288
       zoom: 1.3

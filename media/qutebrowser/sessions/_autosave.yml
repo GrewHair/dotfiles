@@ -1,23 +1,22 @@
 windows:
 - active: true
   geometry: !!binary |
-    AdnQywADAAAAAAAAAAAAAAAABXcAAAQAAAAAAwAAAAMAAAV0AAAD/QAAAAEAAAAABXgAAAADAAAA
-    AwAABXQAAAP9
+    AdnQywADAAAAAAAAAAAAAAAAB38AAAQeAAAAAwAAAAMAAAd8AAAEGwAAAAAAAAAAB4AAAAADAAAA
+    AwAAB3wAAAQb
   tabs:
   - history:
     - active: true
-      last_visited: '2021-06-03T14:57:12'
+      last_visited: '2021-06-13T16:28:31'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: "▸ \U0001D40C\U0001D42E\U0001D41B\U0001D428\U0001D427\U0001D420 \U0001D40F\U0001D41A\U0001D42B\U0001D424┊박무봉
-        | Wiki | Anime Amino"
+      title: Anime Amino
       url: https://aminoapps.com/c/anime/page/item/mubong-park-bagmubong/jPto_IGomkgGr4zg420wvwVkgRVGN
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-06-03T14:57:11'
+      last_visited: '2021-06-13T16:28:23'
       pinned: false
       scroll-pos:
         x: 0
@@ -27,7 +26,7 @@ windows:
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-06-03T14:57:14'
+      last_visited: '2021-06-13T16:28:31'
       pinned: false
       scroll-pos:
         x: 0
@@ -37,17 +36,17 @@ windows:
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-06-03T14:57:11'
+      last_visited: '2021-06-13T16:28:23'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: (2) Who is your favorite Utaite? - Quora
+      title: Who is your favorite Utaite? - Quora
       url: https://www.quora.com/Who-is-your-favorite-Utaite
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-06-03T14:57:12'
+      last_visited: '2021-06-13T16:28:24'
       pinned: false
       scroll-pos:
         x: 0
@@ -58,7 +57,7 @@ windows:
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-06-03T14:57:12'
+      last_visited: '2021-06-13T16:28:23'
       pinned: false
       scroll-pos:
         x: 0
@@ -68,7 +67,7 @@ windows:
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-06-03T14:57:12'
+      last_visited: '2021-06-13T16:28:23'
       pinned: false
       scroll-pos:
         x: 0
@@ -78,7 +77,7 @@ windows:
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-06-03T14:57:11'
+      last_visited: '2021-06-13T16:28:23'
       pinned: false
       scroll-pos:
         x: 0
@@ -88,17 +87,17 @@ windows:
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-06-03T14:57:12'
+      last_visited: '2021-06-13T16:28:23'
       pinned: false
       scroll-pos:
         x: 0
-        y: 3786
+        y: 0
       title: WaniKani, a kanji learning application by Tofugu
       url: https://www.wanikani.com/#explanation
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-06-03T14:57:11'
+      last_visited: '2021-06-13T16:28:23'
       pinned: false
       scroll-pos:
         x: 0
@@ -107,70 +106,94 @@ windows:
       url: https://knowledge.wanikani.com/getting-started/payment-and-billing/wanikani/wanikani-free/
       zoom: 1.3
   - history:
-    - last_visited: '2021-06-03T15:39:01'
-      pinned: false
-      title: static application security testing - Google Search
-      url: https://www.google.com/search?q=static%20application%20security%20testing
-    - last_visited: '2021-06-03T16:05:07'
-      pinned: false
-      title: what is nightly build - Google Search
-      url: https://www.google.com/search?q=what+is+nightly+build&sxsrf=ALeKk00zwxS00JR1H2cjQtOrIQpN7dHl4w%3A1622723940144&ei=ZM24YPqmCJKxrgS_hJrADA&oq=what+is+nightly&gs_lcp=Cgdnd3Mtd2l6EAMYADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BwgjEOoCECc6BAgAEEM6CAguEMcBEKMCOgQIIxAnOgIILjoFCAAQkQI6BwgAEIcCEBQ6BQgAEMkDUIGPX1ihu19g6sBfaAJwAngAgAG4AYgBuw6SAQQ3LjEwmAEAoAEBqgEHZ3dzLXdperABCsABAQ&sclient=gws-wiz
     - active: true
-      last_visited: '2021-06-03T16:05:14'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 1766
-      title: open source - What does 'Nightly Builds' mean? - Software Engineering
-        Stack Exchange
-      url: https://softwareengineering.stackexchange.com/questions/56490/what-does-nightly-builds-mean
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-06-03T16:09:14'
+      last_visited: '2021-06-13T16:28:35'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Vulnerability assessment - Wikipedia
-      url: https://en.wikipedia.org/wiki/Vulnerability_assessment
+      title: Inbox (1,388) - barysdzemidziuk@gmail.com - Gmail
+      url: https://mail.google.com/mail/u/0/#inbox
       zoom: 1.3
   - history:
+    - last_visited: '2021-06-13T16:28:25'
+      pinned: false
+      title: docker error response from daemon manifest for jenkins:latest not found
+        - Google Search
+      url: https://www.google.com/search?q=docker+error+response+from+daemon+manifest+for+jenkins%3Alatest+not+found&sxsrf=ALeKk02pmmsxbYi8k6hzar_m2OEsvDftPA%3A1623014836834&ei=tD29YMaYMtGxrgSQj5qgAw&oq=docker+error+response+from+daemon+manifest+for+jenkins%3Alatest+not+found&gs_lcp=Cgdnd3Mtd2l6EAM6BwgjEOoCECc6BAgjECc6BAgAEEM6BQgAEJECOgIIADoHCAAQhwIQFDoGCAAQFhAeUIyPAljlkwRgjKIEaAZwAngAgAFkiAHPKpIBBDc4LjGYAQCgAQGqAQdnd3Mtd2l6sAEKwAEB&sclient=gws-wiz&ved=0ahUKEwjGwsG2-YPxAhXRmIsKHZCHBjQQ4dUDCA4&uact=5
+    - last_visited: '2021-06-13T16:31:04'
+      pinned: false
+      title: microsoft outlook filters - Google Search
+      url: https://www.google.com/search?q=microsoft+outlook+filters&sxsrf=ALeKk00K9AfXmUqBWNGdErszQ8jHmwEPZg%3A1623590903581&ei=9wfGYInVIuuGwPAPhNWI0AE&oq=microsoft+outlook+filters&gs_lcp=Cgdnd3Mtd2l6EAMyAggAMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB46BwgjEOoCECc6BAgjECc6BAguECc6BQgAEJECOgIILjoICC4QxwEQowI6BAguEEM6BAgAEEM6BwgAEIcCEBQ6BAgAEApQ-_IIWM7KCWCC0QloAnACeACAAdoYiAH9LZIBCTExLjE1LjktMZgBAKABAaoBB2d3cy13aXqwAQrAAQE&sclient=gws-wiz&ved=0ahUKEwjJrMW425TxAhVrAxAIHYQqAhoQ4dUDCA4&uact=5
     - active: true
-      last_visited: '2021-06-03T16:32:37'
+      last_visited: '2021-06-13T16:56:17'
       pinned: false
       scroll-pos:
         x: 0
-        y: 702
-      title: owasp - Google Search
-      url: https://www.google.com/search?q=owasp
-      zoom: 1.3
-  - history:
-    - active: true
-      last_visited: '2021-06-03T16:32:44'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 641
-      title: OWASP - Wikipedia
-      url: https://en.wikipedia.org/wiki/OWASP
+        y: 312
+      title: microsoft outlook create rule subject contains wildcard - Google Search
+      url: https://www.google.com/search?q=microsoft+outlook+create+rule+subject+contains+wildcard&sxsrf=ALeKk02-lDFpJ77whmxUbfpckuUybDW1xw%3A1623591063494&ei=lwjGYLu0HeXjrgTVza3wBA&oq=microsoft+outlook+rules+subject+contains+wi&gs_lcp=Cgdnd3Mtd2l6EAMYADIGCAAQFhAeOgQIABBDOgIIADoHCAAQhwIQFFCnpltYwvxbYPKhXGgAcAJ4AIABrAKIAe4YkgEIOC4xNy4xLjGYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=gws-wiz
       zoom: 1.3
   - active: true
     history:
-    - last_visited: '2021-06-03T16:33:16'
-      pinned: false
-      title: owasp three most critical risks - Google Search
-      url: https://www.google.com/search?q=owasp%20three%20most%20critical%20risks
-    - last_visited: '2021-06-03T16:57:33'
-      pinned: false
-      title: owasp - Google Search
-      url: https://www.google.com/search?q=owasp&sxsrf=ALeKk01R54_qV7sdkYR7_LDfcbIoLvgeWA%3A1622727195300&ei=G9q4YIzmEder3AP6xJagBQ&oq=owasp&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyBQgAEJECMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoHCAAQhwIQFFDZ31hYiOlYYKPsWGgAcAJ4AIABxAGIAYEFkgEDNC4ymAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=gws-wiz&ved=0ahUKEwjM36vwyfvwAhXXFXcKHXqiBVQQ4dUDCA4&uact=5
     - active: true
-      last_visited: '2021-06-03T16:58:13'
+      last_visited: '2021-06-13T16:57:46'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: OWASP - Wikipedia
-      url: https://en.wikipedia.org/wiki/OWASP
+      title: To create a rule with wildcards
+      url: https://www.slipstick.com/outlook/rules/create-a-rule-with-wildcards/
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T16:56:24'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 1430
+      title: Can I add a pattern to a "subject contains" filter in - Microsoft Community
+      url: https://answers.microsoft.com/en-us/outlook_com/forum/oemail-osend/can-i-add-a-pattern-to-a-subject-contains-filter/b961c11f-a5f9-47d8-9156-0d24f9976419
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T16:31:07'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 2419
+      title: Manage email messages by using rules - Outlook
+      url: https://support.microsoft.com/en-us/office/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T16:32:37'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: microsoft outlook folders - Google Search
+      url: https://www.google.com/search?q=microsoft%20outlook%20folders
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T16:32:43'
+      original-url: https://www.cedarville.edu/insights/blog/outlook-create-and-manage-folders.aspx
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 208
+      title: 'Outlook: Create and Manage Folders | Cedarville University'
+      url: https://www.cedarville.edu/insights/computer-help/post/create-and-manage-folders-in-outlook
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-06-13T16:28:23'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'docker - Error response from daemon: manifest for ibmblockchain/fabric-peer:latest
+        not found - Stack Overflow'
+      url: https://stackoverflow.com/questions/45952630/error-response-from-daemon-manifest-for-ibmblockchain-fabric-peerlatest-not-fo
       zoom: 1.3
