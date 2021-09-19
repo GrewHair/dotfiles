@@ -6,84 +6,202 @@ windows:
   tabs:
   - history:
     - active: true
-      last_visited: '2021-07-19T03:05:28'
+      last_visited: '2021-09-19T23:29:17'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Anime Amino
+      title: aminoapps.com
       url: https://aminoapps.com/c/anime/page/item/mubong-park-bagmubong/jPto_IGomkgGr4zg420wvwVkgRVGN
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-07-19T03:05:25'
+      last_visited: '2021-09-19T23:29:17'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Utaite | Utaite Wiki | Fandom
+      title: utaite.fandom.com
       url: https://utaite.fandom.com/wiki/Utaite
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-07-19T03:05:28'
+      last_visited: '2021-09-19T23:29:17'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: aspiring utaites - Google Search
+      title: www.google.com
       url: https://www.google.com/search?q=aspiring+utaites&sxsrf=ALeKk02aJ6AuwfHkUW5oZ9d4i7WWV4NCqA%3A1622184199369&ei=B5GwYOfvFcitrgSR0I6AAg&oq=aspiring+utaites&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABOgQIIxAnOgQIABBDOgIIADoECAAQCjoECC4QCjoHCCMQsAIQJzoGCAAQDRAKOgQIABANOgYIABANEB46CAgAEA0QChAeOgYIABAHEB46CAgAEAcQChAeOgoIABAIEAcQChAeUL0WWPfsAWCw8QFoAXACeAGAAecBiAGuDJIBBjEwLjQuMZgBAKABAaoBB2d3cy13aXrAAQE&sclient=gws-wiz&ved=0ahUKEwinj9qH4-vwAhXIlosKHRGoAyAQ4dUDCA4&uact=5
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-07-19T03:05:25'
+      last_visited: '2021-09-19T23:29:17'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Who is your favorite Utaite? - Quora
+      title: www.quora.com
       url: https://www.quora.com/Who-is-your-favorite-Utaite
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-07-19T03:05:26'
+      last_visited: '2021-09-19T23:29:17'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Manage your dotfiles with Ansible | by Kyle Espinola | Espinola Designs
-        | Medium
+      title: medium.com
       url: https://medium.com/espinola-designs/manage-your-dotfiles-with-ansible-6dbedd5532bb
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-07-19T03:05:25'
+      last_visited: '2021-09-19T23:29:17'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: 'Patterns: targeting hosts and groups — Ansible Documentation'
+      title: docs.ansible.com
       url: https://docs.ansible.com/ansible/latest/user_guide/intro_patterns.html
       zoom: 1.3
   - history:
     - active: true
-      last_visited: '2021-07-19T03:05:26'
+      last_visited: '2021-09-19T23:29:17'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: WaniKani, a kanji learning application by Tofugu
+      title: www.wanikani.com
       url: https://www.wanikani.com/#explanation
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-09-19T23:29:17'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: github.com
+      url: https://github.com/kubernetes-up-and-running/kuard
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-09-19T23:29:17'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: www.google.com
+      url: https://www.google.com/search?q=oracle+database+enterprise+edition+docker+hub&sxsrf=ALeKk00HiUkKD-ItqW_jA37KhviOJ4DSEg%3A1627563460379&ei=xKUCYfO2FoevrgTFybOIDw&oq=dockerhub+oracle+database+enter&gs_lcp=Cgdnd3Mtd2l6EAMYADIGCAAQFhAeOgcIIxDqAhAnOgQIIxAnOgQIABBDOgUIABCABDoFCAAQkQI6BwgAEIAEEAo6BwgAEAoQywE6CAgAEBYQChAeOgQIABAKOgQIABANOggIABAIEA0QHkoFCDwSATNKBAhBGABQwtADWPnqBGDF_ARoBHACeACAAdgCiAHRKJIBCDAuMzEuMy4xmAEAoAEBsAEKwAEB&sclient=gws-wiz
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-09-19T23:29:17'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: hub.docker.com
+      url: https://hub.docker.com/r/konnecteam/docker-oracle-12c/
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-09-19T23:29:17'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: docs.docker.com
+      url: https://docs.docker.com/engine/reference/commandline/search/
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-09-19T23:29:17'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: docs.docker.com
+      url: https://docs.docker.com/language/nodejs/run-containers/
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-09-19T23:29:17'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: www.google.com
+      url: https://www.google.com/search?q=docker%3A%20invalid%20reference%20format
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-09-19T23:29:17'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: forums.docker.com
+      url: https://forums.docker.com/t/docker-invalid-reference-format/98597
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-09-19T23:29:17'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: docs.docker.com
+      url: https://docs.docker.com/docker-hub/publish/
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-09-19T23:29:17'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: hub.docker.com
+      url: https://hub.docker.com/_/oracle-database-enterprise-edition?tab=description
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-09-19T23:29:17'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: stackoverflow.com
+      url: https://stackoverflow.com/questions/45682010/docker-invalid-reference-format
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-09-19T23:29:17'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: hub.docker.com
+      url: https://hub.docker.com/_/oracle-database-enterprise-edition?tab=reviews
+      zoom: 1.3
+  - history:
+    - active: true
+      last_visited: '2021-09-19T23:29:17'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: technology.amis.nl
+      url: https://technology.amis.nl/platform/run-oracle-database-in-docker-using-prebaked-image-from-oracle-container-registry-a-two-minute-guide/
       zoom: 1.3
   - active: true
     history:
     - active: true
-      last_visited: '2021-07-19T03:05:26'
+      last_visited: '2021-09-19T23:29:30'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: 'kubernetes-up-and-running/kuard: Demo app for Kubernetes Up and Running
-        book'
-      url: https://github.com/kubernetes-up-and-running/kuard
+      title: www.google.com
+      url: https://www.google.com/search?q=foo
       zoom: 1.3
